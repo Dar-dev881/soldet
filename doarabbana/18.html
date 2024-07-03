@@ -1,0 +1,453 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel=stylesheet type=text/css href=style.css>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />   
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+
+</script> 
+</head> 
+<style> 
+.ui-page { 
+    background:#000000 important!;
+}
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Regular.ttf");
+}
+
+
+.audioPlayer{
+  display: block;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+
+.tabView{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+
+
+}
+
+.arabic {
+    <!-- position:fixed; -->
+    <!-- display: inline -->
+    direction:rtl;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    font-family: "myFirstFont";
+    text-align: center;
+    font-size: 32px;
+    line-height: 2;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+
+.indonesia {
+    <!-- position:fixed; -->
+    <!-- display: inline -->
+    <!-- direction:rtl; -->
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    font-family: "myFirstFont";
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.2;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+    
+} 
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    font-size: 18px;
+    padding: 8px 12px 8px 12px;
+    background-image: "gambar/paper.png" font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #E76E66;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+}
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+<!-- .arab { -->
+    <!-- font-size: 25px !important; -->
+    <!-- line-height: 46px !important; -->
+    <!-- font-family: "Times New Roman", Tahoma, sans-serif; -->
+    <!-- font-weight: normal; -->
+    <!-- text-align: right; -->
+    <!-- direction: rtl; -->
+<!-- } -->
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 250px;
+}
+
+
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    td,
+    th {
+        border: 1px solid #999;
+        padding: 0.3rem;
+    }
+}
+
+ol {
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ol>li {
+    position: relative;
+    margin: 0 0 6px 2em;
+    padding: 4px 8px;
+    list-style: none;
+    border-top: 2px solid #666;
+    background: #f6f6f6;
+}
+
+ol>li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 2em;
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 2px solid #666;
+    color: #fff;
+    background: #666;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+li ol,
+li ul {
+    margin-top: 6px;
+}
+
+ol ol li:last-child {
+    margin-bottom: 0;
+}
+
+.wrap2 {
+    white-space: normal !important;
+    text-align: right;
+} 
+
+ .ui-page { background: #FFFFFF !important;}
+
+.ui-page-theme-a, html .ui-page-theme-a .ui-panel-wrapper {
+background: #FFFFFF !important;
+}
+
+
+.doa {
+    max-width: 55%;
+}
+
+.top-container {
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+}
+
+.header {
+  padding: 0px 0px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.content {
+  padding: 0px;
+background:#red;
+}
+
+<!-- .sticky { -->
+  <!-- position: fixed; -->
+  <!-- top: 0; -->
+  <!-- width: 100%; -->
+<!-- } -->
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.anchor {
+   position: relative;
+   top: -[number]px;
+}
+
+
+
+</style>  
+
+<body>  
+    <div data-role="header" data-theme="i">
+<h2 class="wrap, title" style="text-align: center" class="title">Rabbana aamana faktubna</h2>
+</div>
+<div data-role="footer"  data-theme="i">
+<audio id="myAudio">   <source src="audio/1.aac" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+<center>
+<!-- <button class=btn  onclick="location.href='../doaharian.html';" value="Go to Google" data-role="button" data-inline="true" ><img src="images/prev.png" width="12" height="12"></button> -->
+<button class=btn value=- id=b2 onclick="resizeText2(-1)" data-role="button" data-inline="true"><img src="images/min.png" width="12" height="12"></button>
+
+
+<button class=btn value=- id=b2 onclick="resizeText2(1)" data-role="button" data-inline="true"><img src="images/plus.png" width="12" height="12"></button> 
+<!-- <button class=btn  onclick="location.href='2.html';" value="Go to Google" data-role="button" data-inline="true" ><img src="images/next.png" width="12" height="12"></button> -->
+</center>
+
+
+<div data-role="navbar" data-small=true data-theme="d">    
+<ul>
+<li><a href="../doarabbana.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext" data-inline="true"></a></li>
+<li><button onclick="openPage('Arabe', this, '')" id=defaultOpen>Arab</button></li>
+<li><button onclick="openPage('Latine', this, '')">Latin</button> </li>       
+<li><button onclick="openPage('Artine', this, '')">Arti</button> </li>
+<li><a id="Bookmark" onclick="bookmark();return false;"" data-icon="heart" data-iconpos="notext" data-inline="true"></a></li>
+</ul> 
+</div>
+ 
+
+</div>
+
+<!-- <div id=content> -->
+<div id=Arabe class=tabcontent>
+<p class="arabic">رَبَّنَا آمَنَّا فَاكْتُبْنَا مَعَ الشَّاهِدِينَ</p>
+</div>
+
+<div id=Latine class=tabcontent>
+<p  class="indonesia">Rabbana aamana faktubna ma’ ash-shahidiin
+</p>
+
+</div>
+
+
+<div id=Artine class=tabcontent>
+<p class="indonesia">Ya Tuhan kami, kami telah beriman, maka catatlah kami bersama orang-orang yang menjadi saksi (atas kebenaran Al Quran dan kenabian Muhammad s. a. w.).
+</p>
+<p class="indonesia">QS. Al-Maidah:83</p>
+
+
+
+</div>
+<!-- </div> -->
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="d">
+
+<!-- </div>  -->
+<!-- /page -->  
+</body>
+<script src="function.js">
+</script> 
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>   
+</html> 
