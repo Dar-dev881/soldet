@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=../css/jquery.mobile.squareui.css />
+<link href="../style.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery.js">
+</script> 
+<script src="../js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+<div data-role=footer data-position=fixed style="background-color:#00897b;border:none" >
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#00897b">
+    <div class="ui-grid-c center">
+
+<div class="ui-block-a">
+<button style="background-color:#00897b;border:none" onclick="location.href='wudhu3.html';" value="Go to Google" data-role="button" data-inline="false" ><img src="../images/prev.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#00897b;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="../images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#00897b;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="../images/plus.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-d">
+<button style="background-color:#00897b;border:none" onclick="location.href='wudhu5.html';" value="Go to Google" data-role="button" data-inline="false" ><img src="../images/next.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Membasuh Tangan</h1>
+        <a href="../wudhuok.html" style="background-color:#00897b;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+</div>
+<div id=one>
+<div id="nav-a">
+    
+<div><figure><img src="images/60.jpg" /></figure></div>
+<div class="arti"><strong>Penjelasan</strong></div>
+<div class="arti">Membasuh tangan kanan hingga siku sebanyak 3 kali sambil menyela-nyela jari-jemari,</div>
+<div class="arti">kemudian Membasuh tangan kiri hingga siku sebanyak tiga kali sambil menyela-nyela jari-jemari</div>
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+
+<script src="../function.js">
+
+
+</script> 
+
+</body>
+</html>
