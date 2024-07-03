@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Tata Cara Shalat Taubat</h1>
+        <a href="taubat.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Jumlah Raka&rsquo;at Sholat Taubat</strong></div>
+<div class="arti">Sholat sunnah taubat bisa dikerjakan dengan jumlah 2 raka&rsquo;at, 4 raka&rsquo;at, maupun 6 raka&rsquo;at. Adapun tata cara pelaksanaannya adalah sama dengan sholat-sholat sunnah pada umumnya, yakni dua raka&rsquo;at salam.</div>
+<div class="arti"><strong>Niat Sholat Taubat</strong></div>
+<div class="arti">Niat sholat taubat adalah :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 29px;">أُصَلِّىْ سُنَّةَ التَّوْبَةِ رَكْعَتَيْنِ لِلّٰهِ تَعَالٰى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/taubat.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">&ldquo;USHALLI SUNNATAT TAUBATI ROKAATAINI LILLAHI TAALA.&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> &ldquo;Saya niat shalat sunnah taubat dua rokaat karena Allah.&rdquo;</div>
+<div class="arti"><strong>Bacaan Dalam Sholat taubat</strong></div>
+<div class="arti">Pada dasarnya tidak ada ketentuan yang mewajibkan kita membaca bacaan khusus setelah membaca Al-Fatihah dalam suatu ibadah sholat, jadi kita bisa membaca ayat-ayat Al-Qur&rsquo;an manapun yang kita hafal. Misalnya saja pada rakaat pertama kita membaca Surat Al- Kafirun dan pada rakaat yang kedua kita membaca surat Al-Ikhlas.</div>
+<div class="arti"><strong>Bacaan Dzikir dan Do&rsquo;a setelah sholat Taubat</strong></div>
+<div class="arti">Setelah sholat sunnah taubat, dianjurkan bagi si pelaksana untuk memperbanyak membaca istighfar yang ditujukan untuk memohon ampunan dari Allah SWT. Dari Abu bakar Radiyallahu&rsquo;anhu, bahwasannya Rosulullah sholallahu Alaihi Wassalam bersabda :</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:31px;">عَلَيْكُمْبِلاَ إِلَهَإِلاَّ اللهُوَا لاِسْتِغْفَارِ فَاكْثِرُوْا مِنْهُمَا فَإِنَّإِ بْلِيْسَقَالَ:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 32px;">أَ هْلَكْتُا لنَّ اسَبِا لذُّنُوْ بِوَ أَهْلَكُوْ نِيبِلاَ إِلَهَإِلاَّ اللهُوَا لْاِسْتِغْفَا رِفَلَمَّا رَأَيْتُذَ لِكَأَهْلَكَأَ هْلَكْتُهُمْبِا لْأَهْوَا ءِفَهُمْيِحْسَبُ وْنَأَنَّهُمْمُهْتَدُوْنَ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Hendaklah kalian membaca Laailaaha illallah dan istigfar lalu perbanyaklah membaca keduanya karena iblis berkata : &ldquo;Aku telah membinasakan manusia dengan dosa sedangkan mereka membinasakanku dengan Laailaaha illallah, istigfar, lalu tatkala aku mengetahui demikian maka aku binasakan mereka dengan (mengikuti) hawa nafsu maka akhirnya mereka menyangka dan merasa bahwa sesungguhnya mereka itu sedang mendapatkan petunjuk (dan sedang berada diatas kebenaran).&rdquo; (HR. Al-Imam Al-Hafidz Ibnu Ya&rsquo;la)</div>
+<div class="arti">Adapun bacaan istighfar tersebut adalah :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 28px;">أسْتَغْفِرُ اللّهَ الْعَظِيمَ الَّذِي لا إلَهَ إلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأتُوبُ إلَيْه</div>
+<div class="arti">&ldquo;ASTAGHFIRULLAHAL LADZII LAA ILAAHA ILLAA HUWAL HAYYUL QAYYUUMU WA ATUUBU ILAIHI.&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> &ldquo;Aku meminta pengampunan kepada Allah yang tidak ada tuhan selain Dia Yang Maha Hidup dan Berdiri Sendiri dan aku bertaubat kepadanya.&rdquo;</div>
+<div class="arti">Hendaknya bacaan istighfar tersebut diucapkan sebanyak 100 kali.</div>
+<div class="arti">Memperbanyak membaca tasbih :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 31px;">سُبْحَانَ اللّهِ وَ بِحَمْدِهِ</div>
+<div class="arti">&ldquo;SUBHANALLAHI WA BIHAMDIHI.&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Maha Suci Allah dan segala puji bagi-Nya.&rdquo;</div>
+<div class="arti"><strong>Membaca Do&rsquo;a</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 30px;">اَللَّهُمَّ اِنِّى اَسْاَلُكَ تَوْ فِيْقَ اَهْلِ الْهُدَى وَاَعْمَالَ اَهْلِ التَّوْبَةِ وَعَزْمَ اَهْلِ الصَّبْرِ وَجِدَّ اَهْلِ الْخَشْيَةِ وَطَلَبَ اَهْلِ الرَّ غْبَةِ وَتَعَبُّدَ اَهْلِ الْوَرَعِ وَعِرْفَانَ اَهْلِ الْعِلْمِ حَتَّى اَخَافَكَ . اَللَّهُمَّ اِنِّى اَسْاَلُكَ مَخَا فَةً تَحْجُزُ نِى عَنْ مَعَاصِيْكَ حَتَّى اَعْمَلَ بِطَا عَتِكَ عَمَلاً اَسْتَحِقُّ بِهِ رِضَاكَ حَتَّى اُنَا صِحَكَ فِىالتَّوْ بَةِ خَوْ فًا مِنْكَ وَحَتَّى اَخْلِصَ لَكَ النَّصِيْحَةَ حُبًّا لَكَ وَحَتَّى اَتَوَ كَّلَ عَلَيْكَ فَ اْلاُمُوْرِ كُلِّهَاوَحُسْنَ ظَنٍّ بِكَ . سُبْحَانَ خَالِقِ نُوْرٍ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Alloh sesungguhnya hamba memohon kepada-Mu Taufiq(pertolongan)nya orang-orang yang mendapatkan petunjuk(hidayah),dan perbuatannya orang-orang yang bertaubat, dan cita-cita orang-orang yang sabar, dan kesungguhan orang-orang yang takut, dan pencariannya orang-orang yang cinta, dan ibadahnya orang-orang yang menjauhkan diri dari dosa (wara&rsquo;), dan ma&rsquo;rifatnya orang-orang berilmu sehingga hamba takut kepada-Mu. Ya Alloh sesungguhnya hamba memohon kepada-Mu rasa takut yang membentengi hamba dari durhaka kepada-Mu, sehingga hamba menunaikan keta&rsquo;atan kepada-Mu yang berhak mendapatkan ridho-Mu sehingga hamba tulus kepada-Mu dalam bertaubat karena takut pada-Mu, dan sehingga hamba mengikhlaskan ketulusan untuk-Mu karena cinta kepada-Mu, dan sehingga hamba berserah diri kepada-Mu dalam semua urusan, dan hamba memohon baik sangka kepada-Mu. Maha suci Dzat Yang Menciptakan Cahaya.&rdquo;</div>
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

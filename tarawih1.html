@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Hukum Sholat Tarawih</h1>
+        <a href="tarawih.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Para ulama sepakat bahwa shalat tarawih hukumnya adalah sunah (dianjurkan), dan tidak wajib.</div>
+<div class="arti">Imam an-Nawawi mengatakan,</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">أما حكم المسألة فصلاة التراويح سنة بإجماع العلماء</div>
+<div class="arti">Adapun hukum masalah shalat tarawih, maka shalat tarawih hukumnya sunah dengan sepakat ulama. <br><strong>(al-Majmu&rsquo; Syarh Muhadzab, 4/31).</strong></div>
+<div class="arti">Keterangan yang sama juga disebutkan dalam ensiklopedi fikih islam,</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">أجمع المسلمون على سنية قيام ليالي رمضان، وقد ذكر النووي أن المراد بقيام رمضان صلاة التراويح</div>
+<div class="arti">Kaum muslimin sepakat tentang hukum anjuran untuk qiyam malam ramadhan. dan an-Nawawi telah menyebutkan bahwa yang dimaksud qiyam ramadhan adalah shalat tarawih. <br><strong>(al-Mausu&rsquo;ah al-Fiqhiyah al-Kuwaitiyah, 23/144).</strong></div>
+<div class="arti">Di tempat lain, dalam ensiklopedi fikih islam juga disebutkan,</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">اتفق الفقهاء على سنية صلاة التراويح، وهي عند الحنفية والحنابلة وبعض المالكية سنة مؤكدة، وهي سنة للرجال والنساء وهي من أعلام الدين الظاهرة</div>
+<div class="arti">Ulama sepakat tentang hukum anjuran untuk shalat tarawih. Sementara menurut madzhab hanafiyah, hambali, dan sebagian malikiyah, shalat tarawih hukumnya sunah yang sangat ditekankan. Shalat ini dianjurkan bagi lelaki dan wanita. Dan shalat ini termasuk syiar agama islam yang sangat nampak. <br><strong>(al-Mausu&rsquo;ah al-Fiqhiyah al-Kuwaitiyah, 27/137).</strong></div>
+<div class="arti">Diantara dalil yang menunjukkan bahwa shalat tarawih tidak wajib, bahwa di zaman Rasulullah shallallahu &lsquo;alaihi wa sallam, shalat tarawih berjamaah hanya dikerjakan selama 3 malam.</div>
+<div class="arti">Sahabat Abu Dzar radhiyallahu &lsquo;anhu menceritakan,</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">صُمْنَا مَعَ رَسُولِ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ رَمَضَانَ، فَلَمْ يَقُمْ بِنَا شَيْئًا مِنْهُ، حَتَّى بَقِيَ سَبْعُ لَيَالٍ، فَقَامَ بِنَا لَيْلَةَ السَّابِعَةِ حَتَّى مَضَى نَحْوٌ مِنْ ثُلُثِ اللَّيْلِ، ثُمَّ كَانَتِ اللَّيْلَةُ السَّادِسَةُ الَّتِي تَلِيهَا، فَلَمْ يَقُمْهَا، حَتَّى كَانَتِ الْخَامِسَةُ الَّتِي تَلِيهَا، ثُمَّ قَامَ بِنَا حَتَّى مَضَى نَحْوٌ مِنْ شَطْرِ اللَّيْلِ، فَقُلْتُ: يَا رَسُولَ اللَّهِ لَوْ نَفَّلْتَنَا بَقِيَّةَ لَيْلَتِنَا هَذِهِ. فَقَالَ: &laquo;إِنَّهُ مَنْ قَامَ مَعَ الْإِمَامِ حَتَّى يَنْصَرِفَ، فَإِنَّهُ يَعْدِلُ قِيَامَ لَيْلَةٍ&raquo; ثُمَّ كَانَتِ الرَّابِعَةُ الَّتِي تَلِيهَا، فَلَمْ يَقُمْهَا، حَتَّى كَانَتِ الثَّالِثَةُ الَّتِي تَلِيهَا، قَالَ: فَجَمَعَ نِسَاءَهُ وَأَهْلَهُ وَاجْتَمَعَ النَّاسُ، قَالَ: فَقَامَ بِنَا حَتَّى خَشِينَا أَنْ يَفُوتَنَا الْفَلَاحُ، قَالَ: ثُمَّ لَمْ يَقُمْ بِنَا شَيْئًا مِنْ بَقِيَّةِ الشَّهْرِ</div>
+<div class="arti">Kami berpuasa bersama Rasulullah shallallahu &lsquo;alaihi wa sallam pada bulan ramadhan. Beliau tidak pernah mengimami shalat malam sama sekali, hingga ramadhan tinggal 7 hari. Pada H-7 beliau mengimami kami shalat malam, hingga berlalu sepertiga malam. Kemudian pada H-6, beliau tidak mengimami kami. Hingga pada malam H-5, beliau mengimami kami shalat malam hingga berlalu setengah malam. Kamipun meminta beliau, &lsquo;Wahai Rasulullah, bagaimana jika kita tambah shalat tarawih hingga akhir malam?&rsquo; Kemudian beliau bersabda, &lsquo;Barangsiapa yang shalat tarawih berjamaah bersama imam hingga selesai, maka dia mendapat pahala shalat tahajud semalam suntuk.&rsquo; Kemudian H-4, beliau tidak mengimami jamaah tarawih, hingga H-3, beliau kumpulkan semua istrinya dan para sahabat. Kemudian beliau mengimami kami hingga akhir malam, sampai kami khawatir tidak mendapatkan sahur. Selanjutnya, beliau tidak lagi mengimami kami hingga ramadhan berakhir. <br><strong>(HR. Nasai 1605, Ibn Majah 1327 dan dishahihkan Al-Albani).</strong></div>
+<div class="arti">Kesimpulan yang bisa garis bawahi dari hadis di atas, bahwa para sahabat pada beberapa malam mereka tidak shalat tarawih berjamaah, meskipun bisa jadi mereka shalat tahajud di masjid. Akan tetapi mereka juga puasa dan tidak diperintahkan untuk meng-qhada&rsquo;-nya.</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

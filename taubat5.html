@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Keutamaan Shalat Taubat</h1>
+        <a href="taubat.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		</div>
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Allah SWT telah berfirman :</strong></div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:30px;">أولئك جراؤهم مغفرة من ربهم وجنت تجري من تحتها الأنهار خالدين فيها، ونعم أجر العالمين</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong>&ldquo;Mereka itu balasannya ialah ampunan dari Tuhan mereka dan surga yang di dalamnya mengalir sungai-sungai, sedang mereka kekal di dalamnya; dan itulah sebaik-baik pahala orang-orang yang beramal.&rdquo; <br><strong>(QS. Ali- Imron ayat 136)</strong></div>
+<div class="arti">Jadi bisa disimpulkan bahwa allah akan memberikan ganjaran bagi mereka yang melakukan taubat, seperti :</div>
+<div class="arti">1. Allah SWT akan mengampuni dosa-dosa yang pernah diperbuat.</div>
+<div class="arti">2. Allah SWT menjanjikan surga bagi siapa saja yang bertaubat dengan sungguh-sungguh dan mereka akan kekal di dalamnya.</div>
+<div class="arti">3. Allah SWT akan memberikan pahala yang terbaik sebagai penambah timbangan amal bagi mereka yang bertaubat.</div>
+<div class="arti">Lalu bagaimana jika seseorang  melakukan kesalahan, kemudian ia bertaubat. Akan tetapi suatu ketika ia melakukan kesalahan yang sama kembali? dari Abu Hurairah Radiyallahu’anhu, bahwasannya Rosulullah Sholallahu Alaihi Wassalam pernah bersabda :</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:31px;">إِنَّرَجُلاً أَذْ نَبَذَ نْبًا فَقَالَ :
+رَبِّإِ نِّيأَ ذَ نَبْتُذَ نْبًا فَا غْفِرْهُ. فَقَالَاللهُ :
+عَبْدِ يعَمِلَذَ نْبًا فَعَلِمَأَ نَّلَهُرَبًا يَغْفِرُ الذَّنْبَوَ يَأْخُذُ بِهِقَدْ غَفَرْ تُلِعَبْدِ يثُمَعَمِلَذَ نْبًآَخَرَ فَقَالَ :
+رَبِّإِنِّيعَمِلْتُذَ نْبًافَاغْفِرْهُ. فَقَا لَتَبَا رَكَوَ تَعَالَى :
+عَلِمَعَبْدِ يأَنَّلَهُرَ بًايَغْفِرُ الذَنْبَوَ يَأْخُذُ بِهِقَدْ غَفَرْ تُلِعَبْدِ ثُمَّعَمِلَذَ نْبًآَخَرَ فَقَالَ :
+رَبِّإِنِّيعَمِلْتُذَ نْبًافَاغْفِرْ هُفَقَا لَتَعَالَى :
+عَبْدِ عَلِمَأَنَّلَهُرَ بًايَغْفِرُ الذَّنْبَوَيَأْ خُذُبِهِ، أُشْهِدُ كُمْأَنِّيقَدْ غَفَرْتُلِعَبْدِ يفَلْيَعْمَلْمَا شَاءَ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> &ldquo;Sesungguhnya seorang laki &ndash; laki berbuat dosa lalu berkata: &ldquo;Wahai Tuhanku sesungguhnya aku berbuat dosa maka ampunilah. Maka Allah Subhanahu Wa Ta&rsquo;ala berkata : &ldquo;Hambaku berbuat dosa lalu ia tahu bahwa ia memiliki Tuhan yang Maha Mengampuni dosa dan ia merealisasikannya, sesungguhnya Aku telah ampuni hambaku tersebut. Kemudian ia pun berbuat dosa lagi dosa yang lainnya lalu berkata : &ldquo;Wahai Tuhanku sesungguhnya aku berbuat dosa maka ampunilah, maka Allah Tabaroka wa Ta&rsquo;ala berkata: &ldquo;Hamba-Ku mengetahui bahwa ia punya Tuhan yang Maha Pengampun lalu ia pun merealisasikannya: &ldquo;Sesungguhnya telah aku ampuni hambaku. Kemudian ia melakukan dosa yang lainnya lagi, dan ia berkata : &ldquo;Wahai Tuhanku sesungguhnya aku berbuat dosa, maka ampunilah. Maka Allah Subhanahu Wa Ta&rsquo;ala berkata lagi : &ldquo;Hamba-Ku tahu bahwa ia punya Tuhan yang Maha Pengampun dan ia merealisasikannya.&rdquo; Maka Aku mempersaksikan kepada kalian semua bahwa sesungguhnya Aku sungguh telah mengampuni hamba-Ku maka silahkan dia lakukan apa yang dia kehendaki.&rdquo; <br><strong>(HR. Al- Imam Ahmad)</strong></div>
+
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

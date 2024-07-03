@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Waktu dan Cara Pelaksanaan Shalat Witir</h1>
+        <a href="witir.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Waktu Pelaksanaan Shalat Sunat Witir</strong></div>
+<div class="arti">Waktu pelaksanaannya adalah setelah shalat isya sampai terbitnya fajar shadiq (masuk waktu subuh). Sedangkan pada bulan Ramadhan waktunya setelah shalat tarawih. Jadi shalat witir boleh dikerjakan di awal malam (setelah shalat isya), tetapi yang paling pertama di akhir malam. Karena shalat diakhir malam disaksikan oleh malaikat.</div>
+<div class="arti">Seorang yang telah mengerjakan shalat witir sebelum tidur , ketika telah bangun dari tidur, ketika telah bangun dari tidur boleh mengerjakan shalat tahjud,atau shalat sunat lainya.Khusus shalat witir yang dikerjakan pada bulan Ramadhan (mulai dari pertengahan sampai akhir Ramadhan) , disunatkan membaca do&rsquo;a kunut yang tepatnya pada raka&rsquo;at terakhir sebelum sujud.</div>
+<div class="arti"><strong>Cara Mengerjakan Shalat Sunat Witir</strong></div>
+<div class="arti">Cara mengerjakan shalat witir sama dengan cara mengerjakan shalat fardlu. Perbedaannya hanya pada niat . shalat witir jika lebih dari 1 raka&rsquo;at (3,5,7,9 atau 11), sebaiknya dikerjakan 2 raka&rsquo;at 2 raka&rsquo;at (setiap 2 raka&rsquo;at satu kali salam). Sedangkan yang terakhir boleh 3 raka&rsquo;at satu kali salam, boleh pula satu raka&rsquo;at.</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

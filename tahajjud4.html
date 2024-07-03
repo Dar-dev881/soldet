@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+
+</div> 
+
+
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Rakaat dan Niat Shalat Tahajjud</h1>
+        <a style="background-color:#007c91;border:none" href="tahajjud.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Rakaat Sholat Tahajjud</strong></div>
+<div class="arti">Sholat tahajud minimal dikerjakan sebanyak dua rakaat, maksimalnya ada yang mengatakan 8 hingga 12 rakaat. Ada juga yang menyebutkan tidak ada batas maksimal rakaat. Sholat tahajud (dan juga shalat sunnah lain pada umumnya) dikerjakan dengan dua-dua rakaat, artinya setiap dua rakaat harus salam terlebih dahulu baru boleh shalat kembali.</div>
+<div class="arti"><strong>Niat Sholat Tahajjud</strong></div>
+<div class="arti">Terdapat 2 hal yang perlu diperhatikan dalam niat sholat yaitu Lafadh ( Bacaan niat ) dan Qashad ( Niat )</div>
+<div class="arti">Lafadh adalah Ada bacaan yang kita ucapkan dengan lidah sebelum melaksanakan suatu ibadah. Sementara Qashad adalah niat di dalam hati ketika melakukan suatu ibadah.</div>
+<div class="arti">Hukum membaca Lafadh adalah sunnah, sementara qashad niat hukumnya wajib.</div>
+<div class="arti">dua hal yang perlu diperhatikan soal niat: lafadh atau bacaan niat dan qashad niat.</div>
+<div class="arti"><strong>Lafadh niat Sholat Tahajjud</strong></div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:20px;">اُصَلِّى سُنَّةً التَّهَجُّدِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ لِلّٰهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/Tahajjud.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="bacaan" style="text-align:justify">Artinya: "Aku niat shalat sunat tahajud 2 rakaat, menghadap kiblat, karena Allah Ta'ala."</div>
+<div class="arti"><strong>Qashad niat</strong></div>
+<div class="arti">Qashad niat adalah ungkapan di dalam hati. Biasanya qashad niat dilakukan dalam bahasa daerah masing-masing agar mudah. Saat kita mengucapkan takbiratul ihram, saat itu pula kita meng-qashad untuk melaksanakan sholat.</div>
+<div class="arti">Saat kita takbiratul ihram dan membaca<strong> اَللهُ اَكْبَرُ</strong>, saat itu juga di dalam hati kita berniat aku niat sholat tahajud 2 rakaat karena Allah ta&rsquo;ala.</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

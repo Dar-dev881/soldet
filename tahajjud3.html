@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+
+</div> 
+
+
+</div>
+
+ <div data-role="header" data-theme="c">
+        <h1>Waktu Shalat Tahajud</h1>
+        <a style="background-color:#007c91;border:none" href="tahajjud.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Waktu yang diperbolehkan untuk melakukan sholat tahajjud adalah setelah sholat isya hingga menjelang shubuh. Selain itu, orang yang ingin melaksanakan sholat tahajjud juga harus tidur terlebih dahulu.</div>
+<div class="arti"><strong>Sepertiga malam yang pertama / awal malam.</strong></div>
+<div class="arti">Shalat tahajjud dapat dikerjakan pada waktu sepertiga malam pertama. Rentang waktu ini adalah setelah sholat Isya’ hingga pukul 22.00. Tetapi, Shalat tahajjud tetap harus diawali dengan tidur terlebih dahulu meski sejenak.</div>
+<div class="arti"><strong>Sepertiga malam yang kedua.</strong></div>
+<div class="arti">Sepertiga malam kedua menjadi salah satu waktu terbaik untuk menjalankan Shalat tahajjud. Rentang waktu ini pada pukul 22.00 hingga 01.00.Waktu Sepertiga malam yang kedua ini dipercaya memiliki fadhilah dan keiistimewaan tersendiri sehingga Waktu Shalat tahajjud ini memang sulit diterapkan. Karena kebanyakan orang sangat sasah bangun di salah satu waktu terbaik tersebut.</div>
+<div class="arti"><strong>Sepertiga malam yang terakhir</strong></div>
+<div class="arti">Waktu ini merupakan waktu yang paling utama bagi dilakukannya Shalat tahajjud. Jika direntangkan, waktu sepertiga malam terakhir itu antara pukul 01.00 hingga sebelum memasuki waktu subuh.</div>
+<div class="arti">Dalam hadits riwayat Imam Bukhari dan Imam Muslim Rasulullah Salallahualahi Wasallam bersabda,</div>
+<div class="bacaan" style="text-align:justify">Setiap malam Allah SWT turun ke langit dunia sampai tersisa sepertiga malam yang terakhir. Ia (Allah) pun berkata,” Adakah hamba-Ku yang meminta sehingga pasti Aku berikan apa yang dia minta? Adakah hamba-Ku yang berdoa hingga pasti Aku kabulkan doanya? Adakah hamba-Ku yang ber-istighfar sehingga Aku ampuni dosanya?</div>
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

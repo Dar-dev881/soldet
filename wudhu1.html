@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Pengertian dan Hukum Shalat Wudhu</h1>
+        <a href="wudhu.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Shalat wudhu merupakan salah satu ibadah yang sangat dianjurkan dalam Islam. Hukum Shalat Wudhu adalah Sunnah, Shalat ini dilaksanakan sesaat setelah kita melakukan wudhu dan sebelum air wudhu mengering dari anggota wudhu. Kesunnahan shalat wudhu ini berdasarkan sabda Nabi Saw. berikut :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">مَا مِنْ مُسْلِمٍ يَتَوَضَّأُ فَيُحْسِنُ وُضُوءَهُ ثُمَّ يَقُومُ فَيُصَلِّى رَكْعَتَيْنِ مُقْبِلٌ عَلَيْهِمَا بِقَلْبِهِ وَوَجْهِهِ إِلاَّ وَجَبَتْ لَهُ الْجَنَّةُ</div>
+<div class="bacaan" style="text-align: justify;">"Tidaklah seorang muslim berwudhu lalu menyempurnakan wudhunya, kemudian mendirikan shalat dua rakaat dengan menghadapkan hati dan wajahnya, kecuali surga wajib diberikan kepadanya." <br><strong>(HR. Muslim)</strong></div>
+<div class="arti">Berdasarkan hadis ini, para ulama menganjurkan shalat wudhu. Shalat wudhu boleh dilakukan kapan saja, siang maupun malam, dengan syarat didahului wudhu terlebih dulu. Bahkan menurut ulama Syafi&rsquo;iyah, shalat wudhu boleh dilakukan di waktu-waktu terlarang shalat. Hal ini karena shalat wudhu termasuk shalat yang mempunyai sebab, sedangkan larangan shalat pada waktu-waktu terlarang shalat hanya berlaku untuk shalat yang tidak mempunyai sebab tertentu.</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

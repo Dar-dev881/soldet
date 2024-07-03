@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Hukum Yang Berkaitan Dengan Shalat Tahiyatul Masjid</h1>
+        <a href="tahiyatulmasjid.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Pertama:</strong></div>
+<div class="arti">Disyari&rsquo;atkannya untuk shalat Tahiyatul Masjid di setiap waktu (tidak ada waktu yang terlarang), karena ia termasuk shalat yang berkaitan dengan sebab (yaitu karena masuk ke masjid). Inilah pendapat yang dipilih oleh Syeikhul islam ibnu Thaimiyyah, majduddin Abul Barakat, Ibnul Jauzi, dan yang lain. <br><strong>(Al-inshof : 2/802, Al-Muharrar : 1/86, Nailul Authar : 3/62, Fatawa li ibni Thaimiyyah : 23/219)</strong></div>
+<div class="arti">Pendapat ini juga dipilih oleh Syeikh Muhammad bin Utsaimin <br><strong>(Syarah Mumthi&rsquo; &rdquo; (4/179))</strong> dan juga Syeikh Ibnu Baz dalam kitab fatawa.</div>
+<div class="arti"><strong>Kedua:</strong></div>
+<div class="arti">Waktu/pelaksanaan shalat Tahiyatul Masjid adalah ketika masuk ke masjid dan sebelum duduk. Adapun jika ia sengaja duduk, maka tidak di syari&rsquo;atkan untuk mengerjakan shalat tahiyatul masjid. Hal itu dikarenakan telah kehilangan kesempatan (yaitu ketika masuk masjid dan sebelum duduk). <br><strong>(Ahkam Tahiyatul Masjid,&nbsp;5)</strong></div>
+<div class="arti"><strong>Ketiga:</strong></div>
+<div class="arti">Adapun jikalau ia masuk masjid dan langsung duduk karena tidak tahu atau lupa dan belum mengerjakan shalat Tahiyatul Masjid, maka ia tetap disyari&rsquo;atkan untuk mengerjakan shalat tahiyatul masjid, karena orang yang diberi uzur (karena lupa atau tidak tahu) tidak hilang kesempatan untuk megerjakan shalat tahiyatul masjid, dengan syarat jarak antara duduk dengan waktunya tidak terlalu lama.&nbsp;<br><strong>(Fathul Bari,&nbsp;2/408)</strong></div>
+<div class="arti"><strong>Keempat:</strong></div>
+<div class="arti">Apabila ada orang yang masuk ke Masjid sedangkan azan dikumandangkan, maka yang sesuai syari&rsquo;at adalah menjawab adzan dan menunda sebentar untuk shalat Tahiyatul Masjid, karena saat itu menjawab adzan lebih penting. Kecuali kalau ia masuk ke masjid pada hari jum&rsquo;at, sedangkan adzan untuk khutbah tengah dikumandangkan, maka dalam kondisi seperti ini mendahulukan shalat tahiyatul masjid daripada menjawab azan (agar bisa mendengarkan khutbah). Karena mendengarkan khutbah lebih penting.&rdquo; <br><strong>(Al-Inshaf,&nbsp;1/427)</strong></div>
+<div class="arti"><strong>Kelima:</strong></div>
+<div class="arti">Apabila ada orang yang masuk ke masjid sedangkan imam saat itu sedang berkhutbah, maka tetap disunnahkan untuk mengerjakan shalat Tahiyatul Masjid, dan hendaknya meringankannya/mempercepatnya <strong>(Al-Fatawa li Ibni Taimiyyah,&nbsp;23/219).</strong></div>
+<div class="arti">Hal ini sebagaimana dalam hadits Nabi,&nbsp;&ldquo;Maka janganlah ia duduk kecuali telah mengerjakan dua raka&rsquo;at&rdquo;&nbsp;<strong>(HR Bukhari (1163) dan Muslim (714)).</strong></div>
+<div class="arti"> Begitu pula dalam hadits yang lain,&acute;&ldquo;Hendaklah ia kerjakan dua raka&rsquo;at, dan hendaklah meringankanya.&rdquo;&nbsp;<strong>(HR Bukhari (931), Muslim (875)).</strong></div>
+<div class="arti"> Jika seorang khatib hampir selesai khutbah, dan menurut dugaan kuat jika ia mengerjakan shalat Tahiyatul Masjid akan ketinggalan shalat wajib (shalat jum&rsquo;at), maka hendaknya ia berdiri untuk mengerjakan shalat jum&rsquo;at, dan setelah selesai shalat Jumat hendaknya ia jangan sampai langsung duduk tanpa mengerjakan shalat tahiyatul masjid.</div>
+<div class="arti"><strong>Keenam:</strong></div>
+<div class="arti">Penghormatan di Masjidil Haram adalah Thawaf, hal ini sebagaimana dikemukakan Jumhur Fuqaha&rsquo;. Imam Nawawi berkata, &ldquo;Shalat Tahiyyatul Masjidil untuk Masjidil Haram adalah Thawaf, yang dikhususkan bagi pendatang. Adapun orang yang Muqim/menetap disitu maka hukumnya sama seperti masjid-masjid yang lain (yaitu disunnahkan shalat Tahiyatul Masjid)&rdquo; <br><strong>(Fathul Bari: 2/412)</strong></div>
+<div class="arti">Namun sebagai catatan,&nbsp;hadits yang dijadikan rujukan dalam masalah ini adalah hadits yang tidak shahih/benar. Bahkan tidak ada asalnya dari Nabi. Lafaz hadits tersebut adalah:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 34px;">تحية البيت الطواف</div>
+<div class="arti">&ldquo;Tahiyat bagi Al-Bait (Ka&rsquo;bah) adalah thawaf,&rdquo; <br><strong>(Lihat&nbsp;Adh-Dhaifah&nbsp;no. 1012 karya Al-Albani &ndash;rahimahullah-),</strong></div>
+<div class="arti">Jadi kesimpulannya&nbsp;shalat Tahiyatul Masjid berlaku untuk semua masjid, termasuk masjidil haram.&nbsp;Sehingga orang yang masuk masjidil haram tetap dianjurkan baginya untuk melakukan tahiyatul masjid jika dia ingin duduk.</div>
+<div class="arti"><strong>Ketujuh:</strong></div>
+<div class="arti">Shalat qabliyah dapat menggantikan tahiyatul masjid, karena maksud dari shalat tahiyatul masjid adalah agar orang yang masuk masjid memulai dengan shalat, sedangkan ia telah melaksanakan shalat sunnah rawatib.&nbsp;Jika ia berniat shalat sunnah rawatib sekaligus shalat tahiyatul masjid atau berniat shalat fardhu maka ia telah mendapat pahala secara bersamaan.&nbsp;<br><strong>(Kasyful Qana&rsquo;: 1/423)</strong></div>
+<div class="arti"><strong>Kedelapan:</strong></div>
+<div class="arti">Adapun seorang imam, maka cukup baginya untuk mendirikan shalat fardhu tanpa shalat Tahiyatul Masjid.&nbsp;Hal itu dikarenakan imam&nbsp;datang&nbsp;di akhir dan kedatangannya dijadikan sebagai tanda untuk mengumandangkan iqamat. <br><strong>(Subulus Salam: 1329)</strong></div>
+<div class="arti">Adapun jikalau imam telah datang sejak awal waktu, maka tetap disyari&rsquo;atkan bagi imam untuk mengerjakan shalat Tahiyatul Masjid, sebagaimana makmum. Hal itu sebagaimana keumuman dalil,&nbsp;&ldquo;Jika salah seorang dari kalian masuk ke Masjid, maka janganlah duduk sehingga ia shalat dua raka&rsquo;at terlebih dahulu.&rdquo;&nbsp;<br><strong>(HR Bukhari (444), Muslim (764))</strong></div>
+<div class="arti">Mengenai shalat di tanah lapang (seperti shalat ied, istisqa&rsquo;), maka tidak disyari&rsquo;atkan untuk mengerjakan shalat Tahiyatul Masjid, <br><strong>(Al-Fawakihul Adidah&nbsp;: 1/99)</strong></div>
+<div class="arti">Namun sebagian ulama&rsquo; ada yang membolehkan shalat tahiyatul Masjid di tanah lapang karena di tinjau dari segi hukumnya sama seperti shalat berjama&rsquo;ah di dalam masjid. <strong>(Al-inshaf: 1/246).</strong></div>
+<div class="arti">Namun yang lebih rajih insya Allah pendapat yang pertama, karena berbeda dari sisi tempatnya dan juga dzahirnya hadits :&nbsp;&ldquo;Jika salah seorang dari kalian masuk ke Masjid&hellip;. <br><strong>(HR Bukhari dan Muslim)</strong></div>
+<div class="arti"><strong>Kesembilan:</strong></div>
+<div class="arti">Tidak dipungkiri bahwa shalat tahiyatul masjid berlaku utk siapa saja, laki-laki &amp; perempuan yang hendak melakukan shalat berjama&rsquo;ah di masjid. Hanya saja para ulama mengecualikan darinya khatib Jum&rsquo;at, dimana tak ada satupun dalil yang menunjukkan bahwa Nabi &ndash;shallallahu Alaihi wassalam- shalat tahiyatul masjid sebelum beliau khutbah.&nbsp;Akan tetapi beliau datang &amp; langsung naik ke mimbar <br><strong>(Al-Majmu&rsquo;: 4/448).</strong></div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Bacaan Doa Shalat Tarawih</h1>
+        <a href="tarawih.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>1.) Sebelum shalat dimulai bilal mengucapkan:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 56px;">صَلَاةَالتَّرَاوِيْحِ آجَرَكُمُ اللهُ</div>
+<div class="arti">shalaata taraawiih aajarakumullaah.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Mari kita laksanakan Shalat Tarawih, semoga Allah memberikan ganjaran kepada kamu semua."</div>
+<div class="arti"><strong>Jamaah Menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">لاَاِلَهَ اِلَّااللهُ مُحَمَّدٌ رَسُوْلُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ</div>
+<div class="arti">laa ilaaha illallaahu muhammadur rasuulullaahi shallallaahu 'alaih wa sallama.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Tak ada Tuhan selain Allah, Nabi Muhammad utusan Allah, semoga rahmat Allah dan kesejahteraan terlimpah kepadanya."</div>
+<div class="arti"><strong>Bilal Mengucapkan lagi:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 50px;">اَللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلٌى اَلِ مُحَمَّدٍ</div>
+<div class="arti">allaahumma shalli 'alaa muhammadiw wa 'alaa aali muhammad.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Awahai Allah! Berilah rahmat kepada nabi Muhammad dan keluarganya."</div>
+<div class="arti"><strong>Jamaah Menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 43px;">.اَللَّهُمَّ صَلِّ وَسَلِّمْ عَلَيْهِ</div>
+<div class="arti">allahumma shalli wa sallim 'alaih</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Wahai Allah! Berilah rahmat dan kejahteraan kepadanya."</div>
+<div class="arti">Keudian melaksanakan shalat tarawih 2 rakaat pertama.</div>
+<div class="arti"><strong>2.) Bilal Mengucapkan:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">. فَضْلًا مِنَ اللهِ وَنِعْمَةً</div>
+<div class="arti">fadhlam minallahi wa ni'mah.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> "Kemurahan dan kenikmataan dari Allah."</div>
+<div class="arti"><strong>Jamaah Menjawab :</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 60px;">وَمَعْفِرَةً وَرَحْمَةً. يَاتَوَّابُ يَاوَاسِعَ الْمَغْفِرَةِ يَااَرْحَمَ الرَّاحِمِيْنَ.</div>
+<div class="arti">wa maghfirataw warahmah. yaa tawwaab yaa waasi'al maghfirah yaa arhamar raahimiin.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Begitu pula ampunan dan rahmat. Wahai Yang Maha Menerima taubat, Wahai Yang Maha Luas ampunan-Nya, Wahai Yang Maha Penyayang d atara para penyayang."</div>
+<div class="arti">Kemudian melaksnakan shalat tarawih 2 rakaat kedua,</div>
+<div class="arti"><strong>3.) Bilal mengucapkan :</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 51px;">اَللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلٌى اَلِ مُحَمَّدٍ</div>
+<div class="arti">allaahumma shalli 'alaa muhammadiw wa 'alaa aali muhammad.</div>
+<div class="arti"><strong>Jamaah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 44px;">.اَللَّهُمَّ صَلِّ وَسَلِّمْ عَلَيْهِ</div>
+<div class="arti">allahumma shalli wa sallim 'alaih.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih 2 rakaat ketiga.</div>
+<div class="arti"><strong>4.) Bilal mengucapkan</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 42px;">. فَضْلًا مِنَ اللهِ وَنِعْمَةً</div>
+<div class="arti">fadhlam minallahi wa ni'mah.</div>
+<div class="arti"><strong>Jamaah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 61px;">وَمَعْفِرَةً وَرَحْمَةً. يَاتَوَّابُ يَاوَاسِعَ الْمَغْفِرَةِ يَااَرْحَمَ الرَّاحِمِيْنَ.</div>
+<div class="arti">wa maghfirataw warahmah. yaa tawwaab yaa waasi'al maghfirah yaa arhamar raahimiin.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih 2 rakaat ke-empat</div>
+<div class="arti"><strong>5.) Bilal megucapkan:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 45px;">اَلْجَلِيْفَةُ اْلاُوْلَى اَمِيْرُ اْلمُؤْ مِنِيْنَ سَيِّدُنَااَبُوْبَكْرِنِ الصِّدِّيْقِ</div>
+<div class="arti">al-khaliifatul uulaa amiirul mu'miniina sayyidunaa abuu bakrinish shiddiiq.</div>
+<div class="arti">Khafilah pertama Amirulmu' minin Penghulu kita, Abu Bakar Shiddiq.</div>
+<div class="arti"><strong>Jamaah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 52px;">رَضِيَ اللهُ عَنْهُ</div>
+<div class="arti">radhiyallaahu'anh.</div>
+<div class="arti">Semoga Allah meridhainya.</div>
+<div class="arti">Kemudian melaksanakan Shalat tarawih 2 rakaat ke-lima.</div>
+<div class="arti"><strong>6.) Bilal mengucapkan:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 57px;">فَضْلًا مِنَ اللهِ وَنِعْمَةً</div>
+<div class="arti">fahlam minallaahi wa ni'mah.</div>
+<div class="arti"><strong>Jamaah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 62px;">وَمَعْفِرَةً وَرَحْمَةً. يَاتَوَّابُ يَاوَاسِعَ الْمَغْفِرَةِ يَااَرْحَمَ الرَّاحِمِيْنَ.</div>
+<div class="arti">wa maghfirataw warahmah. yaa tawwaab yaa waasi'al maghfirah ya arhamar raahimiin.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih rakaat ke-enam</div>
+<div class="arti"><strong>7.) Bilal mengucapkan:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 47px;">اَلْخَلِيْفَةُ الثَّانِيَةُ اَمِيْرُ اْلمُؤْمِنِيْنَ سَيِّدُنَاعُمَرُابْنُ اْلخَطَّابَ.</div>
+<div class="arti">al-khaliifatuts tsaaniyah amiirul mu'miniina sayyidunaa 'umarubnul khathtaab. artinya:</div>
+<div class="arti">Khalifah kedua Amirulmu'minin Penghulu kita, Umar bin Khattab.</div>
+<div class="arti"><strong>Jamaah Menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 53px;">رَضِيَ اللهُ عَنْهُ</div>
+<div class="arti">Radhitallaahu' anh.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih 2 rakaat ketujuh.</div>
+<div class="arti"><strong>8.) Bilal mengucapkan:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 58px;">فَضْلًا مِنَ اللهِ وَنِعْمَةً</div>
+<div class="arti">fadhlam minallaahi wa ni'mah.</div>
+<div class="arti"><strong>Jamah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 63px;">وَمَعْفِرَةً وَرَحْمَةً. يَاتَوَّابُ يَاوَاسِعَ الْمَغْفِرَةِ يَااَرْحَمَ الرَّاحِمِيْنَ.</div>
+<div class="arti">wa maghfirataw warahmah, yaa tawwaan yaa waasi'al maghfirah yaa arhamar raahimiin.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih 2 rakaat ke-delapan.</div>
+<div class="arti"><strong>9.) Bilal mengucapkan</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 46px;">اَلْخَلِيْفَةُ الثَّالِثَةُ اَمِيْرُاْلمُؤْمِنِيْنَ سَيِّدُنَاعُثْمَانُ ابْنُ عَفَّانَ.</div>
+<div class="arti">al-khaliifatuts tsaalitsah amiirul mu'miniina sayyidunaa 'utsmaanubnu 'affaan.</div>
+<div class="arti">Kalifah ketiga Amirulmu'minin Penghulu kita,Usman bin Affan.</div>
+<div class="arti"><strong>Jamaah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 54px;">رَضِيَ اللهُ عَنْهُ</div>
+<div class="arti">radhiyallaahu' anh.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih 2 rakaat ke-sembilan.</div>
+<div class="arti"><strong>10.) Bilal mengucapkan</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 48px;">اَلْخَلِيْفَةُالرَّابِعَةُ اَمِيْرُاْلمُؤْمِنِيْنَ سَيِّدُنَاعَلَيُّ ابْنُ اَبِىْ طَاِلبٍ.</div>
+<div class="arti">al-khaliifatur raabi'ah amiirul mu'miniina sayyidunaa 'aliyyubnu abii thaalib.</div>
+<div class="arti">Khalifah ke-4 Amirul mu'minin Penghulu kita, Ali bin Abi Thalib.</div>
+<div class="arti"><strong>Jamaah menjawab:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 55px;">رَضِيَ اللهُ عَنْهُ</div>
+<div class="arti">radhiyallaahu' anh.</div>
+<div class="arti">Kemudian melaksanakan shalat tarawih 2 rakaat ke-sepuluh. setelah selesai shalat tarawih 20 rakaat, dilanjutkan dengan membaca doa shalaat tarawih sebagai berikut:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 49px;">اَللَّهُمَّ ا جْعَلْنَا بِالْاِيْمَانِ كَ مِلِيْنَ وَلِلْفَرَائِضِ مُؤَدِّيْنِ وَلِلصَّلَاةِحَافِضِيْنَ وَلِلزَّكَ ةِ فَاعِلِيْنَ وَلِمَاعِنْدَكَ طَالِبِيْنَ وَلِعَفْوِكَ رَاجِيْنَ وَبِاْلهُدَى مُتَمَسِّكِيْنَ وَعَنِ الَّلغْوِمُعْرِظِيْنَ وَفِى الدُّنْيَازَاهِدِيْنَ وَفِىاْلآخِرَةِرَاغِبِيْنَ وَبِالْقَضَاءِرَاضِيْنَ وَبِالنَّعْمَاءِثَاكِرِيْنَ وَعَلَى اْلبَلَاءِصَابِرِيْنَ وَتَحْتَ لِوَاءِسَيِّدِنَامُحَمَّدٍصَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَوْمَ الْقِيَامَةِسَائِرِيْنَ وَاِلَى اْلحَوْضِ وَارِدِيْنَ وَاِلَى الْجَنَّةِدَاخِلِيْنَ وَمِنَ النَّارِنَاجِيْنَ وَعَلَى سَرِيْرِ اْلكَرَامَةِ قَاعِدِيْنَ وَمِنْ حُوْرٍعِيْنٍ مُتَزَوِّجِيْنَ وَمِنْ سُنْدُسٍ وَاِسْتَبْرَقٍ وَدِيْبَاجٍ مُتَلَبِّسِيْنَ وَمِنْ طَعَامِ اْلجَنَّةِآكِلِيْنَ وَمِنْ لَبَنٍ وَعَسَلٍ مُصَفٍّى شَارِبِيْنَ بِاَكْوَابٍ وَاَبَارِىقَ وَكَأْسٍ مِنْ مَعِيْنٍ مَعَ اْلَذِيْنَ اَنْعَمْتَ عَلَيْهِمْ مِنَ النَّبِيِّيْنَ وَالصِّدٍّيْقِيْنَ وَالشُهَدَاءِوَالصَّالِحِيْنَ وَحَسُنَ اُوْلَئِكَ رَفِيْقً. ذَلِكَ اْلفَضْلُ مِنَ اللهِ وَكَفَى بِا للهِ عَلِيْمًا. وَاْحَمْدُلِلهِ رَبِّ الْعَا لَمِيْنَ.</div>
+<div class="arti">allaahummaj' alnaa bil iimaani kaamiliin, wa lil faraa 'idhi mu' addiin, wa lish shalaati haafizhiin, wa lizzakaati faa'iliin, wa limaa indaka thaalibiin, wa li' afwika raajiin, wa bil hudaa mutamassikiin, wa 'anil laghwi mu' ridhiin, wa fiddunyaazaahidiin, wafil' aakhirati raaghibiin, wa bilqadhaa'i raadhiin, wa binna' maa'isyaakiriin, wa ''alalbalaa'ihaabiriin. wa tahta liwaa'isayyidinaa muhammadin shalallaahu 'alaihiwasallama yaumalqiyaamati saa 'iriin, wa ilal maudhi waridiin, wa ilal jannati daakhiliin, wa minan naari naajiin, wa 'alaa sariiril karaamatiqaa 'idiin, waminhuurin 'iinin mutazawwijiin, wa min sundusiw wa istabraqiw wa diibaajim mutalabbisiin, wa min tha 'aamil jannati aakilin, wa min labaniw wa asalim mushaffan syaaribiin, bi akwaabiw wa abaariiqa wa ka'sim mim ma'iin, ma'al ladziina an'amta 'alaihim minan nabiyyiina washshidiiqiina wasy syuhadaa 'i wash shaalihiina wa hasuna ulaa 'ika rafiiqaa, dzaalikal fadhlu minallaahi wa kafaa billaahi' aliimaa. wal hamdu lillaahi rabbil 'alamiin.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Wahai Allah! jadikankanlah kami orang-orang yang sempurna imannya, menunaikan kewajiban-kewajiban, memelihara shalat, menunaikan zakat, mencari anugerah yang ada di sisi Engkau, mengharap amunan Engkau, berpegang teguh dengan petunjuk (Engkau), menjauhi kesia-siaan, zuhud di dunia, dan senang kepada akhirat, rela terhadap ketentuan (kepastian), bersyukur terhadap nikmat, sabar terhadap cobaan, dan berjalan pada hari kiamat di bawah panji penghulu kami, Nabi Muhammad saw, datang ke telaga (yang sejuk), masuk ke dalam syurga, selamat dari neraka, duduk di atas singgasana kemuliaan, menikah dengan bidadari yang cantik, mengenakan pakaian dari sutera yan tipis dan tebal, memakan-makanan syurga, meminum susu dan madu yang jernih, dengan gelas, teko, dan piala dari mata air yang selalu mengalir, bersama orang-orang yang telah Engkau berikan nikmat, yaitu para Nabi, Shiddiqun, Syuhada, dan orang-orang yang shaleh, mereka itulah sebaik-baik teman, anugerah itu dari Allah dan cukuplah Allah yang maha mengetahui, dan segala puji milik Allah, Tuhan Semesta alam."</div>
+<div class="arti">Setelah anda selesai membaca doa shalat tarawih tesebut, anda dapat melanjutkan dengan mengerjakan shalat sunat witir 3 rakaat.</div>
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+
+</body>
+</html>

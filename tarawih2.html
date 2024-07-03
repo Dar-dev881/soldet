@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Waktu, Rakaat dan Niat Shalat Tarawih</h1>
+        <a href="tarawih.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Adapun waktu pelaksanaan Shalat Tarawih yaitu mulai setelah sholat isya (sebelum sholat sunat witir) sampai terbit fajar shadiq (masuk shalat subuh).</div>
+<div class="arti">Jumlah rakaat Sholat Tarawih adalah 20 rakaat (ditambah 3 rakaat sunat witir), atau ada pula yang mengerjakan 8 rakaat (ditambah rakaat sunaat witir). Bahkan Imam Malik memilih 36 rakaat, sebagaiaman yang dikerjakan oleh penduduk madinah.</div>
+<div class="arti">Shalat Tarawih ini boleh dikerjakan dengan 2 macam cara, yaitu:</div>
+<div class="arti">1. Setiap 2 rakaat salam</div>
+<div class="arti">2. Setiap 4 rakaat salam (tanpa tasyahud awal).</div>
+<div class="arti">Akan tetapi yang paling baik adalah setiap 2 rakaat salam, karena dalam hadist Rasulullah saw menyatakan bahwa shalat malam itu sebaiknya dikerjakan 2 rakaat 2 rakaat.</div>
+<div class="arti">Setelah shalat tarawih selesai dilanjutkan dengan sholat sunat witir 3 rakaat. Shalat witir ini boleh dikerjakan 3 rakaat salam (3 rakaat sekaligus, tanpa tasyahud awal), atau pertama dikerjakan 2 rakaat, kemudian 1 rakaat.</div>
+<div class="arti">Cara pelaksanaan shalat tarawih sama dengan cara pelaksanaan shalat fardhu, baik gerakan maupun bacaannya. Perbedaanya adalah pada niat. Niat shalat tarawih adalah:</div>
+<div class="arti"><strong>Niat Shalat sendirian</strong></div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:41px;">اُصَلِّىْ سُنَّةَالتَّرَاوِيْحِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ لِلّٰهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/starawih.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">ushallii sunnatat taraawiihi rak'ataini mustaqbilal qiblati lillaahi ta'aalaa.</div>
+<div class="bacaan" style="text-align:justify"><strong>Artinya:</strong></br>"Saya niat sholat sunah tarawih dua raka'at menghadap kiblat karena Allah Ta'ala"</div>
+<div class="arti"><strong>Niat sebagai Imam</strong></div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:41px;">اُصَلِّىْ سُنَّةَالتَّرَاوِيْحِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ إِمَامًا لِلّٰهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/itarawih.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">ushallii sunnatat taraawiihi rak'ataini mustaqbilal qiblati imaaman lillaahi ta'aalaa.</div>
+<div class="bacaan" style="text-align:justify"><strong>Artinya:</strong><br>"Saya niat sholat sunah tarawih dua raka'at menghadap kiblat sebagai imam karena Allah Ta'ala"</div>
+<div class="arti"><strong>Niat sebagai Ma'mum</strong></div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:41px;">اُصَلِّىْ سُنَّةَالتَّرَاوِيْحِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ مَأْمُوْمًالِلّٰهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/mtarawih.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">ushallii sunnatat taraawiihi rak'ataini mustaqbilal qiblati ma'muuman lillaahi ta'aalaa.</div>
+<div class="bacaan" style="text-align:justify"><strong>Artinya:</strong><br>"Saya niat sholat sunah tarawih dua raka'at menghadap kiblat sebagai ma'mum karena Allah Ta'ala"</div>
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

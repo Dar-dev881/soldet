@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Tatacara dan Niat Shalat Wudhu</h1>
+        <a href="wudhu.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Shalat wudhu berjumlah dua rakaat dan dianjurkan dilaksanakan sendirian, tanpa berjemaah. Adapun niat shalat wudhu sebagai berikut;</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:59px;">اُصَلِّيْ سُنَّةَ اْلوُضُوْءِ رَكْعَتَيْنِ لِلهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/swudhu.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">Usholli sunnatal wudhu rak’ataini lillahi ta’ala</div>
+<div class="bacaan" style="text-align:justify">"Saya shalat sunnah wudhu dua rakaat karena Allah Ta’ala."</div>
+<div class="arti">Pada rakaat pertama setelah membaca surah al-Fatihah, disunnahkan membaca ayat 64 dari surah al-Nisa’. Sedangkan pada rakaat kedua, disunnahkan membaca ayat 110 dari surah al-Nisa’.</div>
+<div class="arti">Demikian penjelasan mengenai hukum dan tata cara shalat wudhu. Semoga kita dimudahkan oleh Allah untuk melakukan shalat wudhu setiap kita selesai wudhu</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>
