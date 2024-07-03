@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah Al 'Adiyat</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="Al-'Adiyat Ayat 1">وَالْعٰدِيٰتِ ضَبْحًاۙ </div><div class="bacaan">wal-'ādiyāti ḍab-ḥā</div><div class="arti">Demi kuda perang yang berlari kencang terengah-engah,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 2">فَالْمُوْرِيٰتِ قَدْحًاۙ</div><div class="bacaan">fal-mụriyāti qad-ḥā</div><div class="arti">dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya),</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 3">فَالْمُغِيْرٰتِ صُبْحًاۙ</div><div class="bacaan">fal-mugīrāti ṣub-ḥā</div><div class="arti">dan kuda yang menyerang (dengan tiba-tiba) pada waktu pagi,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 4">فَاَثَرْنَ بِهٖ نَقْعًاۙ</div><div class="bacaan">fa aṡarna bihī naq'ā</div><div class="arti">sehingga menerbangkan debu,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 5">فَوَسَطْنَ بِهٖ جَمْعًاۙ</div><div class="bacaan">fa wasaṭna bihī jam'ā</div><div class="arti">lalu menyerbu ke tengah-tengah kumpulan musuh,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 6">اِنَّ الْاِنْسَانَ لِرَبِّهٖ لَكَنُوْدٌ ۚ</div><div class="bacaan">innal-insāna lirabbihī lakanụd</div><div class="arti">sungguh, manusia itu sangat ingkar, (tidak bersyukur) kepada Tuhannya,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 7">وَاِنَّهٗ عَلٰى ذٰلِكَ لَشَهِيْدٌۚ</div><div class="bacaan">wa innahụ 'alā żālika lasyahīd</div><div class="arti">dan sesungguhnya dia (manusia) menyaksikan (mengakui) keingkarannya,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 8">وَاِنَّهٗ لِحُبِّ الْخَيْرِ لَشَدِيْدٌ ۗ</div><div class="bacaan">wa innahụ liḥubbil-khairi lasyadīd</div><div class="arti">dan sesungguhnya cintanya kepada harta benar-benar berlebihan.</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 9">۞ اَفَلَا يَعْلَمُ اِذَا بُعْثِرَ مَا فِى الْقُبُوْرِۙ</div><div class="bacaan">a fa lā ya'lamu iżā bu'ṡira mā fil-qubụr</div><div class="arti">Maka tidakkah dia mengetahui apabila apa yang di dalam kubur dikeluarkan,</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 10">وَحُصِّلَ مَا فِى الصُّدُوْرِۙ</div><div class="bacaan">wa huṣṣila mā fiṣ-ṣudụr</div><div class="arti">dan apa yang tersimpan di dalam dada dilahirkan?</div></li>
+<li><div class="ayat" title="Al-'Adiyat Ayat 11">اِنَّ رَبَّهُمْ بِهِمْ يَوْمَىِٕذٍ لَّخَبِيْرٌ</div><div class="bacaan">inna rabbahum bihim yauma`iżil lakhabīr</div><div class="arti">sungguh, Tuhan mereka pada hari itu Mahateliti terhadap keadaan mereka.</div></li> </ol>
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 

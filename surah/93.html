@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah Ad Duha</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="Ad-Duha Ayat 1">وَالضُّحٰىۙ</div><div class="bacaan">waḍ-ḍuḥā</div><div class="arti">Demi waktu duha (ketika matahari naik sepenggalah),</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 2">وَالَّيْلِ اِذَا سَجٰىۙ</div><div class="bacaan">wal-laili iżā sajā</div><div class="arti">dan demi malam apabila telah sunyi,</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 3">مَا وَدَّعَكَ رَبُّكَ وَمَا قَلٰىۗ</div><div class="bacaan">mā wadda'aka rabbuka wa mā qalā</div><div class="arti">Tuhanmu tidak meninggalkan engkau (Muhammad) dan tidak (pula) membencimu,</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 4">وَلَلْاٰخِرَةُ خَيْرٌ لَّكَ مِنَ الْاُوْلٰىۗ</div><div class="bacaan">wa lal-ākhiratu khairul laka minal-ụlā</div><div class="arti">dan sungguh, yang kemudian itu lebih baik bagimu dari yang permulaan.</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 5">وَلَسَوْفَ يُعْطِيْكَ رَبُّكَ فَتَرْضٰىۗ</div><div class="bacaan">wa lasaufa yu'ṭīka rabbuka fa tarḍā</div><div class="arti">Dan sungguh, kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, sehingga engkau menjadi puas.</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 6">اَلَمْ يَجِدْكَ يَتِيْمًا فَاٰوٰىۖ</div><div class="bacaan">a lam yajidka yatīman fa āwā</div><div class="arti">Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungi(mu),</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 7">وَوَجَدَكَ ضَاۤلًّا فَهَدٰىۖ</div><div class="bacaan">wa wajadaka ḍāllan fa hadā</div><div class="arti">dan Dia mendapatimu sebagai seorang yang bingung, lalu Dia memberikan petunjuk,</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 8">وَوَجَدَكَ عَاۤىِٕلًا فَاَغْنٰىۗ</div><div class="bacaan">wa wajadaka 'ā`ilan fa agnā</div><div class="arti">dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan.</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 9">فَاَمَّا الْيَتِيْمَ فَلَا تَقْهَرْۗ</div><div class="bacaan">fa ammal-yatīma fa lā taq-har</div><div class="arti">Maka terhadap anak yatim janganlah engkau berlaku sewenang-wenang.</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 10">وَاَمَّا السَّاۤىِٕلَ فَلَا تَنْهَرْ</div><div class="bacaan">wa ammas-sā`ila fa lā tan-har</div><div class="arti">Dan terhadap orang yang meminta-minta janganlah engkau menghardik(nya).</div></li>
+<li><div class="ayat" title="Ad-Duha Ayat 11">وَاَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ</div><div class="bacaan">wa ammā bini'mati rabbika fa ḥaddiṡ</div><div class="arti">Dan terhadap nikmat Tuhanmu hendaklah engkau nyatakan (dengan bersyukur).</div></li> </ol>
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 
