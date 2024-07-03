@@ -1,0 +1,502 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel=stylesheet type=text/css href=style.css>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />   
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+
+</script> 
+</head> 
+<style> 
+.ui-page { 
+    background:#000000 important!;
+}
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Regular.ttf");
+}
+
+
+.audioPlayer{
+  display: block;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+
+.tabView{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+
+
+}
+
+.arabic {
+    <!-- position:fixed; -->
+    <!-- display: inline -->
+    direction:rtl;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    font-family: "myFirstFont";
+    text-align: center;
+    font-size: 32px;
+    line-height: 2;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+
+.indonesia {
+    <!-- position:fixed; -->
+    <!-- display: inline -->
+    <!-- direction:rtl; -->
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    font-family: "myFirstFont";
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.2;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+    
+} 
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    font-size: 18px;
+    padding: 8px 12px 8px 12px;
+    background-image: "gambar/paper.png" font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #E76E66;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+}
+
+<!-- h2 { -->
+    <!-- padding-bottom: 0px; -->
+    <!-- padding-top: 0px; -->
+    <!-- font-size: 22px; -->
+    <!-- margin-bottom: 10px; -->
+    <!-- text-align: center; -->
+    <!-- <!-- border-style: solid; --> -->
+    <!-- <!-- border-bottom: double #666; --> -->
+    <!-- <!-- border-top: double; --> -->
+    <!-- <!-- border-left: 0px; --> -->
+    <!-- <!-- border-right: 0px; --> -->
+    <!-- <!-- background-color: none; --> -->
+    <!-- <!-- border-radius: 0px; --> -->
+    <!-- line-height: 1; -->
+    <!-- font-family: "myFirstFont"; -->
+    <!-- <!-- font-family: "georgia" --> -->
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+<!-- .arab { -->
+    <!-- font-size: 25px !important; -->
+    <!-- line-height: 46px !important; -->
+    <!-- font-family: "Times New Roman", Tahoma, sans-serif; -->
+    <!-- font-weight: normal; -->
+    <!-- text-align: right; -->
+    <!-- direction: rtl; -->
+<!-- } -->
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 250px;
+}
+
+
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    td,
+    th {
+        border: 1px solid #999;
+        padding: 0.3rem;
+    }
+}
+
+ol {
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ol>li {
+    position: relative;
+    margin: 0 0 6px 2em;
+    padding: 4px 8px;
+    list-style: none;
+    border-top: 2px solid #666;
+    background: #f6f6f6;
+}
+
+ol>li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 2em;
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 2px solid #666;
+    color: #fff;
+    background: #666;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+li ol,
+li ul {
+    margin-top: 6px;
+}
+
+ol ol li:last-child {
+    margin-bottom: 0;
+}
+
+.wrap2 {
+    white-space: normal !important;
+    text-align: right;
+} 
+
+ .ui-page { background: #F8F3E0 !important;}
+
+.ui-page-theme-a, html .ui-page-theme-a .ui-panel-wrapper {
+background: #FFFFFF !important;
+}
+
+
+.doa {
+    max-width: 55%;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 0px;
+  text-align: center;
+}
+
+.header {
+  padding: 0px 0px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.content {
+  padding: 0px;
+background:#red;
+}
+
+<!-- .sticky { -->
+  <!-- position: fixed; -->
+  <!-- top: 0; -->
+  <!-- width: 100%; -->
+<!-- } -->
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.anchor {
+   position: relative;
+   top: -[number]px;
+}
+
+
+
+</style>  
+
+<body>  
+<div data-role="header" data-position="fixed" data-small="true" data-theme="c">
+</div>
+<h2 class="wrap, title" style="text-align: center" >Dzikir Pagi Petang</p></h2>
+<img src="images/42.jpg" class="sticky" alt="" data-inline="true">
+</div>
+<audio id="myAudio">   <source src="https://f002.backblazeb2.com/file/donbull/doaharian/27.aac" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+<center>
+<button class=btn  onclick="location.href='26.html';" value="Go to Google" data-role="button" data-inline="true" ><img src="images/prev.png" width="12" height="12"></button>
+<button class=btn value=- id=b2 onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" data-role="button" data-inline="true"><img src="images/min.png" width="12" height="12"></button>
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="true" class="play2"><img id="play" src="images/play.png" width="12" height="12"></button> -->
+<!-- <!-- <button onclick="pauseAudio()" type="button" data-role="button" data-inline="true"><img src="images/stop.png" width="12" height="12"></button>  -->
+<button class=btn value=- id=b2 onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" data-role="button" data-inline="true"><img src="images/plus.png" width="12" height="12"></button> 
+<button class=btn  onclick="location.href='28.html';" value="Go to Google" data-role="button" data-inline="true" ><img src="images/next.png" width="12" height="12"></button>
+</center>
+
+
+<div data-role="navbar" data-small=true data-theme="d">    
+<ul>
+<li><a href="../doaharian.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext" data-inline="true"></a></li>
+<li><button onclick="openPage('Arabe', this, '')" id=defaultOpen>Pagi</button></li>
+<li><button onclick="openPage('Latine', this, '')">Petang</button> </li>       
+<!-- <li><button onclick="openPage('Artine', this, '')">Arti</button> </li> -->
+<li><a id="Bookmark" onclick="bookmark();return false;"" data-icon="heart" data-iconpos="notext" data-inline="true"></a></li>
+</ul> 
+</div>
+ 
+
+</div>
+
+
+<div id=Arabe class=tabcontent>
+
+<h2><p>Dzikir Pagi</p></h2>
+<h3><p>Dzikir Pertama</p></h3>
+<p class="arabic">أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنْ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ</p>
+<p class=indonesia>Asbahna Wa-Asbahal-Mulku Lillah Walhamdu Lillah La Ilaha Illal-Lah, Wahdahu La Shariika Lah, Lahul-Mulku Walahul-Hamd, Wahuwa Aaala Kulli Shayin Qadiir, Rabbi As-Aluka Khairo Ma Fii Hatha-Alyawmi, Wakhairo Ma Baaadaho, Wa-Aaaoothu Bika Min Sharri Hatha-Alyawmi, Washarri Ma Baaadaho, Rabbi Aaaoothu Bika Minal-Kasal, Wasoo-Il Kibar, Rabbi Aaoothu Bika Min Aathobin Fin-Nar, Wa'Athobin Fil-Qabr<p><p class=indonesia2>Kami dan seluruh kerajaan memasuki waktu pagi hanya karena Allah. Segala puji bagi Allah. Tiada sesembahan yang berhak disembah melainkan Allah semata, tiada sekutu bagi-Nya, semua kerajaan hanya milik-Nya dan segala pujian hanya untuk-Nya, Dia maha berkuasa atas segala sesuatu&hellip; Wahai Tuhanku, aku memohon kebaikan yang ada di hari ini dan setelahnya, (sebaliknya) aku memohon perlindungan dari keburukan yang ada di hari ini dan setelahnya&hellip; Wahai Tuhanku, aku berlindung kepada-Mu dari kemalasan dan buruknya hari tua&hellip; Wahai Tuhanku, aku berlindung kepada-Mu dari adzab neraka dan adzab kubur. Ibnu Mas&rsquo;ud mengatakan: Dahulu Rasulullah Shallallahu 'Alaihi Wa Sallam ketika pagi membaca dzikir ini. (HR. Muslim)</p>
+<h3><p>Dzikir ke 2</p></h3>
+<p class="arabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُوْرُ</p>
+<p class=indonesia>Allahumma Bika Asbahna Wabika Amsainaa, Wabika Nahya, Wabika Namootu Wa-Ilaykan-Nusyuur</p>
+<p class=indonesia2>Ya Allah dengan (rahmat dan pertolongan)-Mu kami memasuki waktu pagi dan dengan-Mu kami memasuki waktu sore, dengan-Mu kami hidup dan dengan-Mu kami mati, serta kepada-Mu-lah kebangkitan (semua makhluk). Abu Hurairah mengatakan: Rasulullah Shallallahu 'Alaihi Wa Sallam dahulu mengajarkan dzikir ini kepada para sahabatnya, beliau mengatakan: &ldquo;Jika masuk waktu pagi, bacalah dzikir ini!&rdquo;</p>
+<h3><p>Dzikir ke 3</p></h3>
+<p class="arabic">اللَّهُمَّ إِنِّي أَصْبَحْتُ، أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَهَ إِلَّا أَنْتَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ</p>
+<p class=indonesia>Allahumma Inni Ashbahtu Usyhiduka Wa Usyhidu Hamalata Arsyika Wa Malaaikataka Wa Jamii&Rsquo;A Khalqika: Annaka Antaallahu Laa Ilaaha Illa Anta Wa Anna Muhammadan Abduka Wa Rasuuluka</p>
+<p class=indonesia2>Ya Allah, sungguh aku memasuki waktu pagi ini (dengan) mempersaksikan kepada Engkau&hellip; kepada para malaikat pemikul Arsy-Mu&hellip; kepada para malaikat-Mu (yang lain)&hellip; dan kepada seluruh makhluk ciptaan-Mu&hellip; bahwa sesungguhnya Engkau-lah Allah, yang tiada sesembahan (yang berhak disembah) melainkan Engkau, (aku juga mempersaksikan kepada mereka semua) bahwa sesungguhnya Muhammad adalah hamba dan utusan-Mu. Dari Anas bin Malik, Rasulullah Shallallahu 'Alaihi Wa Sallam bersabda: &ldquo;Barangsiapa ketika pagi atau sore membaca dzikir ini satu kali, maka Allah membebaskan 1/4 dirinya dari neraka. Barangsiapa membacanya dua kali, maka Allah membebaskan 1/2 dirinya dari neraka. Barangsiapa membacanya tiga kali, maka Allah membebaskan 3/4 dirinya dari neraka. Dan barangsiapa membacanya empat kali, maka Allah membebaskannya dari neraka. (HR. Abu Dawud, Ibnus Sunni dan lainnya, di-hasan-kan oleh Al-Hafidz Ibnu Hajar dan Ibnu Baz)</p>
+<h3><p>Dzikir ke 4</p></h3>
+<p class="arabic">أَصْبَحْناَ عَلَى فِطْرَةِ الْإِسْلَامِ، وَعَلَى كَلِمَةِ الْإِخْلَاصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا، وَمَا كَانَ مِنْ الْمُشْرِكِينَ</p>
+<p class=indonesia>Ash-bahnaa ‘ala fithrotil islaam wa ‘alaa kalimatil ikhlaash, wa ‘alaa diini nabiyyinaa Muhammadin shallallahu ‘alaihi wa sallam, wa ‘alaa millati abiina Ibraahiima haniifam muslimaaw wa maa kaana minal musyrikin</p>
+<p class=indonesia2>Aku memasuki waktu pagi ini dengan berpegang teguh pada ajaran Islam, kalimat ikhlas (yakni kalimat tauhid laa ilaaha illalloh), ajaran Nabi kita Muhammad -shollallohu alaihi wasallam- dan agama ayah kita Ibrohim, seorang yang muslim (pasrah), selalu tunduk pada Allah, dan tidak tergolong orang-orang musyrik.</p>
+<!-- <div><em>ASBAHNA WA-ASBAHAL-MULKU LILLAH WALHAMDU LILLAH LA ILAHA ILLAL-LAH, WAHDAHU LA SHARIIKA LAH, LAHUL-MULKU WALAHUL-HAMD, WAHUWA AALA KULLI SHAYIN QADIIR, RABBI AS-ALUKA KHAIRO MA FII HATHA-ALYAWMI, WAKHAYRA MA BAAADAHO, WA-AAAOOTHU BIKA MIN SHARRI HATHA-ALYAWMI, WASHARRI MA BAAADAHO, RABBI AAAOOTHU BIKA MINAL-KASAL, WASOO-IL KIBAR, RABBI AAAOOTHU BIKA MIN AAATHABIN FIN-NAR, WAAAATHABIN FIL-QABR</em><br /><strong><br /></strong></div> -->
+<p>Abdurrahman bin Abza mengatakan: Rasulullah Shallallahu 'Alaihi Wa Sallam dahulu ketika pagi dan sore membaca doa ini. (HR. Ahmad dan lainnya, di-shohih-kan oleh Albani)</p>
+<h3><p>Dzikir ke 5</p></h3>
+<p class="arabic">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ</p>
+<p class=indonesia>Subhan-Allahi Wa Bihamdihi, `Adada Khalqihi, Wa Rida Nafsihi, Wa Zinatah `Arshihi, Wa Midada Kalimatihi</p>
+<p class=indonesia2>Maha suci Allah, aku memujiNya dengan pujian sebanyak makhlukNya, sejauh kerelaanNya, seberat timbangan arsyNya dan sebanyak tinta tulisan kalimatNya. Dari Juwairiyah (ummul mukminin), ia mengisahkan: Suatu hari saat Shubuh tiba, ia sudah (duduk berdzikir) di tempat sholat dalam rumahnya dan Rasulullah Shallallahu 'Alaihi Wa Sallam meninggalkannya keluar (untuk sholat di masjid), kemudian beliau kembali ketika sudah masuk waktu dhuha, sedangkan dia masih tetap duduk (ditempat sholat itu sambil dzikir). Maka beliau mengatakan: &ldquo;Kamu masih seperti itu, sejak kutinggal tadi?!&rdquo;. Ia mengatakan: &ldquo;Ya&rdquo;. Lalu beliau mengatakan: &ldquo;Aku akan membaca empat kalimat sebanyak tiga kali, seandainya ia ditimbang dengan dzikir yang kamu ucapkan hari ini, tentu akan melebihi dzikirmu hari ini&rdquo; lalu beliau membaca dzikir ini&hellip; (HR. Muslim)</p>
+<h3><p>Dzikir ke 6</p></h3>
+<p class="arabic">اللَّهُمَّ إِنِّيْ أَسْأَلُكَ عِلْماً نَافِعاً, وَرِزْقاً طَيِّباً, وَعَمَلاً مُتَقَبَّلاً&nbsp;</p>
+<p class=indonesia>Allahumma Inni As'Aluka 'Ilman Naafi'An, Wa Rizqan Tayyiban, Wa 'Amalan Mutaqabbalan</p>
+<p class=indonesia2>Ya Allah&hellip; sesungguhnya aku memohon kepadaMu ilmu yang bermanfaat, rejeki yang baik dan amalan yang maqbul (diterima oleh-Nya). Ummu Salamah mengatakan: &ldquo;Dahulu Rasulullah Shallallahu 'Alaihi Wa Sallam membaca doa ini setelah sholat fajar&rdquo;. (HR. Ahmad, Ibnu Majah dan Thobaroni, Al-Haitsami dan Albani mengatakan: Sanadnya Jayyid)</p>
+<h3><p>Dzikir ke 7</p></h3>
+<p class="arabic">لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</p>
+<p class=indonesia>La Ilaha Illallah Wahdahu La Syarikalah, Lahul Mulku Wa Lahul Hamdu Wa Huwa 'Ala Kulli Syai-In Qadiir</p>
+<p class=indonesia2>Tiada sesembahan yang berhak disembah melainkan Allah semata, tiada sekutu bagi-Nya, semua kerajaan dan segala pujian hanyalah milik-Nya, dan Dia maha berkuasa atas segala sesuatu.
+
+Dari Abu Hurairah, Rasulullah Shallallahu 'Alaihi Wa Sallam bersabda: &ldquo;Barangsiapa membaca dzikir ini 100 kali, maka baginya (pahala) memerdekakan 10 budak, dicatat 100 kebaikan baginya, dihapus 100 keburukan darinya, dzikir ini akan menjaganya dari (gangguan) setan pada hari itu hingga sore, dan tidak ada seorang pun yang amalannya melebihinya kecuali orang yang melakukan amalan lebih banyak dari itu. (HR. Bukhori dan Muslim)</p>
+<h3><p>Dzikir ke 8</p></h3>
+<p class="arabic">رَضِيْتُ بِاللهِ رَباًّ، وَبِاْلإِسْلاَمِ دِيْناً، وَبِمُحَمَّدٍ نَبِياًّ</p>
+<p class=indonesia>Radhiitu Billahi Rabba Wa Bil Islami Diina Wa Bi Muhammadin Nabiyya Wa Rasuula</p>
+<p class=indonesia2>Aku rela Allah sebagai Tuhanku, Islam sebagai Agamaku dan Muhammad sebagai Nabiku.<br />Dari Munaidzir -seorang sahabat-, Rasulullah Shallallahu 'Alaihi Wa Sallam bersabda: &ldquo;Barangsiapa saat pagi membaca dzikir ini, maka akulah penjaminnya, aku akan menggandengnya hingga kumasukkan ke surga&rdquo;. (HR. Thobaroni dan Ibnu Mandah, Albani mengatakan: Hadits ini tsabit)</p>
+</div>
+
+<div id=Latine class=tabcontent>
+
+<h2><p>Dzikir Petang</p></h2>
+<h3><p>Dzikir Pertama</p></h3>
+<p class="arabic">أَعُوْذُ بِكَلِمَاتِ اللهِ التَّامَّاتِ مِنْ شَرِّ مَاخَلَقَ</p>
+<p class=indonesia>A'UDZU BI KALIMATI TAMMATI MIN SYARRI MA KHALAQ (3x)</p>
+<p class=indonesia2>Aku berlindung dengan kalimat-kalimat Allah yang sempurna dari kejahatan makhluk ciptaan-Nya<br />Dari Abu Hurairah, Rasulullah Shallallahu 'Alaihi Wa Sallam bersabda: &ldquo;Barangsiapa sorenya membaca dzikir ini tiga kali, maka sengatan binatang pada malam itu tidak akan mencederainya&rdquo; (HR. Ahmad dan Tirmidzi, di-shohih-kan oleh Albani)</p>
+
+<h3><p>Dzikir ke 2</p></h3>
+<p class="arabic">أَمْسَيْنَا وَأَمْسَى الْمُلْكُ للهِ، وَالْحَمْدُ للهِ، لَا إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُبِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُبِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُبِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ</p>
+<p class=indonesia>AMSAYNAA WA AMSAL MULKU LILLAH WALHAMDULILLAH, LAA ILAHA ILLALLAH WAHDAHU LAA SYARIKA LAH, LAHUL MULKU WALAHUL HAMDU WA HUWA ‘ALA KULLI SYAI-IN QODIR. ROBBI AS-ALUKA KHOIRO MAA FII HADZIHIL LAILAH WA KHOIRO MAA BA’DAHAA, WA A’UDZU BIKA MIN SYARRI MAA FII HADZIHIL LAILAH WA SYARRI MAA BA’DAHAA. ROBBI A’UDZU BIKA MINAL KASALI WA SUU-IL KIBAR. ROBBI A’UDZU BIKA MIN ‘ADZABIN FIN NAARI WA ‘ADZABIN FIL QOBRI.</P>
+<p class=indonesia2>Kami telah memasuki waktu petang dan kerajaan hanya milik Allah, segala puji bagi Allah. Tidak ada ilah (yang berhak disembah) kecuali Allah semata, tiada sekutu bagi-Nya. Milik Allah kerajaan dan bagi-Nya pujian. Dia-lah Yang Mahakuasa atas segala sesuatu.Wahai Rabbku, aku mohon kepada-Mu kebaikan di malam ini dan kebaikan sesudahnya. Aku berlindung kepadaMu dari kejahatan malam ini dan kejahatan sesudahnya. Wahai Rabbku, aku berlindung kepadaMu dari kemalasan dan kejelekan di hari tua. Wahai Rabbku, aku berlindung kepada-Mu dari siksaan di neraka dan siksaan di kubur. Ibnu Mas&rsquo;ud mengatakan: Dahulu Rasulullah Shallallahu 'Alaihi Wa Sallam ketika sore membaca dzikir ini. (HR. Muslim)</p>
+
+<h3><p>Dzikir ke 3</p></h3>
+<p class="arabic">اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيْرُ</p>
+<p class=indonesia>ALLAHUMMA BIKA AMSAINA, WA BIKA ASBAHNA, WA BIKA NAHYA, WA BIKA NAMATU WA ILAIKAL MASIR</p>
+<p class=indonesia2>Ya Allah dengan (rahmat dan pertolongan)-Mu kami memasuki waktu sore dan dengan-Mu kami memasuki waktu pagi, dengan-Mu kami hidup dan dengan-Mu kami mati, serta kepada-Mu-lah tempat kembali (semua makhluk). Abu Hurairah mengatakan: Rasulullah Shallallahu 'Alaihi Wa Sallam dahulu mengajarkan dzikir ini kepada para sahabatnya, beliau mengatakan: &ldquo;Jika masuk waktu sore, bacalah dzikir ini!&rdquo;</p>
+
+<h3><p>Dzikir ke 4</p></h3>
+<p class="arabic">اللَّهُمَّ إِنِّي أَمْسَيْتُ، أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَهَ إِلَّا أَنْتَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ</p>
+<p class=indonesia>ALLAHUMMA INNI ASHBAHTU USYHIDUKA WA USYHIDU HAMALATA ARSYIKA WA MALAAIKATAKA WA JAMII'A KHALQIKA ANNAKA ANTAALLAHU LAA ILAAHA ILLA ANTA WAHDAKA LAA SYARIIKA LAKA ANNA MUHAMMADAN ABDUKA WA RASUULUK</p>
+<p class=indonesia2>Ya Allah, sungguh aku memasuki waktu sore ini (dengan) mempersaksikan kepada Engkau&hellip; kepada para malaikat pemikul Arsy-Mu&hellip; kepada para malaikat-Mu (yang lain)&hellip; dan kepada seluruh makhluk ciptaan-Mu&hellip; bahwa sesungguhnya Engkau-lah Allah, yang tiada sesembahan (yang berhak disembah) melainkan Engkau, (aku juga mempersaksikan kepada mereka semua) bahwa sesungguhnya Muhammad adalah hamba dan utusan-Mu. Dari Anas bin Malik, Rasulullah Shallallahu 'Alaihi Wa Sallam bersabda: &ldquo;Barangsiapa ketika pagi atau sore membaca dzikir ini satu kali, maka Allah membebaskan 1/4 dirinya dari neraka. Barangsiapa membacanya dua kali, maka Allah membebaskan 1/2 dirinya dari neraka. Barangsiapa membacanya tiga kali, maka Allah membebaskan 3/4 dirinya dari neraka. Dan barangsiapa membacanya empat kali, maka Allah membebaskannya dari neraka. (HR. Abu Dawud, Ibnus Sunni dan lainnya, di-hasan-kan oleh Al-Hafidz Ibnu Hajar dan Ibnu Baz)</p>
+
+<h3><p>Dzikir ke 5</p></h3>
+<p class="arabic">أَمْسَيْنَا عَلَى فِطْرَةِ الْإِسْلَامِ، وَعَلَى كَلِمَةِ الْإِخْلَاصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا، وَمَا كَانَ مِنْ الْمُشْرِكِينَ</p>
+<p class=indonesia>AMSAINA &rsquo;ALA FITROTIL ISLAM-WA KALIMATIL IKHLAS-WA&rsquo;ALA DIINI NABIYYINA MUHAMMADDIN SHOLLALLOOHU &rsquo;ALAIHI WASALLAM-WA&rsquo;ALA MILLATIN ABIINA IBROOHIIMA KHANIFAN WAMAA KANA MINAL MUSYRIKIIN</p>
+<p class=indonesia2>Aku memasuki waktu sore ini dengan berpegang teguh pada ajaran Islam, kalimat ikhlas (yakni kalimat tauhid laa ilaaha illalloh), ajaran Nabi kita Muhammad -shollallohu alaihi wasallam- dan agama ayah kita Ibrohim, seorang yang muslim (pasrah), selalu tunduk pada Allah, dan tidak tergolong orang-orang musyrik. Abdurrohman bin Abza mengatakan: Rasulullah Shallallahu 'Alaihi Wa Sallam dahulu ketika pagi dan sore membaca doa ini. (HR. Ahmad dan lainnya)</p>
+
+</div>
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="d">
+
+</body>
+<script src="function.js">
+</script> 
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>   
+</html> 
