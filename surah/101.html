@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah Al Qari'ah</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="Al-Qari'ah Ayat 1">اَلْقَارِعَةُۙ</div><div class="bacaan">al-qāri'ah</div><div class="arti">Hari Kiamat,</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 2">مَا الْقَارِعَةُ ۚ</div><div class="bacaan">mal-qāri'ah</div><div class="arti">Apakah hari Kiamat itu?</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 3">وَمَآ اَدْرٰىكَ مَا الْقَارِعَةُ ۗ</div><div class="bacaan">wa mā adrāka mal-qāri'ah</div><div class="arti">Dan tahukah kamu apakah hari Kiamat itu?</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 4">يَوْمَ يَكُوْنُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوْثِۙ</div><div class="bacaan">yauma yakụnun-nāsu kal-farāsyil-mabṡụṡ</div><div class="arti">Pada hari itu manusia seperti laron yang beterbangan,</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 5">وَتَكُوْنُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوْشِۗ</div><div class="bacaan">wa takụnul-jibālu kal-'ihnil-manfụsy</div><div class="arti">dan gunung-gunung seperti bulu yang dihambur-hamburkan.</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 6">فَاَمَّا مَنْ ثَقُلَتْ مَوَازِينُهٗۙ</div><div class="bacaan">fa ammā man ṡaqulat mawāzīnuh</div><div class="arti">Maka adapun orang yang berat timbangan (kebaikan)nya,</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 7">فَهُوَ فِيْ عِيْشَةٍ رَّاضِيَةٍۗ</div><div class="bacaan">fa huwa fī 'īsyatir rāḍiyah</div><div class="arti">maka dia berada dalam kehidupan yang memuaskan (senang).</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 8">وَاَمَّا مَنْ خَفَّتْ مَوَازِيْنُهٗۙ</div><div class="bacaan">wa ammā man khaffat mawāzīnuh</div><div class="arti">Dan adapun orang yang ringan timbangan (kebaikan)nya,</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 9">فَاُمُّهُ هَاوِيَةٌ ۗ</div><div class="bacaan">fa ummuhụ hāwiyah</div><div class="arti">maka tempat kembalinya adalah neraka Hawiyah.</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 10">وَمَآ اَدْرٰىكَ مَا هِيَهْۗ</div><div class="bacaan">wa mā adrāka mā hiyah</div><div class="arti">Dan tahukah kamu apakah neraka Hawiyah itu?</div></li>
+<li><div class="ayat" title="Al-Qari'ah Ayat 11">نَارٌ حَامِيَةٌ</div><div class="bacaan">nārun ḥāmiyah</div><div class="arti">(Yaitu) api yang sangat panas.</div></li> </ol>
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 

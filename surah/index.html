@@ -1,0 +1,275 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>
+ 
+<style> 
+
+.ui-page { 
+    background:#000000 important!;
+}
+
+
+
+.audioPlayer{
+  display: block;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+
+.tabView{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+
+
+}
+
+
+
+
+
+.nomor {
+	direction:rtl;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-right: 0px;
+    font-family: "myFirstFont";
+	text-align: right;
+	font-size: 15px;
+	line-height: 0;
+	<!-- background-color: #F8F3E0; -->
+	border-radius: 10px;
+	margin:0px;
+	
+}
+
+	
+} 
+
+
+<!-- .arab { -->
+    <!-- font-size: 25px !important; -->
+    <!-- line-height: 46px !important; -->
+    <!-- font-family: "Times New Roman", Tahoma, sans-serif; -->
+    <!-- font-weight: normal; -->
+    <!-- text-align: right; -->
+    <!-- direction: rtl; -->
+<!-- } -->
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    td,
+    th {
+        border: 1px solid #999;
+        padding: 0.3rem;
+    }
+}
+
+
+.wrap2 {
+    white-space: normal !important;
+    text-align: right;
+} 
+
+.ui-page { 
+    background:#2b2e31 important!;
+}
+
+
+
+</style>  
+
+<body>  
+<div class="title">01. Al-Fatihah</div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surat Al-Fatihah</h1>
+<a href="../index.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+<!-- <ul>           -->
+<!-- <li><a href="#.html" rel="external" data-ajax="false" data-icon="false" data-transition="slidefade">Mode Siang</a></li>      -->
+<!-- <li data-theme="a"><a href="79.html" rel="external" data-ajax="false" data-icon="false" data-transition="slidefade">Mode Malam</a></li>          -->
+<!-- </ul>  -->
+<!-- </div> -->
+<!-- <h1 class="arabic"></h1> -->
+</div>
+
+<ol>
+<li><div class="ayat" title="Al-Fatihah Ayat 1">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div><div class="bacaan">bismillāhir-raḥmānir-raḥīm</div><div class="arti">Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.</div></li>
+<li><div class="ayat" title="Al-Fatihah Ayat 2">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</div><div class="bacaan">al-ḥamdu lillāhi rabbil-'ālamīn</div><div class="arti">Segala puji bagi Allah, Tuhan seluruh alam,</div></li>
+<li><div class="ayat" title="Al-Fatihah Ayat 3">الرَّحْمٰنِ الرَّحِيْمِۙ</div><div class="bacaan">ar-raḥmānir-raḥīm</div><div class="arti">Yang Maha Pengasih, Maha Penyayang,</div></li>
+<li><div class="ayat" title="Al-Fatihah Ayat 4">مٰلِكِ يَوْمِ الدِّيْنِۗ</div><div class="bacaan">māliki yaumid-dīn</div><div class="arti">Pemilik hari pembalasan.</div></li>
+<li><div class="ayat" title="Al-Fatihah Ayat 5">اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُۗ</div><div class="bacaan">iyyāka na'budu wa iyyāka nasta'īn</div><div class="arti">Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan.</div></li>
+<li><div class="ayat" title="Al-Fatihah  Ayat 6">اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ ۙ</div><div class="bacaan">ihdinaṣ-ṣirāṭal-mustaqīm</div><div class="arti">Tunjukilah kami jalan yang lurus,</div></li>
+<li><div class="ayat" title="Al-Fatihah Ayat 7">صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ</div><div class="bacaan">ṣirāṭallażīna an'amta 'alaihim gairil-magḍụbi 'alaihim wa laḍ-ḍāllīn</div><div class="arti">(yaitu) jalan orang-orang yang telah Engkau beri nikmat kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan (pula jalan) mereka yang sesat.</div></li> </ol>
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/audio.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+<!-- <div class="ui-grid-d center"> -->
+<!-- <div class="ui-block-a"> -->
+<!-- <button class=btn onclick="myArti()" data-role="button" data-inline="false" data-icon="arti" data-iconpos="notext"/></button> -->
+<!-- </div> -->
+<!-- <div class="ui-block-b"> -->
+<!-- <button class=btn value=- id=b2 onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" data-role="button" data-inline="false" data-icon="fontmin" data-iconpos="notext"/></button> -->
+<!-- </div> -->
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<!-- <div class="ui-block-d"> -->
+<!-- <button class=btn value=- id=b2 onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" data-role="button" data-inline="false" data-icon="fontplus" data-iconpos="notext"></button>  -->
+<!-- </div> -->
+<!-- <div class="ui-block-e"> -->
+<!-- <button class=btn onclick="myBacaan()" data-role="button" data-inline="false" data-icon="bacaan" data-iconpos="notext"/></button> -->
+<!-- </div> -->
+<!-- </div>  -->
+
+<div class="ui-grid-d center">
+<!-- <div class="ui-block-a"> -->
+<!-- <button class=btn onclick="myArti()" data-role="button" data-inline="false" data-icon="arti" data-iconpos="notext"/></button> -->
+<!-- </div> -->
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-b" display> -->
+<!-- <button class=btn value=- id=b2 onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" data-role="button" display="inline-" data-icon="fontmin" data-iconpos="notext"/></button> -->
+<!-- </div> -->
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-d">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-d"> -->
+<!-- <button class=btn value=- id=b2 onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" data-role="button" data-inline="false" data-icon="fontplus" data-iconpos="notext"></button>  -->
+<!-- </div> -->
+<!-- <div class="ui-block-e"> -->
+<!-- <button class=btn onclick="myBacaan()" data-role="button" data-inline="false" data-icon="bacaan" data-iconpos="notext"/></button> -->
+<!-- </div> -->
+<div class="ui-block-e">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+
+</script>   
+</html> 

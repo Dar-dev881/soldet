@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah Al 'Asr</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="Al-'Asr Ayat 1">وَالْعَصْرِۙ</div><div class="bacaan">wal-'aṣr</div><div class="arti">Demi masa,</div></li>
+<li><div class="ayat" title="Al-'Asr Ayat 2">اِنَّ الْاِنْسَانَ لَفِيْ خُسْرٍۙ</div><div class="bacaan">innal-insāna lafī khusr</div><div class="arti">sungguh, manusia berada dalam kerugian,</div></li>
+<li><div class="ayat" title="Al-'Asr Ayat 3">اِلَّا الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ وَتَوَاصَوْا بِالْحَقِّ ەۙ وَتَوَاصَوْا بِالصَّبْرِ</div><div class="bacaan">illallażīna āmanụ wa 'amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqqi wa tawāṣau biṣ-ṣabr</div><div class="arti">kecuali orang-orang yang beriman dan mengerjakan kebajikan serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran.</div></li> </ol>
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 

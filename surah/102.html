@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah At Takasur</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="At-Takasur Ayat 1">اَلْهٰىكُمُ التَّكَاثُرُۙ</div><div class="bacaan">al-hākumut-takāṡur</div><div class="arti">Bermegah-megahan telah melalaikan kamu,</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 2">حَتّٰى زُرْتُمُ الْمَقَابِرَۗ</div><div class="bacaan">ḥattā zurtumul-maqābir</div><div class="arti">sampai kamu masuk ke dalam kubur.</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 3">كَلَّا سَوْفَ تَعْلَمُوْنَۙ</div><div class="bacaan">kallā saufa ta'lamụn</div><div class="arti">Sekali-kali tidak! Kelak kamu akan mengetahui (akibat perbuatanmu itu),</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 4">ثُمَّ كَلَّا سَوْفَ تَعْلَمُوْنَ </div><div class="bacaan">ṡumma kallā saufa ta'lamụn</div><div class="arti">kemudian sekali-kali tidak! Kelak kamu akan mengetahui.</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 5">كَلَّا لَوْ تَعْلَمُوْنَ عِلْمَ الْيَقِيْنِۗ</div><div class="bacaan">kallā lau ta'lamụna 'ilmal-yaqīn</div><div class="arti">Sekali-kali tidak! Sekiranya kamu mengetahui dengan pasti,</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 6">لَتَرَوُنَّ الْجَحِيْمَۙ</div><div class="bacaan">latarawunnal-jaḥīm</div><div class="arti">niscaya kamu benar-benar akan melihat neraka Jahim,</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 7">ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِيْنِۙ</div><div class="bacaan">ṡumma latarawunnahā 'ainal-yaqīn</div><div class="arti">kemudian kamu benar-benar akan melihatnya dengan mata kepala sendiri,</div></li>
+<li><div class="ayat" title="At-Takasur Ayat 8">ثُمَّ لَتُسْـَٔلُنَّ يَوْمَىِٕذٍ عَنِ النَّعِيْمِ</div><div class="bacaan">ṡumma latus`alunna yauma`iżin 'anin-na'īm</div><div class="arti">kemudian kamu benar-benar akan ditanya pada hari itu tentang kenikmatan (yang megah di dunia itu).</div></li> </ol>
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 

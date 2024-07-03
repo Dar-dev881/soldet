@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah An Nas</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="An-Nas Ayat 1">قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ</div><div class="bacaan">qul a'ụżu birabbin-nās</div><div class="arti">Katakanlah, &ldquo;Aku berlindung kepada Tuhannya manusia,</div></li>
+<li><div class="ayat" title="An-Nas Ayat 2">مَلِكِ النَّاسِۙ</div><div class="bacaan">malikin-nās</div><div class="arti">Raja manusia,</div></li>
+<li><div class="ayat" title="An-Nas Ayat 3">اِلٰهِ النَّاسِۙ</div><div class="bacaan">ilāhin-nās</div><div class="arti">sembahan manusia,</div></li>
+<li><div class="ayat" title="An-Nas Ayat 4">مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِۖ</div><div class="bacaan">min syarril-waswāsil-khannās</div><div class="arti">dari kejahatan (bisikan) setan yang bersembunyi,</div></li>
+<li><div class="ayat" title="An-Nas Ayat 5">الَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِۙ</div><div class="bacaan">allażī yuwaswisu fī ṣudụrin-nās</div><div class="arti">yang membisikkan (kejahatan) ke dalam dada manusia,</div></li>
+<li><div class="ayat" title="An-Nas Ayat 6">مِنَ الْجِنَّةِ وَالنَّاسِ </div><div class="bacaan">minal-jinnati wan-nās</div><div class="arti">dari (golongan) jin dan manusia.&rdquo;</div></li> </ol>
+
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 

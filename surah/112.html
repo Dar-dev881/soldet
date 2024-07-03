@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>   
+<meta charset="utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />     
+<script src="js/jquery.js">
+</script>   
+<script src="js/jquery.mobile-1.4.0.min.js">
+
+</script> 
+</head>  
+
+<body>  
+<div class="title"></div>
+
+<div data-role="page" data-theme="d" id="siang"> 
+
+
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="d">
+<h1>Surah Al Ikhlas</h1>
+<a href="../quran.html" rel="external" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+</div>
+<p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+<ol>
+<li><div class="ayat" title="Al-Ikhlas Ayat 1">قُلْ هُوَ اللّٰهُ اَحَدٌۚ</div><div class="bacaan">qul huwallāhu aḥad</div><div class="arti">Katakanlah (Muhammad), &ldquo;Dialah Allah, Yang Maha Esa.</div></li>
+<li><div class="ayat" title="Al-Ikhlas Ayat 2">اَللّٰهُ الصَّمَدُۚ</div><div class="bacaan">allāhuṣ-ṣamad</div><div class="arti">Allah tempat meminta segala sesuatu.</div></li>
+<li><div class="ayat" title="Al-Ikhlas Ayat 3">لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ</div><div class="bacaan">lam yalid wa lam yụlad</div><div class="arti">(Allah) tidak beranak dan tidak pula diperanakkan.</div></li>
+<li><div class="ayat" title="Al-Ikhlas Ayat 4">وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ</div><div class="bacaan">wa lam yakul lahụ kufuwan aḥad</div><div class="arti">Dan tidak ada sesuatu yang setara dengan Dia.&rdquo;</div></li> </ol>
+
+
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="i">
+<audio id="myAudio">   <source src="audio/2.mp3" type="audio/ogg">     Your browser does not support the audio element. </audio> 
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-c"> -->
+<!-- <button onclick="togglePlay(); chngimg();" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/play.png" width="20" height="20"></button> -->
+<!-- </div> -->
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+</div>
+<script src="function.js"></script>   
+</div>
+<!-- /page -->  
+</body> 
+</html> 
