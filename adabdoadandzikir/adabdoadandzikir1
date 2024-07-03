@@ -1,1 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=../css/jquery.mobile.squareui.css />
+<link href="../style.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery.js">
+</script> 
+<script src="../js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
 
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed width=100%>
+        <h1>Keutamaan Dzikir</h1>
+        <a style="background-color:#00897b;border:none" href="../adabdoadandzikir.html" rel="external" data-ajax="false" data-icon="home" data-iconpos="notext">Menu</a>
+		<!-- <a data-theme="a" href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat" data-icon="heart" data-iconpos="notext">Rate</a> -->
+		<!-- <a href="#add-form" data-icon="gear" data-iconpos="notext">Setting</a> -->
+
+
+
+<!-- <form> -->
+<!-- <input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder=Search> -->
+<!-- </form> -->
+</div>
+
+
+<div data-role=footer data-position=fixed style="background-color:#00897b;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+<ol>
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Allah akan memberikan ganjaran yang besar kepada orang-orang yang berzikir</strong></div>
+<div class="ayat" style="padding-top:17px;">إِنَّ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَالْقَانِتِينَ وَالْقَانِتَاتِ وَالصَّادِقِينَ وَالصَّادِقَاتِ وَالصَّابِرِينَ وَالصَّابِرَاتِ وَالْخَاشِعِينَ وَالْخَاشِعَاتِ وَالْمُتَصَدِّقِينَ وَالْمُتَصَدِّقَاتِ وَالصَّائِمِينَ وَالصَّائِمَاتِ وَالْحَافِظِينَ فُرُوجَهُمْ وَالْحَافِظَاتِ وَالذَّاكِرِينَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْرًا عَظِيمًا</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Sesungguhnya laki-laki dan perempuan yang muslim, laki-laki dan perempuan yang mukmin, laki-laki dan perempuan yang tetap dalam ketaatannya, laki-laki dan perempuan yang benar, laki-laki dan perempuan yang sabar, laki-laki dan perempuan yang khusyu&rsquo;, laki-laki dan perempuan yang bersedekah, laki-laki dan perempuan yang berpuasa, laki-laki dan perempuan yang memelihara kehormatannya, laki-laki dan perempuan yang banyak menyebut (nama) Allah, Allah telah menyediakan untuk mereka ampunan dan pahala yang besar.&rdquo;</em>&nbsp;(QS. Al-Ahzab: 35)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Orang yang senantiasa berzikir (mengingat) Allah subhanahu wa ta&rsquo;ala maka Allah subhanahu wa ta&rsquo;ala akan mengingatnya</strong></div>
+<div class="arti">Allah subhanahu wa ta&rsquo;ala berfirman,</div>
+<div class="ayat" style="padding-top:17px;">فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Karena itu, ingatlah kalian kepada-Ku niscaya Aku ingat (pula) kepada kalian, dan bersyukurlah kepada-Ku, dan janganlah kalian mengingkari (nikmat)-Ku.&rdquo;</em>&nbsp;(QS. Al-Baqarah: 152)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir sebab mendapatkan ketenteraman hati.</strong></div>
+<div class="arti">Allah subhanahu wa ta&rsquo;ala berfirman,</div>
+<div class="ayat" style="padding-top:17px;">الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;(yaitu) orang-orang yang beriman dan hati mereka menjadi tenteram dengan mengingat Allah. Ingatlah, hanya dengan mengingati Allah-lah hati menjadi tenteram.&rdquo;</em>&nbsp;(QS. Ar-Ra&rsquo;d: 28)</div>
+</li>
+
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Berzikir menjadi sebab terhindar dari sempitnya kehidupan.</strong></div>
+<div class="arti">Allah subhanahu wa ta&rsquo;ala berfirman,</div>
+<div class="ayat" style="padding-top:17px;">وَمَنْ أَعْرَضَ عَنْ ذِكْرِي فَإِنَّ لَهُ مَعِيشَةً ضَنْكًا وَنَحْشُرُهُ يَوْمَ الْقِيَامَةِ أَعْمَىٰ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Dan barangsiapa berpaling dari peringatan-Ku, maka sesungguhnya baginya penghidupan yang sempit, dan Kami akan menghimpunkannya pada hari kiamat dalam keadaan buta.&rdquo;</em>&nbsp;(QS. Thaha: 124)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Berzikir sebab terhindarnya dari kerugian.</strong></div>
+<div class="arti">Allah subhanahu wa ta&rsquo;ala berfirman,</div>
+<div class="ayat" style="padding-top:17px;">يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُلْهِكُمْ أَمْوَالُكُمْ وَلَا أَوْلَادُكُمْ عَنْ ذِكْرِ اللَّهِ ۚ وَمَنْ يَفْعَلْ ذَٰلِكَ فَأُولَٰئِكَ هُمُ الْخَاسِرُونَ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Hai orang-orang beriman, janganlah hartamu dan anak-anakmu melalaikan kamu dari mengingat Allah. Barangsiapa yang berbuat demikian maka mereka itulah orang-orang yang merugi.&rdquo;</em>&nbsp;(QS. Al-Munafiqun: 9)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Membiasakan berzikir termasuk sebab dimasukkannya seorang hamba ke dalam surga.</strong></div>
+<div class="arti">Dari Abdullah bin Amr,</div>
+<div class="ayat" style="padding-top:17px;">&laquo;خَصْلَتَانِ، أَوْ خَلَّتَانِ لَا يُحَافِظُ عَلَيْهِمَا عَبْدٌ مُسْلِمٌ إِلَّا دَخَلَ الْجَنَّةَ، هُمَا يَسِيرٌ، وَمَنْ يَعْمَلُ بِهِمَا قَلِيلٌ، يُسَبِّحُ فِي دُبُرِ كُلِّ صَلَاةٍ عَشْرًا، وَيَحْمَدُ عَشْرًا، وَيُكَبِّرُ عَشْرًا، فَذَلِكَ خَمْسُونَ وَمِائَةٌ بِاللِّسَانِ، وَأَلْفٌ وَخَمْسُ مِائَةٍ فِي الْمِيزَانِ، وَيُكَبِّرُ أَرْبَعًا وَثَلَاثِينَ إِذَا أَخَذَ مَضْجَعَهُ، وَيَحْمَدُ ثَلَاثًا وَثَلَاثِينَ، وَيُسَبِّحُ ثَلَاثًا وَثَلَاثِينَ، فَذَلِكَ مِائَةٌ بِاللِّسَانِ، وَأَلْفٌ فِي الْمِيزَانِ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Ada dua perkara, sekiranya keduanya itu selalu dijaga oleh seorang muslim, maka ia akan masuk surga. Dua perkara itu sangat mudah untuk dikerjakan, tetapi sedikit yang mau melaksanakannya. Yaitu; setiap selesai shalat mengucapkan tasbih sebanyak sepuluh kali, tahmid sepuluh kali, dan takbir sepuluh kali. Hal itu akan sama dengan seratus lima puluh dengan lisan dan seribu lima ratus dalam timbangan. Membaca takbir sebanyak tiga puluh empat jika akan tidur, membaca tahmid sebanyak tiga puluh tiga dan membaca tasbih sebanyak tiga puluh tiga, maka itu adalah seratus dalam hitungan lisan dan seribu dalam hitungan timbangan.&rdquo;</em>&nbsp;(HR. Abu Dawud no. 5065. Dan Al-Albani mengatakan hadits ini shohih)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir termasuk bentuk sedekah yang sangat mudah dilakukan oleh seorang muslim.</strong></div>
+<div class="arti">Berdasarkan riwayat Abu Dzar:</div>
+<div class="ayat" style="padding-top:17px;">&laquo;يُصْبِحُ عَلَى كُلِّ سُلَامَى مِنْ أَحَدِكُمْ صَدَقَةٌ، فَكُلُّ تَسْبِيحَةٍ صَدَقَةٌ، وَكُلُّ تَحْمِيدَةٍ صَدَقَةٌ، وَكُلُّ تَهْلِيلَةٍ صَدَقَةٌ، وَكُلُّ تَكْبِيرَةٍ صَدَقَةٌ، وَأَمْرٌ بِالْمَعْرُوفِ صَدَقَةٌ، وَنَهْيٌ عَنِ الْمُنْكَرِ صَدَقَةٌ، وَيُجْزِئُ مِنْ ذَلِكَ رَكْعَتَانِ يَرْكَعُهُمَا مِنَ الضُّحَى&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Setiap pagi dari persendian masing-masing kalian ada sedekahnya, setiap tasbih adalah sedekah, setiap tahmid adalah sedekah, dan setiap tahlil adalah sedekah, setiap takbir sedekah, setiap amar ma&rsquo;ruf nahyi mungkar sedekah, dan semuanya itu tercukupi dengan dua rakaat dhuha.&rdquo;</em>&nbsp;(HR. Muslim no. 720)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir lebih baik dari seorang pembantu.</strong></div>
+<div class="arti">Ini berdasarkan hadits yang diriwayatkan oleh &lsquo;Ali:</div>
+<div class="ayat" style="padding-top:17px;">أَنَّ فَاطِمَةَ، اشْتَكَتْ مَا تَلْقَى مِنَ الرَّحَى فِي يَدِهَا، وَأَتَى النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ سَبْيٌ، فَانْطَلَقَتْ، فَلَمْ تَجِدْهُ وَلَقِيَتْ عَائِشَةَ، فَأَخْبَرَتْهَا فَلَمَّا جَاءَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، أَخْبَرَتْهُ عَائِشَةُ بِمَجِيءِ فَاطِمَةَ إِلَيْهَا، فَجَاءَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِلَيْنَا، وَقَدْ أَخَذْنَا مَضَاجِعَنَا، فَذَهَبْنَا نَقُومُ فَقَالَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: &laquo;عَلَى مَكَانِكُمَا&raquo; فَقَعَدَ بَيْنَنَا حَتَّى وَجَدْتُ بَرْدَ قَدَمِهِ عَلَى صَدْرِي، ثُمَّ قَالَ: &laquo;أَلَا أُعَلِّمُكُمَا خَيْرًا مِمَّا سَأَلْتُمَا، إِذَا أَخَذْتُمَا مَضَاجِعَكُمَا، أَنْ تُكَبِّرَا اللهَ أَرْبَعًا وَثَلَاثِينَ، وَتُسَبِّحَاهُ ثَلَاثًا وَثَلَاثِينَ، وَتَحْمَدَاهُ ثَلَاثًا وَثَلَاثِينَ، فَهْوَ خَيْرٌ لَكُمَا مِنْ خَادِمٍ&raquo;،</div>
+<div class="arti"><strong>Artinya:</strong><br><em>Bahwasanya Fatimah merasakan tapak tangannya mengeras karena menumbuk tepung. Dan seorang pelayan mendatangi Nabi shallallahu &lsquo;alaihi wa sallam. Lalu Fatimah pergi mendatangi Nabi shallallahu &lsquo;alaihi wa sallam namun tidak mendapatinya, lalu ia bertemu dengan &lsquo;Aisyah. Kemudian Fatimah berpesan kepada &lsquo;Aisyah agar disampaikan kepada Rasulullah shallallahu alaihi wasallam. Ketika Rasulullah shallallahu alaihi wasallam tiba di rumah, &lsquo;Aisyah pun memberitahu beliau shallallahu alaihi wasallam tentang kedatangan Fatimah. Lalu Rasulullah pergi ke rumah kami ketika kami sedang berbaring hendak tidur. Kamipun segera bangun, tetapi beliau shallallahu alaihi wasallam mencegahnya dan bersabda : &lsquo;Tetaplah di tempat kamu! Kemudian Rasulullah shallallahu alaihi wasallam duduk di antara kami sehingga aku merasakan dinginnya telapak kaki beliau yang menyentuh dada-ku. Setelah itu, Rasulullah shallallahu alaihi wasallam bersabda : &ldquo;Inginkah kalian berdua aku ajarkan sesuatu yang lebih baik daripada apa yang kamu minta? Apabila kalian berbaring hendak tidur, bacalah takbir (Allahu Akbar) tiga puluh empat kali, tasbih (Subhanallah) tiga puluh tiga kali, dan tahmid (Alhamdulillah) tiga puluh tiga kali. Sesungguhnya yang demikian itu lebih baik bagi kamu daripada seorang pembantu.&rdquo;</em>&nbsp;(HR. Muslim no. 2727)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Allah subhanahu wa ta&rsquo;ala bersama orang yang mengingatnya</strong></div>
+<div class="arti">Dari Abu Hurairah dalam sebuah hadits qudsy,</div>
+<div class="ayat" style="padding-top:17px;">أَنَا عِنْدَ ظَنِّ عَبْدِي بِي، وَأَنَا مَعَهُ إِذَا ذَكَرَنِي، فَإِنْ ذَكَرَنِي فِي نَفْسِهِ ذَكَرْتُهُ فِي نَفْسِي، وَإِنْ ذَكَرَنِي فِي مَلَإٍ ذَكَرْتُهُ فِي مَلَإٍ خَيْرٍ مِنْهُمْ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Aku sesuai persangkaan hamba-Ku. Aku bersamanya ketika ia mengingat-Ku. Jika ia mengingat-Ku dalam kesendiriannya maka Aku akan mengingatnya dalam diri-Ku. Jika ia mengingat-Ku di suatu kumpulan maka Aku akan mengingatnya di kumpulan yang lebih baik daripada pada itu (kumpulan malaikat).&rdquo;</em>&nbsp;(HR. Bukhori no. 7405)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir ada suatu ibadah yang mengumpulkan banyak keutamaan dan tidak sulit untuk dikerjakan.</strong></div>
+<div class="arti">Dari Abdullah bin Busr,</div>
+<div class="ayat" style="padding-top:17px;">إِنَّ شَرَائِعَ الْإِسْلَامِ قَدْ كَثُرَتْ عَلَيَّ، فَأَنْبِئْنِي مِنْهَا بِشَيْءٍ أَتَشَبَّثُ بِهِ قَالَ: &laquo;لَا يَزَالُ لِسَانُكَ رَطْبًا مِنْ ذِكْرِ اللَّهِ عَزَّ وَجَلَّ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;wahai Rasulullah, sesungguhnya syari&rsquo;at-syari&rsquo;at Islam telah banyak yang menjadi kewajibanku, maka beritahukan kepadaku sesuatu yang dapat aku jadikan sebagai pegangan! Beliau bersabda: &ldquo;Hendaknya senantiasa lidahmu basah karena berzikir kepada Allah.&rdquo;</em>&nbsp;(HR. Abu Dawud no. 3793. Dan Al-Albani mengatakan bahwa hadits ini shohih)</div>
+</li>
+
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Pohon di surga adalah tasbih, tahmid, tahlil, dan takbir.</strong></div>
+<div class="arti">Hal ini berdasarkan hadits Abdullah bin Mas&rsquo;ud, bahwa Rasulullah shallallahu &lsquo;alaihi wa sallam bersabda:</div>
+<div class="ayat" style="padding-top:17px;">لَقِيتُ إِبْرَاهِيمَ لَيْلَةَ أُسْرِيَ بِي فَقَالَ: يَا مُحَمَّدُ، أَقْرِئْ أُمَّتَكَ مِنِّي السَّلَامَ وَأَخْبِرْهُمْ أَنَّ الجَنَّةَ طَيِّبَةُ التُّرْبَةِ عَذْبَةُ المَاءِ، وَأَنَّهَا قِيعَانٌ، وَأَنَّ غِرَاسَهَا سُبْحَانَ اللَّهِ وَالحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ &rdquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Aku bertemu dengan Ibrahim pada malam ketika aku diisra`kan, kemudian ia berkata; wahai Muhammad, sampaikan salam dariku kepada Umatmu, dan beritahukan kepada mereka bahwa Surga debunya harum, airnya segar, dan Surga tersebut adalah datar, tanamannya adalah kalimat; SUBHAANALLAAHI WAL HAMDU LILLAAHI WA LAA ILAAHA ILLAAHU WALLAAHU AKBAR (Maha Suci Allah, segala puji bagi Allah, tidak ada tuhan yang berhak disembah kecuali Allah, dan Allah Maha Besar).</em>&nbsp;(HR. At-Tirmidzi no. 3462, dan beliau berkata hadits ini hasan ghorib. Al-Albani juga mengatakan hadits ini hasan.)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Membiasakan berzikir dengan takbir sebelum terbit matahari dan sebelum terbenam lebih baik dari membebaskan seratus budak.</strong></div>
+<div class="arti">Hal ini berdasarkan hadits</div>
+<div class="ayat" style="padding-top:17px;">وَمَنْ قَالَ: اللهُ أَكْبَرُ مِائَةَ مَرَّةٍ قَبْلَ طُلُوعِ الشَّمْسِ وَقَبْلَ غُرُوبِهَا، كَانَ أَفْضَلَ مِنْ عِتْقِ مِائَةِ رَقَبَةٍ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;dan barang siapa yang mengucapkan &ldquo;allaahu akbar&rdquo;&nbsp;</em><em>sebelum terbit matahari dan sebelum terbenam maka ini lebih utama dari membebaskan seratus budak.&rdquo;&nbsp;</em>(HR. An-Nasai no. 10588 dalam kitabnya As-Sunan Al-Kubro. Dan Al-Albani mengatakan hadits ini hasan. (lihat: Shohih At-Targhib wa At-Tarhib no. 658)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir sebab dikabulkannya doa seseorang.</strong></div>
+<div class="arti">Hal ini berdasarkan hadits Ubadah bin Ash-Shomit, dari Nabi shallallahu &lsquo;alaihi wa sallam beliau bersabda:</div>
+<div class="ayat" style="padding-top:17px;">مَنْ تَعَارَّ مِنَ اللَّيْلِ، فَقَالَ: لاَ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ المُلْكُ وَلَهُ الحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، الحَمْدُ لِلَّهِ، وَسُبْحَانَ اللَّهِ، وَلاَ إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلَّا بِاللَّهِ، ثُمَّ قَالَ: اللَّهُمَّ اغْفِرْ لِي، أَوْ دَعَا، اسْتُجِيبَ لَهُ، فَإِنْ تَوَضَّأَ وَصَلَّى قُبِلَتْ صَلاَتُهُ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Barang siapa yang terbangun dari tidurnya pada malam hari, kemudian dia mengucapkan, &lsquo;La ilaha illallah wahdahu la syarika lahu, lahul mulku wa lahul hamdu wa huwa &lsquo;ala kulli syay-in qadri, alhamdulillah wa subhanallah wa la ilaha illallah wallahu akbar, wa la hawla wa la quwwata illa billah&lsquo; kemudian dia berkata &lsquo;Ya Allah, ampunilah aku&rsquo; atau dia memanjatkan doa, maka akan dikabulkan. Kemudian jika dia berwudhu lalu shalat, maka shalatnya akan diterima (oleh Allah).&rdquo;</em>&nbsp;(HR. Bukhori no. 1154)</div>
+</li>
+
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Termasuk hukuman yang paling berat adalah lalai dari berzikir.</strong></div>
+<div class="arti">Allah subhanahu wa ta&rsquo;ala berfirman,</div>
+<div class="ayat" style="padding-top:17px;">وَاصْبِرْ نَفْسَكَ مَعَ الَّذِينَ يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ يُرِيدُونَ وَجْهَهُ ۖ وَلَا تَعْدُ عَيْنَاكَ عَنْهُمْ تُرِيدُ زِينَةَ الْحَيَاةِ الدُّنْيَا ۖ وَلَا تُطِعْ مَنْ أَغْفَلْنَا قَلْبَهُ عَنْ ذِكْرِنَا وَاتَّبَعَ هَوَاهُ وَكَانَ أَمْرُهُ فُرُطًا</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Dan bersabarlah kamu bersama-sama dengan orang-orang yang menyeru Tuhannya di pagi dan senja hari dengan mengharap keridhaan-Nya; dan janganlah kedua matamu berpaling dari mereka (karena) mengharapkan perhiasan dunia ini; dan janganlah kamu mengikuti orang yang hatinya telah Kami lalaikan dari mengingati Kami, serta menuruti hawa nafsunya dan adalah keadaannya itu melewati batas.&rdquo;</em>&nbsp;(QS. Al-Kahfi: 28)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Dijauhkan dari setan.</strong></div>
+<div class="arti">Allah berfirman,</div>
+<div class="ayat" style="padding-top:17px;">وَمَنْ يَعْشُ عَنْ ذِكْرِ الرَّحْمَٰنِ نُقَيِّضْ لَهُ شَيْطَانًا فَهُوَ لَهُ قَرِينٌ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Barang siapa yang berpaling dari mengingat Tuhan Yang Maha Pemurah (Al Quran), kami adakan baginya setan (yang menyesatkan) maka setan itulah yang menjadi teman yang selalu menyertainya.&rdquo;</em>&nbsp;(QS. Az-Zukhruf: 36)</div>
+<div class="arti">Dan Allah subhanahu wa ta&rsquo;ala berfirman,</div>
+<div class="ayat" style="padding-top:17px;">إِنَّ الَّذِينَ اتَّقَوْا إِذَا مَسَّهُمْ طَائِفٌ مِنَ الشَّيْطَانِ تَذَكَّرُوا فَإِذَا هُمْ مُبْصِرُونَ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Sesungguhnya orang-orang yang bertakwa bila mereka ditimpa was-was dari setan, mereka ingat kepada Allah, maka ketika itu juga mereka melihat kesalahan-kesalahannya.&rdquo;</em>&nbsp;(QS. Al-A&rsquo;raf: 201)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>majelis zikir adalah taman-taman surga.</strong></div>
+<div class="arti">Dari Anas bin Malik</div>
+<div class="ayat" style="padding-top:17px;">&laquo;إِذَا مَرَرْتُمْ بِرِيَاضِ الجَنَّةِ فَارْتَعُوا&raquo; قَالُوا: وَمَا رِيَاضُ الجَنَّةِ؟ قَالَ: &laquo;حِلَقُ الذِّكْرِ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Apabila kalian berjalan melewati taman-taman Surga, perbanyaklah berdzikir.&rdquo; Para Shahabat bertanya, &ldquo;Wahai Rasulullah, apakah yang dimaksud taman-taman Surga itu?&rdquo; Beliau menjawab, &ldquo;Yaitu halaqah-halaqah zikir.&rdquo;</em>&nbsp;(HR. At-Tirmidzi no. 3510 dan Al-Albani mengatakan hadits ini hasan)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir sebab mendapatkan rahmat.</strong></div>
+<div class="arti">Dari Abu Hurairah,</div>
+<div class="ayat" style="padding-top:17px;">&laquo;لَا يَقْعُدُ قَوْمٌ يَذْكُرُونَ اللهَ عَزَّ وَجَلَّ إِلَّا حَفَّتْهُمُ الْمَلَائِكَةُ، وَغَشِيَتْهُمُ الرَّحْمَةُ، وَنَزَلَتْ عَلَيْهِمِ السَّكِينَةُ، وَذَكَرَهُمُ اللهُ فِيمَنْ عِنْدَهُ&raquo;،</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Tidaklah berkumpul suatu kaum sambil berzikir kepada Allah &lsquo;Azza Wa Jalla kecuali para malaikat mengelilingi mereka, rahmat menyelimuti mereka, dan ketenangan hati turun kepada mereka, dan Allah menyebut (memuji) mereka di hadapan makhluk yang ada di sisi-Nya&rdquo;</em>&nbsp;(HR. Muslim no. 2700)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Allah subhanahu wa ta&rsquo;ala memiliki malaikat yang mencari majelis-majelis zikir</strong></div>
+<div class="arti">Dari Abu Hurairah,</div>
+<div class="ayat" style="padding-top:17px;">إِنَّ لِلَّهِ تَبَارَكَ وَتَعَالَى مَلَائِكَةً سَيَّارَةً، فُضُلًا يَتَتَبَّعُونَ مَجَالِسَ الذِّكْرِ، فَإِذَا وَجَدُوا مَجْلِسًا فِيهِ ذِكْرٌ قَعَدُوا مَعَهُمْ، وَحَفَّ بَعْضُهُمْ بَعْضًا بِأَجْنِحَتِهِمْ، حَتَّى يَمْلَئُوا مَا بَيْنَهُمْ وَبَيْنَ السَّمَاءِ الدُّنْيَا، فَإِذَا تَفَرَّقُوا عَرَجُوا وَصَعِدُوا إِلَى السَّمَاءِ، قَالَ: فَيَسْأَلُهُمُ اللهُ عَزَّ وَجَلَّ، وَهُوَ أَعْلَمُ بِهِمْ: مِنْ أَيْنَ جِئْتُمْ؟ فَيَقُولُونَ: جِئْنَا مِنْ عِنْدِ عِبَادٍ لَكَ فِي الْأَرْضِ، يُسَبِّحُونَكَ وَيُكَبِّرُونَكَ وَيُهَلِّلُونَكَ وَيَحْمَدُونَكَ وَيَسْأَلُونَكَ، قَالَ: وَمَاذَا يَسْأَلُونِي؟ قَالُوا: يَسْأَلُونَكَ جَنَّتَكَ، قَالَ: وَهَلْ رَأَوْا جَنَّتِي؟ قَالُوا: لَا، أَيْ رَبِّ قَالَ: فَكَيْفَ لَوْ رَأَوْا جَنَّتِي؟ قَالُوا: وَيَسْتَجِيرُونَكَ، قَالَ: وَمِمَّ يَسْتَجِيرُونَنِي؟ قَالُوا: مِنْ نَارِكَ يَا رَبِّ، قَالَ: وَهَلْ رَأَوْا نَارِي؟ قَالُوا: لَا، قَالَ: فَكَيْفَ لَوْ رَأَوْا نَارِي؟ قَالُوا: وَيَسْتَغْفِرُونَكَ، قَالَ: فَيَقُولُ: قَدْ غَفَرْتُ لَهُمْ فَأَعْطَيْتُهُمْ مَا سَأَلُوا، وَأَجَرْتُهُمْ مِمَّا اسْتَجَارُوا، قَالَ: فَيَقُولُونَ: رَبِّ فِيهِمْ فُلَانٌ عَبْدٌ خَطَّاءٌ، إِنَّمَا مَرَّ فَجَلَسَ مَعَهُمْ، قَالَ: فَيَقُولُ: وَلَهُ غَفَرْتُ هُمُ الْقَوْمُ لَا يَشْقَى بِهِمْ جَلِيسُهُمْ &rdquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Sesungguhnya Allah tabaraka wa ta&rsquo;ala memiliki para malaikat khusus yang senantiasa berkeliling mencari di mana adanya majelis-majelis zikir. Apabila mereka menemukan sebuah majelis yang padanya terdapat zikir maka mereka pun duduk bersama orang-orang itu dan meliputi mereka satu sama lain dengan sayap-sayapnya sampai-sampai mereka memenuhi jarak antara orang-orang itu dengan langit terendah, kemudian apabila orang-orang itu telah bubar maka mereka pun naik menuju ke atas langit&rdquo; Nabi berkata, &ldquo;Maka Allah &lsquo;azza wa jalla pun bertanya kepada mereka sedangkan Dia adalah yang paling mengetahui keadaan mereka, &lsquo;Dari mana kalian datang?&rsquo;. Para malaikat itu menjawab, &lsquo;Kami datang dari sisi hamba-hamba-Mu yang ada di bumi. Mereka mensucikan-Mu (bertasbih), mengagungkan-Mu (bertakbir), mengucapkan tahlil, dan memuji-Mu (bertahmid), serta meminta (berdo&rsquo;a) kepada-Mu.&rsquo; Lalu Allah bertanya, &lsquo;Apa yang mereka minta kepada-Ku?&rsquo;. Para malaikat itu menjawab, &lsquo;Mereka meminta kepada-Mu surga-Mu.&rsquo; Allah bertanya, &lsquo;Apakah mereka telah melihat surga-Ku?&rsquo;. Mereka menjawab, &lsquo;Belum wahai Rabbku.&rsquo; Allah mengatakan, &lsquo;Lalu bagaimana lagi jika mereka benar-benar telah melihat surga-Ku?&rsquo;. Para malaikat itu berkata, &lsquo;Mereka juga meminta perlindungan kepada-Mu.&rsquo; Allah bertanya, &lsquo;Dari apakah mereka meminta perlindungan-Ku?&rsquo;. Mereka menjawab, &lsquo;Mereka berlindung dari neraka-Mu, wahai Rabbku&rsquo;. Maka Allah bertanya, &lsquo;Apakah mereka pernah melihat neraka-Ku?&rsquo;. Mereka menjawab, &lsquo;Belum, wahai Rabbku.&rsquo; Lalu Allah mengatakan, &lsquo;Lalu bagaimanakah lagi jika mereka telah melihat neraka-Ku.&rsquo; Mereka mengatakan, &lsquo;Mereka meminta ampunan kepada-Mu.&rsquo; Maka Allah mengatakan, &lsquo;Sungguh Aku telah mengampuni mereka. Dan Aku telah berikan apa yang mereka minta dan Aku lindungi mereka dari apa yang mereka minta untuk berlindung darinya.&rsquo;.&rdquo; Nabi bersabda, &ldquo;Para malaikat itu berkata, &lsquo;Wahai Rabbku, di antara mereka ada si fulan, seorang hamba yang telah banyak melakukan dosa, sesungguhnya dia hanya lewat kemudian duduk bersama mereka.&rsquo;.&rdquo; Nabi mengatakan, Maka Allah berfirman: Dan kepadanya juga Aku akan ampuni. Orang-orang itu adalah sebuah kaum yang teman duduk mereka tidak akan binasa.&rdquo;</em>&nbsp;(HR. Muslim no. 2689)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Orang-orang yang berjaelis dan tidak berzikir di dalamnya maka ketika mereka selesai mereka seperti bangkai kedelai.</strong></div>
+<div class="arti">Dari Abu Hurairah</div>
+<div class="ayat" style="padding-top:17px;">&laquo;مَا مِنْ قَوْمٍ يَقُومُونَ مِنْ مَجْلِسٍ لَا يَذْكُرُونَ اللَّهَ فِيهِ، إِلَّا قَامُوا عَنْ مِثْلِ جِيفَةِ حِمَارٍ وَكَانَ لَهُمْ حَسْرَةً&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Tiada suatu kaum yang bangun (selesai dari suatu majelis) dari suatu majelis dimana mereka tidak berzikir kepada Allah dalam majelis itu, melainkan mereka bangun dari sesuatu yang serupa dengan bangkai himar/keledai, dan akan menjadi penyesalan mereka kelak di hari kiamat &rdquo;</em>&nbsp;(HR. Abu Dawud no. 4855 dan dishohihkan oleh Al-Albani)</div>
+<div class="arti"><strong>Artinya:</strong><br>At-Thiby menjelaskan maksud dari &ldquo;<em>melainkan mereka bangun dari sesuatu yang serupa dengan bangkai himar/keledai</em>&rdquo; yaitu tidak ada seorang pun dari yang berdiri dari majelis mereka kecuali seperti berdirinya orang-orang yang berpencar dari memakan bangkai yang ini adalah sesuatu yang sangat kotor dan sangat najis.&rdquo; (Lihat: Mirqootul Mafaatiih Syarhu Misykaatul Mashoobiih 4/1555)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Majelis yang tidak ada zikirnya dan shalawat kepada nabi maka akan menjadi bahan penyesalan.</strong></div>
+<div class="arti">Dari Abu Hurairah,</div>
+<div class="ayat" style="padding-top:17px;">&laquo;مَا جَلَسَ قَوْمٌ مَجْلِسًا لَمْ يَذْكُرُوا اللَّهَ فِيهِ، وَلَمْ يُصَلُّوا عَلَى نَبِيِّهِمْ، إِلَّا كَانَ عَلَيْهِمْ تِرَةً، فَإِنْ شَاءَ عَذَّبَهُمْ وَإِنْ شَاءَ غَفَرَ لَهُمْ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Jika ada sekelompok kaum yang duduk bersama dan tidak mengingat Allah serta tidak memberi shalawat kepada nabi mereka maka itu akan menjadi bahan penyesalan baginya. Jika Allah berkehendak, Allah akan menghukum mereka, dan jika Allah berkehendak, Dia akan mengampuni mereka.&rdquo; (HR. At-Tirmidzi no. 3380. Dan Al-Albani mengatakan hadits ini shohih)</em></div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Orang yang berzikir memiliki kelebihan dari orang yang tidak berzikir.</strong></div>
+<div class="arti">Dari Abu Hurairah</div>
+<div class="ayat" style="padding-top:17px;">&laquo;سَبَقَ الْمُفَرِّدُونَ&raquo; قَالُوا: وَمَا الْمُفَرِّدُونَ؟ يَا رَسُولَ اللهِ قَالَ: &laquo;الذَّاكِرُونَ اللهَ كَثِيرًا، وَالذَّاكِرَاتُ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Para mufarrid telah mendahului&rdquo; Para sahabat bertanya: Wahai Rasulullah, siapa itu mufarrid? Beliau menjawab: &ldquo;Laki-laki dan wanita yang banyak berzikir kepada Allah&rdquo;</em>&nbsp;(HR. Muslim no. 2676)</div>
+<div class="arti">&lsquo;Ali bin Sulthan al-Qari menjelaskan makna الْمُفَرِّدُونَ adalah orang yang memiliki kelebihan dalam keadaannya dari orang lain dengan terangkatnya derajatnya, karena mereka menjadikan satu-satunya Allah subhanahu wa ta&rsquo;ala yang dijadikan untuk berzikir dan meninggalkan selain-Nya.&rdquo; (Lihat: Mirqootul Mafaatiih Syarhu Misykaatul Mashoobiih 4/1540)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Sebaik-baiknya amal dan derajat yang paling tinggi</strong></div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Lebih baik dari bersedekah dengan emas dan perak</strong></div>
+<div class="arti">Dari Abu Darda,</div>
+<div class="ayat" style="padding-top:17px;">أَلَا أُنَبِّئُكُمْ بِخَيْرِ أَعْمَالِكُمْ، قَالَ مَكِّيٌّ: وَأَزْكَاهَا، عِنْدَ مَلِيكِكُمْ، وَأَرْفَعِهَا فِي دَرَجَاتِكُمْ، وَخَيْرٍ لَكُمْ مِنْ إِعْطَاءِ الذَّهَبِ وَالْوَرِقِ، وَخَيْرٍ لَكُمْ مِنْ أَنْ تَلْقَوْا عَدُوَّكُمْ، فَتَضْرِبُوا أَعْنَاقَهُمْ وَيَضْرِبُوا أَعْنَاقَكُمْ &rdquo; قَالُوا: وَذَلِكَ مَا هُوَ يَا رَسُولَ اللَّهِ؟ قَالَ: &laquo;ذِكْرُ اللَّهِ عَزَّ وَجَلَّ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Maukah kalian kuberitahu amal yang paling baik untuk kalian, amal yang paling suci di sisi Tuhan kalian, amal yang paling tinggi pada derajat kalian, amal yang lebih baik bagi kalian daripada menginfakkan emas dan perak, dan amal yang lebih baik bagi kalian daripada menghadapi musuh di medan jihad yang kemudian kalian dan musuh kalian saling menebas leher?&rdquo; Para sahabat menjawab: &ldquo;Tentu, wahai Rasulullah.&rdquo; Nabi bersabda: berzikir kepada Allah.&rdquo;</em>&nbsp;(HR. Ahmad no. 21702 dan dikatakan oleh Syu&rsquo;aib Al-Arnauth hadits ini shohih)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Orang yang berzikir dengan yang tidak berzikir bagaikan orang yang hidup dan yang mati.</strong></div>
+<div class="arti">Dari Abu Musa,</div>
+<div class="ayat" style="padding-top:17px;">&laquo;مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لاَ يَذْكُرُ رَبَّهُ، مَثَلُ الحَيِّ وَالمَيِّتِ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;perumpamaan orang yang berzikir kepada Allah dengan orang yang tidak berzikir kepada Allah seperti orang yang hidup dengan orang yang mati.&rdquo;</em>&nbsp;(HR. Bukhori no. 6407)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Rumah yang di dalamnya terdapat zikir dengan rumah yang kosong dari zikir bagaikan rumah yang hidup dengan rumah yang mati.</strong></div>
+<div class="arti">Dari Abu Musa,</div>
+<div class="ayat" style="padding-top:17px;">&laquo;مَثَلُ الْبَيْتِ الَّذِي يُذْكَرُ اللهُ فِيهِ، وَالْبَيْتِ الَّذِي لَا يُذْكَرُ اللهُ فِيهِ، مَثَلُ الْحَيِّ وَالْمَيِّتِ&raquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;perumpamaan rumah yang di dalamnya disebut Allah dengan rumah yang kosong dari menyebut Allah seperti rumah yang hidup dengan rumah yang mati.&rdquo;</em>&nbsp;(HR. Muslim no. 779)</div>
+<div class="arti">&lsquo;Ali bin Sulthan al-Qari menjelaskan makna perumpamaan dari yang hidup dan yang mati: disamakannya orang yang berzikir dengan orang yang hidup karena yang hidup zahirnya dihiasi dengan cahaya kehidupan dan bisa berbuat yang ia kehendaki dan batinnya dihiasi dengan cahaya ilmu. Begitu juga yang hidup dihiasi dengan cahaya ketaatan dan batinnya dihiasi dengan cahaya ma&rsquo;rifah, adapun yang tidak berzikir maka diumpamakan dengan sesuatu yang mati yang zhahir dan batinnya tidak ada manfaat. (Lihat: Mirqootul Mafaatiih Syarhu Misykaatul Mashoobiih 4/1541)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir sebab mendapatkan seratus kebaikan dan dihilangkan seratus keburukan.</strong></div>
+<div class="arti">Hal ini berdasarkan hadits Abu Hurairah bahwasanya Rasulullah shallallahu &lsquo;alaihi wa sallam bersabda:</div>
+<div class="ayat" style="padding-top:17px;">مَنْ قَالَ: لاَ إِلَهَ إِلَّا اللَّهُ، وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ المُلْكُ وَلَهُ الحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، فِي يَوْمٍ مِائَةَ مَرَّةٍ، كَانَتْ لَهُ عَدْلَ عَشْرِ رِقَابٍ، وَكُتِبَتْ لَهُ مِائَةُ حَسَنَةٍ، وَمُحِيَتْ عَنْهُ مِائَةُ سَيِّئَةٍ، وَكَانَتْ لَهُ حِرْزًا مِنَ الشَّيْطَانِ يَوْمَهُ ذَلِكَ حَتَّى يُمْسِيَ، وَلَمْ يَأْتِ أَحَدٌ بِأَفْضَلَ مِمَّا جَاءَ بِهِ، إِلَّا أَحَدٌ عَمِلَ أَكْثَرَ مِنْ ذَلِكَ &rdquo;</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Barang siapa yang membaca laa ilaaha illallahu wahdahuu laa syariika lahuu, lahul mulku wa lahul hamdu wa huwa &lsquo;alaa kulli syai&rsquo;in qodir (Tidak ada ilah (yang berhaq disembah) selain Allah Yang Maha Tunggal tidak ada sekutu bagi-Nya. Milik-Nya kerajaan dan bagi-Nya segala puji dan Dia Maha Kuasa atas segala sesuatu) sebanyak seratus kali dalam sehari, maka baginya mendapatkan pahala seperti membebaskan sepuluh orang budak, ditetapkan baginya seratus hasanah (kebaikan) dan dijauhkan darinya seratus keburukan dan baginya ada perlindungan dari (godaan) setan pada hari itu hingga petang dan tidak ada orang yang lebih baik amalnya dari orang yang membaca doa ini kecuali seseorang yang dapat lebih banyak mengamalkan (membaca) dzikir ini&rdquo;.</em>&nbsp;(HR. Bukhori no.&nbsp; 3293 dan Muslim no. 2691)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Zikir termasuk obat bimbang</strong></div>
+<div class="arti">Berdasarkan Hadits Abu Hurairah, bahwasanya Rasulullah shallallahu &lsquo;alaihi wa sallam bersabda</div>
+<div class="ayat" style="padding-top:17px;">مَنْ قَالَ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ، كَانَ دَوَاءً مِنْ تِسْعَةٍ وَتِسْعِينَ دَاءً أَيْسَرُهَا الْهَمُّ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;barang siapa yang mengucapkan &ldquo;laa hawla wa laa quwwata ilaa billaah&rdquo; maka ini adalah obat dari sembilan puluh sembilan penyakit dan yang paling mudah adalah rasa bimbang.&rdquo;&nbsp;</em>(HR. Hakim dalam mustadroknya no. 1990 dan dia mengatakan hadits ini shohih)</div>
+</li>
+
+<li>
+<div class="arti" style="padding-left:55px;margin-top:-40px;"><strong>Sebab diterimanya amalan ibadah shalat seseorang.</strong></div>
+<div class="arti">Hal ini berdasarkan hadits Ubadah bin Ash-Shomit, dari Nabi shallallahu &lsquo;alaihi wa sallam beliau bersabda:</div>
+<div class="ayat" style="padding-top:17px;">مَنْ تَعَارَّ مِنَ اللَّيْلِ، فَقَالَ: لاَ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ المُلْكُ وَلَهُ الحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، الحَمْدُ لِلَّهِ، وَسُبْحَانَ اللَّهِ، وَلاَ إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلَّا بِاللَّهِ، ثُمَّ قَالَ: اللَّهُمَّ اغْفِرْ لِي، أَوْ دَعَا، اسْتُجِيبَ لَهُ، فَإِنْ تَوَضَّأَ وَصَلَّى قُبِلَتْ صَلاَتُهُ</div>
+<div class="arti"><strong>Artinya:</strong><br><em>&ldquo;Barang siapa yang terbangun dari tidurnya pada malam hari, kemudian dia mengucapkan, &lsquo;La ilaha illallah wahdahu la syarika lahu, lahul mulku wa lahul hamdu wa huwa &lsquo;ala kulli syay-in qadri, alhamdulillah wa subhanallah wa la ilaha illallah wallahu akbar, wa la hawla wa la quwwata illa billah&lsquo; kemudian dia berkata &lsquo;Ya Allah, ampunilah aku&rsquo; atau dia memanjatkan doa, maka akan dikabulkan.&nbsp;<u>Kemudian jika dia berwudhu lalu shalat, maka shalatnya akan diterima (oleh Allah)</u>.&rdquo;</em>&nbsp;(HR. Bukhori no. 1154)</div>
+</li>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</ol>
+</div>
+</div>
+
+
+
+<div data-role=footer data-position=fixed style="background-color:#00897b;border:none">
+
+
+
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#00897b;border:none" onclick="location.href='#';" value="Go to Google" data-role="button" data-inline="false" ><img src="../images/prev.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#00897b;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="../images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#00897b;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="../images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<div class="ui-block-d">
+<button style="background-color:#00897b;border:none" onclick="location.href='adabdoadandzikir2.html';" value="Go to Google" data-role="button" data-inline="false" ><img src="../images/next.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-e"> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false"><button>Doa</button></a> -->
+<!-- </div> -->
+</div> 
+
+
+</div>
+
+
+<script src="../function.js">
+
+
+</script> 
+
+
+<div data-role="panel" data-display="push" data-theme="a" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="index.html" data-rel="close">Close</a></li>
+				<li><a href="index.html" rel="external" data-ajax="false">Dzikir & Doa Setelah Sholat</a></li>
+                <li><a href="bacaansholat.html" rel="external" data-ajax="false">Bacaan Sholat</a></li>
+				<li><a href="dzikirpagipetang.html" rel="external" data-ajax="false">Dzikir Pagi Petang</a></li>
+				<li><a href="doaharian.html" rel="external" data-ajax="false">Doa Harian</a></li>
+				<li><a href="doapilihan.html" rel="external" data-ajax="false">Doa Pilihan</a></li>
+				<li><a href="doarabbana.html" rel="external" data-ajax="false">40 Doa Rabbana</a></li>
+				<li><a href="doaparanabi.html" rel="external" data-ajax="false">Doa Para Nabi & Rasul</a></li>
+                <li><a href="doashalatsunnah.html" rel="external" data-ajax="false">Doa Sholat Sunnah</a></li>
+				<li><a href="quran.html" rel="external" data-ajax="false">Quran Terjemah</a></li>
+				<li><a href="asmaulhusna.html" rel="external" data-ajax="false">Asmaul Husna<span class="blink_me" style="background-color:red;margin-left:8px;padding-left:5px;padding-right:5px;">new</span></a></li>
+				<li><a href="rate.html" rel="external" data-ajax="false">Rate This App</a></li>
+				<li><a href="disclaimer.html" rel="external" data-ajax="false">Discalimer</a></li>
+        </ul>
+    </div>
+    
+
+<!-- <div data-role="controlgroup" class="float2" data-type="horizontal" data-mini="false" data-theme="c"> -->
+<!-- <button style="background-color:#00897b;border:none" onclick="classToggle()" type="button" data-role="button" data-inline="false" class=""><img id="" src="../images/min.png" width="20" height="20"></button></div> -->
+
+<!-- </div> -->
+
+
+
+	
+
+<!-- </div> -->
+	
+
+      
+
+	
+
+<!-- </div> -->
+<!-- </div> -->
+</body>
+</html>
