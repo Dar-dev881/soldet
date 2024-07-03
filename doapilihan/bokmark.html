@@ -1,0 +1,18 @@
+<html><head><meta charset=utf-8 /><meta name=viewport content="width=device-width, initial-scale=1"><link rel=stylesheet type=text/css href=style.css></head><body>BOOK MARK<div><table border=1 id=tableData><thead></thead></table></div><input type=button value="Reset Bookmark" onclick=resetData() /> <script type="text/javascript">
+	var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+	//console.log(bookmarks);
+	var table = document.getElementById("tableData");
+	if(bookmarks != null){
+		bookmarks.forEach(function(item,index){
+			var row = table.insertRow(0);
+			var cell1 = row.insertCell(0);
+			cell1.innerHTML = "<a href='"+item.url+"'>"+item.title+"</a>";
+			//document.getElementById("tableData").appendChild("<tr><td>"+ item.url+"</td></tr>");
+			console.log(item.url);
+		});
+	}
+	function resetData(){
+	//	alert(localStorage.getItem('bookmarks'));
+		localStorage.removeItem('bookmarks');
+	}
+</script></body></html>
