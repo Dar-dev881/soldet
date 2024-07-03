@@ -1,0 +1,414 @@
+
+<html>
+
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+
+<style>
+body {
+    background-color: #000
+}
+
+.ui-page .ui-header {
+    background: #695b8e !important;
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Bold.ttf");
+}
+
+.arabic {
+	direction:rtl;
+    font-family: "myFirstFont";
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+
+}
+
+
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal!important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px/10px;
+    border-radius: 100px/10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg)rotate(3deg);
+    -moz-transform: skew(8deg)rotate(3deg);
+    -ms-transform: skew(8deg)rotate(3deg);
+    -o-transform: skew(8deg)rotate(3deg);
+    transform: skew(8deg)rotate(3deg);
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+	border-radius: 30%;
+}
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+@media screen and(max-width:640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    td,
+    th {
+        border: 1px solid #999;
+        padding: 0.3rem;
+    }
+}
+
+.imageradio {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border-top-left-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 30px;
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        content: "\f01d";
+        font-family: FontAwesome;
+        font-size: 100px;
+        color: #fff;
+        opacity: .8;
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    }
+    &:hover:before {
+        color: #eee;
+    }
+}
+
+.deskripsi {
+font-color: red !important;
+
+
+}
+
+
+.ui-page-theme-d .ui-panel-wrapper {
+background-color: #ffffff Important!;
+}
+
+
+.shadow {
+    font-size: 1em;
+    width: 100%;
+    height: 0.5em;
+    border-top: 0.0625em solid rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to bottom,
+                                      rgb(135, 136, 138),
+                                      transparent);
+    -webkit-mask-box-image: linear-gradient(to right,
+                                            rgba(0, 0, 0, 0) 0%,
+                                            rgba(0, 0, 0, 0.8) 50%,
+                                            rgba(0, 0, 0, 0) 100%);
+											
+											
+}
+
+
+ .imgBox
+    {
+      width: 441px;
+      height: 248px;
+      <!-- background: url(http://www.corelangs.com/css/box/img/water.jpg) no-repeat; -->
+    }
+    .imgBox:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+
+	  
+a {text-decoration: none !important;}
+	  
+</style>
+</head>
+
+<body>
+<title>Doa Pilihan</title>
+<div data-role=page id=page1 data-theme="f">
+
+<div data-role=header data-position=fixed>
+
+						<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+						
+					
+						</div>
+
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<!-- <li><a href="index.html" rel="external" data-ajax="false"><img alt="" src=icon/star.png style="width: 30px;" /></a></li> -->
+<li><a href=#two class=tabButton><img alt="" src=icon/doa.png style="width: 30px;" /></a></li> 
+<li><a href=#four class=tabButton><img alt="" src=icon/favorite.png style="width: 30px;" /></a></li>
+ 
+</ul>
+</div>
+<form>
+<input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari Doa">
+</form>
+</div>
+
+<!-- TAP TUTORIALS -->
+<div id=two class=tabView>
+
+<div>
+<ul data-role=listview data-autodividers=false data-inset=true data-input=#divOfPs-input data-filter=true data-theme=c data-filter-placeholder="Find Formula" data-filter-theme=e>
+<!-- COPAS DATA DARI EXCEL DI SINI -->
+
+
+<li data-icon="false"><a href="doarabbana/1.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana Taqabbal Minna</h2><p>Doa Diterima Amalan</p></a></li>
+<li data-icon="false"><a href="doarabbana/2.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana waj’alna muslimayni laka</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/3.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana atina</h2><p>Doa Kebaikan Dunia dan Akhirat</p></a></li>
+<li data-icon="false"><a href="doarabbana/4.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana afrigh ‘alayna</h2><p>Doa Kesabaran dan Minta Pertolongan</p></a></li>
+<li data-icon="false"><a href="doarabbana/5.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana la tu’akhidhna</h2><p>Doa Diringankan Beban</p></a></li>
+<li data-icon="false"><a href="doarabbana/6.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana wala tahmil alayna isran</h2><p>Doa Diringankan Beban</p></a></li>
+<li data-icon="false"><a href="doarabbana/7.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana wala tuhammilna ma la taqata lana bih</h2><p>Doa Diringankan Beban</p></a></li>
+<li data-icon="false"><a href="doarabbana/8.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana la tuzigh qulooban</h2><p>Doa Perlindungan dari Kesesatan</p></a></li>
+<li data-icon="false"><a href="doarabbana/9.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innaka jami’unnasi</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/10.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innana amanna</h2><p>Doa Kekuatan Iman</p></a></li>
+<li data-icon="false"><a href="doarabbana/11.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana amanna bima anzalta</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/12.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana-ghfir lana dhunuubana</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/13.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana ma khalaqta</h2><p>Doa Melihat Keajaiban Alam</p></a></li>
+<li data-icon="false"><a href="doarabbana/14.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innaka man tudkhilin nara</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/15.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innana sami’na munadiyany-yunadi</h2><p>Doa Mohon Dihapuskan Kesalahan</p></a></li>
+<li data-icon="false"><a href="doarabbana/16.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana faghfir lana dhunoobana</h2><p>Doa Mohon Dihapuskan Kesalahan</p></a></li>
+<li data-icon="false"><a href="doarabbana/17.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana wa ‘atina ma wa’adtana</h2><p>Doa Mohon Dihapuskan Kesalahan</p></a></li>
+<li data-icon="false"><a href="doarabbana/18.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana aamana faktubna</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/19.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana anzil ‘alayna</h2><p>Doa Curahan Rizqi</p></a></li>
+<li data-icon="false"><a href="doarabbana/20.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana zalamna anfusana</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/21.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana la taj’alna</h2><p>Doa Perlindungan dari Orang Fasik</p></a></li>
+<li data-icon="false"><a href="doarabbana/22.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbanaf-tah baynana</h2><p>Doa Perlindungan dari Orang Fasik</p></a></li>
+<li data-icon="false"><a href="doarabbana/23.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbanaafrigh ‘alayna</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/24.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana la taj’alna fitnatal lil-qawmidz-Dzalimiin</h2><p>Doa Mohon Dihindarkan dari Fitnah</p></a></li>
+<li data-icon="false"><a href="doarabbana/25.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innaka ta’lamu ma nukhfi</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/26.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana wa taqabbal Du’a</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/27.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbanaghfir li wa li wallidayya</h2><p>Doa Ampunan bagi Keluarga</p></a></li>
+<li data-icon="false"><a href="doarabbana/28.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana ‘atina mil-ladunka</h2><p>Doa Mohon Karunia Rahmat dan Petunjuk</p></a></li>
+<li data-icon="false"><a href="doarabbana/29.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innana nakhafu any-yafruta ‘alayna</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/30.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana amanna faghfir lana</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/31.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbanas-rif ‘anna ‘adhaba jahannama</h2><p>Doa Mohon Kemuliaan</p></a></li>
+<li data-icon="false"><a href="doarabbana/32.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana Hablana min azwaajina</h2><p>Doa Mohon Jodoh dan Keturunan yang Baik</p></a></li>
+<li data-icon="false"><a href="doarabbana/33.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana la Ghafurun syakur</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/34.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana wasi’ta</h2><p>Doa Malaikat Memohonkan Ampunan bagi Orang Beriman</p></a></li>
+<li data-icon="false"><a href="doarabbana/35.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana ‘alaika tawakkalna</h2><p>Doa Para Malaikat</p></a></li>
+<li data-icon="false"><a href="doarabbana/36.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana-ghfir lana wa li ‘ikhwaninalladzina</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/37.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana innaka Ra’ufur Rahim</h2><p></p></a></li>
+<li data-icon="false"><a href="doarabbana/38.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana ‘alaika tawakkalna</h2><p>Doa Bertawakkal Kepada Allah</p></a></li>
+<li data-icon="false"><a href="doarabbana/39.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana la taj’alna fitnatal lilladhina kafaru</h2><p>Doa Bertawakkal Kepada Allah</p></a></li>
+<li data-icon="false"><a href="doarabbana/40.html" rel="external" data-ajax="false"><img src="icon/icon.png" class="image"><h2 class="wrap">Rabbana atmim lana nurana</h2><p>Doa Agar Kesempurnaan Cahaya</p></a></li>
+
+</div>
+</div>
+
+<!-- TAB RATE -->
+<div id=three class=tabView>
+<div id=t>
+<img clss=img2 width=600px src=icon/thanks.gif>
+<p data-icon=false data-theme=e><h2 class=wrap align=center>Tim kami bekerja keras untuk menyediakan berbagai konten dalam aplikasi ini. Jika Anda suka dengan aplikasi ini jangan ragu untuk memberi kami penilaian dan ulasan terbaik Anda.</h2>
+<!-- MASUKIN ACTIVITY RATE DI SINI -->
+<a href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat">
+<div data-role=button class="ui-btn ui-input-btn ui-shadow custom-btn" data-theme=a>&#11088; &#11088; &#11088; &#11088; &#11088;
+</div></a>
+<!-- <img class=img2 width=600px src=icon/thanks.gif> -->
+</div>
+</div>
+
+
+
+<!-- TAB REQUEST -->
+<div id=one class=tabView>
+
+<div id=t>
+<!-- <img clss=img2 width=600px src=icon/working.gif> -->
+<p data-icon=false data-theme=e><h2 class=wrap align=center>Jika anda tidak menemukan Doa atau bacaan yang anda cari silahkan request ke kami. Tim kami akan memasukkan request anda pada update berikutnya secepatnya.	</h2>
+<!-- MASUKIN ACTIVITY RATE DI SINI -->
+<a href="mailto:fatihsyaronidoplang@gmail.com?Subject=Request%20Doa">
+<img class=img width=100px src=icon/sent2.png>
+<div data-role=button class="ui-btn ui-input-btn ui-shadow custom-btn" data-theme=a>REQUEST
+</div></a>
+<!-- <img class=img2 width=600px src=icon/thanks.gif> -->
+</div>
+
+</div>
+
+
+
+<!-- TAB BOOKMARK -->
+<div id=four class=tabView>
+
+<div>
+<ul id=tabFavourite data-role=listview data-autodividers=false data-inset=true data-input=#divOfPs-input data-filter=true data-theme=c data-filter-placeholder="Find Formula" data-filter-theme=e>
+</ul>
+</div><nav class=right-floating-menu>
+<input type=button class=btn value=Clear id=b3 onclick="clear_bookmark()"/></nav>
+</div>
+
+
+<div data-role="panel" data-display="push" data-theme="" id="nav-panel" style="background-color:#695b8e">
+<fieldset class=ui-grid-b data-inset="true"	 data-input="#divOfPs-input" data-filter="true" data-theme="c" style="padding-top:10px;background:#FFFDF1;border-radius:10px;">
+
+<div class=ui-block-a><a href=index.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/dzikir.png style="width: 60%;" /><p class="textbawah" align=center>Dzikir Setelah Sholat</p></a></div>
+<div class=ui-block-b><a href=index2.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa3.png style="width: 60%;" /><p class="textbawah" align=center>Doa Setelah Sholat</p></a></div>
+<div class=ui-block-c><a href=dzikirpagipetang.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/pagi.png style="width: 60%;" /><p class="textbawah" align=center>Dzikir Pagi Petang</p></a></div>
+<div class=ui-block-a><a href=doaharian.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa2.png style="width: 60%;" /><p class="textbawah" align=center>Doa<br>Harian</p></a></div>
+<div class=ui-block-b><a href=doaparanabi.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tajwid.png style="width: 60%;" /><p class="textbawah" align=center>Doa Para Nabi</p></a></div>
+<div class=ui-block-c><a href=doarabbana.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa3.png style="width: 60%;" /><p class="textbawah" align=center>Doa Rabbana</p></a></div>
+<div class=ui-block-a><a href=doapilihan.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa.png style="width: 60%;" /><p class="textbawah" align=center>Doa<br>Pilihan</p></a></div>
+<div class=ui-block-b><a href=bacaansholat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/dzikir2.png style="width: 60%;" /><p class="textbawah" align=center>Bacaan Sholat</p></a></div>
+<div class=ui-block-c><a href=panduansholat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/s2.png style="width: 60%;" /><p class="textbawah" align=center>Sholat Wajib</p></a></div>
+<div class=ui-block-a><a href=sholatsunnah.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/sholat.png style="width: 60%;" /><p class="textbawah" align=center>Sholat Sunnah</p></a></div>
+<div class=ui-block-b><a href=doashalatsunnah.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa2.png style="width: 60%;" /><p class="textbawah" align=center>Doa Sholat Sunnah</p></a></div>
+<div class=ui-block-c><a href=quran.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/quran.png style="width: 60%;" /><p class="textbawah" align=center>Quran Terjemah</p></a></div>
+<div class=ui-block-a><a href=asmaulhusna.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tafsir1.png style="width: 60%;" /><p class="textbawah" align=center>Asmaul Husna</p></a></div>
+<div class=ui-block-b><a href=kisahmuslim.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tajwid2.png style="width: 60%;" /><p class="textbawah" align=center>Kisah<br>Muslim</p></a></div>
+<div class=ui-block-c><a href=adabdoadandzikir.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/adabd3.gif style="width: 60%;" /><p class="textbawah" align=center>Adab &<br>Waktu</p></a></div>
+<div class=ui-block-a><a href=rate.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/rate.gif style="width: 60%;" /><p class="textbawah" align=center>Rate<br>Aplikasi</p></a></div>
+<div class=ui-block-b><a href=disclaimer.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/podcast.png style="width: 60%;" /><p class="textbawah" align=center>Privacy<br>Disclaimer</p></a></div>
+<div class=ui-block-c><a href=removeads.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/noads.png style="width: 60%;" /><p class="textbawah" align=center>Remove<br>Ads</p></a></div>
+
+
+</fieldset>
+		
+    </div>
+<script src="function.js">
+
+
+</script> 
+<script> 
+ $(document).on("pagecreate", "#page1", function(){
+    //start with only viewone visible
+    $(".tabButton").removeClass("ui-btn-active");
+    $(".tabView").hide();
+    $(".tabButton").eq(0).addClass("ui-btn-active");
+    var viewHref  = $(".tabButton").eq(0).prop("href");
+    $(viewHref.substr(viewHref.indexOf('#'))).show();
+    
+    $(".tabButton").on("click", function(){
+        $(".tabButton").removeClass("ui-btn-active");        
+        $(".tabView").hide();
+        var href = $(this).prop("href");
+        $(href.substr(href.indexOf('#'))).show();        
+        $(this).addClass("ui-btn-active");
+        return false;
+    });
+	
+	
+});
+ 
+
+
+</script> 
+<script>
+		loadBookmark();
+	
+
+
+</script>
+</body>
+</html>

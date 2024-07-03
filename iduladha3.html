@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Tatacara dan Niat Shalat Idul Adha</h1>
+        <a href="iduladha.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Shalat Idul Adha dilakukan sebanyak dua rakat dengan tata cara sebagai berikut :</div>
+<div class="arti"><strong>a. Membaca Niat</strong></div>
+<div class="arti">Dalam menjalankan shalat Idul Adha, sebelumnya kita harus menata niat. Sementara untuk bacaan niatnya sebagai berikut :</div>
+<div class="arti"><strong>Niat Sholat Idul Adha Sebagai Ma'mum / Imam</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">اُصَلِّى سُنُّةً لِعِيْدِالْاَضْحَى رَكْعَتَيْنِ (مَأْمُوْمًا/اِمَامًا) لِلّٰهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/iduladha.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">usholli sunnatan li'iidhil adhaa rok'ataini (ma'muuman / imaaman)  lillaahi ta'aala</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> "Saya niat sholat sunnah idul adha dua raka'at sebagai (ma'mum / imam) karena Allah Ta'ala".</div>
+<div class="arti"><strong>b. Takbiratul Ihram</strong></div>
+<div class="arti">Melakukan takbir pertama pada awal permulaan shalat disertai niat (dalam hati) untuk shalat Idul Adha</div>
+<div class="arti"><strong>c. Membaca do&rsquo;a iftitah sebagaimana biasa dilakukan pada bacaan shalat biasanya</strong></div>
+<div class="arti"><strong>d. Membaca takbir ( disebut takbir Zawaid ). Yaitu 7 kali pada rakaat pertama, dan 5 kali pada rakaat kedua</strong></div>
+<div class="arti">Hal tersebut memang merujuk pada hadits Nabi, sebagaimana Rasulullah SAW menyerukan untuk takbir sebanyak tujuh kali ( pada rakaat pertama ), dan 5 kali ( rakaat kedua ) pada pelaksanaan shalat Idul Fitri sebelumnya. Dari sahabat Amr bin Syu'aib dari ayahnya, dari kakeknya R.Hum, berkata bahwa Rasulullah SAW bersabda :</div>
+<div class="bacaan" style="text-align: justify;">" Takbir di shalat Idul Fitri tujuh kali di rakaat pertama dan lima kali di rakaat yang kedua. Dan membaca ayat Al-Quran sesudah takbir pada keduanya&rdquo; <strong>(HR Abu Daud ( 1018 ), sebagaimana dalam Shahih Sunan Abu Daud ).</strong></div>
+<div class="arti">Kemudian diperbolehkan pula mengangkat tangan saat takbir zawaid, sebagaimana dicontohkan oleh Ibnu Umar R.A, berdasarkan penjelasan ibnu Qoyyim dalam Al-Atsram : 151, &ldquo; Bahwasanya Ibnu Umar yang dikenal sangat meneladani Rasulullah SAW, mengangkat tangannya dalam setiap takbir &rdquo;. Namun ada pula yang tidak memperbolehkan mengangkat tangan, sebagaimana pendapat Imam Abu Hanifah dan Al Bhani, karena dianggap tidak ada riwayat hadits yang shahih.</div>
+<div class="arti"><strong>e. Membaca dzikir di sela &ndash; sela takbir zawaid</strong></div>
+<div class="arti">Berdasarkan hadits riwayat dari Ibnu Mas&rsquo;ud dikatakan : &ldquo; Di antara tiap &ndash; tiap takbir, hendaknya menyanjung dan memuji Allah SWT &rdquo;. Dikeluarkan oleh Al Baihaqi dan menurut Syaikh &lsquo;Ali Hasan &lsquo;Ali &lsquo;Abdul Hamid bahwa sanad hadits kuat.</div>
+<div class="arti">Oleh karena itu, menurut pendapat Imam As-Syafi&rsquo;I dan Imam Abu Hanifah mensunnahkan membaca dzikir dianatara takbir dengan menggunakan lafadz yang tidak ditentukan. Tapi sebagian pendapat ada yang tidak mensunnahkannya seperti Imam Malik dan Auza&rsquo;I, karena dianggap tidak ada keterangan dari Rasulullah SAW yang menyatakan hal itu.</div>
+<div class="arti">Untuk bacaan dzikir yaitu :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">سُبْحَانَ اللهِ وَالْحَمْدُ لِلهِ وَلاَ إِلَهَ إِلاَّ اللهُ وَاللهُ أَكْبَرُ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> &ldquo; Maha Suci Allah, segala puji bagi Allah, tiada tuhan selain Allah, Allah maha besar. &rdquo;</div>
+<div class="arti"><strong>f. Membaca surat Al &ndash; fatihah</strong></div>
+<div class="arti"><strong>g. Membaca sebagian surat dalam Al &ndash;Quran</strong></div>
+<div class="arti">Selanjutnya, mengenai bacaan ruku&rsquo;, I&rsquo;tidal, sujud, duduk diantara dua sujud dalam shalat Idul Adha, sama dengan gerakan shalat biasanya. Kemudian kembali berdiri untuk melakukan rakaat kedua dengan diawali kembali takbir sebanyak 5 kali, dan seterusnya sampai salam. Terakhir disunnahkan untuk mendengarkan khotbah hingga selesai.</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

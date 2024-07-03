@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Tata Cara Shalat Awwabin</h1>
+        <a href="awwabin.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Tata Cara Shalat Awwabin</strong></div>
+<div class="arti">Shalat ini dianjurkan untuk dikerjakan sendirian, tanpa berjemaah. Ulama berbeda pendapat terkait jumlah rakaat paling banyak dari shalat ini, sebagian mengatakan 20 rakaat, ada yang mengatakan 6 rakaat, 4 rakaat dan 2 rakaat. Menurut Syaikh Zainudin Al-Malibari, jumlah rakaat paling banyak dari shalat Awwabin adalah 20 rakaat, sementara paling sedikit adalah 2 rakaat.</div>
+<div class="arti">Dalam kitab Fathul Muin, Syaikh Zainudin Al-Malibari berkata;</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:59px;">ﻭﻣﻨﻪ ﺻﻼﺓ ﺍﻷﻭﺍﺑﻴﻦ ﻭﻫﻲ ﻋﺸﺮﻭﻥ ﺭﻛﻌﺔ ﺑﻴﻦ ﺍﻟﻤﻐﺮﺏ ﻭﺍﻟﻌﺸﺎﺀﻭﺭﻭﻳﺖ ﺳﺘﺎ ﻭﺃﺭﺑﻌﺎ ﻭﺭﻛﻌﺘﻴﻦ ﻭﻫﻤﺎ ﺍﻷﻗﻞ</div>
+<div class="bacaan" style="text-align:justify">“Di antara shalat yang tidak disunahkan berjemaah adalah shalat Awwabin. Ia berjumlah 20 rakaat dan dilakukan antara shalat Maghrib dan Isya’. Diriwayatkan bahwa ia berjumlah 6 rakaat, 4 rakaat dan 2 rakaat, dan 2 rakaat ini adalah jumlah rakaat paling sedikit.”</div>
+<div class="arti">Adapun tata cara melakukan shalat Awwabin adalah sebagai berikut;</div>
+<div class="arti">Pertama, niat shalat Awwabin pada saat takbiratul ihram. Lafadz niatnya sebagai berikut;</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:59px;">اُصَلِّى سُنَّةَ الأَوَّابِينَ رَكَعَتَيْنِ للهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/awwabin.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">Usholli sunnatal awwabina rak’ataini lillahi ta’ala.</div>
+<div class="bacaan" style="text-align:justify">“Saya niat shalat sunah awwabin dua rakaat karena Allah Ta’ala.”</div>
+<div class="arti">Kedua, pada setiap rakaat setelah membaca surah Al-Fatihah disunahkan membaca surah Al-Ikhlas sebanyak 6 kali, surah Al-Falaq sekali dan surah Al-Nas sekali. Begitu juga pada rakaat kdua.</div>
+<div class="arti">Ketiga, setelah salam disunahkan untuk membaca doa berikut;</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:59px;">ﺍَﻟﻠَّﻬُﻢَّ ﺇِﻧِّﻲْ ﺃَﺳْﺘَﻮْﺩِﻋُﻚَ ﺇِﻳْﻤَﺎﻧِﻲْ ﻓِﻰْ ﺣَﻴَﺎﺗِﻲْ ﻭَﻋِﻨْﺪَ ﻣَﻤَﺎﺗِﻲْ ﻭَﺑَﻌْﺪَﻣَﻤَﺎﺗِﻲْ ﻓَﺎﺣْﻔَﻈْﻪُ ﻋَﻠَﻲَّ ﺇِﻧَّﻚَ ﻋَﻠَﻰ ﻛُﻞِّ شيْئٍ ﻗَﺪِﻳْﺮٌ</div>
+<div class="arti">Allohumma inni astawdi’uka imani fi hayati wa ‘inda mamati wa ba’da mamati fahfadzhu ‘alayya innaka ‘ala kulli syai-in qodir.</div>
+<div class="bacaan" style="text-align:justify">“Ya Allah, saya titipkan imanku baik ketika aku masih hidup, pada saat meninggal dan setelah meninggal. Jagalah iman tersebut untukku, sesungguhnya Engkau Maha Kuasa atas segala sesuatu.”</div>
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

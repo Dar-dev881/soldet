@@ -1,0 +1,363 @@
+
+<html>
+
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<style>
+.ui-page .ui-header {
+    background: #b95752 !important;
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Bold.ttf");
+}
+
+.arabic {
+	direction:rtl;
+    font-family: "myFirstFont";
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+
+}
+
+.rate {
+	direction:rtl;
+    font-family: "myFirstFont";
+	text-align: center;
+	font-size: 24px;
+	line-height: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: none;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 8px 12px 8px 12px;
+    background-image: "gambar/paper.png" font-family: "Helvetica, sans-serif"
+}
+
+#t h1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+}
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #E76E66;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+}
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: none #666;
+    border-top: none;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "helvetica"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal!important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px/10px;
+    border-radius: 100px/10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg)rotate(3deg);
+    -moz-transform: skew(8deg)rotate(3deg);
+    -ms-transform: skew(8deg)rotate(3deg);
+    -o-transform: skew(8deg)rotate(3deg);
+    transform: skew(8deg)rotate(3deg);
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+	border-radius: 30%;
+}
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+@media screen and(max-width:640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    td,
+    th {
+        border: 1px solid #999;
+        padding: 0.3rem;
+    }
+}
+
+.imageradio {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border-top-left-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 30px;
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        content: "\f01d";
+        font-family: FontAwesome;
+        font-size: 100px;
+        color: #fff;
+        opacity: .8;
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    }
+    &:hover:before {
+        color: #eee;
+    }
+}
+
+.deskripsi {
+font-color: red !important;
+
+
+}
+</style>
+</head>
+<body>
+
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed width=100%>
+        <h1>Support Us</h1>
+        <a style="background-color:#b95752;border:none;" href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a><a style="background-color:#b95752;border:none;" href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat" data-icon="heart" data-iconpos="notext">Rate</a>
+		<!-- <a href="#add-form" data-icon="gear" data-iconpos="notext">Setting</a> -->
+
+
+<!-- <form> -->
+<!-- <input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari Doa"> -->
+<!-- </form> -->
+</div>    
+<br>
+
+<center>
+<div class="arabic">
+السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
+</p>
+<p class=rate>
+Jika anda menyukai aplaikasi ini, support kami dengan memberikan rating dan review yang sesuai. Feedback anda akan sangat menyemangati kami untuk terus mengembangka aplikasi ini. 
+</p>
+<br>
+<a href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat">
+<img border="0" style="border-radius:0px;" alt="W3Schools" src="icon/rate.png" width="60%">
+</a>
+</center>
+
+<div data-role="panel" data-display="push" data-theme="" id="nav-panel" style="background-color:#b95752">
+<fieldset class=ui-grid-b data-inset="true"	 data-input="#divOfPs-input" data-filter="true" data-theme="c" style="padding-top:10px;background:#FFFDF1;border-radius:10px;">
+
+<div class=ui-block-a><a href=index.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/dzikir.png style="width: 60%;" /><p class="textbawah" align=center>Dzikir Setelah Sholat</p></a></div>
+<div class=ui-block-b><a href=index2.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa3.png style="width: 60%;" /><p class="textbawah" align=center>Doa Setelah Sholat</p></a></div>
+<div class=ui-block-c><a href=dzikirpagipetang.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/pagi.png style="width: 60%;" /><p class="textbawah" align=center>Dzikir Pagi Petang</p></a></div>
+<div class=ui-block-a><a href=doaharian.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa2.png style="width: 60%;" /><p class="textbawah" align=center>Doa<br>Harian</p></a></div>
+<div class=ui-block-b><a href=doaparanabi.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tajwid.png style="width: 60%;" /><p class="textbawah" align=center>Doa Para Nabi</p></a></div>
+<div class=ui-block-c><a href=doarabbana.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa3.png style="width: 60%;" /><p class="textbawah" align=center>Doa Rabbana</p></a></div>
+<div class=ui-block-a><a href=doapilihan.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa.png style="width: 60%;" /><p class="textbawah" align=center>Doa<br>Pilihan</p></a></div>
+<div class=ui-block-b><a href=bacaansholat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/dzikir2.png style="width: 60%;" /><p class="textbawah" align=center>Bacaan Sholat</p></a></div>
+<div class=ui-block-c><a href=panduansholat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/s2.png style="width: 60%;" /><p class="textbawah" align=center>Sholat Wajib</p></a></div>
+<div class=ui-block-a><a href=sholatsunnah.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/sholat.png style="width: 60%;" /><p class="textbawah" align=center>Sholat Sunnah</p></a></div>
+<div class=ui-block-b><a href=doashalatsunnah.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa2.png style="width: 60%;" /><p class="textbawah" align=center>Doa Sholat Sunnah</p></a></div>
+<div class=ui-block-c><a href=quran.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/quran.png style="width: 60%;" /><p class="textbawah" align=center>Quran Terjemah</p></a></div>
+<div class=ui-block-a><a href=asmaulhusna.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tafsir1.png style="width: 60%;" /><p class="textbawah" align=center>Asmaul Husna</p></a></div>
+<div class=ui-block-b><a href=kisahmuslim.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tajwid2.png style="width: 60%;" /><p class="textbawah" align=center>Kisah<br>Muslim</p></a></div>
+<div class=ui-block-c><a href=adabdoadandzikir.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/adabd3.gif style="width: 60%;" /><p class="textbawah" align=center>Adab &<br>Waktu</p></a></div>
+<div class=ui-block-a><a href=rate.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/rate.gif style="width: 60%;" /><p class="textbawah" align=center>Rate<br>Aplikasi</p></a></div>
+<div class=ui-block-b><a href=disclaimer.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/podcast.png style="width: 60%;" /><p class="textbawah" align=center>Privacy<br>Disclaimer</p></a></div>
+<div class=ui-block-c><a href=removeads.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/noads.png style="width: 60%;" /><p class="textbawah" align=center>Remove<br>Ads</p></a></div>
+
+
+</fieldset>
+		
+    </div>
+	
+	
+    <!-- <div data-role="panel" data-position="right" data-display="reveal" data-theme="a" id="add-form"> -->
+        <!-- <input id="btn_1" type="button" value="change theme to a" /> -->
+        <!-- <input id="btn_2" type="button" value="change theme to b" /> -->
+		
+		
+    <!-- </div><!-- /panel -->
+
+
+		</div>
+	
+	<!-- <div class="ui-grid-b center"> -->
+<!--     <div class="ui-block-a" id="play"><a class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-inline"></a>Play</div> -->
+<!--     <div class="ui-block-b" id="pause"><a class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext ui-btn-inline"></a>Pause</div> -->
+<!-- <!--     <div class="ui-block-d" id="restart"><a class="ui-shadow ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext ui-btn-inline"></a>Rest</div> -->
+  
+
+	
+
+      
+
+</div>
+
+
+
+
+
+</body>
+</html>

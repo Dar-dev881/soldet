@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Tatacara dan Niat Shalat Idul Fitri</h1>
+        <a href="idulfitri.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Shalat idul fitri hampir sama cara pelaksanaannya seperti shalat wajib atau shalat sunnah hanya saja terdapat sedikit perbedaan. Shalat idul fitri dilaksanakan dua rakaat secara berjamaah dan tidak ada adzan maupun iqamat untuk mengawalinya. Berikut adalah penjabarannya</div>
+<div class="arti">1. Dimulai dengan Niat &amp; takbiratul ikhram sebagaimana shalat lainnya.</div>
+<div class="arti">Berikut Niat Sholat Idul Fitri ( Sebagai Ma'mum / Imam )</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 58px;">اُصَلِّى سُنُّةً لِعِيْدِ الْفِطْرِ رَكْعَتَيْنِ (مَأْمُوْمًا/اِمَامًا) لِلّٰهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/idulfitri.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">usholli sunnata Li'iidhil fithri rok'ataini ma'muuman / imaaman lillaahi ta'aala</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> "Saya niat sholat sunnah idul fitri dua raka'at sebagai ma'mum / imam karena Allah Ta'ala"</div>
+<div class="arti">2. Bertakbir sebanyak 7 kali selain takbiratul ikhram dan dengan melafadzkan kalimat takbir. Diantara takbir-takbir tersebut hendaknya membaca kalimat</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 60px;">سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إلَهَ إلَّا اللَّهُ وَاَللَّهُ أَكْبَرُ . اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِ</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Subhanallah wal hamdulillah wa laa ilaha illallah wallahu akbar. Allahummaghfirlii war hamnii (Maha suci Allah, segala pujian bagi-Nya, tidak ada sesembahan yang benar untuk disembah selain Allah. Ya Allah, ampunilah aku dan rahmatilah aku).</div>
+<div class="arti">3. Membaca Alfatihah kemudian membaca surat lainnya pada rakaat pertama</div>
+<div class="arti">4. Kemudian lakukan gerakan shalat seperti pada shalat umumnya yakni ruku, itidal dan sujud</div>
+<div class="arti">5. Setelah bangkit dan masuk rakaat kedua, bertakbir sebanyak lima kali dan dengan lafadz yang sama seperti rakaat pertama</div>
+<div class="arti">6. Membaca surat Alfatihah dan surat lainnya</div>
+<div class="arti">7. Selanjutnya lakukan gerakan shalat sebagaimana biasanya sampai tahyat akhir dan salam</div>
+<div class="arti">Setelah shalat id boleh khotib akan menyampaikan khutbah atau ceramah, jamaah boleh mengikuti khutbah ini dan mendengarkan namun juga boleh meninggalkan jika memiliki kepentingan. Sebagaimana hadits Rasullullah SAW</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">إِنَّا نَخْطُبُ فَمَنْ أَحَبَّ أَنْ يَجْلِسَ لِلْخُطْبَةِ فَلْيَجْلِسْ وَمَنْ أَحَبَّ أَنْ يَذْهَبَ فَلْيَذْهَبْ</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Aku saat ini akan berkhutbah. Siapa yang mau tetap duduk untuk mendengarkan khutbah, silakan ia duduk. Siapa yang ingin pergi, silakan ia pergi. <br><strong>(HR Abdullah Said)</strong></div>
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

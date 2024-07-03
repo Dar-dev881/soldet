@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Tata Cara Shalat Istikharah</h1>
+        <a href="istikharah.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Niat</strong></div>
+<div class="arti">Hal pertama yang akan dilakukan adalah membaca niat. Tanpa niat amalan kita tersebut tidak akan diterima. Niat bisa diucapkan secara pelan atau bisa diucapkan di dalam hati. Meskipun diucapkan di dalam hati, Allah akan tahu niat kita.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 26px;">أُصَلِّي سُنَّةَ اْلإِسْتِخَارَةِ رَكْعَتَيْن لِلَّهِ تَعَال</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/Istikhoroh.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">&ldquo;ushalli sunatan istikharati rok &lsquo;ataini lillahi ta&rsquo;ala.&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> &ldquo;saya niat shalat sunat istikharah dua rakaat karena Allah ta&rsquo;ala.&rdquo;</div>
+<div class="arti"><strong>Menghadap Kiblat</strong></div>
+<div class="arti">Sholat tidak akan syah jika tidak menghadap kiblat, oleh sebab itu sholat istikharah yang dilakukan haruslah menghadap kiblat. Kiblatnya umat islam adalah ka&rsquo;bah sehingga umat muslim diwajibkan untuk sholat menghadap ke ka&rsquo;bah atau kiblat.</div>
+<div class="arti"><strong>Takbiratul Ikhram</strong></div>
+<div class="arti">Setelah menghadap kiblat, barulah kita bisa memulai shalat istikharah dengan melakukan takbiratul ikhram.</div>
+<div class="arti"><strong>Membaca Doa Iftitah</strong></div>
+<div class="arti">Pada rakaat pertama sebelum membaca surat al-fatihah, kita harus membaca doa iftitah terlebih dahulu. Doa iftitah ini hanya dibaca pada rakaat pertama saja sedangkan untuk rakaat kedua tidak perlu dibaca. Bunyi doa iftitah untuk golongan Muhammadiah berbeda dengan doa iftitah untuk golongan NU atau Nahdlatul Ulama.</div>
+<div class="arti"><strong>Membaca Al-fatihah</strong></div>
+<div class="arti">Tata cara sholat istikharah yang tidak boleh dilupakan adalah membaca surat al-fatihah. Surat al-fatihah itu sendiri merupakan syarat syahnya sholat. Jika surat al-fatihah lupa dibaca akibatnya adalah sholat tidak akan diterima.</div>
+<div class="arti"><strong>Membaca Surat Pendek</strong></div>
+<div class="arti">Sehabis surat al-fatihah selesai dibaca, kita diwajibkan untuk membaca surat pendek. Sebenarnya orang yang melakukan sholat istikharah bisa memilih surat pendek yang diinginkannya, namun alangkah baiknya jika surat pendek yang dibaca adalah surat Al-kafirun dan pada rakaat kedua membaca surat Al-Ikhlas.</div>
+<div class="arti"><strong>Salam</strong></div>
+<div class="arti">Sebelum salam, gerakan sholat pada sholat istikharah ini sama dengan gerakan sholat fardhu. Tidak ada bacaan khusus yang menyertai gerakan sholat tersebut, yang dibaca adalah bacaan shalat fardhu biasa. Setelah orang muslim mengucapkan salam, barulah orang muslim itu bisa memohon petunjuk kepada Allah SWT dan menyampaikan kepada Allah SWT apa yang sedang dihadapinya. Tidak lupa dia membaca doa setelah shalat istikharah selesai.</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+<html>
+
+<head>
+<meta charset=utf-8 />
+
+<head>
+<meta name=viewport content="width=device-width, user-scalable=no" />
+</head>
+<link rel=stylesheet type=text/css href=surah/css/jquery.mobile.squareui.css />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="surah/js/jquery.js">
+</script> 
+<script src="surah/js/jquery.mobile-1.4.0.min.js">
+</script>
+</head>
+<style>
+body {
+    background-color: #000
+}
+
+.ui-page .ui-header {
+    background: #b95752 !important;
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Bold.ttf");
+}
+
+.arabic {
+	direction:rtl;
+    font-family: "myFirstFont";
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+
+}
+
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal!important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px/10px;
+    border-radius: 100px/10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg)rotate(3deg);
+    -moz-transform: skew(8deg)rotate(3deg);
+    -ms-transform: skew(8deg)rotate(3deg);
+    -o-transform: skew(8deg)rotate(3deg);
+    transform: skew(8deg)rotate(3deg);
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+
+
+
+
+</style>
+
+<body>
+<title>Quran Terjamahan</title>
+<div data-role=page id=page1 data-theme=a>
+
+<div data-role=header data-position=fixed >
+
+<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+						
+						</div>
+
+<form>
+<input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari Surah">
+</form>
+</div>
+
+<!-- TAP TUTORIALS -->
+
+<div>
+<ul data-role=listview data-autodividers=false data-inset=true data-input=#divOfPs-input data-filter=true data-theme=c data-filter-placeholder="Find Formula" data-filter-theme=e>
+<!-- COPAS DATA DARI EXCEL DI SINI -->
+
+<li data-icon="false"><a href="surah/1.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_1.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">1</span>Al-Fatihah</h1></a></li>
+<li data-icon="false"><a href="surah/2.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_2.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">2</span>Al-Baqarah</h1></a></li>
+<li data-icon="false"><a href="surah/3.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_3.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">3</span>Ali 'Imran</h1></a></li>
+<li data-icon="false"><a href="surah/4.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_4.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">4</span>An-Nisa'</h1></a></li>
+<li data-icon="false"><a href="surah/5.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_5.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">5</span>Al-Ma'idah</h1></a></li>
+<li data-icon="false"><a href="surah/6.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_6.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">6</span>Al-An'am</h1></a></li>
+<li data-icon="false"><a href="surah/7.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_7.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">7</span>Al-A’raf</h1></a></li>
+<li data-icon="false"><a href="surah/8.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_8.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">8</span>Al-Anfal</h1></a></li>
+<li data-icon="false"><a href="surah/9.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_9.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">9</span>At-Taubah</h1></a></li>
+<li data-icon="false"><a href="surah/10.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_10.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">10</span>Yunus</h1></a></li>
+<li data-icon="false"><a href="surah/11.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_11.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">11</span>Hud</h1></a></li>
+<li data-icon="false"><a href="surah/12.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_12.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">12</span>Yusuf</h1></a></li>
+<li data-icon="false"><a href="surah/13.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_13.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">13</span>Ar-Ra’d</h1></a></li>
+<li data-icon="false"><a href="surah/14.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_14.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">14</span>Ibrahim</h1></a></li>
+<li data-icon="false"><a href="surah/15.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_15.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">15</span>Al-Hijr</h1></a></li>
+<li data-icon="false"><a href="surah/16.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_16.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">16</span>An-Nahl</h1></a></li>
+<li data-icon="false"><a href="surah/17.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_17.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">17</span>Al-Isra'</h1></a></li>
+<li data-icon="false"><a href="surah/18.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_18.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">18</span>Al-Kahf</h1></a></li>
+<li data-icon="false"><a href="surah/19.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_19.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">19</span>Maryam</h1></a></li>
+<li data-icon="false"><a href="surah/20.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_20.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">20</span>Ta Ha</h1></a></li>
+<li data-icon="false"><a href="surah/21.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_21.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">21</span>Al-Anbiya</h1></a></li>
+<li data-icon="false"><a href="surah/22.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_22.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">22</span>Al-Hajj</h1></a></li>
+<li data-icon="false"><a href="surah/23.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_23.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">23</span>Al-Mu’minun</h1></a></li>
+<li data-icon="false"><a href="surah/24.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_24.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">24</span>An-Nur</h1></a></li>
+<li data-icon="false"><a href="surah/25.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_25.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">25</span>Al-Furqan</h1></a></li>
+<li data-icon="false"><a href="surah/26.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_26.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">26</span>Asy-Syu'ara'</h1></a></li>
+<li data-icon="false"><a href="surah/27.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_27.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">27</span>An-Naml</h1></a></li>
+<li data-icon="false"><a href="surah/28.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_28.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">28</span>Al-Qasas</h1></a></li>
+<li data-icon="false"><a href="surah/29.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_29.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">29</span>Al-'Ankabut</h1></a></li>
+<li data-icon="false"><a href="surah/30.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_30.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">30</span>Ar-Rum</h1></a></li>
+<li data-icon="false"><a href="surah/31.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_31.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">31</span>Luqman</h1></a></li>
+<li data-icon="false"><a href="surah/32.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_32.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">32</span>As-Sajdah</h1></a></li>
+<li data-icon="false"><a href="surah/33.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_33.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">33</span>Al-Ahzab</h1></a></li>
+<li data-icon="false"><a href="surah/34.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_34.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">34</span>Saba’</h1></a></li>
+<li data-icon="false"><a href="surah/35.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_35.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">35</span>Fatir</h1></a></li>
+<li data-icon="false"><a href="surah/36.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_36.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">36</span>Ya Sin</h1></a></li>
+<li data-icon="false"><a href="surah/37.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_37.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">37</span>As-Saffat</h1></a></li>
+<li data-icon="false"><a href="surah/38.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_38.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">38</span>Sad</h1></a></li>
+<li data-icon="false"><a href="surah/39.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_39.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">39</span>Az-Zumar</h1></a></li>
+<li data-icon="false"><a href="surah/40.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_40.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">40</span>Al-Mu’min</h1></a></li>
+<li data-icon="false"><a href="surah/41.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_41.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">41</span>Fussilat</h1></a></li>
+<li data-icon="false"><a href="surah/42.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_42.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">42</span>Asy-Syura</h1></a></li>
+<li data-icon="false"><a href="surah/43.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_43.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">43</span>Az-Zukhruf</h1></a></li>
+<li data-icon="false"><a href="surah/44.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_44.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">44</span>Ad-Dukhan</h1></a></li>
+<li data-icon="false"><a href="surah/45.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_45.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">45</span>Al-Jasiyah</h1></a></li>
+<li data-icon="false"><a href="surah/46.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_46.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">46</span>Al-Ahqaf</h1></a></li>
+<li data-icon="false"><a href="surah/47.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_47.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">47</span>Muhammad</h1></a></li>
+<li data-icon="false"><a href="surah/48.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_48.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">48</span>Al-Fath</h1></a></li>
+<li data-icon="false"><a href="surah/49.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_49.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">49</span>Al-Hujurat</h1></a></li>
+<li data-icon="false"><a href="surah/50.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_50.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">50</span>Qaf</h1></a></li>
+<li data-icon="false"><a href="surah/51.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_51.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">51</span>Az-Zariyat</h1></a></li>
+<li data-icon="false"><a href="surah/52.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_52.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">52</span>At-Tur</h1></a></li>
+<li data-icon="false"><a href="surah/53.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_53.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">53</span>An-Najm</h1></a></li>
+<li data-icon="false"><a href="surah/54.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_54.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">54</span>Al-Qamar</h1></a></li>
+<li data-icon="false"><a href="surah/55.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_55.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">55</span>Ar-Rahman</h1></a></li>
+<li data-icon="false"><a href="surah/56.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_56.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">56</span>Al-Waqi’ah</h1></a></li>
+<li data-icon="false"><a href="surah/57.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_57.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">57</span>Al-Hadid</h1></a></li>
+<li data-icon="false"><a href="surah/58.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_58.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">58</span>Al-Mujadilah</h1></a></li>
+<li data-icon="false"><a href="surah/59.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_59.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">59</span>Al-Hasyr</h1></a></li>
+<li data-icon="false"><a href="surah/60.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_60.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">60</span>Al-Mumtahanah</h1></a></li>
+<li data-icon="false"><a href="surah/61.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_61.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">61</span>As-Saff</h1></a></li>
+<li data-icon="false"><a href="surah/62.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_62.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">62</span>Al-Jumu’ah</h1></a></li>
+<li data-icon="false"><a href="surah/63.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_63.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">63</span>Al-Munafiqun</h1></a></li>
+<li data-icon="false"><a href="surah/64.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_64.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">64</span>At-Tagabun</h1></a></li>
+<li data-icon="false"><a href="surah/65.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_65.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">65</span>At-Talaq</h1></a></li>
+<li data-icon="false"><a href="surah/66.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_66.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">66</span>At-Tahrim</h1></a></li>
+<li data-icon="false"><a href="surah/67.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_67.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">67</span>Al-Mulk</h1></a></li>
+<li data-icon="false"><a href="surah/68.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_68.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">68</span>Al-Qalam</h1></a></li>
+<li data-icon="false"><a href="surah/69.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_69.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">69</span>Al-Haqqah</h1></a></li>
+<li data-icon="false"><a href="surah/70.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_70.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">70</span>Al-Ma’arij</h1></a></li>
+<li data-icon="false"><a href="surah/71.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_71.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">71</span>Nuh</h1></a></li>
+<li data-icon="false"><a href="surah/72.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_72.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">72</span>Al-Jinn</h1></a></li>
+<li data-icon="false"><a href="surah/73.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_73.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">73</span>Al-Muzzammil</h1></a></li>
+<li data-icon="false"><a href="surah/74.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_74.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">74</span>Al-Muddassir</h1></a></li>
+<li data-icon="false"><a href="surah/75.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_75.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">75</span>Al-Qiyamah</h1></a></li>
+<li data-icon="false"><a href="surah/76.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_76.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">76</span>Al-Insan</h1></a></li>
+<li data-icon="false"><a href="surah/77.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_77.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">77</span>Al-Mursalat</h1></a></li>
+<li data-icon="false"><a href="surah/78.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_78.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">78</span>An-Naba’</h1></a></li>
+<li data-icon="false"><a href="surah/79.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_79.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">79</span>An-Nazi’at</h1></a></li>
+<li data-icon="false"><a href="surah/80.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_80.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">80</span>'Abasa</h1></a></li>
+<li data-icon="false"><a href="surah/81.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_81.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">81</span>At-Takwir</h1></a></li>
+<li data-icon="false"><a href="surah/82.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_82.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">82</span>Al-Infitar</h1></a></li>
+<li data-icon="false"><a href="surah/83.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_83.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">83</span>Al-Tatfif</h1></a></li>
+<li data-icon="false"><a href="surah/84.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_84.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">84</span>Al-Insyiqaq</h1></a></li>
+<li data-icon="false"><a href="surah/85.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_85.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">85</span>Al-Buruj</h1></a></li>
+<li data-icon="false"><a href="surah/86.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_86.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">86</span>At-Tariq</h1></a></li>
+<li data-icon="false"><a href="surah/87.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_87.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">87</span>Al-A’la</h1></a></li>
+<li data-icon="false"><a href="surah/88.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_88.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">88</span>Al-Gasyiyah</h1></a></li>
+<li data-icon="false"><a href="surah/89.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_89.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">89</span>Al-Fajr</h1></a></li>
+<li data-icon="false"><a href="surah/90.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_90.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">90</span>Al-Balad</h1></a></li>
+<li data-icon="false"><a href="surah/91.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_91.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">91</span>Asy-Syams</h1></a></li>
+<li data-icon="false"><a href="surah/92.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_92.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">92</span>Al-Lail</h1></a></li>
+<li data-icon="false"><a href="surah/93.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_93.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">93</span>Ad-Duha</h1></a></li>
+<li data-icon="false"><a href="surah/94.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_94.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">94</span>Al-Insyirah</h1></a></li>
+<li data-icon="false"><a href="surah/95.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_95.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">95</span>At-Tin</h1></a></li>
+<li data-icon="false"><a href="surah/96.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_96.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">96</span>Surat Al-'Alaq</h1></a></li>
+<li data-icon="false"><a href="surah/97.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_97.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">97</span>Al-Qadr</h1></a></li>
+<li data-icon="false"><a href="surah/98.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_98.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">98</span>Al-Bayyinah</h1></a></li>
+<li data-icon="false"><a href="surah/99.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_99.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">99</span>Az-Zalzalah</h1></a></li>
+<li data-icon="false"><a href="surah/100.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_100.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">100</span>Al-'Adiyat</h1></a></li>
+<li data-icon="false"><a href="surah/101.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_101.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">101</span>Al-Qari'ah</h1></a></li>
+<li data-icon="false"><a href="surah/102.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_102.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">102</span>At-Takasur</h1></a></li>
+<li data-icon="false"><a href="surah/103.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_103.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">103</span>Al-'Asr</h1></a></li>
+<li data-icon="false"><a href="surah/104.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_104.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">104</span>Al-Humazah</h1></a></li>
+<li data-icon="false"><a href="surah/105.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_105.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">105</span>Al-Fil</h1></a></li>
+<li data-icon="false"><a href="surah/106.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_106.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">106</span>Quraisy</h1></a></li>
+<li data-icon="false"><a href="surah/107.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_107.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">107</span>Al-Ma’un</h1></a></li>
+<li data-icon="false"><a href="surah/108.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_108.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">108</span>Al-Kausar</h1></a></li>
+<li data-icon="false"><a href="surah/109.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_109.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">109</span>Al-Kafirun</h1></a></li>
+<li data-icon="false"><a href="surah/110.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_110.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">110</span>An-Nasr</h1></a></li>
+<li data-icon="false"><a href="surah/111.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_111.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">111</span>Al-Lahab</h1></a></li>
+<li data-icon="false"><a href="surah/112.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_112.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">112</span>Al-Ikhlas</h1></a></li>
+<li data-icon="false"><a href="surah/113.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_113.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">113</span>Al-Falaq</h1></a></li>
+<li data-icon="false"><a href="surah/114.html" rel="external"  data-ajax="false"><div style="padding:10px 10px 10px 0;text-align:center; float:right;"><img src="sname/sname_114.png" style="height:40px;"/></div><h1 class="wrap" style="padding:10px 10px 10px 0;text-align:center; float:left;font-size:18px;"><span class="angkadepan">114</span>An-Nas</h1></a></li>
+
+
+</ul>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

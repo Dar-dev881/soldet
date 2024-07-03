@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Bacaan Takbir dan Artinya</h1>
+        <a href="iduladha.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">اَللهُ اَكْبَرُ، اَللهُ اَكْبَرُ، اَللهُ اَكْبَرُ، لآَاِلهَ اِلاَّاللهُ وَاللهُ اَكْبَرُ اَللهُ اَكْبَرُ وَ ِللهِ الْحَمْدُ</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">اَللهُ اَكْبَرُ كَبِيْرًا، وَالْحَمْدُ ِللهِ كَثِيْرًا، وَسُبْحَانَ اللهِ بُكْرَةً وَّاَصِيْلاً. لآَاِلهَ اِلاَّاللهُ وَلاَنَعْبُدُ اِلاَّ اِيَّاهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ، وَلَوْكَرِهَ الْكَافِرُوْنَ، لآَاِلهَ اِلاَّاللهُ وَحْدَهُ، صَدَقَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَاَعَزَّجُنْدَهُ وَهَزَمَ اْلاَحْزَابَ وَحْدَهُ، لآَاِلهَ اَلاَّ اللهُ وَاللهُ اَكْبَرُ، اَللهُ اَكْبَرُ وَ ِللهِ الْحَمْدُ</div>
+<div class="arti">allaahu akbar, allaahu akbar, allaahu akbar, laa ilaaha illaallaahu wallaahu akbar, allaahu akbar walillaahil hamd. (dibaca 3 kali)</div>
+<div class="arti">allaahu akbaru kabiiraa, walhamdu lillaahi katsiiraa, wa subhaanallaahi bukrataw wa ashiilaa, laa ilaaha illallaahu walaa na'budu illaa iyyaahu mukhlishiina lahuddiin, walau karihal kaafiruun, laa ilaaha ilallaahu wahdah, shadaqawa'dah, wanashara 'abdah, wa a-'azza jundah, wahazamal ahzaaba wahadah, laa ilaaha illallaahu wallaahu akbar, allaahu akbaru walillaahil hamd.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> "Allah Maha Besar, Allah Maha Besar, Allah Maha Besar. Tiada Tuhan kecuali Alah, Allah Maha Besar, Allah Maha Besar, dan bagi-Nya segala pua dan puji."</div>
+<div class="bacaan" style="text-align: justify;">"Allah Maha Besar dan pujian bagi Allah sebanyak-banyaknya, bertasbih kepada Allah setiap pagi dan petang. Tidak ada Tuhan kecuali Allah, dan kami tidak menyembah kecuali kepada-Nya dengan ikhlas menjalankan agama walaupun orang-orang karif membenci. Tidak ada Tuhan yang berhak disembah kecuali Allah semata. Benar janji-Nya, dan menolong hamba-Nya, juga lasykar-Nya dan menghancurkan musuhNya dengan dirinya semata. Tidak ada Tuhan kecuali Allah. Allah Maha Besar, Allah Maha Besar, dan bagi Allah semata segala puja dan puji."</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

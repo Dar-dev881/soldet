@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Niat dan Doa Shalat Istisqa</h1>
+        <a href="istisqa.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Bacaan Niat Shalat Istisqo Sendirian</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 22px;">أُصَلِّيْ سُنَّةَ اْلإِسْتِسْقَاءِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/sistisqa.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">Ushalli Sunnatal Istisqa&rsquo;i Rak&rsquo;ataini Lillahi Ta&rsquo;ala.</div>
+<div class="bacaan" style="text-align: justify;">Artinya: "Saya Niat Salat Sunah Istisqa&rsquo; Dua Rakaat karena Allah Ta&rsquo;ala ".</div>
+<div class="arti"><strong>Bacaan Niat Shalat Istisqo menjadi Imam / Makmum</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 22px;">أُصَلِّيْ سُنَّةَ اْلإِسْتِسْقَاءِ رَكْعَتَيْنِ (&hellip;&hellip;..) لِلَّهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/imistisqa.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">Ushalli Sunnatal Istisqa&rsquo;i Rak&rsquo;ataini (imaman/ ma&rsquo;muman) Lillahi Ta&rsquo;ala.</div>
+<div class="bacaan" style="text-align: justify;">Artinya: "Saya Niat Salat Sunah Istisqa&rsquo; Dua Rakaat (jadi imam atau makmum) karena Allah Ta&rsquo;ala ".</div>
+<div class="arti"><strong>Doa Shalat Istisqo</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 23px;">اَلْحَمْدُ لِلَّهِ رَبِّ اَلْعَالَمِينَ, اَلرَّحْمَنِ اَلرَّحِيمِ, مَالِكِ يَوْمِ اَلدِّينِ, لَا إِلَهَ إِلَّا اَللَّهُ يَفْعَلُ مَا يُرِيدُ, اَللَّهُمَّ أَنْتَ اَللَّهُ, لَا إِلَهَ إِلَّا أَنْتَ, أَنْتَ اَلْغَنِيُّ وَنَحْنُ اَلْفُقَرَاءُ, أَنْزِلْ عَلَيْنَا الْغَيْثَ, وَاجْعَلْ مَا أَنْزَلْتَ قُوَّةً وَبَلَاغًا إِلَى حِينٍ</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 25px;">اَللَّهُمَّ اسْقِنَا اللَّهُمَّ اسْقِنَا اللَّهُمَّ اسْقِنَا, اللَّهُمَّ اسْقِنا غَيْثاً مُغِيثاً هَنِيئاً مَرِيئاً غَدَقاً مُجَلِّلاً سَحّاً عامّاً طَبَقاً دَائِماً؛ اللَّهُمَّ على الظِّرَابِ وَمَنَابِتِ الشَّجَرِ، وَبُطُونِ الأوْدِيَةِ؛ اللَّهُمَّ إِنَّا نَسْتَغْفِرُكَ إِنَّكَ كُنْتَ غَفَّاراً، فَأَرْسِلِ السَّمَاءَ عَلَيْنَا مِدْرَاراً؛ اَللَّهُمَّ اسْقِنَا الغَيْثَ وَلا تَجْعَلْنا مِنَ القَانِطِينَ. اَللَّهُمَّ إِنَّ بِالعِبَادِ وَالْبِلادِ وَالبَهَائِمِ وَالْخَلْقِ مِن الْلأوَاءِ وَالْجُهْدِ وَالضِّنَكِ مَا لَا نَشْكُوْه ُإِلَّا إِلَيْكَ. اَللَّهُمَّ أنْبِتْ لَنا الزَّرْعَ، وَأَدِّرْ لَنا الضَّرْعَ، وَاسْقِنَا مِنْ بَرَكَاتِ السَّمَاءِ، وأنْبِتْ لَنَا مِنْ بَرَكاتِ الأَرْضِ؛ اَللَّهُمَّ ارْفَعْ عَنَّا الجُهْدَ وَالجُوْعَ والعُرْيَ، واكْشِفْ عَنَّا مِنَ البَلَاءِ مَا لَا يَكْشِفُهُ غَيْرُكَ</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 24px;">اَللَّهُمَّ اسْقِنَا الْغَيْثَ وَانْصُرْنَا عَلَى الْأَعْدَاءِ. اَللَّهُمَّ أَنْتَ أَمَرْتَنَا بْدُعَائِكَ وَوَعَدْتَنَا إِجَابَتَكَ، وَقَدْ دَعَوْنَاكَ كَمَا أَمَرْتَنَا فَأَجِبْنَا كَمَا وَعَدْتَنَا، اَللَّهُمَّ اّمْنِنْ عَلَيْنَا بِمَغْفِرَةِ مَا قَارِفْنَا، وَإِجَابَتُكَ فيِ سُقْيَانَا، وَا سِعَة ُرِزْقِنَا.</div>
+<div class="arti">Alhamdulillahi robbil &lsquo;alamin, arrohmanirrohim, maliki yaumid din, la ilaha illallohu yaf&rsquo;alu ma yuridu, Allohumma antalloh, lailaha ila anta, antal ghoniyyu wa nahnul fuqoro&rsquo; anzil &lsquo;alainal ghoitsa, waj&lsquo;al ma anzalta quwwatan wa balaghon ila hin.</div>
+<div class="arti">Allohummas qina, Allohummas qina, Allohummas qina, Allohummas qina ghoisam mughitsa haniam maria ghodaqom mujallila, sahhan &lsquo;amman thobaqon daima Allohumma ammad dhaima, Allohumma &lsquo;alad dhirobi wa manabits syajari, wa buthunil adiyati, Allohumma inna nastaghfiruka innaka kunta ghoffaro, fa arsilissam&aacute; alaina midroro, Allohummas qinal ghoitsa wala taj&rsquo;alna minal qonithin, Allohumma inna bil &lsquo;ibadi wal biladi wal bahaimi wal kholqi minal awai wal juhdi wad dhinaki mala nashkuhu illa ilaika, Allohumma ambits lana zar'a, Wa addirladh dhor'a, wasqina mimbarokatis samai, Wa ambitslana mim barokatil ardli, Allohummar fa&lsquo;annal juhda, wal ju&rsquo;a wal urya waksyif anna minal balai mala yaksyifu ghoiruka.</div>
+<div class="arti">Allohus qina ghoitsa wanshurna &lsquo;alal a&rsquo;da&rsquo;, Allohumman anta amartana bidu&rsquo;aika wa wa&rsquo;adtana ijabataka, wa qod da&rsquo;aunaka kama amartana fa ajibna kama wa&rsquo;adtana. Allohumma amnin &lsquo;alaina bimaghfiroti ma qorifna waijabatuka fi suqyana wa si&rsquo;atu rizqina.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> &ldquo;Segala puji bagi Allah Rabbul &lsquo;alamin yang Maha Pengasih lagi Maha Penyayang, yang merajai hari pembalasan, tidak ada Tuhan selain Allah yang melakukan apa yang Ia kehendaki, ya Allah Engkaulah Allah tidak ada Tuhan selain Engkau, Engkau Maha kaya dan kami orang-orang fakir, semoga Engkau turunkan pada kami hujan, dan jadikan apa yang Engkau turunkan sebagai kekuatan dan bekal hingga suatu batas yang lama.</div>
+<div class="bacaan" style="text-align: justify;">Ya Allah, turunkan bagi kami hujan 3x, Ya Allah, turunkan bagi kami hujan yang menyuburkan, menyejahterakan, bermanf&Aacute;t, mengalir dari atas ke bawah merata, dan terus-menerus kebaikannya bagi negeri dan penghuninya. Ya Allah, pada pegunungan, sawah ladang dan danau-danau. Ya Allah kami beristighfar kepada-Mu, sesungguhnya Engkau penerima ampun, turunkan kepada hujan dari langit yang terus menerus memberikan kebaikan. Ya Allah, turunkanlah hujan dan jangan jadikan kami termasuk orang-orang yang putus asa. Ya Allah, negeri dan penduduknya mengalami kesulitan, kesengsaraan, kesempitan dan kami tidak mengadu kecuali kepadaMu. Ya Allah, semoga Engkau tumbuhkan bagi kami tanaman, suburkanlah susu-susu ternak kami, semoga Enkau turunkan hujan dari keberkahan langit dan Engkau tumbuhkan tanaman dari keberkahan bumi. Ya Allah, semoga Engkau angkat dari kami kesusahan, kelaparan, dan terbukanya aurat, semoga Engkau singkapkan dari kami musibah dan tidak ada yang dapat menyingkapkannya kecuali Engkau.</div>
+<div class="bacaan" style="text-align: justify;">Ya Allah, turunkanlah hujan dan tolonglah kami atas musuh. Ya Allah, Engkau telah memerintahkan kami untuk berdoa, dan berjanji untuk mengabulkan. Dan kami telah berdoa sebagaimana engkau perintahkan, maka kabulkanlah sebagaimana Engkau telah janjikan. Ya Allah berikanlah anugerah ampunan-Mu atas kesalahan kami, dan kabulkan hujan untuk kami dan kelapangan rezeki.</div>
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+
+</div> 
+
+
+</div>
+
+ <div data-role="header" data-theme="c">
+        <h1>Tata Cara Shalat Dhuha</h1>
+        <a style="background-color:#007c91;border:none" href="dhuha.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Tata cara melaksanakan shalat dhuha sama sebagaimana tata cara shalat lainnya. Dikerjakan dengan dua raka’at-dua raka’at, dengan salam setiap dua raka’at. Berdasarkan hadits dari Abdullah bin Umar radhiallahu’anhuma, Nabi Shallallahu’alaihi Wasallam bersabda:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:13px;">صلاةُ اللَّيلِ والنَّهارِ مَثنَى مَثنَى</div>
+<div class="bacaan" style="text-align:justify">“Shalat (sunnah) di malam dan siang hari, dua rakaat-dua rakaat” <br><strong>(HR. Abu Daud no. 1295, An Nasa-i no. 1665, dishahihkan Al Albani dalam Shahih Abi Daud).</strong></div>
+<div class="arti">Syaiikh Abdul Aziz bin Baz menjelaskan:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:15px;">ويقرأ فيها ما تيسر سوراً أو آيات ليس فيها شيء مخصوص، يقرأ فيها ما تيسر من الآيات أو من السور. وأقلها ركعتان تسليمة واحدة، وإن صلى أربع أو ست أو ثمان أو أكثر يسلم من كل ثنتين فكله حسن</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Dalam shalat dhuha (setelah Al Fatihah, pent.) silakan membaca surat atau ayat-ayat apa saja yang dimampui, tidak ada surat atau ayat khusus yang diutamakan. Silakan membaca ayat atau surat apa saja. Jumlah rakaatnya minimal dua rakaat dengan satu salam. Jika ingin shalat empat rakaat atau enam atau delapan rakaat, atau bahkan lebih, dengan salam di setiap dua rakaat, maka ini semua baik&rdquo; <br><strong>(<a href="https://binbaz.org.sa/fatwas/10014">Fatawa Ibnu Baz</a>).</strong></div>
+<div class="arti">Shalat Dhuha Secara Berjama’ah</div>
+<div class="arti">ٍShalat dhuha boleh dilaksanakan secara berjama’ah sesekali. Syaikh Muhammad bin Shalih Al Utsaimin mengatakan:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:14px;">لا بأس أن يصلي الجماعة بعض النوافل جماعة ولكن لا تكون هذه سنة راتبة كلما صلوا السنة صلوها جماعة</div>
+<div class="bacaan" style="text-align:justify">“Tidak mengapa melaksanakan sebagian shalat sunnah secara berjama’ah, namun hendaknya tidak dijadikan kebiasaan yang dirutinkan sehingga terus-menerus shalat sunnah berjama’ah” <br><strong>(Majmu’ Fatawa war Rasa’il, 14/335).</strong></div>
+<div class="arti">Jika shalat dhuha dilaksanakan secara berjama’ah maka dilakukan dengan bacaan yang sirr (lirih). Syaikh Abdul Aziz bin Baz mengatakan:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:12px;">أما الصلاة النهارية كصلاة الضحى والرواتب وصلاة الظهر والعصر , فإن السنة فيها الإسرار</div>
+<div class="bacaan" style="text-align:justify">“Adapun shalat-shalat yang dilakukan di siang hari, seperti shalat dhuha, shalat rawatib, shalat zhuhur, shalat ashar, disunnahkan dilakukan dengan sirr (lirih)” <br><strong>(Fatawa Ibnu Baz, 11/207).</strong></div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

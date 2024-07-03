@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Hukum Sholat Dhuha</h1>
+        <a style="background-color:#007c91;border:none" href="dhuha.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<div class="arti">Ulama empat madzhab sepakat bahwa shalat dhuha hukumnya sunnah. Diantara dalilnya hadits Abu Dzar radhiallahu’anhu, Nabi shallallahu ‘alaihi wasallam bersabda,</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">
+يُصْبِحُ عَلَى كُلِّ سُلاَمَى مِنْ أَحَدِكُمْ صَدَقَةٌ فَكُلُّ تَسْبِيحَةٍ صَدَقَةٌ وَكُلُّ تَحْمِيدَةٍ صَدَقَةٌ وَكُلُّ تَهْلِيلَةٍ صَدَقَةٌ وَكُلُّ تَكْبِيرَةٍ صَدَقَةٌ وَأَمْرٌ بِالْمَعْرُوفِ صَدَقَةٌ وَنَهْىٌ عَنِ الْمُنْكَرِ صَدَقَةٌ وَيُجْزِئُ مِنْ ذَلِكَ رَكْعَتَانِ يَرْكَعُهُمَا مِنَ الضُّحَى
+</div>
+<div class="bacaan" style="text-align:justify;">“Di pagi hari ada kewajiban bagi seluruh persendian kalian untuk bersedekah. Maka setiap bacaan tasbih adalah sedekah, setiap bacaan tahmid adalah sedekah, setiap bacaan tahlil adalah sedekah, dan setiap bacaan takbir adalah sedekah. Demikian juga amar ma’ruf dan nahi mungkar adalah sedekah. Semua ini bisa dicukupi dengan melaksanakan shalat dhuha sebanyak dua raka’at”<br><strong>(HR. Muslim no. 720).</strong></div>
+
+<div class="arti">Dari Buraidah Al Aslami radhiallahu’anhu, Nabi shallallahu ‘alaihi wasallam bersabda,</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">
+في الإنسانِ ثلاثُ مِئةٍ وسِتُّونَ مَفصِلًا؛ فعليه أن يتصدَّقَ عن كلِّ مَفصِلٍ منه بصدَقةٍ، قالوا: ومَن يُطِيقُ ذلك يا نبيَّ اللهِ ؟ قال: النُّخَاعةُ في المسجِدِ تدفِنُها، والشَّيءُ تُنحِّيهِ عن الطَّريقِ، فإنْ لم تجِدْ فركعَتا الضُّحَى تُجزِئُكَ
+</div>
+<div class="bacaan" style="text-align:justify">
+“Manusia memiliki 360 sendi, diwajibkan untuk bersedekah sedekah untuk setiap sendinya”. Para sahabat bertanya, ”Siapa yang mampu melakukan demikian, wahai Nabi Allah?”. Nabi bersabda, ”Cukup dengan menutup dahak yang ada di lantai masjid dengan tanah dan menghilangkan gangguan dari jalanan. Apabila engkau tidak mendapatinya, maka lakukanlah dua raka’at shalat Dhuha yang itu bisa mencukupimu” <br><strong>(HR. Abu Daud no.5242, dishahihkan Al Albani dalam Irwaul Ghalil [2/213]).</strong>
+</div>
+<div class="arti">Juga hadits dari Abud Darda&rsquo; radhiallahu&rsquo;anhu, ia berkata:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">أَوْصاني حبيبي بثلاثٍ لنْ أَدَعهنَّ ما عشتُ: بصيامِ ثلاثةِ أيَّامٍ من كلِّ شهرٍ، وصلاةِ الضُّحى، وأنْ لا أنامَ حتى أُوتِرَ</div>
+<div class="bacaan" style="text-align:justify">&ldquo;Kekasihku (Rasulullah Shallallahu&rsquo;alaihi Wasallam) mewasiatkan aku untuk tidak meninggalkan tiga perkara selama aku masih hidup: puasa tiga hari di setiap bulan, shalat dhuha dan tidak tidur sampai aku shalat witir&rdquo; <br><strong>(HR. Muslim no. 722).</strong></div>
+<div class="arti">Hadits yang mirip juga diriwayatkan dari Abu Hurairah radhiallahu&rsquo;anhu, ia berkata:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">أَوْصاني خليلي صلَّى اللهُ عليه وسلَّم بثلاثٍ: صيامِ ثلاثةِ أيَّامٍ من كلِّ شهرٍ، وركعتي الضُّحى، وأنْ أُوتِرَ قبل أن أرقُدَ</div>
+<div class="bacaan" style="text-align:justify">&ldquo;Kekasihku (Rasulullah Shallallahu&rsquo;alaihi Wasallam) mewasiatkan aku utiga perkara: puasa tiga hari di setiap bulan, dua raka&rsquo;at shalat dhuha dan shalat witir sebelum tidur&rdquo; <br><strong>(HR. Bukhari no. 1178, Muslim no. 721).</strong></div>
+
+
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

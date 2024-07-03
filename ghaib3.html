@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Bacaan dan Niat Shalat Ghaib</h1>
+        <a href="ghaib.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Niat sholat ghaib untuk jenazah yang diketahui identitasnya</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 39px;">أُصَلِّى عَلَى اْلمَيِّتِ (اْلمَيِّتَةِ) اْلغَائبِ أَرْبَعَ تَكْبِيْرَاتٍ فَرْضَ اْلكِفَايَةِ (إِمَامًا / مَأْمُوْمًا) لِلّهِ تَعَالى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/dghaib.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">Usholli alalmayyiti (tati-perempuan) alghooibi arba&rsquo;a takbiroti fardhol kifayati (imaman/makmuman) lillahi ta&rsquo;ala</div>
+<div class="bacaan" style="text-align: justify;">"Aku niat sholat atas mayit (&hellip;.) empat kali takbir fardu kifayah karena menjadi (imam/makmum) karena Allah Ta&rsquo;ala"</div>
+<div class="arti"><strong>Niat sholat ghaib untuk jenazah yang tidak diketahui identitasnya</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 40px;">أُصَلِّى عَلَى&nbsp; مَنْ صَلَّى عَلَيْهِ اْلإِمَامِ أَرْبَعَ تَكْبِيْرَاتٍ فَرْضَ اْلكِفَايَةِ مَأْمُوْمًا لِلّهِ تَعَالى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/tghaib.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">Usholli ala man sholla alaihil imaami&nbsp; arba&rsquo;a takbiroti fardhol kifayati (makmuman) lillahi ta&rsquo;ala</div>
+<div class="bacaan" style="text-align: justify;">"Aku sholat ghoib atas mayyit yang disholati imam empat kali takbir fardu kifayah makmum karena Allah Ta&rsquo;ala"</div>
+<div class="arti"><strong>Takbir Pertama Bembaca Surat al-Fatihah</strong></div>
+<div class="arti"><strong>Takbir Kedua Membaca Sholawat</strong></div>
+<div class="arti">Membaca bacaan Shalawat ketika sedang tahiyat. Yaitu membaca shalawat atas Nabi Muhammad SAW seperti dibawah ini.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 44px;">اَللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلٰى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلٰى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلٰى سَيِّدِنَا مُحَمَّدٍ وَعَلٰى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلٰى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلٰى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ</div>
+<div class="arti"><strong>Takbir Ketiga Membaca Do&rsquo;a</strong></div>
+<div class="arti">Membacakan doa untuk si Jenazah, seperti yang dicontohkan Rasulullah SAW pada hadist berikut:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 43px;">اَللَّهُمَّ اغْفِرْ لَهُ، وَارْحَمْهُ، وَعَافِهِ وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مَدْخَلَهُ، وَاغْسِلْهُ باالْمَاءٍ وَالثَّلْجِ والْبَرَدِ، وَنَقِّهِ مِنَ الخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنَ الدَّنَسِ، وَأَبْدِلْهُ دَاراً خَيْراً مِنْ دَارِهِ، وَأَهْلاً خَيْراً مِنْ أَهْلِهِ، وَزَوْجاً خَيْراً مِنْ زَوْجِهِ، وَأَدْخِلْهُ اْلجَنَّة وَأَعِدْهُ مِنْ عَذَابِ اْلقَبْرِ وَعَذَابِ الناَّرِ</div>
+<div class="bacaan" style="text-align: justify;">"Ya Allah, ampunilah dia (mayat), berilah rahmat kepadanya, selamatkanlah dia (dari beberapa hal yang tidak disukai), maafkanlah dia dan tempatkanlah dia di tempat yang mulia, luaskanlah kuburannya, mandikan dia dengan air salju dan air es. Bersihkanlah dia dari segala kesalahan, sebagaimana Engkau mebersihkan baju putih dari kotoran. Berilah dia rumah yang lebih baik dari rumahnya (di dunia), berilah keluarga yang lebih baik daripada keluarganya di dunia, istri yang lebih baik dari istrinya (atau suaminya) dan masukkan dia ke surga, jagalah dia dari siksa kubur dan neraka."</div>
+<div class="arti"><strong>Sedangkan doa untuk anak-anak adalah:</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 42px;">اَللَّهُمَّ اجْعَلْهُ فَرَطاً ِلأَبْوَيهِ وَسَلَفاً وَذُخْراً، وَعِظٰةً وَاعْتِبَاراً وَشَفِيْعاً، وَثَقِّلْ بِهِ مَوَازِيْنَهُمَا وَأَفْرِغِ الصَّبْرَ عَلٰى قُلُوْبِهِمَا وَلاَ تَفْتِنَّهُمَا بَعْدَهُ وَلاَ تَحْرِمْهُمَا أَجْرَهُ</div>
+<div class="arti"><strong>Takbir Keempat Membaca Doa</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 45px;">اللّـٰهُمَّ لاَ تَحْرِمْنَا أَجْرَهُ وَلاَ تَفْتِنَّا بَعْدَهُ وَاغْفِرْ لَنَا وَلَهُ &nbsp;وَلِإِخْوَانِنَا الَّذِيْنَ سَبَقُوْنَ بِااْلإِيْمَانِ وَلاَ تَجْعَلْ فىِ قُلُوْبِنَا غِلاَّ لِّـلَّذِيْنَ آمَنُوْا رَبَّناَ اِنَّكَ رَؤُفٌ الرَّحِيْمٌ</div>
+<div class="bacaan" style="text-align: justify;">"Ya Allah janganlah kami tidak Engkau beri pahalanya, dan janganlah Engkau beri fitnah kepada kami sesudahnya, dan berilah ampunan kepada kami dan kepadanya."</div>
+<div class="arti"><strong>Kemudian Salam</strong></div>
+<div class="arti">Setelah membaca doa takbir ke empat, dilanjutkan dengan membaca salam ke kanan dan kekiri.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">اَلسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "&nbsp;&nbsp;keselamatan, rahmat Allah dan keberkahan-Nya semoga untuk kalian semua.&rdquo;</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

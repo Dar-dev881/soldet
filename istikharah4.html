@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Doa Setelah Shalat Istikharah</h1>
+        <a href="istikharah.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 26px;">اَللَّهُمَّ اِنِّى اَسْتَخِيْرُكَ بِعِلْمِكَ وَاَسْتَقْدِرُكَ بِقُدْرَتِكَ وَاَسْئَلُكَ مِنْ فَضْلِكَ الْعَظِيْمِ. فَاِنَّكَ تَقْدِرُ وَلَآاَقْدِرُ وَلَآاَعْلَمُ وَاَنْتَ عَلاَّمُ الْغُيُوْبِ. اَللهُمَّ اِنْ كُنْتَ تَعْلَمُ اَنَّ هذَااْلاَمْرَخَيْرٌلِّىْ فِىْ دِيْنِىْ وَمَعَاشِىْ فَاقْدُرْهُ لِىْ وَيَسِّرْهُ لِىْ ثُمَّ بَارِكْ لِىْ فِيْهِ وَاِنْ كُنْتَ تَعْلَمُ اَنَّ هذَااْلاَمْرَشَرٌّلِّىْ فِىْ دِيْنِىْ وَمَعَاشِىْ وَعَاقِبَةِ اَمْرِىْ وَعَاجِلِهِ وَآجِلِهِ فَاصْرِفْهُ عَنِّىْ وَاصْرِفْنِيْ عَنْهُ وَاقْدُرْلِى الْخَيْرَحَيْثُ كَانَ ثُمَّ رَضِّنِىْ بِهِ.</div>
+<div class="arti">alloohumma inni astakhiiruka bi'ilmika wa astaqdiruka biqudrotika wa as aluka min fadhlikal 'adzhiimi. fainnaka taqdiru walaa aqdiru walaa a'lamu wa anta 'al-laamulghuyuubi. alloohumma inkunta ta'lamu anna haadzal amro khoirun lii fii diinii wama'aasyii faqdurhu lii wa yassirhu lii tsumma baariklii fiihi wa inkunta ta'lamu anna haadzal amro syarrun lii fii diinii wa ma'aasyii wa 'aaqibati amrii wa 'aajilihi fashrifhu 'annii washrifnii 'anhu waqdurlil khoiro haitsu kaana tsumma rodh-dhinii bihi.</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya:</strong> "Wahai Allah, bahwasanya aku mohon pilihan olehMu dengan ilmu-Mu, dan mohon kepastian-Mu dengan kekuasaan-Mu, serta mohon kepada-Mu dari anugerah-Mu Yang Maha Agung, karena Engkaulah Dzat yang berkuasa, sedang aku tiada kuasa, dan Engkaulah Dzat Yang Maha Mengetahui, sedang aku tiada mengetahui, dan Engkaulah Dzat yang mengetahui yang ghoib. Wahai Allah, jika adanya, Engkau ketahui bahwa urusan ini ........ adalah baik bagiku, untuk duniaku, akhiratku, penghidupanku, dan akibat urusanku untuk masa sekarang maupun besoknya, maka kuasakanlah bagiku dan permudahkanlah untukku, kemudian berkahilah dalam urusan itu bagiku. Namun jikalau adanya, Engkau ketahui bahwa urusan itu ......... menjadi buruk bagiku, untuk duniaku, akhiratku, penghidupanku, dan akibatnya persoalanku pada masa sekarang maupun besoknya, maka hindarkanlah aku dari padanya, lalu tetapkanlah bagiku kepada kebaikan, bagaimanapun adanya kemudian ridhoilah aku dengan kebaikan itu."</div>
+<div class="arti">Shalat istikharah tidak selesai begitu saja, masih ada hal yang harus dilakukan setelah pelaksanaan shalat istikharah selesai dilakukan. Setelah shalat istikharah selesai orang muslim yang melakukan shalat istikharah di tuntut untuk melapangkan hatinya atas apa yang menjadi keputusan Allah.</div>
+<div class="arti">Seperti kata Imam Nawawi yang ada di dalam kitab Al-Adzkar. Bunyinya adalah sebagai berikut ini &ldquo;setelah melakukan shalat istikharah dan berdoa kemudian lakukanlah tindakan yang sesuai dengan hati nurani. Pendapat Nawawi itu mengambil dari hadist yang diriwayatkan oleh Ibnu Sunni yang bunyinya adalah &ldquo;apabila engkau memiliki maksud sesuatu, maka beristikharahlah kepada Tuhanmu sebanyak 7 kali. Lalu lihatlah kepada apa dan siapa hatimu bercondong. Maka di situlah letak kebaikan akan ada.</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

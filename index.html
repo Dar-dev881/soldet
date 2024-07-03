@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script> 
+<script src="js/jquery.mobile-1.4.0.min.js"></script>
+<style>
+.ui-page .ui-header {
+    background: #00897b !important;
+}
+</style>
+</head>
+<body>
+<div data-role=page id=page1>
+<div data-role=header data-position=fixed width=100% data-theme=a>
+    <div class="ui-grid-d center" style="background-color:#007c91">
+
+<div class="ui-block-a">
+<button onclick="myArti()" style="background-color:#007c91;border:none" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" style="background-color:#007c91;border:none" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)"  style="background-color:#007c91;border:none" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" style="background-color:#007c91;border:none" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-e" style="background-color:#007c91;border:none">
+</div>
+                        <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+                        </div>
+                        <div data-role=navbar id=navbar data-iconpos=top data-theme=b>
+
+                            <ul>
+                                <li>
+									<a href=#one class=tabButton data-theme=c>VER. 1</a>
+								</li>
+								<li>
+									<a href=#three class=tabButton data-theme=c>VER. 2</a>
+								</li>
+								<li>
+									<a href=#two class=tabButton data-theme=c>VER.3</a>
+    </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-role=footer data-position=fixed style="background-color:#007c91">
+
+
+</div> 
+                    </div>
+                    <!-- SD -->
+<!-- SD -->
+<div id=one class=tabView>
+<div id="nav-a">
+<ol>
+<li>
+<h3>Istighfar	</h3>
+<div class="ayat" title="Al-Fatihah Ayat 1">أَسْتَغْفِرُ اللهَ أَسْتَغْفِرُ اللهَ أَسْتَغْفِرُ اللهَ اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ</div>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/astagfirullah.mp3" type="audio/mp3">
+ </audio>
+</center>
+<div class="bacaan">"astaghfirullah, astaghfirullah, astaghfirullah, allahumma antassalam  waminkassalam tabarakta ya dzaljalali wal ikram"</div>
+<div class="arti"><strong>Artinya:</strong><br>“Aku meminta ampunan kepada Allah (tiga kali). Ya Allah, Engkaulah As-Salaam (Yang selamat dari kejelekan-kejelekan, kekurangan-kekurangan dan kerusakan-kerusakan) dan dari-Mu As-Salaam (keselamatan), Maha Berkah Engkau Wahai Dzat Yang Maha Agung dan Maha Baik.”</div>
+<div class="arti"><strong>Referensi:</strong><br>(HR. Muslim no 915 dan HR. Muslim no 932)</div>
+</li>
+<li>
+<h3>Tauhid</h3>
+<div class="ayat" title="Al-Fatihah Ayat 1">
+    لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ, لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ, اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ وَلاَ مُعْطِيَ لِمَا مَنَعْتَ وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ
+</div>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/tauhid.mp3" type="audio/mp3">
+ </audio>
+</center>
+<div class="bacaan">"laa ilaaha illallahu wahdahu laa syarikalahu, lahul mulku walahul hamdu wahuwa 'alaa kulli syai-inq qodir, allahumma laa mani 'aa lima a' thoita wala mughthiya lima managhta wala yanfa'u dzaljaddi minkal jaddu"
+</div>
+<div class="arti"><strong>Artinya:</strong><br>“Tiada tuhan yang berhak disembah selain Allah, tiada sekutu bagi-Nya, bagi-Nya segala kerajaan, dan pujian, dan Dia Maha Berkuasa atas segala sesuatu. Ya Allah, tidak ada yang dapat menolak terhadap apa yang Engkau beri dan tidak ada yang dapat memberi terhadap apa yang Engkau tolak dan orang yang memiliki kekayaan tidak dapat menghalangi dari siksa-Mu.”</div>
+<div class="arti"><strong>Referensi:</strong><br>(HR. Bukhhari No 844 dan  HR. Muslim no 593)</div>
+</li>
+<li>
+<h3>Tauhid Kedua</h3>
+<div class="ayat" title="Al-Fatihah Ayat 1">
+    لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ، لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللهِ، لاَ إِلَهَ إِلاَّ اللهُ وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَهَ إِلاَّ اللهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ وَلَوْ كَرِهَ الْكَافِرُوْنَ
+</div>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/tauhid2.mp3" type="audio/mp3">
+ </audio>
+</center>
+<div class="bacaan">
+    "laa ilaaha illallahu wahdahu laa syarikalahu, lahul mulku walahul hamdu wahuwa 'alaa kulli syai-inq qodir, laa haula wala quwwata illa billah, laa ilaaha illallahu wala na'budhu illa iyyahu, lahun ni'matu walahul fadhlu walahus sana'ul hasan, laa ilaaha illallahu mukhlisina lahuddin walau karihal khafirun"
+</div>
+<div class="arti"><strong>Artinya:</strong><br>
+    “Tiada tuhan yang berhak sembah selain Allah, tiada sekutu bagi-Nya, bagi-Nya segala kerajaan, dan pujian, dan Dia Maha Berkuasa atas segala sesuatu. Tiada daya dan upaya serta kekuatan kecuali dengan pertolongan Allah dan kami tidak beribadah kecuali kepada Allah, milik-Nya-lah segala kenikmatan, karunia, dan sanjungan yang baik, tiada tuhan yang berhak diibadahi selain Allah, kami mengikhlashkan agama untuk-Nya walaupun orang-orang kafir benci.”</div>
+<div class="arti"><strong>Referensi:</strong><br>(HR. Muslim No 594)</div>
+</li>
+<li>
+<h3>Tasbih, Tahmid dan Takbir</h3>
+<div class="ayat">
+    (33x)  سُبْحَانَ اللهُ
+</div>
+<center>
+<audio controls class="audioPlayer">
+  <source src="audio/subhanallah.mp3" type="audio/mp3">
+ </audio>
+</center>
+<div class="bacaan">
+    "Subhanallah"</div>
+<div class="arti"><strong>Artinya :</strong><br>
+    “Maha Suci Allah.” (33x)
+</div>
+<hr>
+<div class="ayat">
+    (33x) اَلْحَمْدُ لِلَّهِ
+</div>
+<center>
+<audio controls class="audioPlayer">
+  <source src="audio/alhamdulillah.mp3" type="audio/mp3">
+ </audio>
+</center>	
+<div class="bacaan">
+    "Alhamdulillah"</div>
+<div class="arti"><strong>Artinya :</strong><br>
+    “Segala puji bagi Allah.” (33x)</div>
+<hr>
+<center>
+</center>
+<div class="ayat">
+    (33x) اَللهُ أَكْبَرُ
+</div>
+<center>
+<audio controls class="audioPlayer">
+  <source src="audio/allahuakbar.mp3" type="audio/mp3">
+ </audio>
+</center>	
+<div class="bacaan">
+"Allahuakbar"</div>
+<div class="arti"><strong>Artinya :</strong><br>
+    “Allah Maha Besar.” (33x)</div>
+<hr>
+<div class="arti">
+Kemudian membaca:</div>
+<div class="ayat">
+    لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ, لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ
+</div>
+<div class="bacaan">
+    "laa ilaaha illallahu wahdahu laa syarikalahu, lahul mulku walahul hamdu wahuwa 'alaa kulli syai-inq qodir"
+</div>
+<div class="arti"><strong>Artinya :</strong><br>
+    “Tiada tuhan yang berhak diibadahi selain Allah, tiada sekutu bagi-Nya, bagi-Nya segala kerajaan, dan pujian, dan Dia Maha Berkuasa atas segala sesuatu.”
+</div>
+<div class="arti"><strong>Referensi:</strong><br>(HR. Muslim no 597)
+Dari Abu Hurairah ra, “Barangsiapa mengucapkan dzikir ini setelah selesai dari setiap shalat wajib, maka diampuni dosa-dosanya walaupun sebanyak buih di lautan.
+</div>
+</li>
+<li>
+<h3>Ayat Kursi</h3>
+<div class="ayat" title="Al-Fatihah Ayat 1">
+    اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهٗ سِنَةٌ وَلَا نَوْمٌ ۚ لَهٗ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهٗ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهٖ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهٗ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ
+</div>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/ayat-kursi.mp3" type="audio/mp3">
+ </audio>
+</center>
+<div class="bacaan">
+"allahu laa ilaaha illa huwal hayyul qayyumu. laa ta'khudzuhuu sinatuw wa laa nauum. lahuu maa fissamaawaati wa maa fil ardhi. man dzal ladzii yasfa'u'indahuu illaa bi idznihi. ya'lamu maa baina aidiihim wa maa khalfahum. wa laa yuhithuuna bi syai-in min 'ilmihii illaa bi maasyaa-a. wasi'a kursiyyuhussamaawaati wal ardha. wa laa ya-udhuu hifzhuhumaa wahuwal 'aliyyul azhiim."</div>
+<div class="arti"><strong>Artinya:</strong><br>
+    Allah tidak ada Tuhan melainkan Dia yang Maha Kekal lagi terus menerus mengurus makhlukNya, tidak mengantuk dan tidak tidur Kepunyaan-Nya     apa yang di langit dan di bumi. Siapakah yang dapat memberi syafa'at di sisi Allah tanpa izinNya? Allah mengetahui apa-apa yang di hadapan     mereka dan di belakang meraka, dan mereka tidak mengetahui apa-apa dari ilmu Allah melainkan apa yang dikehendakiNya. Kursi Allah meliputi     langit dan bumi, Dan Allah tidak merasa berat memelihara keduanya, dan Allah Maha Tinggi lagi Maha Besar. (QS : Al-Baqarah : 255)</div>
+<div class="arti"><strong>Referensi:</strong><br>“Barangsiapa yang membaca ayat kursi di akhir setiap shalat wajib, maka tidak ada yang menghalangi dia untuk masuk surga kecuali kematiannya.”
+(HR. An-Nasa'i)</div>
+</li>
+<li>
+<h3>Surat Al-Ikhlas, Al-Falaq & An-Nas</h3>
+<div class="arti">Khusus Shalat Zhuhur, ‘Ashar dan ‘Isya, membaca surat Al-Ikhlas, Al-Falaq dan An-Nas (satu kali)<br><br>	
+Khusus Shalat Maghrib dan Shubuh, membaca surat Al-Ikhlas, Al-Falaq dan An-Nas (tiga kali)</div>
+<hr>
+<h3>Surah Al-Ikhlas :</h3>
+<div class="ayat">
+    بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ هُوَ اللهُ أَحَـدٌ. اَللّٰهُ الصَّمَـدُ. لَمْ يَلِـدْ وَلَمْ يٌوْلَـدْ. وَلَمْ يَكُـنْ لَهُ كُفُـوًا أَحَـد
+</div><br/>
+<center>
+<audio controls class="audioPlayer">
+  <source src="audio/al-ikhlas.mp3" type="audio/mp3">
+ </audio>
+ </center>
+<div class="bacaan">
+Bismillahirrahmanirrahim, Qul huwa allaahu ahad(un), allaahu alshshamad(u), lam yalid walam yuulad(u), walam yakullahu kufuwan ahad(un).</div>
+<div class="arti"><strong>Artinya:</strong><br>
+Dengan nama Allah, Yang Maha Pengasih, Maha Penyayang. Katakanlah (Muhammad), Dialah Allah, Yang Maha Esa. Allah tempat meminta segala sesuatu. (Allah) tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatu yang setara dengan Dia.
+</div>
+<hr>
+<h3>Surat Al-Falaq :</h3>
+<div class="ayat">
+    بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ، مِنْ شَرِّ ماَ خَلَقَ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَد
+</div><br/>
+<center>
+<audio controls class="audioPlayer">
+  <source src="audio/al-falag.mp3" type="audio/mp3">
+ </audio>
+ </center>
+<div class="bacaan">
+Bismillahirrahmanirrahim, Qul a'udzu birobbil falaq(i), Min syarri ma kholaq(o), Wamin syarri ghosiqin idza waqob(a), Wamin syarrin naffatsati fiil 'uqad(i), Wamin syiarri hasidin idza hasad(a)
+</div>
+<div class="arti"><strong>Artinya:</strong><br>
+Dengan nama Allah, Yang Maha Pengasih, Maha Penyayang. Katakanlah, “Aku berlindung kepada Tuhan yang menguasai subuh (fajar). dari kejahatan (makhluk yang) Dia ciptakan. Dan dari kejahatan malam apabila telah gelap gulita. Dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya). Dan dari kejahatan orang yang dengki apabila dia dengki.</div>
+<hr>
+<h3>Surat An-Nas :</h3>
+<div class="ayat">
+    بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ أَعُوْذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، اَلَّذِيْ يُوَسْوِسُ فِي صُدُوْرِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ
+</div>
+<center>
+<audio controls class="audioPlayer">
+  <source src="audio/an-naas.mp3" type="audio/mp3">
+ </audio>
+ </center>
+<div class="bacaan">
+Qul a'uudzu birabbi nnaas, maliki nnaas, ilaahi nnaas, min syarri lwaswaasi lkhannaas, alladzii yuwaswisu fii shuduuri nnaas, mina ljinnati wannaas.</div>
+<div class="arti"><strong>Artinya:</strong><br>
+Dengan nama Allah Yang Maha Pengasih, Maha Penyayang. Katakanlah, “Aku berlindung kepada Tuhannya manusia. Raja manusia. Sembahan manusia. Dari kejahatan (bisikan) setan yang bersembunyi. Yang membisikkan (kejahatan) ke dalam dada manusia. Dari (golongan) jin dan manusia.</div>
+</li>
+<center>
+</center>
+</div>
+</div>
+<!-- SMP -->
+<div id=two class=tabView>
+<div id="nav-a">
+<ol>
+<li>
+<div class="ayat">أَسْتَغْفِرُ اللهَ [3&times;]
+	</li>
+<li><div class="ayat">اللَّهُمَّ أَنْتَ السَّلاَم وَمِنْكَ السَّلاَم وَإِلَيْكَ يَعُودُ السَّلاَم فَحَيِّنَا رَبَّنَا بِالسَّلاَم وَأَدْخِلْنَا دَارَكَ دَارَ السَّلاَم تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَاذَا الجَلاَلِ وَالإِكْرَامِ
+</div></li><li><div class="ayat">اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ وَلاَ مُعْطِيَ لِمَا مَنَعْتَ وَلاَ رَآدَّ لِمَا قَضَيْتَ وَلاَ يَنْفَعُ ذَا الجَدِّ مِنْكَ الجَدُّ
+</div></li><li><div class="ayat">اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ
+</div></li><li><div class="ayat">رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ العَلِيمُ وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ [3&times;]
+</div></li><li><div class="ayat">وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ
+</div></li><li><div class="ayat">سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ
+</div></li><li><div class="ayat">سُبْحَانَ مَنْ تَعَزَّزَ بِالعَظَمَةِ سُبْحَانَ مَنْ تَرَدَّا بِالكِبْرِيَاءِ سُبْحَانَ مَنِ احْتَجَبَ بِالنُّورِ سُبْحَانَ مَنْ تَفَرَّدَ بِالوَحْدَانِيَّةِ سُبْحَانَ مَنْ قَهَرَ عِبَادَهُ بِالمَوْتِ سُبْحَانَ مَنْ لاَيَعْلَمُ قَدْرَهُ غَيْرُهُ وَلاَ يَبْلُغُ الوَاصِفُونَ صِفَتَهُ سُبْحَانَ رَبِّيَ العَلِيِّ الأَعْلَى الوَهَّاب عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ
+</div></li><li><div class="ayat">أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيمِ, بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+</div></li><li><div class="ayat">&nbsp;وَإِلَهُكُمْ إِلَهٌ وَاحِدٌ لَا إِلَهَ إِلَّا هُوَ الرَّحْمَنُ الرَّحِيمُ اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيم. سُبْحَانَكَ يَاعَلِيُّ يَاعَظِيمُ
+</div></li><li><div class="ayat">
+<p>سُبْحَانَ اللهِ [33&times;]
+	<br> الحَمْدُ للهِ [33&times;]
+	<br> اللهُ أَكْبَرُ [33&times;]
+	<br>&nbsp;لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ لَهُ المُلْكُ وَلَهُ الحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ
+الحَمْدُ للهِ رَبِّ العَالَمِينَ اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ</p>
+</div>
+<li>
+<div class="arti">Dan mengangkat kedua tangan, lalu berdoa sesuai dengan hajatnya dan mengakhiri dengan doa Al Habib Abdullah bin Alwi Al Haddad.</div>
+	<div class="ayat">اللَّهُمَّ أَخْرِجْ مِنْ قَلْبِي كُلَّ قَدَرٍ لِلدُّنْيَا وَكُلَّ مَحَلٍّ لِلْخَلْقِ يُمِيلُ بِي إِلَى مَعْصِيَتِكَ أَوْ يُشْغِلُنِي عَنْ طَاعَتِكَ أَوْ يَحُولُ بَيْنِي وَبَيْنَ التَّحَقُّقِ بِمَعْرِفَتِكَ الخَآصَّةِ وَمَحَبَّتِكَ الخَالِصَةِ وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ وَالحَمْدُ للهِ رَبِّ العَالَمِينَ
+</div>
+</li>
+<li>
+	<div class="ayat">أَسْتَغْفِرُاللهَ العَظِيمَ الَّذِي لاَ إِلَهَ إِلاَّ هُوَ الحَيُّ القَيُّومُ وَأَتُوبُ إِلَيْهِ [3&times;]
+	</div></li>
+<li><div class="ayat"> أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ إِلَهًا وًاحِدًا وَرَبًّا شَاهِدًا وَنَحْنُ لَهُ مُسْلِمُونَ [4&times;]
+</div></li><li><div class="ayat"> لاَ إِلَهَ إِلاَّ اللهُ مُحَمَّدٌ رَسُولُ اللهِ فِي كُلِّ لَمْحَةٍ وَنَفَسٍ عَدَدَ مَا وَسِعَهُ عِلْمُ اللهِ [4&times;]
+</div></li><li><div class="ayat"> لاَ إِلَهَ إِلاَّ اللهُ اللهُ أَكْبَرُ [4&times;]
+</div></li><li><div class="ayat">&nbsp;وَلاَحَوْلَ وَلاَقُوَّةَ إِلاَّ بِاللهِ العَلِيِّ العَظِيمِ فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ</div>
+<li>
+        <div class="arti">Setelah shalat Shubuh dan Maghrib di tambah dengan:</div>
+        <div class="ayat">اللَّهُمَّ أَجِرْنَا مِنَ النَّارِ [7×]. وَأَسْكِنَّا مَعَ السَّابِقِينَ أَعْلَى فَرَادِيسِ الجِنَانِ خَالِدِينَ مِنْ غَيْرِ سَابِقَةِ عَذَابٍ وَلاَ عِتَابٍ وَلاَ فِتْنَةٍ وَلاَ حِسَابٍ بِرَحْمَتِكَ يَاأَرْحَمَ الرَّاحِمِينَ وَافْعَلْ كَذَلِكَ بِوَالِدِينَا وَذُرِّيَّاتِنَا وَأَحْبَابِنَا إِلىَ يَوْمِ الدِّينِ وَصَلَّى اللهُ عَلىَ سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ. سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ&nbsp; وَسَلَامٌ عَلَى الْمُرْسَلِينَ&nbsp; وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ</div>
+</li>
+<li>
+        <div class="arti">Setelah shalat Shubuh dan Ashar di tambah dengan:</div>
+<div class="ayat">الَّذِينَ آَمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّهِ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ &nbsp;فَاعْلَمْ أَنَّهُ
+	<br>لاَ إِلَهَ إِلاَّ اللهُ مُحَمَّدٌ رَّسُولُ اللهِ [3&times;]
+	<br> لاَ إِلَهَ إِلاَّ اللهُ [5&times;]
+	<br> اللهُ [25&times;]
+	<br> لاَ إِلَهَ إِلاَّ اللهُ مُحَمَّدٌ رَّسُولُ اللهِ [3&times;]
+	<br>&nbsp;صَلَّى اللهُ عَلَيْهِ وآلِهِ وَسَلَّمَ</div>    
+        <div class="arti">Kemudian ditutup dengan Al Fatihah.</div>
+<li>	
+<div class="arti">Khusus seusai shalat Shubuh ditambah dzikir berikut:</div>
+    <div>
+<div class="ayat">لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ لَهُ المُلْكُ وَلَهُ الحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ [10&times;]
+	<br>&nbsp;وَإِلَيْهِ النُّشُورُ وَلاَحَوْلَ وَلاَقُوَّةَ إِلاَّ بِاللهِ العَلِيِّ العَظِيمِ فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ</div>
+</li>
+<li>
+<div class="arti">Dan khusus seusai shalat maghrib kata</div>
+<div class="ayat"> النُّشُورُ</div>
+<div class="arti">diubah menjadi</div>
+<div class="ayat">المَصِيرُ.</div>
+</li>
+		<center>
+</center>
+</ol>
+</div>
+</div>
+<!-- SMA -->
+<div id=three class=tabView>
+<div id="nav-a">
+<ol>
+<li>
+<div class="ayat">أَسْتَغْفِرُ اللهَ (3x)<br>
+ اَللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَاْلإِكْرَامِ.</div>
+<div class="bacaan">Astaghfirullah (3x). Allahumma antas salaam wa minkas salaam tabaarokta yaa dzal jalaali wal ikrom.</div>
+<div class="arti"><strong>Artinya:</strong><br>Aku minta ampun kepada Allah,&rdquo; (3x). Lantas membaca: &ldquo;Ya Allah, Engkau pemberi keselamatan, dan dariMu keselamatan, Maha Suci Engkau, wahai Tuhan Yang Pemilik Keagungan dan Kemuliaan&rdquo; </div>
+<div class="arti"><strong>Referensi:</strong><br>(HR. Muslim no. 591).</div>
+</li>
+<li>
+<div class="ayat">
+لَا إِلٰـهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلٰى كُلِّ شَيْءٍ قَدِيْرُ، اَللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ</div>
+<div class="bacaan">Laa ilaaha illallaah wahdahu laa syarika lah, lahul mulku wa lahul hamdu wa huwa &lsquo;alaa kulli syai-in qodiir. Allahumma laa maani&rsquo;a lima a&rsquo;thoita wa laa mu&rsquo;thiya limaa mana&rsquo;ta wa laa yanfau dzal jaddi minkal jaddu.</div>
+<div class="arti"><strong>Artinya:</strong><br>&ldquo;Tiada Rabb yang berhak disembah selain Allah Yang Maha Esa, tidak ada sekutu bagiNya. BagiNya puji dan bagi-Nya kerajaan. Dia Maha Kuasa atas segala sesuatu. Ya Allah, tidak ada yang mencegah apa yang Engkau berikan dan tidak ada yang memberi apa yang Engkau cegah. Tidak berguna kekayaan dan kemuliaan itu bagi pemiliknya (selain iman dan amal shalihnya yang menyelamatkan dari siksaan). Hanya dari-Mu kekayaan dan kemuliaan&rdquo;</div>
+<div class="arti"><strong>Referensi:</strong><br>
+(HR. Bukhari no.6615, Muslim no.593).</div>
+</li>
+<li>
+<div class="ayat">
+لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللهِ، لاَ إِلَـهَ إِلاَّ اللهُ، وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَـهَ إِلاَّ اللهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ وَلَوْ كَرِهَ الْكَافِرُوْنَ</div>
+<div class="bacaan">Laa ilaha illallah wahdahu laa syarika lah. Lahul mulku wa lahul hamdu wa huwa &lsquo;ala kulli syai-in qodiir. Laa hawla wa laa quwwata illa billah. Laa ilaha illallah wa laa na&rsquo;budu illa iyyah. Lahun ni&rsquo;mah wa lahul fadhl wa lahuts tsanaaul hasan. Laa ilaha illallah mukhlishiina lahud diin wa law karihal kaafiruun.</div>
+<div class="arti"><strong>Artinya:</strong><br>&ldquo;Tiada Rabb (yang berhak disembah) kecuali Allah, Yang Maha Esa, tidak ada sekutu bagiNya. BagiNya kerajaan dan pujaan. Dia Mahakuasa atas segala sesuatu. Tidak ada daya dan kekuatan kecuali (dengan pertolongan) Allah. Tiada Rabb (yang hak disembah) kecuali Allah. Kami tidak menyembah kecuali kepadaNya. Bagi-Nya nikmat, anugerah dan pujaan yang baik. Tiada Rabb (yang hak disembah) kecuali Allah, dengan memurnikan ibadah kepadaNya, sekalipun orang-orang kafir sama benci&rdquo; </div>
+<div class="arti"><strong>Referensi:</strong><br>
+(HR. Muslim, no. 594).</div>
+</li>
+<li>
+<div class="ayat">سُبْحَانَ اللهِ وَالْحَمْدُ لِلَّهِ وَاللهُ أَكْبَرُ (33 &times;) لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ</div>
+<div class="bacaan">Subhanallah wal hamdulillah wallahu akbar (33 x). Laa ilaha illallah wahda, laa syarika lah. Lahul mulku wa lahul hamdu wa huwa &lsquo;ala kulli syai-in qodiir.</div>
+<div class="arti"><strong>Artinya:</strong><br>&ldquo;Maha Suci Allah, segala puji bagi Allah, dan Allah Maha Besar (33 x). Tidak ada Rabb (yang berhak disembah) kecuali Allah Yang Maha Esa, tidak ada sekutu bagiNya. BagiNya kerajaan. BagiNya pujaan. Dia-lah Yang Mahakuasa atas segala sesuatu&rdquo;</div>
+<div class="arti"><strong>Referensi:</strong><br>(HR. Muslim no. 597).</div>
+</li>
+<li>
+<div class="arti">Membaca surat Al-Ikhlas, Al-Falaq dan An-Naas setiap selesai&nbsp;shalat&nbsp;(fardhu) (HR. Abu Daud no. 1523, dishahikan Al Albani dalam Shahih Abu Daud).</div>
+<div class="arti"><strong>Surah Al-Ikhlas :</strong></div>
+<div class="ayat">
+    بِسْم اللهِ الرَّحْمنِ الرَّحِيْمِ. قُلْ هُوَ اللهُ أَحَـدٌ. اَللهُ الصَّمَـدُ. لَمْ يَلِـدْ وَلَمْ يٌوْلَـدْ. وَلَمْ يَكُـنْ لَهُ كُفُـوًا أَحَـد
+</div>
+<div class="bacaan">Bismillahirrahmanirrahim, Qul huwa allaahu ahad(un), allaahu alshshamad(u), lam yalid walam yuulad(u), walam yakullahu kufuwan ahad(un).</div>
+<div class="arti"><strong>Surat Al-Falaq :</strong></div>
+<div class="ayat">
+    سْم اللهِ الرَّحْمنِ الرَّحِيْمِ قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ، مِنْ شَرِّ ماَ خَلَقَ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَد
+</div>
+<div class="bacaan">Bismillahirrahmanirrahim, Qul a'udzu birobbil falaqi, Min syarri ma kholaqo, Wamin syarri ghosiqin idza waqoba, Wamin syarrin naffatsati fiil 'uqadi, Wamin syiarri hasidin idza hasada</div>
+<div class="arti"><strong>Surat An-Nas :</strong></div>
+<div class="ayat">
+    بِسْم اللهِ الرَّحْمنِ الرَّحِيْمِ قُلْ أَعُوْذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، اَلَّذِيْ يُوَسْوِسُ فِي صُدُوْرِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ
+</div>
+<div class="bacaan">Qul a'uudzu birabbi nnaas, maliki nnaas, ilaahi nnaas, min syarri lwaswaasi lkhannaas, alladzii yuwaswisu fii shuduuri nnaas, mina ljinnati wannaas.</div>
+</li>
+<li>
+<div class="arti">Membaca ayat Kursi setiap selesai shalat (fardhu) (HR. An Nasa-i no. 9928, Ath Thabrani no.7532, dishahihkan Al Albani dalam Shahih Al Jami&rsquo; no.6464).</div>
+<div class="ayat">
+    اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ
+</div>
+<div class="bacaan">"allahu laa ilaaha illa huwal hayyul qayyumu. laa ta'khudzuhuu sinatuw wa laa nauum. lahuu maa fissamaawaati wa maa fil ardhi. man dzal ladzii yasfa'u'indahuu illaa bi idznihi. ya'lamu maa baina aidiihim wa maa khalfahum. wa laa yuhithuuna bi syai-in min 'ilmihii illaa bi maasyaa-a. wasi'a kursiyyuhussamaawaati wal ardha. wa laa ya-udhuu hifzhuhumaa wahuwal 'aliyyul azhiim."</div>
+</li>
+<li>
+<div class="ayat">لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. 10&times; بعد صلاة المغرب والصبح</div>
+<div class="bacaan">Laa ilaha illallah wahdahu laa syarika lah. Lahul mulku wa lahul hamdu yuhyi wa yumiit wa huwa &lsquo;ala kulli syai-in qodiir .</div>
+<div class="arti"><strong>Artinya:</strong><br>&ldquo;Tiada Rabb yang berhak disembah kecuali Allah Yang Maha Esa, tiada sekutu bagiNya, bagiNya kerajaan, bagi-Nya segala puja. Dia-lah yang menghidupkan (orang yang sudah mati atau memberi roh janin yang akan dilahirkan) dan yang mematikan. Dia-lah Yang Mahakuasa atas segala sesuatu.&rdquo; (Dibaca 10 x setiap sesudah shalat Maghrib dan Subuh).</div>
+</li>
+<li>
+<div class="ayat">اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلاً مُتَقَبَّلاً</div>
+<div class="bacaan">Allahumma inni as-aluka &lsquo;ilman naafi&rsquo;a, wa rizqon thoyyiba, wa &lsquo;amalan mutaqobbala.</div>
+<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Allah, sesungguhnya aku mohon kepadaMu ilmu yang bermanfaat, rezeki yang halal dan amal yang diterima.&rdquo; (Dibaca setelah salam shalat Shubuh) (HR. Ibnu Majah no. 762, dishahihkan Al Albani dalam Shahih Ibni Majah).</div>
+<div class="arti">Semoga dzikir yang sederhana ini bisa rutin kita amalkan setelah shalat sehingga Allah berkahi aktivitas harian kita.Wallahu waliyyut taufiq. Walhamdulillah, wa shallallahu &lsquo;ala nabiyyina Muhammad wa &lsquo;ala aalihi wa shohbihi wa sallam.</div>
+<div class="arti"><strong>Referensi:</strong><br>
+Hish-nul Muslim&nbsp;min Adzkar Al Kitab was Sunnah, Syaikh Sa&rsquo;ad bin Wahf Al Qohthoni
+<br>Tash-hih Syarh Hish-nul Muslim min Adzkar Al Kitab was Sunnah, Majdi bin &lsquo;Abdul Wahab Al Ahmad, terbitan Maktabah Al Malik Fahd Al Wathoniyah, cetakan keempat, 1430 H
+</div>
+<center>
+</center>
+</li>
+</ol>
+</div>
+</div>
+
+<script src="function.js">
+</script> 
+<script> 
+ $(document).on("pagecreate", "#page1", function(){
+    //start with only viewone visible
+    $(".tabButton").removeClass("ui-btn-active");
+    $(".tabView").hide();
+    $(".tabButton").eq(0).addClass("ui-btn-active");
+    var viewHref  = $(".tabButton").eq(0).prop("href");
+    $(viewHref.substr(viewHref.indexOf('#'))).show();
+    $(".tabButton").on("click", function(){
+        $(".tabButton").removeClass("ui-btn-active");        
+        $(".tabView").hide();
+        var href = $(this).prop("href");
+        $(href.substr(href.indexOf('#'))).show();        
+        $(this).addClass("ui-btn-active");
+        return false;
+    });
+});
+</script> 
+<div data-role="panel" data-display="push" data-theme="" id="nav-panel" style="background-color:#00897b">
+</body>
+</html>

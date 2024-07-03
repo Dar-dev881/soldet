@@ -1,0 +1,586 @@
+
+<html>
+	<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+				<style>
+.ui-page .ui-header {
+    background: #232323 !important;
+}
+
+.ayat {
+
+background: #F8F3E0 !important;
+padding-top: 10px;
+margin-bottom: 5px;
+
+}
+
+.arti {
+padding-top: 10px;
+}
+
+.bacaan{
+margin-top: 10px;
+
+
+}
+
+    
+					<!-- padding-left: 0.5em; -->
+					<!-- min-height: 3em; -->
+					<!-- line-height: 3em; -->
+}
+
+
+					<!-- .ui-page .ui-header { -->
+					<!-- background: #232323 !important; -->
+					<!-- } -->
+					<!-- Navbar { -->
+					<!-- background: #00897b !important; -->
+					<!-- } -->
+				</style>
+			</head>
+			<body>
+				<div data-role=page id=page1>
+					<div data-role=header data-position=fixed width=100%>
+
+<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+
+
+
+						<form>
+							<input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari Doa">
+							</form>
+						</div>
+						<div data-role = "collapsibleset" data-filter = "true" data-inset = "true" 
+id = "collapsiblesetForFilter" data-input = "#divOfPs-input">
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Adam AS">
+								<h2>Doa Nabi Adam AS</h2>
+								<div class="ayat">
+									<span>قَالَا رَبَّنَا ظَلَمْنَآ أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ ٱلْخَٰسِرِينَ</span>
+								</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/1a-Doa-Nabi-Adam-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Qālā rabbanā ẓalamnā anfusana wa il lam tagfir lanā wa tar-ḥamnā lanakụnanna minal-khāsirīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>Keduanya berkata:"Ya Tuhan kami, kami telah dzalimkan diri kami sendiri, Jika Engkau tidak mengampuni kami dan Engkau rahmatkan kami, tentulah kami menjadi orang yang rugi&rdquo;. (Al A&rsquo;raf : 23)
+									<br />
+									<br />Menurut keterangan Al-Qur&rsquo;an sendiri doa inilah yang diucapkan Nabi Adam dan Siti Hawa sesudah dikeluarkan dari Surga dan diusir kedunia, dengan memohon ampun terhadap dosanya dengan doa ini.
+								</div>
+								
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Nuh AS">
+								<h2>Doa Nabi Nuh AS</h2>
+								<div class="ayat">قَالَ رَبِّ إِنِّىٓ أَعُوذُ بِكَ أَنْ أَسْـَٔلَكَ مَا لَيْسَ لِى بِهِۦ عِلْمٌ ۖ وَإِلَّا تَغْفِرْ لِى وَتَرْحَمْنِىٓ أَكُن مِّنَ ٱلْخَٰسِرِين</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/2a-Doa-Nabi-Nuh-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Qāla rabbi innī a'ụżu bika an as`alaka mā laisa lī bihī 'ilm, wa illā tagfir lī wa tar-ḥamnī akum minal-khāsirīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>Dia (Nuh) berkata,َ&ldquo;Ya Tuhanku, sesungguhnya aku berlindung kepada Engkau dari memohon kepada Engkau sesuatu yang aku tidak mengetahui (hakekatnya). Dan sekiranya Engkau tidak memberi ampun kepadaku, dan tidak menaruh belas kasihan kepadaku, niscaya aku akan termasuk orang-orang yang merugi&rdquo;. (QS. Hud : 47)
+								<br>
+								<br>
+								Menurut Al-Qur&rsquo;an sendiri, doa inilah yang diucapkan oleh Nabi Nuh As sesudah ditolak Allah, karena memohon dilepaskan anaknya (Kan&rsquo;an) yang kafir dan yang tenggelam.&ldquo;Ya Tuhanku tempatkanlah aku pada tempat yang diberkati dan Engkau adalah sebaik-baik yang memberi tempat&rdquo;. Menurut ahli tafsir, doa inilah yang diucapkan Nabi Nuh As sesudah diselamatkan Allah dari bahaya taufan.</div>
+								<div class="ayat">رَّبِّ ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِمَن دَخَلَ بَيْتِىَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ وَلَا تَزِدِ ٱلظَّٰلِمِينَ إِلَّا تَبَارًۢا</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/2b-Doa-Nabi-Nuh-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Rabbigfir lī wa liwālidayya wa liman dakhala baitiya mu`minaw wa lil-mu`minīna wal-mu`mināt, wa lā tazidiẓ-ẓālimīna illā tabārā</div>
+
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku! Ampunilah aku, ibu bapakku, orang yang masuk kerumahku dengan beriman dan semua orang beriman yang laki-laki dan yang perempuan. Dan janganlah Engkau tambahkan bagi orang-orang yang dzalim itu selain binasaan&rdquo;. (QS. Nuh :28)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Nuh As dikala hendak meminta dibinasakan kaumnya lantaran ingkar, beliau memohon dengan doa ini untuk diselamatkan beserta pengikut-pengikutnya.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Isa AS">
+								<h2>Doa Nabi Isa AS</h2>
+								<div class="ayat">قَالَ عِيسَى ٱبْنُ مَرْيَمَ ٱللَّهُمَّ رَبَّنَآ أَنزِلْ عَلَيْنَا مَآئِدَةً مِّنَ ٱلسَّمَآءِ تَكُونُ لَنَا عِيدًا لِّأَوَّلِنَا وَءَاخِرِنَا وَءَايَةً مِّنكَ ۖ وَٱرْزُقْنَا وَأَنتَ خَيْرُ ٱلرَّٰزِقِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/3a-Doa-Nabi-Isa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Qāla 'īsabnu maryamallāhumma rabbanā anzil 'alainā mā`idatam minas-samā`i takụnu lanā 'īdal li`awwalinā wa ākhirinā wa āyatam mingka warzuqnā wa anta khairur-rāziqīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>Isa putera Maryam berdoa:&ldquo;Ya Tuhan kami, turunkanlah kiranya kepada kami suatu kehidupan dari langit (yang hari turunnya) akan menjadi hari raya bagi kami yaitu bagi orang-orang yang bersama kami dan yang datang sesudah kami, dan menjadi tanda bagi kekuasaan Engkau, beri rezeki kami dan Engkaulah Pemberi rezeki yang paling utama&rdquo;. (QS. AL-Maaidah :114)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Isa As sesudah bersembahyang dua rakaat, kemudian menundukkan kepalanya sambil berdoa dengan doa ini serta sambil menangis.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Ibrahim AS">
+								<h2>Doa Nabi Ibrahim AS</h2>
+								<div class="ayat">رَبَّنَا وَٱجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِن ذُرِّيَّتِنَآ أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَآ ۖ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/4a-Doa-Nabi-Ibrahim-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Rabbanā waj'alnā muslimaini laka wa min żurriyyatinā ummatam muslimatal laka wa arinā manāsikanā wa tub 'alainā, innaka antat-tawwābur-raḥīm</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhan kami terimalah daripada kami (amalan kami) sesungguhnya Engkaulah yang Maha Mendengar lagi Maha Mengetahui. Dan terimalah taubat kami. Sesungguhnya Engkaulah yang Maha Penerima Taubat lagi Maha Penyayang&rdquo;. (QS. Al-Baqarah : 128)
+								<br><br>
+								Menurut riwayat Al-Baghawy, bahwa Nabi Ibrahim As dan Nabi Ismail As membaca doa ini saat membina Ka&rsquo;bah.</div>
+								
+								<div class="ayat">رَبِّ ٱجْعَلْنِى مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِى ۚ رَبَّنَا وَتَقَبَّلْ دُعَآءِ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/4b-Doa-Nabi-Ibrahim-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Rabbij'alnī muqīmaṣ-ṣalāti wa min żurriyyatī rabbanā wa taqabbal du'ā`</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, jadikanlah aku dan anak cucuku orang-orang yang tetap mendirikan shalat, ya Tuhan kami perkenankanlah doaku.(QS. Ibrahim : 40)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Ibrahim As mengucapkan doa ini sesudah beliau (telah) memperoleh anak Ismail dan Ishaq.</div>
+								<div class="ayat">رَبِّ هَبۡ لِىۡ حُكۡمًا وَّاَلۡحِقۡنِىۡ بِالصّٰلِحِيۡنَۙ‏</div>
+								<div class="ayat">وَاجۡعَلْ لِّىۡ لِسَانَ صِدۡقٍ فِى الۡاٰخِرِيۡنَۙ‏</div>
+								<div class="ayat">وَاجۡعَلۡنِىۡ مِنۡ وَّرَثَةِ جَنَّةِ النَّعِيۡمِۙ‏</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/4c-Doa-Nabi-Ibrahim-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Rabbi hab lī ḥukmaw wa al-ḥiqnī biṣ-ṣāliḥīn</div>
+								</p>
+								<div class="bacaan">Waj'al lī lisāna ṣidqin fil-ākhirīn</div>
+								</p>
+								<div class="bacaan">Waj'alnī miw waraṡati jannatin-na'īm</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>“Ya Tuhanku, berikanlah kepadaku ilmu dan masukkanlah aku ke dalam golongan orang-orang yang saleh, dan jadikanlah aku buah tutur yang baik bagi orang-orang (yang datang) kemudian, dan jadikanlah aku termasuk orang yang mewarisi surga yang penuh kenikmatan. (QS. Asy-Syu&rsquo;ara : 83-85)
+								<br><br>
+								Menurut keterangan ahli tafsir doa inilah yang selalu diucapkan oleh Nabi Ibrahim As. &ldquo;Ya Tuhanku, berikanlah kepadaku (seorang anak) dari anak-anak yang shaleh&rdquo;.Menurut keterangan ahli tafsir, Nabi Ibrahim memohon dengan doa ini sebelum memperoleh anaknya Ismail.</div>
+								<div class="ayat">رَبَّنَا عَلَيۡكَ تَوَكَّلۡنَا وَاِلَيۡكَ اَنَـبۡنَا وَاِلَيۡكَ الۡمَصِيۡرُ</div>
+								<div class="ayat">رَبَّنَا لَا تَجۡعَلۡنَا فِتۡنَةً لِّلَّذِيۡنَ كَفَرُوۡا وَاغۡفِرۡ لَـنَا رَبَّنَا‌ ۚ اِنَّكَ اَنۡتَ الۡعَزِيۡزُ الۡحَكِيۡمُ</div>	
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/4d-Doa-Nabi-Ibrahim-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Rabbanā 'alaika tawakkalnā wa ilaika anabnā wa ilaikal-maṣīr</div>
+								</p>
+								<div class="bacaan">Rabbanā lā taj'alnā fitnatal lillażīna kafarụ wagfir lanā rabbanā, innaka antal-'azīzul-ḥakīm</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhan kami hanya kepada Engkaulah kami bertawakal dan hanya kepada Engkaulah kami bertaubat dan hanya kepada Engkaulah kami kembali. Ya Tuhan kami janganlah Engkau jadikan kami (sasaran) fitnah bagi orang-orang kafir. Dan ampunilah kami ya Tuhan kami. Sesungguhnya Engkau, Engkaulah yang Maha Perkasa lagi Maha Bijaksana&rdquo;. (QS. Al-Mumtahanah :4-5)
+									<br><br>Menurut keterangan ahli tafsir Nabi Ibrahim As dan pengikut-pengikutnya selalu berdoa dengan doa ini.</div>
+								</p>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Ayyub AS">
+								<h2>Doa Nabi Ayyub AS</h2>
+								<div class="ayat">وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُۥٓ أَنِّى مَسَّنِىَ ٱلضُّرُّ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/5a-Doa-Nabi-Ayyub-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+								<div class="bacaan">Wa ayyụba iż nādā rabbahū annī massaniyaḍ-ḍurru wa anta ar-ḥamur-rāḥimīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, bahwasanya aku telah ditimpa bencana, dan Engkaulah Tuhan yang paling rahim dari segala yang rahim (Penyanyang)&rdquo;. (Al Anbiyaa : 83)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Ayyub As dikala mendapat cobaan dari Allah lalu berdoa dengan doa ini.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Musa AS">
+								<h2>Doa Nabi Musa AS</h2>
+								<div class="ayat">قَالَ رَبِّ اشْرَحْ لِيْ صَدْرِيْ ۙ</div>
+								<div class="ayat">وَيَسِّرْ لِيْٓ اَمْرِيْ ۙ</div>
+								<div class="ayat">وَاحْلُلْ عُقْدَةً مِّنْ لِّسَانِيْ ۙ</div>
+								<div class="ayat">يَفْقَهُوْا قَوْلِيْ ۖ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/6a-Doa-Nabi-Musa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Qāla rabbisyraḥ lī ṣadrī</div>
+								<div class="bacaan">Wa yassir lī amrī</div>
+								<div class="bacaan">Waḥlul 'uqdatam mil lisānī</div>
+								<div class="bacaan">Yafqahụ qaulī</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, lapangkanlah untukku dadaku, dan mudahkanlah untukku urusanku, dan lepaskanlah kekakuan dari lidahku,supaya mereka mengerti perkataanku&rdquo;. (QS Thaahaa : 25-28)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Musa As dikala merasa takut menghadapi Fir&rsquo;aun memohon kepada Allah dengan doa ini.</div>
+								<div class="ayat">قَالَ رَبِّ إِنِّى ظَلَمْتُ نَفْسِى فَٱغْفِرْ لِى فَغَفَرَ لَهُۥٓ ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/6b-Doa-Nabi-Musa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Qāla rabbi innī ẓalamtu nafsī fagfir lī fa gafara lah, innahụ huwal-gafụrur-raḥīm</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, sesungguhnya aku telah menganiaya diriku sendiri karena itu ampunilah aku&rdquo;. (QS. Qashas : 16)
+								<br><br>
+								Menurut keterangan ahli tafsir, doa ini yang diucapkan oleh Nabi Musa As setelah membunuh orang Kurby.</div>
+								<div class="ayat">وَٱحْلُلْ عُقْدَةً مِّن لِّسَانِى</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/6c-Doa-Nabi-Musa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Waḥlul 'uqdatam mil lisānī</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Dan berikanlah aku kemampuan untuk berbicara secara fasih,&rdquo;. (QS Thaahaa : 27)
+								<br><br>
+								Doa inilah yang diucapkan Nabi Musa As ketika meninggalkan Mesir dan menuju ke Mad-yan.</div>
+								<div class="ayat">رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍ فَقِيرٌ &hellip;.</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/6d-Doa-Nabi-Musa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbi innī limā anzalta ilayya min khairin faqīr</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku sesungguhnya aku sangat memerlukan sesuatu kebaikan yang Engkau turunkan kepadaku&rdquo;. (QS. AL-Qashash :24)
+								<br><br>
+								Doa inilah yang diucapkan Nabi Musa As ketika sampai di 	Mad-yan dan menderita kelaparan.</div>
+								<div class="ayat">قَالَ رَبِّ ٱغْفِرْ لِى وَلِأَخِى وَأَدْخِلْنَا فِى رَحْمَتِكَ ۖ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/6e-Doa-Nabi-Musa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Qāla rabbigfir lī wa li`akhī wa adkhilnā fī raḥmatika wa anta ar-ḥamur-rāḥimīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&rdquo;Ya Tuhanku, ampunilah aku dan saudaraku dan masukanlah kami kedalam Rahmat Engkau dan Engkau adalah Maha Penyayang diantara Para Penyayang&rdquo;. (QS. Al-A&rsquo;raaf : 151)</div>
+								<div class="ayat">...اَنۡتَ وَلِيُّنَا فَاغۡفِرۡ لَـنَا وَارۡحَمۡنَا‌ وَاَنۡتَ خَيۡرُالۡغَافِرِيۡنَ</div>
+								<div class="ayat">وَاكۡتُبۡ لَـنَا فِىۡ هٰذِهِ الدُّنۡيَا حَسَنَةً وَّفِى الۡاٰخِرَةِ اِنَّا هُدۡنَاۤ اِلَيۡكَ...</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/6f-Doa-Nabi-Musa-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Anta waliyyunā fagfir lanā war-ḥamnā wa anta khairul-gāfirīn</div>
+								<div class="bacaan">Waktub lana fī hāżihid-dun-yā ḥasanataw wa fil-ākhirati innā hudnā ilaīk...</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Engkaulah yang memimpin kami, maka ampunilah kami dan berilah kami Rahmat dan Engkaulah Pemberi ampun yang sebaik-baiknya. Dan tetapkanlah untuk kami kebajikan didunia ini dan akherat. Sesungguhnya kami kembali (bertaubat) kepada Engkau&rdquo;. (QS. AL-A&rsquo;raaf :155-156)</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Sulaiman AS">
+								<h2>Doa Nabi Sulaiman AS</h2>
+								<div class="ayat">رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضَىٰهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/7a-Doa-Nabi-Sulaiman-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbi auzi'nī an asykura ni'matakallatī an'amta 'alayya wa 'alā wālidayya wa an a'mala ṣāliḥan tarḍāhu wa adkhilnī biraḥmatika fī 'ibādikaṣ-ṣāliḥīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, berikanlah aku ilham untuk tetap mensyukuri nikmat-Mu yang telah Engkau anugerahkan kepadaku dan kepada dua orang ibu bapakku dan untuk mengerjakan amal shaleh yang Engkau ridhoi dan masukkanlah aku dengan rahmat-Mu kedalam golongan hamba-hamba-Mu yang shaleh&rdquo;. (QS. An-Naml : 19) 
+								<br><br>
+								Menurut keterangan ahli tafsir, doa inilah yang diucapkan Nabi Sulaiman As, sesudah memperoleh kerajaan yang besar dari Allah SWT.</p></div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Luth AS">
+								<h2>Doa Nabi Luth AS</h2>
+								<div class="ayat">رَبِّ نَجِّنِى وَأَهْلِى مِمَّا يَعْمَلُونَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/8a-Doa-Nabi-Luth-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbi najjinī wa ahlī mimmā ya'malụn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku selamatkanlah aku beserta keluargaku dari (akibat) perbuatan yang mereka kerjakan&rdquo;. (QS. Asy-Syu&rsquo;araa :169)
+								<br><br>
+								Menurut keterangan ahli tafsir, doa inilah yang diucapkan Luth untuk memohon supaya beliau dan keluarganya dipelihara Allah dari tindakan kaumnya yang buruk itu.&ldquo;Tuhanku, tolonglah aku terhadap kaum yang berbuat kerusakan&rdquo;.
+									<br />Menurut keterangan ahli tafsir, Nabi Luth berdoa dengan doa ini sesudah kaumnya meminta supaya mereka beri bencana oleh Allah sekiranya kalau Luth benar-benar seorang Nabi.
+								</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Yusuf AS">
+								<h2>Doa Nabi Yusuf AS</h2>
+								<div class="ayat">رَبِّ قَدْ ءَاتَيْتَنِى مِنَ ٱلْمُلْكِ وَعَلَّمْتَنِى مِن تَأْوِيلِ ٱلْأَحَادِيثِ ۚ فَاطِرَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ أَنتَ وَلِىِّۦ فِى ٱلدُّنْيَا وَٱلْءَاخِرَةِ ۖ تَوَفَّنِى مُسْلِمًا وَأَلْحِقْنِى بِٱلصَّٰلِحِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/9a-Doa-Nabi-Yusuf-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbi qad ātaitanī minal-mulki wa 'allamtanī min ta`wīlil-aḥādīṡ, fāṭiras-samāwāti wal-arḍ, anta waliyyī fid-dun-yā wal-ākhirah, tawaffanī muslimaw wa al-ḥiqnī biṣ-ṣāliḥīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, sesungguhnya Engkau telah menganugerahkan kepadaku sebahagian kerajaan dan telah mengajarkan kepadaku sebahagian ta&rsquo;bir mimpi. (Ya Tuhan) Pencipta langit dan bumi. Engkaulah Pelindungku di dunia dan di akhirat, wafatkanlah aku dalam keadaan Islam dan gabungkanlah aku dengan orang-orang yang saleh&rdquo;. (QS. Yusuf :101)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Yusuf memohon kepada Allah dengan doa ini dikala beliau dijadikan wazir Negara Mesir.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Syuaib AS">
+								<h2>Doa Nabi Syuaib AS</h2>
+								<div class="ayat">رَبَّنَا ٱفْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِٱلْحَقِّ وَأَنتَ خَيْرُ ٱلْفَٰتِحِينَ &hellip;</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/10a-Doa-Nabi-Syuaib-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbanaftaḥ bainanā wa baina qauminā bil-ḥaqqi wa anta khairul-fātiḥīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhan kami, berilah keputusan antara kami dan kaum kami dengan yang hak (adil) dan Engkaulan Pemberi keputusan yang sebaik-baiknya&rdquo;. (QS. Al-A&rsquo;raf : 89) Menurut ahli tafsir, Nabi Syu&rsquo;aib setelah putus asa mengajak beriman kaumnya beliau berdoa dengan doa ini.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Yunus AS">
+								<h2>Doa Nabi Yunus AS</h2>
+								<div class="ayat">وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبًا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِى ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/11a-Doa-Nabi-Yunus-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Wa żan-nụni iż żahaba mugāḍiban fa ẓanna al lan naqdira 'alaihi fa nādā fiẓ-ẓulumāti al lā ilāha illā anta sub-ḥānaka innī kuntu minaẓ-ẓālimīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Dan (ingatlah kisah) Dzun Nun (Yunus), ketika ia pergi dalam keadaan marah, lalu ia menyangka bahwa Kami tidak akan mempersempitnya (menyulitkannya), maka ia menyeru dalam keadaan yang sangat gelap: "Bahwa tidak ada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku adalah termasuk orang-orang yang zalim&rdquo;. (QS. Al-Anbiya :87)
+								<br><br>
+								Menurut keterangan ahli tafsir, inilah tasbih yang diucapkan Nabi Yunus dikala beliau ditelan ikan.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Zakariya AS">
+								<h2>Doa Nabi Zakariya AS</h2>
+								<div class="ayat">هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُۥ ۖ قَالَ رَبِّ هَبْ لِى مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/12a-Doa-Nabi-Zakariya-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Hunālika da'ā zakariyyā rabbah, qāla rabbi hab lī mil ladungka żurriyyatan ṭayyibah, innaka samī'ud-du'ā`</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, berilah aku dari sisi-Mu seorang anak yang baik. Sesungguhnya Engkau Maha Pendengar doa&rdquo;. (QS. AL-Imron :38)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi Zakaria setelah masuk kedalam mihrabnya dan menguncikan segala pintu, memohon kepada Allah supaya diberikan kepadanya seorang anak yang diterangkan dalam Al-Qur&rsquo;an dengan doa ini.</div>
+								<div class="ayat">وَزَكَرِيَّآ إِذْ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرْنِى فَرْدًا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/12b-Doa-Nabi-Zakariya-AS.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Wa zakariyyā iż nādā rabbahụ rabbi lā tażarnī fardaw wa anta khairul-wāriṡīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, Janganlah Engkau membiarkan aku hidup seorang diri dan Engkau lah waris yang paling baik&rdquo;. (QS. Al-Anbiya : 89)
+								<br><br>
+								Menurut keterangan ahli tafsir, doa inilah yang diucapkan Nabi Zakaria As ketika beliau belum memperoleh anak.</div>
+							</div>
+							<div data-role = "collapsible" data-filtertext = "Doa Nabi Muhammad SAW">
+								<h2>Doa Nabi Muhammad SAW</h2>
+								<div class="ayat">وَمِنْهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْءَاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13a-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Wa min-hum may yaqụlu rabbanā ātinā fid-dun-yā ḥasanataw wa fil-ākhirati ḥasanataw wa qinā 'ażāban-nār</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Wahai Tuhan kami, berikanlah kami kebaikan dunia dan kebaikan di akhirat dan periharalah kami dari adzab neraka&rdquo;. (QS Al Baqarah : 201)
+								<br><br>
+								Menurut riwayat Al-Baghawy dari Anas ra, doa inilah yang selalu diucapkan Nabi Muhammad [lihat tafsir Al-Baghawy I :158]</div>
+								<div class="ayat">رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13b-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbanā lā tu`ākhiżnā in nasīnā au akhṭa`nā, rabbanā wa lā taḥmil 'alainā iṣrang kamā ḥamaltahụ 'alallażīna ming qablinā, rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa'fu 'annā, wagfir lanā, war-ḥamnā, anta maulānā fanṣurnā 'alal-qaumil-kāfirīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhan kami, Janganlah Engkau hukum kami jika kami lupa atau kami bersalah. Ya Tuhan kami, Janganlah Engkau bebankan kepada kami beban yang berat sebagaimana Engkau bebankan kepada orang-orang yang sebelum kami. Ya Tuhan kami, Janganlah Engkau pikulkan kepada kami apa yang tak sanggup kami memikulnya. Beri maaflah kami, ampunilah kami dan rahmatilah kami. Engkaulah penolong kami maka tolonglah kami terhadap kaum yang kafir&rdquo;. (QS. Al-Baqarah : 286)
+								<br><br>
+								Menurut riwayat Al-Baihaqy, Nabi Muhammad bersabda : &rdquo;Dua ayat dari akhir AL-Baqarah, apabila seseorang membacanya dimalam hari, maka terpeliharalah ia dari segala bencana&rdquo;.</div>
+								<div class="ayat">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13c-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbanā lā tuzig qulụbanā ba'da iż hadaitanā wa hab lanā mil ladungka raḥmah, innaka antal-wahhāb</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Allah, Janganlah Engkau palingkan hati kami setelah menerima petunjuk Engkau, dan berilah kami akan Rahmat dari Engkau. Sesungguhnya Engkau adalah Dzat yang banyak pemberiannya&rdquo;. (QS. Al-Imran : 8)
+								<br><br>
+								Menurut riwayat AL-Baghawy, Nabi bersabda : &rdquo;Segala jiwa manusia terletak antara dua tangan Tuhan, Tuhan memerengkan dan Tuhan melempangkannya&rdquo;. Karena itu Nabi berdoa selalu mengucapkan : Allahumma ya muqallibal qulubi tsabit qulubana &rsquo;ala diinika.</div>
+								<div class="ayat">رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ ٱللَّهَ لَا يُخْلِفُ ٱلْمِيعَادَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13d-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbanā innaka jāmi'un-nāsi liyaumil lā raiba fīh, innallāha lā yukhliful-mī'ād</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhan kami, sesungguhnya Engkau mengumpulkan manusia untuk (menerima pembalasan) pada hari yang tak ada keraguan padanya.&rdquo; Sesungguhnya Allah tidak menyalahi janji&rdquo;. (QS. Al-Imran : 9)</div>
+								<div class="ayat">قُلِ اللّٰهُمَّ مٰلِكَ الْمُلْكِ تُؤْتِى الْمُلْكَ مَنْ تَشَاۤءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاۤءُۖ </div>
+								<div class="ayat">﴾وَتُعِزُّ مَنْ تَشَاۤءُ وَتُذِلُّ مَنْ تَشَاۤءُ ۗ بِيَدِكَ الْخَيْرُ ۗ اِنَّكَ عَلٰى كُلِّ شَيْءٍ قَدِيْرٌ﴿٢٦</div>
+								<div class="ayat">تُوْلِجُ الَّيْلَ فِى النَّهَارِ وَتُوْلِجُ النَّهَارَ فِى الَّيْلِ وَتُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ</div>
+								<div class="ayat">﴾وَتُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَتَرْزُقُ مَنْ تَشَاۤءُبِغَيْرِ حِسَابٍ﴿٢٧</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13e-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Qulillāhumma mālikal-mulki tu`til-mulka man tasyā`u wa tanzi'ul-mulka mim man tasyā`u wa tu'izzu man tasyā`u wa tużillu man tasyā`, biyadikal-khaīr, innaka 'alā kulli syai`ing qadīr</div>
+								<div class="bacaan">Tụlijul-laila fin-nahāri wa tụlijun-nahāra fil-laili wa tukhrijul-ḥayya minal-mayyiti wa tukhrijul-mayyita minal-ḥayyi wa tarzuqu man tasyā`u bigairi ḥisāb</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Katakanlah : Wahai Tuhan yang mempunyai kerajaan, Engkau berikan kerajaan kepada orang yang Engkau kehendaki dan Engkau Cabut kerajaan dari orang yang Engkau kehendaki. Engkau muliakan orang yang Engkau kehendaki dan Engkau hinakan orang yang Engkau kehendaki. Ditangan Engkaulah segala kebajikan. Sesungguhnya Engkau Maha Kuasa atas segala sesuatu. Engkau masukkan malam kesiang dan Engkau masukkan siang kedalam malam. Engkau keluarkan yang hidup dari yang mati dan Engkau keluarkan yang mati dari yang hidup. Dan Engkau beri rezeki siapa yang Engkau kehendaki tanpa hisap&rdquo;. (QS. Ali Imran : 26-27)
+								<br><br>
+								Menurut riwayat Al-Baghawy bahwa Rasulullah SAW bersabda : Fatihatul Kitab dan dua ayat dari Al-Imron yaitu dari ayat 26-27 bila dibaca dibelakang shalat, niscaya Tuhan menjanjikan Surga untuknya.</div>
+								<div class="ayat">وَقُل رَّبِّ أَدْخِلْنِى مُدْخَلَ صِدْقٍ وَأَخْرِجْنِى مُخْرَجَ صِدْقٍ وَٱجْعَل لِّى مِن لَّدُنكَ سُلْطَٰنًا نَّصِيرًا</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13f-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan"> Wa qur rabbi adkhilnī mudkhala ṣidqiw wa akhrijnī mukhraja ṣidqiw waj'al lī mil ladungka sulṭānan naṣīrā</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, masukkanlah aku dengan cara yang baik dan keluarkanlah aku dengan cara yang baik dan berikanlah kepadaku dari sisi Engkau kekuasaan yang menolong&rdquo;. (QS. Al-Israa : 80)
+								<br><br>
+								Menurut keterangan ahli tafsir, Nabi SAW berdoa dengan doa ini memohon kepada Allah supaya beliau dapat mengalahkan musuh-musuhnya sesudah berkediaman di Madinah.</div>
+								<div class="ayat">فَتَعَٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۗ وَلَا تَعْجَلْ بِٱلْقُرْءَانِ مِن قَبْلِ أَن يُقْضَىٰٓ إِلَيْكَ وَحْيُهُۥ ۖ وَقُل رَّبِّ زِدْنِى عِلْمًا</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13g-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Fa ta'ālallāhul-malikul-ḥaqq, wa lā ta'jal bil-qur`āni ming qabli ay yuqḍā ilaika waḥyuhụ wa qur rabbi zidnī 'ilmā</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Maka Maha Tinggi Allah Raja Yang sebenar-benarnya, dan janganlah kamu tergesa-gesa membaca Al qur&rsquo;an sebelum disempurnakan mewahyukannya kepadamu, dan katakanlah: &ldquo;Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan&ldquo;(QS.Thaa Haa:114).
+								<br><br>
+								Menurut keterangan ahli tafsir, doa inilah yang diucapkan Nabi untuk memperoleh faham yang luas dalam memahamkan ayat-ayat Allah.</div>
+								<div class="ayat">قَٰلَ رَبِّ ٱحْكُم بِٱلْحَقِّ ۗ وَرَبُّنَا ٱلرَّحْمَٰنُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13h-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">qāla rabbiḥkum bil-ḥaqq, wa rabbunar-raḥmānul-musta'ānu 'alā mā taṣifụn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, berilah keputusan dengan adil. Dan Tuhan kami ialah Tuhan Yang Maha Pemurah lagi yang dimohonkan pertolongan-Nya terhadap apa yang kamu katakan&rdquo;. (QS. Al-Anbiyaa : 112)
+								<br><br>
+								Menurut keterangan ahli tafsir, doa inilah yang diucapkan Nabi Muhammad sebelum beliau memperoleh kemenangan perang Badar. (Al-Khazim 4 : 264)</div>
+								<div class="ayat">رَبِّ فَلَا تَجْعَلْنِى فِى ٱلْقَوْمِ ٱلظَّٰلِمِينَ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13i-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Rabbi fa lā taj'alnī fil-qaumiẓ-ẓālimīn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku, maka janganlah Engkau jadikan aku berada diantara orang-orang yang dzalim&rdquo;. (QS. Al_Mukminun : 94)
+								<br><br>
+								Menurut keterangan ahli tafsir doa inilah yang diucapkan Nabi Muhammad supaya dipelihara Allah dari bencana yang mungkin menimpa kaum yang dzalim.</div>
+								<div class="ayat">وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ</div>
+								<br>
+								<center>
+								<audio controls class="musicplayer">
+								<source src="audio/13j-Doa-Nabi-Muhammad-SAW.ogg" type="audio/mp3">
+								</audio>
+								</center>
+
+								<div class="bacaan">Wa qur rabbi a'ụżu bika min hamazātisy-syayāṭīn</div>
+								<div class="bacaan">Wa a'ụżu bika rabbi ay yaḥḍurụn</div>
+								</p>
+								<div class="arti"><strong>Artinya:</strong><br>&ldquo;Ya Tuhanku aku berlindung kepada-Mu dari bisikan &ndash; bisikan syaithan. Dan Aku berlindung (pula) kepada Engkau ya Tuhanku dari kedatangan mereka kepadaku&rdquo;. (QS. Al-Mukminun : 97-98) 
+								<br><br>
+								Menurut keterangan ahli tafsir inilah salah satu doa yang diperintahkan supaya Nabi membacanya : Karena doa ini sering sekali meminta perlindungan dengan membaca doa ini, yang tersebut dalam Iftitah shalat. [Lihat Al-Khazim, 5 : 36]Sebenarnya masih sangat banyak doa-doa Nabi Muhammad yang terdapat didalam Kitab Suci AL-Qur&rsquo;an dan Al-Hadist.</div>
+							</div>
+
+						</div>
+						<div data-role=footer data-position=fixed>
+
+<script src="function.js">
+
+
+</script> 
+						
+<div data-role="panel" data-display="push" data-theme="" id="nav-panel" style="background-color:#333">
+<fieldset class=ui-grid-b data-inset="true"	 data-input="#divOfPs-input" data-filter="true" data-theme="c" style="padding-top:10px;background:#FFFDF1;border-radius:10px;">
+
+<div class=ui-block-a><a href=index.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/dzikir.png style="width: 60%;" /><p class="textbawah" align=center>Dzikir Setelah Sholat</p></a></div>
+<div class=ui-block-b><a href=index2.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa3.png style="width: 60%;" /><p class="textbawah" align=center>Doa Setelah Sholat</p></a></div>
+<div class=ui-block-c><a href=dzikirpagipetang.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/pagi.png style="width: 60%;" /><p class="textbawah" align=center>Dzikir Pagi Petang</p></a></div>
+<div class=ui-block-a><a href=doaharian.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa2.png style="width: 60%;" /><p class="textbawah" align=center>Doa<br>Harian</p></a></div>
+<div class=ui-block-b><a href=doaparanabi.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tajwid.png style="width: 60%;" /><p class="textbawah" align=center>Doa Para Nabi</p></a></div>
+<div class=ui-block-c><a href=doarabbana.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa3.png style="width: 60%;" /><p class="textbawah" align=center>Doa Rabbana</p></a></div>
+<div class=ui-block-a><a href=doapilihan.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa.png style="width: 60%;" /><p class="textbawah" align=center>Doa<br>Pilihan</p></a></div>
+<div class=ui-block-b><a href=bacaansholat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/dzikir2.png style="width: 60%;" /><p class="textbawah" align=center>Bacaan Sholat</p></a></div>
+<div class=ui-block-c><a href=panduansholat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/s2.png style="width: 60%;" /><p class="textbawah" align=center>Sholat Wajib</p></a></div>
+<div class=ui-block-a><a href=sholatsunnah.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/sholat.png style="width: 60%;" /><p class="textbawah" align=center>Sholat Sunnah</p></a></div>
+<div class=ui-block-b><a href=doashalatsunnah.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/doa2.png style="width: 60%;" /><p class="textbawah" align=center>Doa Sholat Sunnah</p></a></div>
+<div class=ui-block-c><a href=quran.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/quran.png style="width: 60%;" /><p class="textbawah" align=center>Quran Terjemah</p></a></div>
+<div class=ui-block-a><a href=asmaulhusna.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tafsir1.png style="width: 60%;" /><p class="textbawah" align=center>Asmaul Husna</p></a></div>
+<div class=ui-block-b><a href=kisahmuslim.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/tajwid2.png style="width: 60%;" /><p class="textbawah" align=center>Kisah<br>Muslim</p></a></div>
+<div class=ui-block-c><a href=adabdoadandzikir.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/adabd3.gif style="width: 60%;" /><p class="textbawah" align=center>Adab &<br>Waktu</p></a></div>
+<div class=ui-block-a><a href=rate.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/rate.gif style="width: 60%;" /><p class="textbawah" align=center>Rate<br>Aplikasi</p></a></div>
+<div class=ui-block-b><a href=disclaimer.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/podcast.png style="width: 60%;" /><p class="textbawah" align=center>Privacy<br>Disclaimer</p></a></div>
+<div class=ui-block-c><a href=removeads.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=icon/noads.png style="width: 60%;" /><p class="textbawah" align=center>Remove<br>Ads</p></a></div>
+
+
+</fieldset>
+		
+    </div>
+					</div>
+				</body>
+			</html>

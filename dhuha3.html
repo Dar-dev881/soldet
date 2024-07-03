@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-e"> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false"><button>Doa</button></a> -->
+<!-- </div> -->
+</div> 
+
+
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Waktu Shalat Dhuha</h1>
+        <a style="background-color:#007c91;border:none" href="dhuha.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Waktu pelaksanaannya adalah dimulai ketika matahari meninggi setinggi tombak sampai sebelum zawal, yaitu ketika matahari tegak lurus. Dari Amr bin Abasah radhiallahu’anhu, ia berkata:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:13px;">قدِم النبيُّ صلَّى اللهُ عليه وسلَّم المدينةَ، فقدِمْتُ المدينةَ، فدخلتُ عليه، فقلتُ: أخبِرْني عن الصلاةِ، فقال: صلِّ صلاةَ الصُّبحِ، ثم أَقصِرْ عن الصَّلاةِ حين تطلُعُ الشمسُ حتى ترتفعَ؛ فإنَّها تطلُع حين تطلُع بين قرنَي شيطانٍ، وحينئذٍ يَسجُد لها الكفَّارُ، ثم صلِّ؛ فإنَّ الصلاةَ مشهودةٌ محضورةٌ، حتى يستقلَّ الظلُّ بالرُّمح</div>
+<div class="bacaan" style="text-align:justify">“Nabi Shallallahu’alaihi Wasallam datang ke Madinah, ketika itu aku pun datang ke Madinah. Maka aku pun menemui beliau, lalu aku berkata: wahai Rasulullah, ajarkan aku tentang shalat. Beliau bersabda: kerjakanlah shalat shubuh. Kemudian janganlah shalat ketika matahari sedang terbit sampai ia meninggi. Karena ia sedang terbit di antara dua tanduk setan. Dan ketika itulah orang-orang kafir sujud kepada matahari. Setelah ia meninggi, baru shalatlah. Karena shalat ketika itu dihadiri dan disaksikan (Malaikat), sampai bayangan tombak mengecil” <br><strong>(HR. Muslim no. 832).</strong></div>
+<div class="arti">Sebagian ulama mengatakan bahwa waktu dhuha itu sekitar 15 menit setelah matahari terbit. Syaikh Abdul Aziz bin Baz menjelaskan:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:14px;">ووقتها يبتدئ من ارتفاع الشمس قيد رمح في عين الناظر، وذلك يقارب ربع ساعة بعد طلوعها</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Waktu shalat dhuha adalah dimulai ketika matahari meninggi setinggi tombak bagi orang yang melihatnya (matahari). Dan itu sekitar 15 menit setelah ia terbit&rdquo; <br /><strong>(<a href="https://ar.islamway.net/fatwa/14645">Fatawa Ibnu Baz</a>).</strong></div>
+<div class="arti">Dan waktu yang paling utama adalah ketika matahari sudah tinggi dan sinar matahari sudah terik. Dari Zaid bin Arqam radhiallahu’anhu:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">أنَّه رأى قومًا يُصلُّون من الضُّحى في مسجدِ قُباءٍ، فقال: أمَا لقَدْ علِموا أنَّ الصلاةَ في غيرِ هذه الساعةِ أفضلُ، قال: ((خرَجَ رسولُ اللهِ صلَّى اللهُ عليه وسلَّم على أهلِ قُباءٍ، وهم يُصلُّونَ الضُّحى، فقال: صلاةُ الأوَّابِين إذا رَمِضَتِ الفصالُ من الضُّحَى</div>
+<div class="bacaan" style="text-align:justify">Zaid bin Arqam melihat sekelompok orang yang sedang melaksanakan shalat Dhuha. Kemudian ia mengatakan, “Mereka mungkin tidak mengetahui bahwa selain waktu yang mereka kerjakan saat ini, ada yang lebih utama. Rasulullah shallallahu ‘alaihi wa sallam bersabda, “Shalat awwabin hendaknya dikerjakan ketika anak unta merasakan terik matahari” <br><strong>(HR. Muslim no. 748).</strong></div>
+<div class="arti"><strong>Shalat Isyraq Adalah Shalat Dhuha Di Awal Waktu</strong></div>
+<div class="arti">Dari Anas bin Malik radhiallahu’anhu, Rasulullah shallallahu ‘alaihi wa sallam bersabda:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:12px;">صلَّى الغداةَ في جماعةٍ ثم قعد يذكرُ اللهَ حتى تطلعَ الشمسُ ثم صلَّى ركعتيْنِ كانت لهُ كأجرِ حجَّةٍ وعمرةٍ . قال : قال رسولُ اللهِ صلَّى اللهُ عليهِ وسلَّمَ : تَامَّةٍ ، تَامَّةٍ ، تَامَّةٍ</div>
+<div class="bacaan" style="text-align:justify">“Seseorang yang shalat subuh secara berjamaah, lalu ia duduk berdzikir kepada Allah sampai matahari terbit. Kemudian ia shalat dua raka’at, maka pahala yang ia dapatkan seperti haji dan umrah. Rasulullah shallallahu ‘alaihi wa sallam bersabda: sempurna, sempurna, sempurna” <br><strong>(HR. Tirmidzi no. 586, dishahihkan Al Albani dalam Silsilah Ash Shahihah no. 3403).</strong></div>
+<div class="arti">Dalam hadits ini disebutkan shalat dua rakaat ketika matahari terbit. Yang sering disebut sebagai shalat isyraq. Dan shalat isyraq ini adalah shalat dhuha di awal waktu. Dalam Mausu’ah Fiqhiyyah Kuwaitiyyah (27/220-221) disebutkan:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:11px;">بتتبُّع ظاهر أقوال الفقهاء والمحدِّثين يتبيَّن: أنَّ صلاة الضحى وصلاة الإشراق واحدةٌ؛ إذ كلهم ذكروا وقتَها من بعد الطلوع إلى الزوال ولم يُفصِّلوا بينهما</div>
+<div class="bacaan" style="text-align:justify">“Dengan menelusuri perkataan-perkataan pada fuqaha dan ahli hadits jelaslah bahwa shalat dhuha dan shalat isyraq itu sama. Karena mereka semua menyebutkan waktu pelaksanaannya adalah awal terbitnya matahari hingga zawal. Dan mereka tidak membedakannya”.</div>
+<div class="arti">Maka shalat dhuha yang dikerjakan di awal waktunya, itulah shalat isyraq.</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

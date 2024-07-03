@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Hukum Shalat Idul Adha</h1>
+        <a href="iduladha.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Berikut ini pendapat para ulama tentang hukum sholat idul adha disertai dengan dalil masing-masing.</div>
+<div class="arti"><strong>Sunnah</strong></div>
+<div class="arti">Jumhur ulama berpendapat bahwa hukum sholat idul adha adalah sunnah muakkadah, yakni sunnah yang sangat dianjurkan. Karena sunnah, maka yang tidak ikut sholat idul adha tidak berdosa.</div>
+<div class="arti">Hal ini didasarkan pada hadits berikut ini:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">جَاءَ رَجُلٌ إِلَى رَسُولِ اللَّهِ - صلى الله عليه وسلم - مِنْ أَهْلِ نَجْدٍ ، ثَائِرُ الرَّأْسِ ، يُسْمَعُ دَوِىُّ صَوْتِهِ ، وَلاَ يُفْقَهُ مَا يَقُولُ حَتَّى دَنَا ، فَإِذَا هُوَ يَسْأَلُ عَنِ الإِسْلاَمِ فَقَالَ رَسُولُ اللَّهِ - - صلى الله عليه وسلم - خَمْسُ صَلَوَاتٍ فِى الْيَوْمِ وَاللَّيْلَةِ . فَقَالَ هَلْ عَلَىَّ غَيْرُهَا قَالَ لاَ ، إِلاَّ أَنْ تَطَوَّعَ</div>
+<div class="bacaan" style="text-align: justify;">"Telah datang seorang laki-laki penduduk Nejed kepada Rasulullah shallallahu &lsquo;alaihi wa sallam, kepalanya telah beruban, gaung suaranya terdengar tetapi tidak bisa difahami apa yang dikatakannya kecuali setelah dekat. Ternyata ia bertanya tentang Islam. Maka Rasulullah shallallahu &lsquo;alaihi wa sallam menjawab, &rdquo;Sholat lima waktu dalam sehari dan semalam&rdquo;. Ia bertanya lagi, &ldquo;Adakah saya punya kewajiban shalat lainnya?&rdquo; Rasulullah shallallahu &lsquo;alaihi wa sallam menjawab, &ldquo;Tidak, melainkan hanya amalan sunnah saja&rdquo; <br><strong>(HR. Bukhari dan Muslim)</strong></div>
+<div class="arti"><strong>Fardhu Kifayah</strong></div>
+<div class="arti">Mazhab Hambali, pendapat populernya mengatakan bahwa hukum sholat idul adha adalah fardhu kifayah. Sehingga jika di suatu masyarakat muslim sudah ada yang mengerjakannya, maka gugurlah kewajiban bagi orang lain.</div>
+<div class="arti">Argumentasinya, sholat idul adha tidak didahului adzan dan iqomah, sama seperti sholat jenazah yang fardhu kifayah.</div>
+<div class="arti">Sebagaimana hadits dari Jabir bin Samurah radhiyallahu &lsquo;anhu:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">صَلَّيْتُ مَعَ رَسُولِ اللَّهِ -صلى الله عليه وسلم- الْعِيدَيْنِ غَيْرَ مَرَّةٍ وَلاَ مَرَّتَيْنِ بِغَيْرِ أَذَانٍ وَلاَ إِقَامَةٍ</div>
+<div class="arti">Aku beberapa kali melaksanakan shalat &lsquo;ied bersama Rasulullah shallallahu &lsquo;alaihi wa sallam, bukan hanya sekali atau dua kali, ketika itu tidak ada adzan maupun iqomah</div>
+<div class="arti"><strong>Fardhu &lsquo;ain</strong></div>
+<div class="arti">Sedangkan menurut mazhab Hanafi dan sebagian ulama mazhab Hambali, sholat idul adha hukumnya fardhu &lsquo;ain. Wajib bagi setiap muslim mukallaf. Sehingga yang tidak mengerjakannya akan mendapat dosa.</div>
+<div class="arti">Pendapat ketiga ini didasarkan pada perintah Rasulullah yang memerintahkan seluruh muslim Madinah untuk mengikuti sholat idul adha, termasuk budak perempuan. Bahkan wanita yang sedang haid pun diperintah untuk hadir mendengarkan khutbah, namun menjauhi tempat shalat, sebagaimana hadits dari Ummu Athiyyah radhiyallahu &lsquo;anha</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">أَمَرَنَا رَسُوْلُ اللهِ صَلَّى اللهُ عَلَيْهِ وَ سَلَّمَ أَنْ نُخْرِجَ فِيْ عِيْدَيْنِ العَوَاطِقَ وَالْحُيَّضَ لِيَشْهَدْناَ الخَيْرَ وَدَعْوَةَ الْمُسْلِمِيْنَ وَتَعْتَزِلَ الْحُيَّضُ الْمُصَلِّى</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Rasulullah shallallahu &lsquo;alaihi wa sallam memerintahkan kami keluar menghadiri shalat &lsquo;id bersama budak-budak perempuan dan perempuan-perempuan yang sedang haid untuk menyaksikan kebaikan-kebaikan dan mendengarkan khuthbah. Namun beliau menyuruh perempuan yang sedang haid menjauhi tempat shalat.&rdquo; <br><strong>(HR. Bukhari dan Muslim)</strong></div>
+<div class="arti">Bahkan wanita yang tidak memiliki jilbab pun diperintahkan untuk ke lapangan, dengan dipinjami hijab oleh sahabiyah lainnya.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">يَا رَسُوْلَ اللهِ لاَ تَجِدُ إِحْدَنَا جِلْبَابًا تَخْرُجُ فِيْهِ فَقَالَ صَلَّى اللهُ عَلَيْهِ وَ سَلَّمَ : لِتُلْبِسْهَا أُخْتُهَا مِنْ جِلْبَابِهَا</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Wahai Rasulullah, di antara kami ada yang tidak mempunyai jilbab.&rdquo; Beliau Shallallahu &lsquo;alaihi wa Sallam lantas bersabda: &ldquo;Hendaklah saudaranya memberikan (meminjamkan) jilbab kepadanya.&rdquo; <br><strong>(HR. Ahmad)</strong></div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

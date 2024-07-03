@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Doa setelah Shalat Hajat</h1>
+        <a href="hajat.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>1. Membaca Istighfar 100 Kali</strong></div>
+<div class="arti">Setelah menunaikan sholat hajat, kita dianjurkan untuk membaca banyak istighfar. Istighfar dibaca sebanyak 100 kali. Adapun lafadznya adalah sebagai berikut:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 24px;">اَسْتَغْفِرُ اَللّهَ الْعَظِیْمَ</div>
+<div class="arti"><strong>Latinnya :</strong> &ldquo;Astaghfirullohaladziim.&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Aku memohon ampunan kepada Alloh yang Maha Agung.&rdquo;</div>
+<div class="arti"><strong>2. Membaca Shalawat Nabi 100 Kali</strong></div>
+<div class="arti">Setelah membaca istighfar, doa setelah sholat hajat dilanjutkan dengan membaca sholawat nabi sebanyak 100 kali. Sholawat nabi ada bermacam-macam lafadznya. Ada yang pendek, ada pula yang panjang. Jika ingin ringkas, baiknya Anda membaca solawat yang pendek saja dengan lafadz berikut:</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 25px;">اللَّهُمَّ صّلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيْمَ اِنَّكَ حَمِيْدٌ مَجِيْدٌ</div>
+<div class="arti"><strong>Latinnya :</strong> &ldquo;Allahumma sholli &lsquo;ala Muhammad wa &lsquo;ala ali Muhammad kama shollaita &lsquo;ala ali Ibrahim, innaka hamidun majid&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Allah, berilah shalawat kepada Muhammad dan kerabatnya karena engkau memberi shalawat kepada kerabat Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.&rdquo;</div>
+<div class="arti"><strong>3. Membaca Doa Sholat Hajat 1 Kali</strong></div>
+<div class="arti">Setelah membaca sholawat, kemudian bacalah doa sholat hajat dengan bacaan berikut ini sebanyak 1 kali saja.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 26px;">لاَ إِلَهَ إِلاَّ اللهُ الْحَلِيْمُ الْكَرِيْمُ سُبْحَانَ اللهِ رَبُّ الْعَرْشِ الْعَظِيْمِ الْحَمْدُ ِللهِ رَبِّ الْعَالَمِيْنَ. اَسْأَلُكَ مُوْجِبَاتِ رَحْمَتِكَ وَعَزَائِمَ مَغْفِرَتِكَ وَالْغَنِيْمَةَ مِنْ كُلِّ بِرٍّ وَالسَّلاَمَةَ مِنْ كُلِّ إِثْمٍ لاَتَدَعْ لَنَا ذَنْبًا إِلاَّ غَفَرْتَهُ وَلاَ هَمًّا إِلاَّ فَرَّجْتَهُ وَلاَ حَاجَةً هِىَ لَكَ رِضَا إِلاَّ قَضَيْتَهَا يَا أَرْحَمَ الرَّاحِمِيْنَ</div>
+<div class="arti"><strong>Latinnya :</strong> &ldquo;Laa ilaha illallohul haliimul kariimu subhaanallohi robbil &lsquo;arsyil &lsquo;azhiim. Alhamdu lillaahi robbil &lsquo;aalamiin. As `aluka muujibaari rohmatika wa &lsquo;azaaima maghfirotika wal ghoniimata ming kulli birri wassalaamata ming kulli itsmin Laa tada&rsquo; lii dzamban illa ghofartahu walaa hamman illaa farojtahu walaa haajatan hiya laka ridhon illa qodhoitahaa yaa arhamar roohimiin.&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Tidak ada Tuhan melainkan Allah Yang Maha Lembut dan Maha Penyantun. Maha Suci Allah, Tuhan pemelihara Arsy yang Maha Agung. Segala puji bagi Allah Tuhan seru sekalian alam. Kepada-Mu-lah aku memohon sesuatu yang mewajibkan rahmat-Mu, dan sesuatu yang mendatangkan ampunan-Mu dan memperoleh keuntungan pada tiap-tiap dosa. Janganlah Engkau biarkan dosa daripada diriku, melainkan Engkau ampuni dan tidak ada sesuatu kepentingan, melainkan Engkau beri jalan keluar, dan tidak pula sesuatu hajat yang mendapat kerelaan-Mu, melainkan Engkau kabulkan. Wahai Tuhan Yang Paling Pengasih dan Penyayang.&rdquo;</div>
+<div class="arti">Setelah membaca doa sholat hajat di atas, selanjutnya mohonkanlah apa yang menjadi keinginan Anda. Jika ingin segera dapat jodoh, getarkanlah dalam hati keinginan itu. Begitupun jika ingin segera dapat pekerjaan, terbebas dari masalah, atau keiginan-keinginan lainnya.</div>
+<div class="arti"><strong>4. Doa Nabi Yunus Sebanyak-banyaknya</strong></div>
+<div class="arti">Perbanyak pula membaca doa nabi Yunus berikut ini setelah permohonan Anda terucapkan. Doa ini terbilang mustajab. Berikut lafal bacaannya.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 27px;">لَّا إِلَهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ</div>
+<div class="arti"><strong>Latinnya :</strong> &ldquo;Laa Ilaaha Illa Anta, Subhanaka Inni Kungtum Minadz Dzolimiin&rdquo;</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Tidak ada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku adalah termasuk ke dalam golongan orang-orang dzolim.&rdquo;</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

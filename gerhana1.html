@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Pengertian dan Sejarah Shalat Gerhana</h1>
+        <a href="gerhana.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Pengertian Shalat Gerhana</strong></div>
+<div class="arti">adalah shalat sunnat 2 rakaat yang dikerjakan ketika terjadi gerhana matahari atau gerhana bulan.Bila terjadi Matahari maka shalat yang dikerjakan disebut SHALAT KUSUF. dan bila terjadi gerhana bulan maka sholat yang dikerjakan disdebut dengan SHALAT KHUSUF.</div>
+<div class="arti">Shalat 2 Gerhana ini disebut juga shalat KUSUFAIN, dan di sunnahkan di dalam masjid, tanpa harus diawali dengan adzan dan iqamat, Hanya panggilan &ldquo;Al-Shalatul Jami&rsquo;ah.&rdquo;</div>
+<div class="arti"><strong>Sejarah Shalat Gerhana</strong></div>
+<div class="arti">Shalat gerhana pertama kali dilakukan sewaktu Ibrahim, anak laki-laki Rasulullah, wafat.</div>
+<div class="arti">Dan kebetulan, meninggalnya Ibrahim bersamaan dengan fenomena alam gerhana matahari. Hari itu adalah hari yang menyedihkan untuk Rasulullah Muhammad SAW, sehingga beliau berdoa pada Allah sewaktu matahari-bulan-bumi berada persis pada satu garis edar.</div>
+<div class="arti">Rasulullah waktu itu bersabda bahwa dua gerhana (matahari dan bulan) dan kematian orang yang dicintai, adalah tanda kekuasaan Allah. Jadi beliau waktu itu memerintahkan umatnya untuk melakukan shalat setiap kali terjadi gerhana, sebagai wujud ketundukkan manusia pada kebesaran Tuhan.</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

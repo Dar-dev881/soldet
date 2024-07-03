@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+<!-- <div class="ui-block-e"> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false"><button>Doa</button></a> -->
+<!-- </div> -->
+</div> 
+
+
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Keutamaan Shalat Dhuha</h1>
+        <a style="background-color:#007c91;border:none" href="dhuha.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Shalat dhuha menggantikan kewajiban sedekah untuk semua persendian sebagaimana dalam hadits Abu Dzar dan Buraidah di atas.</div>
+<div class="arti">Dari Nu’aim bin Hammar Al Ghathafani, Rasulullah shallallahu ‘alaihi wa sallam bersabda:</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">قَالَ اللَّهُ عَزَّ وَجَلَّ يَا ابْنَ آدَمَ لاَ تَعْجِزْ عَنْ أَرْبَعِ رَكَعَاتٍ مِنْ أَوَّلِ النَّهَارِ أَكْفِكَ آخِرَهُ</div>
+<div class="bacaan" style="text-align:justify">“Allah Ta’ala berfirman: Wahai anak Adam, janganlah engkau tinggalkan empat raka’at shalat di awal siang (di waktu Dhuha). Maka itu akan mencukupimu di akhir siang” <br><strong>(HR. Tirmidzi no. 475, dishahihkan Al Albani dalam Shahih Al Jami’ no. 4342).</strong></div>
+<div class="arti">Shalat dhuha juga disebut sebagai shalat awwabin, yaitu shalatnya orang-orang yang banyak kembali kepada Allah. Rasulullah shallallahu ‘alaihi wa sallam bersa</div>
+<div class="ayat" style="background-color: #F8F3E0;padding-top:10px;">صلاةُ الأوَّابينَ حين تَرمَضُ الفِصَالُ</div>
+<div class="bacaan" style="text-align:justify">“Shalat awwabin adalah ketika anak unta merasakan terik matahari” <br><strong>(HR. Muslim no. 748).</strong></div>
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

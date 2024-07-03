@@ -1,0 +1,524 @@
+<html>
+
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui1.css />
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+
+<style>
+body {
+    background-color: #000;
+}
+
+
+.menukiri {
+@include 'jquery.mobile.squareui.css';
+
+}
+
+.pembahasan {
+background-color: grey;
+padding-left: 5px;
+padding-right: 5px;
+radius: 5px;
+padding-bottom: 0px;
+color: #ffffff;
+display: none;
+
+
+}
+
+<!-- .ui-btn { -->
+    <!-- font-size: 16px; -->
+    <!-- margin: 0em; -->
+    <!-- padding: 0em; -->
+	<!-- } -->
+
+img {
+    display: block;
+    margin: 0 auto;
+	padding-top:10px;
+	padding-bottom:10px;
+    max-width: 60%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+	border-radius: 0%;
+}
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+
+.deskripsi {
+font-color: red !important;
+
+
+}
+
+
+.ui-page-theme-d .ui-panel-wrapper {
+background-color: #ffffff Important!;
+}
+
+
+.shadow {
+    font-size: 1em;
+    width: 100%;
+    height: 0.5em;
+    border-top: 0.0625em solid rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to bottom,
+                                      rgb(135, 136, 138),
+                                      transparent);
+    -webkit-mask-box-image: linear-gradient(to right,
+                                            rgba(0, 0, 0, 0) 0%,
+                                            rgba(0, 0, 0, 0.8) 50%,
+                                            rgba(0, 0, 0, 0) 100%);
+											
+											
+}
+
+
+
+	  
+a {text-decoration: none !important;}
+
+p {
+font-weight: normal;
+<!-- background-color:#90a4ae; -->
+color:#000;
+font-size: 15px;
+padding-left: 5px;
+padding-right: 5px;
+margin-block-start: 0.5em;
+margin-block-end: 0.5em;
+
+
+}
+
+.lama {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.tabButton {
+ margin: 0em;
+    padding: 0em;
+
+
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Regular.ttf");
+}
+
+
+.audioPlayer{
+  display: block;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+
+.tabView{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+
+
+}
+
+.arabic {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+    font-family: "myFirstFont";
+	text-align: right;
+	font-size: 33px;
+	line-height: 2;
+	<!-- background-color: #fff; -->
+	border-radius: 10px;
+	
+}
+
+.rate {
+    padding-bottom: 0px;
+    padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    <!-- border-style: solid; -->
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: "myFirstFont";
+	line-height: 1.3;
+}
+
+
+.ondel {
+margin:auto;
+border-right:grey solid 0.5px;
+border-left:white solid 0px;
+border-bottom:none;
+border-top:none;
+border-radius:0px;
+box-shadow:none;
+margin: 0em;
+padding: 0em;
+
+}
+
+.cabe {
+margin: 0em;
+padding: 0em;
+border-bottom: 0px;
+
+}
+
+.ui-page { 
+    background:#eceff1 !important;
+}
+
+form {
+margin-bottom:0px !important;
+margin-top:0px !important;
+background-color: none;
+
+
+}
+	  
+a {text-decoration: none !important;}
+
+.tengah { 
+            width:100%; 
+            height:100%; 
+            <!-- position: fixed;  -->
+            <!-- background-color: blue;  -->
+            top: 50%; 
+            left: 50%; 
+            margin-top: 0px; 
+            margin-left: 0px%; 
+        } 
+	  
+</style>
+</head>
+
+<body>
+<title>Doa Harian</title>
+<div data-role=page id=page1 data-theme="d">
+
+<div data-role=header data-position=fixed data-theme="" style="background-color:#b95752;margin-bottom:0px;">
+<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+</div>
+
+
+<div data-role=navbar id=navbar data-iconpos=top data-theme=c>
+<ul>
+<li class="ondel"><a href=#two class=tabButton><img alt="" src=icon/doa.png style="width: 30px;" /></a></li> 
+<li class="ondel"><a href=#four class=tabButton><img alt="" src=icon/favorite.png style="width: 30px;" /></a></li>
+</ul>
+</div>
+<form>
+<input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari Doa">
+</form>
+</div>
+
+<!-- TAP TUTORIALS -->
+<div id=two class=tabView>
+
+<div class="tengah">
+
+<fieldset class=ui-grid-a data-inset="true" data-input="#divOfPs-input" data-filter="true" data-theme="a">
+
+<div class=ui-block-a><a href=tutorials/1.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/1.jpg style="width: 95%;" /><p align=center>Doa Mau Tidur</p></a></div>
+<div class=ui-block-b><a href=tutorials/2.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/2.jpg style="width: 95%;" /><p align=center>Doa Memakai Pakian</p></a></div>
+<div class=ui-block-a><a href=tutorials/3.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/3.jpg style="width: 95%;" /><p align=center>Doa Memakai Pakain Baru</p></a></div>
+<div class=ui-block-b><a href=tutorials/4.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/4.jpg style="width: 95%;" /><p align=center>Do'a Kepada Orang Yang Mengenakan Pakaian Baru</p></a></div>
+<div class=ui-block-a><a href=tutorials/5.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/5.jpg style="width: 95%;" /><p align=center>Do'a Melepas Pakaian</p></a></div>
+<div class=ui-block-b><a href=tutorials/6.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/6.jpg style="width: 95%;" /><p align=center>Do'a Masuk Kamar Mandi</p></a></div>
+<div class=ui-block-a><a href=tutorials/7.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/7.jpg style="width: 95%;" /><p align=center>Do'a Keluar Kamar Mandi</p></a></div>
+<div class=ui-block-b><a href=tutorials/8.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/8.jpg style="width: 95%;" /><p align=center>Do'a Sebelum Wudhu’</p></a></div>
+<div class=ui-block-a><a href=tutorials/9.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/9.jpg style="width: 95%;" /><p align=center>Do'a Setelah Wudhu’</p></a></div>
+<div class=ui-block-b><a href=tutorials/10.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/10.jpg style="width: 95%;" /><p align=center>Do'a Ketika Keluar Rumah</p></a></div>
+<div class=ui-block-a><a href=tutorials/11.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/11.jpg style="width: 95%;" /><p align=center>Do'a Masuk Rumah</p></a></div>
+<div class=ui-block-b><a href=tutorials/12.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/12.jpg style="width: 95%;" /><p align=center>Do'a Pergi Ke Masjid</p></a></div>
+<div class=ui-block-a><a href=tutorials/13.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/13.jpg style="width: 95%;" /><p align=center>Do'a Masuk Masjid</p></a></div>
+<div class=ui-block-b><a href=tutorials/14.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/14.jpg style="width: 95%;" /><p align=center>Do'a Keluar Dari Masjid</p></a></div>
+<div class=ui-block-a><a href=tutorials/15.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/15.jpg style="width: 95%;" /><p align=center>Do'a Sesudah Adzan</p></a></div>
+<div class=ui-block-b><a href=tutorials/16.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/16.jpg style="width: 95%;" /><p align=center>Do'a Istiftah</p></a></div>
+<div class=ui-block-a><a href=tutorials/17.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/17.jpg style="width: 95%;" /><p align=center>Do'a Ruku’</p></a></div>
+<div class=ui-block-b><a href=tutorials/18.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/18.jpg style="width: 95%;" /><p align=center>Do'a Bangun Dari Ruku’</p></a></div>
+<div class=ui-block-a><a href=tutorials/19.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/19.jpg style="width: 95%;" /><p align=center>Do'a Sujud</p></a></div>
+<div class=ui-block-b><a href=tutorials/20.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/20.jpg style="width: 95%;" /><p align=center>Do'a Duduk Antara Dua Sujud</p></a></div>
+<div class=ui-block-a><a href=tutorials/21.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/21.jpg style="width: 95%;" /><p align=center>Tasyahud</p></a></div>
+<div class=ui-block-b><a href=tutorials/22.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/22.jpg style="width: 95%;" /><p align=center>Tasyahud Akhir</p></a></div>
+<div class=ui-block-a><a href=tutorials/23.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/23.jpg style="width: 95%;" /><p align=center>Do'a Setelah Tasyahud Akhir Sebelum Salam</p></a></div>
+<div class=ui-block-b><a href=tutorials/24.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/24.jpg style="width: 95%;" /><p align=center>Salam</p></a></div>
+<div class=ui-block-a><a href=tutorials/25.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/25.jpg style="width: 95%;" /><p align=center>Dzikir Selesai Shalat</p></a></div>
+<div class=ui-block-b><a href=tutorials/26.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/52.jpg style="width: 95%;" /><p align=center>Do'a Shalat Istikharah</p></a></div>
+<div class=ui-block-a><a href=tutorials/27.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/42.jpg style="width: 95%;" /><p align=center>Dzikir Pagi Dan Petang</p></a></div>
+<div class=ui-block-b><a href=tutorials/28.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/28.jpg style="width: 95%;" /><p align=center>Do'a Bangun Tidur</p></a></div>
+<div class=ui-block-a><a href=tutorials/29.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/29.jpg style="width: 95%;" /><p align=center>Do'a Jika Terbangun Pada Malam Hari</p></a></div>
+<div class=ui-block-b><a href=tutorials/30.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/30.jpg style="width: 95%;" /><p align=center>Do'a Apabila Melihat Yang Menakutkan Dalam Tidur</p></a></div>
+<div class=ui-block-a><a href=tutorials/31.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/31.jpg style="width: 95%;" /><p align=center>Apa Yang Dilakukan Jika Bermimpi Buruk</p></a></div>
+<div class=ui-block-b><a href=tutorials/32.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/32.jpg style="width: 95%;" /><p align=center>Do'a Qunut Witir</p></a></div>
+<div class=ui-block-a><a href=tutorials/33.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/21.jpg style="width: 95%;" /><p align=center>Dzikir Setelah Salam Shalat Witir</p></a></div>
+<div class=ui-block-b><a href=tutorials/34.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/34.jpg style="width: 95%;" /><p align=center>Do'a Saat Gundah Dan Berduka</p></a></div>
+<div class=ui-block-a><a href=tutorials/35.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/34.jpg style="width: 95%;" /><p align=center>Do'a Untuk Kesedihan Yang Mendalam</p></a></div>
+<div class=ui-block-b><a href=tutorials/36.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/35.jpg style="width: 95%;" /><p align=center>Do'a Saat Bertemu Musuh Dan Penguasa</p></a></div>
+<div class=ui-block-a><a href=tutorials/37.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/36.jpg style="width: 95%;" /><p align=center>Do'a Saat Takut Menghadapi Penguasa Dzalim</p></a></div>
+<div class=ui-block-b><a href=tutorials/38.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/37.jpg style="width: 95%;" /><p align=center>Do'a Atas Musuh</p></a></div>
+<div class=ui-block-a><a href=tutorials/39.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/39.jpg style="width: 95%;" /><p align=center>Do'a Saat Takut Terhadap Suatu Kaum/Kelompok</p></a></div>
+<div class=ui-block-b><a href=tutorials/40.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/40.jpg style="width: 95%;" /><p align=center>Do'a Bagi Yang Mengalami Keraguan Dalam Iman</p></a></div>
+<div class=ui-block-a><a href=tutorials/41.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/41.jpg style="width: 95%;" /><p align=center>Do'a Agar Dapat Melunasi Hutang</p></a></div>
+<div class=ui-block-b><a href=tutorials/42.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/42.jpg style="width: 95%;" /><p align=center>Do'a Orang Yang Mengalami Kesulitan</p></a></div>
+<div class=ui-block-a><a href=tutorials/43.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/43.jpg style="width: 95%;" /><p align=center>Ucapan Orang Yang Melakukan Dosa</p></a></div>
+<div class=ui-block-b><a href=tutorials/44.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/44.jpg style="width: 95%;" /><p align=center>Do'a Mengusir Setan Dan Bisikannya</p></a></div>
+<div class=ui-block-a><a href=tutorials/45.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/45.jpg style="width: 95%;" /><p align=center>Do'a Saat Mengalami Sesuatu Yang Tidak Diinginkan</p></a></div>
+<div class=ui-block-b><a href=tutorials/46.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/46.jpg style="width: 95%;" /><p align=center>Ucapan Bagi Orang Yang Mendapatkan Kelahiran Dan Jawabannya</p></a></div>
+<div class=ui-block-a><a href=tutorials/47.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/47.jpg style="width: 95%;" /><p align=center>Do'a Perlindungan Bagi Anak</p></a></div>
+<div class=ui-block-b><a href=tutorials/48.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/48.jpg style="width: 95%;" /><p align=center>Do'a Kepada Orang Sakit</p></a></div>
+<div class=ui-block-a><a href=tutorials/49.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/49.jpg style="width: 95%;" /><p align=center>Keutamaan Mengunjungi Orang Sakit</p></a></div>
+<div class=ui-block-b><a href=tutorials/50.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/50.jpg style="width: 95%;" /><p align=center>Do'a Orang Sakit Yang Tidak Bisa Sembuh</p></a></div>
+<div class=ui-block-a><a href=tutorials/51.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/51.jpg style="width: 95%;" /><p align=center>Membimbing (Talqin) Orang Yang Sekarat</p></a></div>
+<div class=ui-block-b><a href=tutorials/52.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/52.jpg style="width: 95%;" /><p align=center>Do'a Saat Terkena Musibah</p></a></div>
+<div class=ui-block-a><a href=tutorials/53.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/53.jpg style="width: 95%;" /><p align=center>Do'a Saat Memejamkan Mata Mayat</p></a></div>
+<div class=ui-block-b><a href=tutorials/54.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/54.jpg style="width: 95%;" /><p align=center>Do'a Dalam Shalat Jenazah</p></a></div>
+<div class=ui-block-a><a href=tutorials/55.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/53.jpg style="width: 95%;" /><p align=center>Do'a Untuk Mayat Anak Kecil</p></a></div>
+<div class=ui-block-b><a href=tutorials/56.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/56.jpg style="width: 95%;" /><p align=center>Do'a Ta’Ziah</p></a></div>
+<div class=ui-block-a><a href=tutorials/57.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/57.jpg style="width: 95%;" /><p align=center>Do'a Saat Memasukkan Mayat Ke Liang Kubur</p></a></div>
+<div class=ui-block-b><a href=tutorials/58.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/56.jpg style="width: 95%;" /><p align=center>Do'a Setelah Mayat Dimakamkan</p></a></div>
+<div class=ui-block-a><a href=tutorials/59.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/56.jpg style="width: 95%;" /><p align=center>Do'a Ziarah Kubur</p></a></div>
+<div class=ui-block-b><a href=tutorials/60.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/60.jpg style="width: 95%;" /><p align=center>Do'a Apabila Ada Angin Ribut</p></a></div>
+<div class=ui-block-a><a href=tutorials/61.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/61.jpg style="width: 95%;" /><p align=center>Do'a Saat Mendengar Petir</p></a></div>
+<div class=ui-block-b><a href=tutorials/62.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/62.jpg style="width: 95%;" /><p align=center>Do'a Untuk Minta Hujan</p></a></div>
+<div class=ui-block-a><a href=tutorials/63.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/63.jpg style="width: 95%;" /><p align=center>Do'a Apabila Hujan Turun</p></a></div>
+<div class=ui-block-b><a href=tutorials/64.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/64.jpg style="width: 95%;" /><p align=center>Do'a Setelah Hujan Turun</p></a></div>
+<div class=ui-block-a><a href=tutorials/65.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/62.jpg style="width: 95%;" /><p align=center>Do'a Agar Hujan Berhenti</p></a></div>
+<div class=ui-block-b><a href=tutorials/66.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/65.jpg style="width: 95%;" /><p align=center>Do'a Melihat Bulan Sabit</p></a></div>
+<div class=ui-block-a><a href=tutorials/67.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/67.jpg style="width: 95%;" /><p align=center>Do'a Ketika Berbuka Bagi Orang Yang Berpuasa</p></a></div>
+<div class=ui-block-b><a href=tutorials/68a.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/68.jpg style="width: 95%;" /><p align=center>Do'a Sebelum Makan</p></a></div>
+<div class=ui-block-a><a href=tutorials/68.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/68.jpg style="width: 95%;" /><p align=center>Do'a Lupa Berdoa Sebelum Makan</p></a></div>
+<div class=ui-block-b><a href=tutorials/69.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/69.jpg style="width: 95%;" /><p align=center>Do'a Setelah Makan</p></a></div>
+<div class=ui-block-a><a href=tutorials/70.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/70.jpg style="width: 95%;" /><p align=center>Do'a Tamu Kepada Orang Yang Menghidangkan Makanan</p></a></div>
+<div class=ui-block-b><a href=tutorials/71.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/71.jpg style="width: 95%;" /><p align=center>BerDo'a Untuk Orang Yang Memberi Minuman</p></a></div>
+<div class=ui-block-a><a href=tutorials/72.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/72.jpg style="width: 95%;" /><p align=center>Do'a Apabila Berbuka Di Rumah Orang Lain</p></a></div>
+<div class=ui-block-b><a href=tutorials/73.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/73.jpg style="width: 95%;" /><p align=center>Do'a Orang Yang Berpuasa Apabila Diajak Makan</p></a></div>
+<div class=ui-block-a><a href=tutorials/74.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/74.jpg style="width: 95%;" /><p align=center>Ucapan Orang Yang Berpuasa Bila Dihina</p></a></div>
+<div class=ui-block-b><a href=tutorials/75.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/75.jpg style="width: 95%;" /><p align=center>Do'a Apabila Melihat Permulaan Buah</p></a></div>
+<div class=ui-block-a><a href=tutorials/76.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/76.jpg style="width: 95%;" /><p align=center>Do'a Ketika Bersin</p></a></div>
+<div class=ui-block-b><a href=tutorials/77.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/77.jpg style="width: 95%;" /><p align=center>Do'a Apabila Orang Kafir Bersin Kemudian Memuji Allah</p></a></div>
+<div class=ui-block-a><a href=tutorials/78.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/78.jpg style="width: 95%;" /><p align=center>Do'a Kepada Pengantin</p></a></div>
+<div class=ui-block-b><a href=tutorials/79.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/79.jpg style="width: 95%;" /><p align=center>Do'a Pengantin Kepada Dirinya</p></a></div>
+<div class=ui-block-a><a href=tutorials/80.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/80.jpg style="width: 95%;" /><p align=center>Do'a Sebelum Bersetubuh</p></a></div>
+<div class=ui-block-b><a href=tutorials/81.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/81.jpg style="width: 95%;" /><p align=center>Do'a Ketika Marah</p></a></div>
+<div class=ui-block-a><a href=tutorials/82.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/82.jpg style="width: 95%;" /><p align=center>Do'a Apabila Melihat Orang Yang Mengalami Cobaan</p></a></div>
+<div class=ui-block-b><a href=tutorials/83.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/83.jpg style="width: 95%;" /><p align=center>Do'a Dalam Majelis</p></a></div>
+<div class=ui-block-a><a href=tutorials/84.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/84.jpg style="width: 95%;" /><p align=center>Do'a Pelebur Dosa Majelis</p></a></div>
+<div class=ui-block-b><a href=tutorials/85.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/40.jpg style="width: 95%;" /><p align=center>Do'a Kepada Orang Yang Berkata: Ghafarallaahu Laka</p></a></div>
+<div class=ui-block-a><a href=tutorials/86.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/86.jpg style="width: 95%;" /><p align=center>Do'a Untuk Orang Yang Berbuat Kebaikan Padamu</p></a></div>
+<div class=ui-block-b><a href=tutorials/87.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/87.jpg style="width: 95%;" /><p align=center>Cara Menyelamatkan Diri Dari Dajjal</p></a></div>
+<div class=ui-block-a><a href=tutorials/88.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/88.jpg style="width: 95%;" /><p align=center>Do'a Kepada Orang Yang Berkata: Aku Mencintaimu Karena Allah</p></a></div>
+<div class=ui-block-b><a href=tutorials/89.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/89.jpg style="width: 95%;" /><p align=center>Do'a Kepada Orang Yang Menawarkan Hartanya Untukmu</p></a></div>
+<div class=ui-block-a><a href=tutorials/90.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/90.jpg style="width: 95%;" /><p align=center>Do'a Untuk Orang Yang Meminjami Ketika Membayar Hutang</p></a></div>
+<div class=ui-block-b><a href=tutorials/91.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/91.jpg style="width: 95%;" /><p align=center>Do'a Agar Terhindar Dari Syirik</p></a></div>
+<div class=ui-block-a><a href=tutorials/92.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/133.jpg style="width: 95%;" /><p align=center>Do'a Untuk Orang Yang Mengatakan: Baarakallahu Fiika</p></a></div>
+<div class=ui-block-b><a href=tutorials/93.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/32.jpg style="width: 95%;" /><p align=center>Do'a Menolak Firasat Buruk / Sial</p></a></div>
+<div class=ui-block-a><a href=tutorials/94.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/94.jpg style="width: 95%;" /><p align=center>Do'a Naik Kendaraan</p></a></div>
+<div class=ui-block-b><a href=tutorials/95.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/95.jpg style="width: 95%;" /><p align=center>Do'a Bepergian</p></a></div>
+<div class=ui-block-a><a href=tutorials/96.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/96.jpg style="width: 95%;" /><p align=center>Do'a Masuk Desa Atau Kota</p></a></div>
+<div class=ui-block-b><a href=tutorials/97.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/97.jpg style="width: 95%;" /><p align=center>Do'a Masuk Pasar</p></a></div>
+<div class=ui-block-a><a href=tutorials/98.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/98.jpg style="width: 95%;" /><p align=center>Do'a Apabila Binatang Tunggangan Tergelincir</p></a></div>
+<div class=ui-block-b><a href=tutorials/99.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/99.jpg style="width: 95%;" /><p align=center>Do'a Musafir Kepada Orang Yang Ditinggalkan</p></a></div>
+<div class=ui-block-a><a href=tutorials/100.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/100.jpg style="width: 95%;" /><p align=center>Do'a Orang Mukim Kepada Musafir</p></a></div>
+<div class=ui-block-b><a href=tutorials/101.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/101.jpg style="width: 95%;" /><p align=center>Takbir Dan Tasbih Dalam Perjalanan</p></a></div>
+<div class=ui-block-a><a href=tutorials/102.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/102.jpg style="width: 95%;" /><p align=center>Do'a Musafir Ketika Menjelang Subuh</p></a></div>
+<div class=ui-block-b><a href=tutorials/103.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/103.jpg style="width: 95%;" /><p align=center>Do'a Apabila Singgah Di Suatu Tempat, Baik; Dalam Bepergian Atau Tidak</p></a></div>
+<div class=ui-block-a><a href=tutorials/104.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/104.jpg style="width: 95%;" /><p align=center>Do'a Apabila Pulang Dari Bepergian</p></a></div>
+<div class=ui-block-b><a href=tutorials/105.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/105.jpg style="width: 95%;" /><p align=center>Do'a Apabila Ada Sesuatu Yang Menyenangkan Atau Menyusahkan</p></a></div>
+<div class=ui-block-a><a href=tutorials/106.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/106.jpg style="width: 95%;" /><p align=center>Keutamaan Membaca Shalawat</p></a></div>
+<div class=ui-block-b><a href=tutorials/107.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/107.jpg style="width: 95%;" /><p align=center>Menyebarkan Salam</p></a></div>
+<div class=ui-block-a><a href=tutorials/108.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/108.jpg style="width: 95%;" /><p align=center>Apabila Orang Kafir Mengucapkan Salam</p></a></div>
+<div class=ui-block-b><a href=tutorials/109.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/109.jpg style="width: 95%;" /><p align=center>Petunjuk Ketika Mendengar Kokok Ayam Atau Ringkikan Keledai</p></a></div>
+<div class=ui-block-a><a href=tutorials/110.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/110.jpg style="width: 95%;" /><p align=center>Petunjuk Apabila Mendengar Anjing Menggonggong</p></a></div>
+<div class=ui-block-b><a href=tutorials/111.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/111.jpg style="width: 95%;" /><p align=center>MenDo'akan Orang Yang Anda Caci</p></a></div>
+<div class=ui-block-a><a href=tutorials/112.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/112.jpg style="width: 95%;" /><p align=center>Apabila Memuji Temannya</p></a></div>
+<div class=ui-block-b><a href=tutorials/113.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/113.jpg style="width: 95%;" /><p align=center>Do'a Bila Dipuji Orang</p></a></div>
+<div class=ui-block-a><a href=tutorials/114.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/114.jpg style="width: 95%;" /><p align=center>Do'a Talbiyah</p></a></div>
+<div class=ui-block-b><a href=tutorials/115.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/115.jpg style="width: 95%;" /><p align=center>Bertakbir Di Setiap Datang Ke Rukun Hajar Aswad</p></a></div>
+<div class=ui-block-a><a href=tutorials/116.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/116.jpg style="width: 95%;" /><p align=center>Do'a Antara Rukun Yamani Dan Hajar Aswad</p></a></div>
+<div class=ui-block-b><a href=tutorials/117.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/117.jpg style="width: 95%;" /><p align=center>Do'a Ketika Di Atas Bukit Shafa Dan Marwah</p></a></div>
+<div class=ui-block-a><a href=tutorials/118.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/118.jpg style="width: 95%;" /><p align=center>Do'a Pada Hari Arafah</p></a></div>
+<div class=ui-block-b><a href=tutorials/119.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/119.jpg style="width: 95%;" /><p align=center>Ketika Di Masy’Aril Haram</p></a></div>
+<div class=ui-block-a><a href=tutorials/120.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/120.jpg style="width: 95%;" /><p align=center>Bertakbir Pada Setiap Lemparan Jumrah</p></a></div>
+<div class=ui-block-b><a href=tutorials/121.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/121.jpg style="width: 95%;" /><p align=center>Do'a Ketika Kagum Terhadap Sesuatu</p></a></div>
+<div class=ui-block-a><a href=tutorials/122.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/122.jpg style="width: 95%;" /><p align=center>Yang Dilakukan Bila Ada Sesuatu Yang Menggembirakan</p></a></div>
+<div class=ui-block-b><a href=tutorials/123.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/123.jpg style="width: 95%;" /><p align=center>Do'a Dan Perbuatan Apabila Merasa Sakit Pada Anggota Badan</p></a></div>
+<div class=ui-block-a><a href=tutorials/124.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/124.jpg style="width: 95%;" /><p align=center>Apabila Takut Mengenai Sesuatu Dengan Matanya</p></a></div>
+<div class=ui-block-b><a href=tutorials/125.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/125.jpg style="width: 95%;" /><p align=center>Do'a Ketika Takut</p></a></div>
+<div class=ui-block-a><a href=tutorials/126.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/126.jpg style="width: 95%;" /><p align=center>Do'a Ketika Menyembelih Kurban</p></a></div>
+<div class=ui-block-b><a href=tutorials/127.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/127.jpg style="width: 95%;" /><p align=center>Do'a Untuk Menolak Gangguan Setan</p></a></div>
+<div class=ui-block-a><a href=tutorials/128.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/128.jpg style="width: 95%;" /><p align=center>Istighfar Dan Taubat</p></a></div>
+<div class=ui-block-b><a href=tutorials/129.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/129.jpg style="width: 95%;" /><p align=center>Keutamaan Tasbih, Tahmid, Tahlil Dan Takbir</p></a></div>
+<div class=ui-block-a><a href=tutorials/130.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/130.jpg style="width: 95%;" /><p align=center>Bagaimana Cara Nabi Shallallahu 'Alaihi Wa Sallam Membaca Tasbih</p></a></div>
+<div class=ui-block-b><a href=tutorials/131.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/131.jpg style="width: 95%;" /><p align=center>Beberapa Adab Dan Kebaikan</p></a></div>
+<div class=ui-block-a><a href=tutorials/132.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/132.jpg style="width: 95%;" /><p align=center>Doa Ilmu Yang bermanfaat, Amal Diterima, dan Rezeki yang baik</p></a></div>
+<div class=ui-block-b><a href=tutorials/133.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/133.jpg style="width: 95%;" /><p align=center>Doa Perlindungan Dari </br>Ilmu yang tidak berguna, </br>amal yang tidak diangkat, </br>hati yang tidak  khusyuk, </br>dan ucapan yang tidak didengar</p></a></div>
+<div class=ui-block-a><a href=tutorials/134.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/134.jpg style="width: 95%;" /><p align=center>Doa sebelum belajar</p></a></div>
+<div class=ui-block-b><a href=tutorials/135.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/135.jpg style="width: 95%;" /><p align=center>Doa Setelah belajar</p></a></div>
+<div class=ui-block-a><a href=tutorials/136.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/52.jpg style="width: 95%;" /><p align=center>Doa sayyidul istighfar</p></a></div>
+<div class=ui-block-b><a href=tutorials/137.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/137.jpg style="width: 95%;" /><p align=center>Doa Becermin</p></a></div>
+<div class=ui-block-a><a href=tutorials/138.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/125.jpg style="width: 95%;" /><p align=center>Doa Agar Terhindar dari Berbagai Keburukan Dunia dan Akhirat</p></a></div>
+<div class=ui-block-b><a href=tutorials/139.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/40.jpg style="width: 95%;" /><p align=center>Doa Memohon Perlindungan dari Bahaya</p></a></div>
+<div class=ui-block-a><a href=tutorials/140.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/88.jpg style="width: 95%;" /><p align=center>Doa Agar dihindarkan dari Malas, Maksiat, Hutang, Fitnah kubur, Fitnah Kekayaan, Fitnah Kemiskinan dan Finah Dajjal</p></a></div>
+<div class=ui-block-b><a href=tutorials/141.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/1.jpg style="width: 95%;" /><p align=center>Doa saat Susah Tidur</p></a></div>
+<div class=ui-block-a><a href=tutorials/142.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/79.jpg style="width: 95%;" /><p align=center>Doa Meminta Jodoh</p></a></div>
+<div class=ui-block-b><a href=tutorials/143.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/46.jpg style="width: 95%;" /><p align=center>Doa Meminta keturunan</p></a></div>
+<div class=ui-block-a><a href=tutorials/144.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/100.jpg style="width: 95%;" /><p align=center>Doa Agar Dimudahkan dalam urusan Ucapan</p></a></div>
+<div class=ui-block-b><a href=tutorials/145.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/40.jpg style="width: 95%;" /><p align=center>Doa ketenangan hati dan pikiran</p></a></div>
+<div class=ui-block-a><a href=tutorials/146.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/86.jpg style="width: 95%;" /><p align=center>Doa untuk Memohon Agar Akhlak Kita Selalu Baik</p></a></div>
+<div class=ui-block-b><a href=tutorials/147.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/147.jpg style="width: 95%;" /><p align=center>Doa mohon ampunan bagi kedua orang tua dan kaum mukminin</p></a></div>
+<div class=ui-block-a><a href=tutorials/148.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/124.jpg style="width: 95%;" /><p align=center>Doa agar dimudahkan dalam segala urusan</p></a></div>
+<div class=ui-block-b><a href=tutorials/149.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/125.jpg style="width: 95%;" /><p align=center>Doa Agar Selalu Diberi Kesehatan</p></a></div>
+<div class=ui-block-a><a href=tutorials/150.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/87.jpg style="width: 95%;" /><p align=center>Doa Agar Diberikan Hati yang Bersih</p></a></div>
+<div class=ui-block-b><a href=tutorials/151.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/74.jpg style="width: 95%;" /><p align=center>Doa untuk Menghilangkan Amarah</p></a></div>
+<div class=ui-block-a><a href=tutorials/152.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/132.jpg style="width: 95%;" /><p align=center>Doa Agar Menjadi Golongan Orang yang Menjaga Sholat</p></a></div>
+<div class=ui-block-b><a href=tutorials/153.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/130.jpg style="width: 95%;" /><p align=center>Doa untuk Memperkuat Ingatan</p></a></div>
+<div class=ui-block-a><a href=tutorials/154.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/6.jpg style="width: 95%;" /><p align=center>Doa mandi besar</p></a></div>
+<div class=ui-block-b><a href=tutorials/155.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/52.jpg style="width: 95%;" /><p align=center>Doa Mandi Wajib Setelah Haid </p></a></div>
+<div class=ui-block-a><a href=tutorials/156.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/46.jpg style="width: 95%;" /><p align=center>Doa Mandi Wajib Setelah Nifas</p></a></div>
+
+
+</fieldset>
+
+</div>
+</div>
+
+<!-- 3. Tab Doa Sholat Sunnah -->
+<div id=SholatSunnah class=tabView>
+
+<div class="tengah">
+
+<fieldset class=ui-grid-a data-inset="true" data-input="#divOfPs-input" data-filter="true" data-theme="a">
+
+<div class=ui-block-a><a href=tutorials/dss1.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/42.jpg style="width: 95%;" /><p align=center>Doa Shalat Dhuha</p></a></div>
+<div class=ui-block-b><a href=tutorials/dss2.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/27.jpg style="width: 95%;" /><p align=center>Doa Shalat Tahajud</p></a></div>
+<div class=ui-block-a><a href=tutorials/dss3.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/40.jpg style="width: 95%;" /><p align=center>Doa Shalat Istikharah</p></a></div>
+<div class=ui-block-b><a href=tutorials/dss4.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/65.jpg style="width: 95%;" /><p align=center>Doa Tarawih</p></a></div>
+<div class=ui-block-a><a href=tutorials/dss5.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/88.jpg style="width: 95%;" /><p align=center>Doa Witir</p></a></div>
+<div class=ui-block-b><a href=tutorials/dss6.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=tutorials/images/52.jpg style="width: 95%;" /><p align=center>Doa Shalat Taubat</p></a></div>
+
+</fieldset>
+
+</div>
+</div>
+
+
+<!-- TAB RATE -->
+<div id=three class=tabView>
+<div id=t>
+<img clss=img2 width=600px src=icon/thanks.gif>
+<p data-icon=false data-theme=e><h2 class=wrap align=center>Tim kami bekerja keras untuk menyediakan berbagai konten dalam aplikasi ini. Jika Anda suka dengan aplikasi ini jangan ragu untuk memberi kami penilaian dan ulasan terbaik Anda.</h2>
+<!-- MASUKIN ACTIVITY RATE DI SINI -->
+<a href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat">
+<div data-role=button class="ui-btn ui-input-btn ui-shadow custom-btn" data-theme=a>&#11088; &#11088; &#11088; &#11088; &#11088;
+</div></a>
+<!-- <img class=img2 width=600px src=icon/thanks.gif> -->
+</div>
+</div>
+
+
+
+<!-- TAB REQUEST -->
+<div id=one class=tabView>
+
+<div id=t>
+<!-- <img clss=img2 width=600px src=icon/working.gif> -->
+<p data-icon=false data-theme=e><h2 class=wrap align=center>Jika anda tidak menemukan Doa atau bacaan yang anda cari silahkan request ke kami. Tim kami akan memasukkan request anda pada update berikutnya secepatnya.	</h2>
+<!-- MASUKIN ACTIVITY RATE DI SINI -->
+<a href="mailto:fatihsyaronidoplang@gmail.com?Subject=Request%20Doa">
+<img class=img width=100px src=icon/sent2.png>
+<div data-role=button class="ui-btn ui-input-btn ui-shadow custom-btn" data-theme=a>REQUEST
+</div></a>
+<!-- <img class=img2 width=600px src=icon/thanks.gif> -->
+</div>
+
+</div>
+
+
+
+<!-- TAB BOOKMARK -->
+<div id=four class=tabView>
+
+<div>
+<ul id=tabFavourite data-role=listview data-autodividers=false data-inset=true data-input=#divOfPs-input data-filter=true data-theme=c data-filter-placeholder="Find Formula" data-filter-theme=e>
+</ul>
+</div><nav class=right-floating-menu>
+<input type=button class=btn value=Clear id=b3 onclick="clear_bookmark()"/></nav>
+</div>
+
+
+
+</div>
+<script src="function.js">
+
+
+</script> 
+<script> 
+ $(document).on("pagecreate", "#page1", function(){
+    //start with only viewone visible
+    $(".tabButton").removeClass("ui-btn-active");
+    $(".tabView").hide();
+    $(".tabButton").eq(0).addClass("ui-btn-active");
+    var viewHref  = $(".tabButton").eq(0).prop("href");
+    $(viewHref.substr(viewHref.indexOf('#'))).show();
+    
+    $(".tabButton").on("click", function(){
+        $(".tabButton").removeClass("ui-btn-active");        
+        $(".tabView").hide();
+        var href = $(this).prop("href");
+        $(href.substr(href.indexOf('#'))).show();        
+        $(this).addClass("ui-btn-active");
+        return false;
+    });
+	
+	
+});
+ 
+
+
+</script> 
+<script>
+		loadBookmark();
+	
+
+
+</script>
+</body>
+</html>

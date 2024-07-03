@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Penjelasan Seputar Shalat Sunah Awwabin (sumber : www.nu.or.id)</h1>
+        <a href="awwabin.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Penjelasan Seputar Shalat Sunah Awwabin<br>(sumber : www.nu.or.id)</strong></div>
+<div class="arti">Bagi masyarakat kebanyakan, terutama kalangan muda yang tidak pernah mengenyam pendidikan agama secara intensif memang agak asing mendengar istilah shalat sunah Awwabin.</div>
+<div class="arti">Shalat sebagaimana yang kita pahami bersama bahwa shalat dikategorikan sebagai ibadah fisik yang paling utama (afdlalu &lsquo;ibadatil badan). Hal ini didasarkan pada sabda Rasulullah SAW yang menyatakan bahwa sebaik-baiknya amalan adalah shalat.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">أَفْضَلُ عِبَادَاتِ الْبَدَنِ: اَلصَّلَاةُ، لِقَوْلِهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ : "اسْتَقِيمُوا وَلَنْ تُحْصُوا ، وَاعْلَمُوا أَنَّ خَيْرَ أَعْمَالِكُمُ الصَّلاَةُ ، وَلاَ يُحَافِظُ عَلَى الْوُضُوءِ إِلاَّ مُؤْمِنٌ"</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya,</strong> &ldquo;Ibadah fisik yang paling utama adalah shalat karena didasarkan pada sabda Nabi SAW, &lsquo;Beristiqamahlah, dan kalian tidak akan mampu. Ketahuilah bahwa sebaik-baiknya amalan kalian adalah shalat. Hanya orang beriman yang melestarikan/menjaga wudlu,&rdquo;<br><strong>(Lihat Wahbah Az-Zuhaili, Al-Fiqhul Islamiy wa Adillatuhu, Damaskus, Darul Fikr, juz II, halaman 222).</strong></div>
+<div class="arti">Logika yang dapat digunakan untuk membenarkan pandangan ini adalah bahwa shalat ibadah yang mengumpulkan pelbagai macam aktivitas ibadah-ibadah lainnya dalam satu rangkaian, seperti bersuci, menghadap kiblat, membaca Al-Quran, dan lain sebagainya. Inilah salah satu hal yang membedakan antara ibadah shalat dengan ibadah fisik lainnya.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">وَلِأَنَّهَا تَجْمَعُ مِنَ الْقُرَبِ مَا لَا يَجْمَعُ غَيْرُهَا، مِنَ الطَّهَارَةِ وَاسْتِقْبَالِ الْقِبْلَةِ، وَالْقِرَاءَةِ، وَذِكْرِ اللهِ عَزَّ وَجَلَّ، وَالصَّلَاةُ عَلَى رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ ، وَيُمْنَعُ فِيهَا مِنْ كُلِّ مَا يَمْنَعُ مِنْهُ فِي سَائِرِ الْعِبَادَاتِ، وَتَزِيدُ عَلَيْهَا بِالْاِمْتِنَاعِ عَنِ الْكَلَامِ، وَالْمَشْيِ، وَسَائِرِ الْأَفْعَالِ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya,</strong> &ldquo;Karena shalat merupakan ibadah yang menggabungkan pelbagai macam ibadah yang tidak dikumpulkan oleh ibadah selain shalat, seperti bersuci, menghadap kiblat, membaca Al-Quran, dzikir kepada Allah, dan bershalawat kepada Rasulullah SAW. Di dalam shalat terdapat larangan dari setiap hal yang dilarang di semua bentuk ibadah, berbicara, berjalan, dan larangan pelbagai macam perbuatan lainnya,&rdquo; <br><strong>(Lihat Wahbah Az-Zuhaili, Al-Fiqhul Islamiy wa Adillatuhu, Damaskus, Darul Fikr, juz II, halaman 222).</strong></div>
+<div class="arti">Sedangan shalat itu ada yang wajib, seperti shalat lima waktu, dan ada yang sunah. Di antara shalat yang disunahkan adalah shalat Awwabin. Istilah shalat Awwabin itu sendiri memilik dua konotasi, bisa diartikan shalat Dhuha, bisa juga diartikan shalat sunah di antara Maghrib dan Isya sebagaimana yang dikemukakan para ulama dari kalangan Madzhab Syafi&rsquo;i.</div>
+<div class="arti">Kendati demikian, Madzhab Syafi&rsquo;i cenderung menggunakan istilah shalat Awwabin dengan pengertian yang kedua, yaitu shalat sunah yang dilakukan di antara Maghrib dan Isya.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">وَيُؤْخَذُ مِمَّا جَاءَ عَنْ صَلاَةِ الضُّحَى وَالصَّلاَةِ بَيْنَ الْمَغْرِبِ وَالْعِشَاءِ أَنَّ صَلاَةَ الْأَوَّابِينَ تُطْلَقُ عَلَى صَلاَةِ الضُّحَى ، وَالصَّلاَةِ بَيْنَ الْمَغْرِبِ وَالْعِشَاءِ . فَهِيَ مُشْتَرَكَةٌ بَيْنَهُمَا كَمَا يَقُول الشَّافِعِيَّةُ .وَانْفَرَدَ الشَّافِعِيَّةُ بِتَسْمِيَةِ التَّطَوُّعِ بَيْنَ الْمَغْرِبِ وَالْعِشَاءِ بِصَلاَةِ الْأَوَّابِينَ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya,</strong> &ldquo;Dari apa yang telah dijelaskan mengenai shalat Dhuha dan shalat sunah di antara Maghrib dan Isya dapat diambil simpulan bahwa &lsquo;shalat Awwabin&rsquo; dikatakan untuk menyebut shalat sunah Dhuha dan shalat sunah di antara Maghrib dan Isya. Karenanya shalat Awwabin dikonotasikan di antara keduanya sebagaimana dikemukakan oleh Madzhab Syafi&rsquo;i. Hanya Madzhab Syafi&rsquo;i yang menamakan shalat di antara Maghrib dan Isya dengan shalat Awwabin,&rdquo;<br><strong>(Lihat Al-Mawsu&rsquo;atul Fiqhiyyah Al-Kuwaitiyyah, Mesir, Darush Shafwah, cet ke-1, juz XXVII, halaman 134-135).</strong></div>
+<div class="arti">Pertanyaannya kemudian, kenapa dinamai shalat Awwabin? Disebut &ldquo;shalat Awwabin&rdquo; karena orang yang menjalankannya itu kembali kepada Allah dan bertobat dari kesalahan yang dilakukan pada siang hari. Ketika ia menjalankan shalat tersebut berulang-ulang, maka hal itu merupakan penanda pertobatan atau kembalinya ia kepada Allah kendati hal tersebut tidak disadarinya.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">وَصَلَاةُ الْأَوَّابِينَ وَإِنَّمَا سُمِّيَتْ صَلَاةَ الْأَوَّابِينَ ؛ لِأَنَّ فَاعِلَهَا رَجَعَ إلَى اللَّهِ تَعَالَى وَتَابَ مِمَّا فَعَلَهُ فِي نَهَارِهِ فَإِذَا تَكَرَّرَ ذَلِكَ مِنْهُ دَلَّ عَلَى رُجُوعِهِ إلَى اللَّهِ تَعَالَى وَلَوْ لَمْ يُلَاحَظْ ذَلِكَ الْمَعْنَى</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya,</strong> &ldquo;Dinamai shalat Awwabin sebab orang yang menjalankannya itu kembali kepada Allah dan bertobat dari kesalahan yang ia lakukan pada siang hari. Karenanya, ketika ia melakukannya berulang-ulang, maka hal itu merupakan penanda kembalinya ia (bertobat) kepada Allah ta&rsquo;ala meskipun itu tidak disadarinya,&rdquo;<br><strong>(Lihat Sulaiman Al-Jamal, Hasyiyatul Jamal, Beirut, Daru Fikr, juz, 609).</strong></div>
+<div class="arti">Shalat Awwabin juga disebut &ldquo;shalat ghaflah&rdquo; (shalat lalai). Menurut apa yang kami pahami dari keterangan di kitab Al-Iqna`, disebut demikian karena umumnya orang cenderung lalai pada saat antara Maghrib dan Isya karena disibukkan dengan aktivitas lain seperti makan malam, tidur, dan lain sebagainya.</div>
+<div class="arti">Sedang jumlah rakaat shalat Awwabin adalah dua puluh dan minimal dua rakaat.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">وَصَلَاةُ الْأَوَّابِينَ وَتُسَمَّى صَلَاةَ الْغَفْلَةِ لِغَفْلَةِ النَّاسِ عَنْهَا بِسَبَبِ عَشَاءٍ أَوْ نَوْمٍ أَوْ نَحْوِ ذَلِكَ وَهِيَ عِشْرُونَ رَكْعَةٍ بَيْنَ الْمَغْرِبِ وَالْعِشَاءِ وَأَقلُّهَا رَكْعَتَانِ</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya,</strong> &ldquo;Shalat Awwabin (disebut juga, pent) &lsquo;shalat Ghaflah&rsquo; (lalai) karena kelalaian orang-orang atas shalat tersebut oleh aktivitas seperti makan malam, tidur, dan selainnya. Sedang jumlah rakaatnya adalah dua puluh di antara Maghrib dan Isya. Minimal adalah dua rakaat,&rdquo;<br><strong>(Lihat Muhammad Asy-Syarbini Al-Khathib, Al-Iqna` fi Halli Alfazhi Abi Syujja&rsquo;, Beirut, Darul Fikr, 1415 H, juz I, halaman 118).</strong></div>
+<div class="arti">Dalam hadist yang diriwayatkan At-Tirmidzi dijelaskan mengenai fadhilah atau keutamaan dari shalat Awwabin. Dalam riwayat tersebut dijelaskan bahwa orang yang menjalankan shalat Awwabin enam rakaat akan mendapatkan pahala setara ibadah dua belas tahun.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">مَنْ صَلَّى سِتَّ رَكَعَاتٍ بَيْنَ الْمَغْرِبِ وَالْعِشَاءِ كَتَبَ اللهُ لَهُ عِبَادَةَ اثْنَتَيْ عَشَرَةَ سَنَةً</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya,</strong> &ldquo;Barang siapa yang melaksanakan shalat Awwabin enam rakaat maka Allah catat baginya pahala ibadah dua belas tahun,&rdquo;<br><strong>(HR Tirmidzi).</strong></div>
+
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Bacaan dan Niat Shalat Jenazah</h1>
+        <a href="jenazah.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		</div>
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>1.a) Bacaan niat sholat jenazah untuk jenazah Laki-laki</strong></div>
+<div class="arti"><strong>Niat Untuk Imam</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 34px;">اُصَلِّى عَلَى هَذَاالْمَيِّتِ اَرْبَعَ تَكْبِرَاتٍ فَرْضَ الْكِفَايَةِ إِمَامًا ِللهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/lijenazah.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">usholli &lsquo;alaa hadzal mayyiti arba&rsquo;a takhbiratin fardhal kifayaati imaaman lillahi ta&rsquo;alaa</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Saya niat shalat atas mayit ini empat kali takbir fardhu kifayah karena menjadi imam karena Allah Ta&rsquo;ala.&rdquo;</div>
+<div class="arti"><strong>Niat Untuk Makmum</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 35px;">اُصَلِّى عَلَى هَذَاالْمَيِّتِ اَرْبَعَ تَكْبِرَاتٍ فَرْضَ الْكِفَايَةِ مَأْمُوْمًا ِللهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/lmjenazah.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">usholli &lsquo;alaa hadzal mayyiti arba&rsquo;a takhbiratin fardhal kifayaati ma&rsquo;muuman lillahi ta&rsquo;alaa</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Saya niat shalat atas mayit ini empat kali takbir fardhu kifayah karena menjadi makmum karena Allah Ta&rsquo;ala.&rdquo;</div>
+<div class="arti"><strong>1.b) Bacaan niat sholat jenazah untuk jenazah Perempuan</strong></div>
+<div class="arti"><strong>Niat Untuk Imam</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 36px;">اُصَلِّى عَلَى هَذِهِ الْمَيِّتَةِ اَرْبَعَ تَكْبِرَاتٍ فَرْضَ الْكِفَايَةِ إِمَامًا ِللهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/pijenazah.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">usholli &lsquo;alaa haadzihil mayyitati arba&rsquo;a takhbiratin fardhal kifayaati imaaman lillahi ta&rsquo;alaa</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Saya niat shalat atas mayit perempuan ini empat kali takbir fardhu kifayah karena menjadi imam karena Allah Ta&rsquo;ala.&rdquo;</div>
+<div class="arti"><strong>Niat Untuk Makmum</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 37px;">اُصَلِّى عَلَى هَذِهِ الْمَيِّتَةِ اَرْبَعَ تَكْبِرَاتٍ فَرْضَ الْكِفَايَةِ مَأْمُوْمًا ِللهِ تَعَالَى</div>
+</br>
+<center>
+<audio class="audioPlayer" controls >
+  <source src="audio/pmjenazah.ogg" type="audio/mp3">
+ </audio>
+</center>
+</br>
+<div class="arti">usholli &lsquo;alaa haadzihil mayyitati arba&rsquo;a takhbiratin fardhal kifayaati ma&rsquo;muuman lillahi ta&rsquo;alaa</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Saya niat shalat atas mayit perempuan ini empat kali takbir fardhu kifayah karena menjadi makmum karena Allah Ta&rsquo;ala.&rdquo;</div>
+<div class="arti"><strong>2. Bacaan Sholat Jenazah setelah takbir pertama</strong></div>
+<div class="arti">Sebelum membaca basmallah pada Surat Al Fatihah, membaca Ta&rsquo;awudz terlebih dahulu</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 38px;">أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الَّرجِيْمِ</div>
+<div class="arti">a&rsquo;uudzubillahi minasy syaithaanirrajiim(i)</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Aku berlindung dari syaitan yang terkutuk&rdquo;</div>
+<div class="arti"><strong>3. Bacaan Sholat Jenazah setelah takbir Kedua</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 42px;">اَللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى أَلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيْمَ وَعَلَى أَلِ إِبْرَاهِيْمَ وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى أَلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيْمَ وَعَلَى أَلِ إِبْرَاهِيْمَ فِى اْلعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَّجِيْدٌ</div>
+<div class="arti">allahumma shalli &lsquo;alaa muhammadin wa &lsquo;alaa aali muhammadin kamaa shallaita &lsquo;alaa ibraahimm(a) wa &lsquo;alaa aali ibrahimm(a) wa baarik &lsquo;alaa muhammadin wa &lsquo;alaa aali muhammadin kamaa baarakta &lsquo;alaa ibraahimm(a) wa &lsquo;alaa aali ibraahimm(a) fiil&rsquo;aalamiina innaka hamiidun mjiidu(un)</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Allah, berilah rahmat kepada Muhammad dan keluarganya, sebagaimana Engkau telah memberikan rahmat kepada Ibrahim dan keluarganya. Sesungguhnya Engkau Maha Terpuji dan Maha Agung. Berilah berkah kepada Muhammad dan keluarganya (termasuk anak dan istri atau umatnya), sebagaimana Engkau telah memberi berkah kepada Ibrahim dan keluarganya. Sesungguhnya Engkau Maha Terpuji dan Maha Agung.&rdquo;</div>
+<div class="arti"><strong>4. Bacaan Sholat Jenazah setelah takbir Ketiga</strong></div>
+<div class="arti"><strong>Untuk Jenazah Laki-Laki</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 40px;">اَللَّهُمَّ اغْفِرْ لَهُ وَارْحَمهُ وَعَافِهِ وَاعْفُ عَنْهُ وأَكْرِمْ نُزُوْلَهُ وَوَسِّعْ مَدْخَلَهُ وَاغْسِلْهُ بِمَاءٍ وثَلْجٍ وَبَرَدٍ وَنَقِّهِ مِنَ اْلخَطَايَا كَمَا يُنَقَى الثَوْبُ اْلأَبْيَضُ مِنَ الدَّنَسِ وأَبْدِلْهُ دَارًا خَيْرًا مِنْ دَارِهِ وأََهْلًا خَيْراً مِنْ أَهْلِهِ وَزَوْجًا خَيْراً مِنْ زَوْجِهِ وَقِهِ فِتْنَةَ القَبْرِ وَعَذَابَ النَّارِ</div>
+<div class="arti">allahumma agfirlahuu warhamhuu wa &lsquo;aafihii waa&rsquo;fu &lsquo;anhuu wa akrim nuzuulahuu wa wassi&rsquo; madkhalahuu waagsilhu bimaa-in wa tsaljin wa baradin wa naqqihii minal khathaayaa kamaa yunaqiits tsaubul abyadhu minaddanasi wa abdil-hu daaran khairan min daarihi wa ahlan khairan min ahlihi wa zaujan khairan min zaujihi wa qihi fitnatal qabri wa &lsquo;adazaabannaar(i)</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Allah, ampunilah dia, rahmatilah dia, maafkanlah dia, ampunilah kesalahannya, muliakanlah kematiannya, lapangkanlah kuburannya, cucilah kesalahannya dengan air, es dan embun sebagaimana mencuci pakaian putih dari kotoran, gantilah rumahnya dengan rumah yang lebih baik, gantilah keluarganya dengan keluarga yang lebih baik, gantilah istrinya dengan istri yang lebih baik, hindarkanlah dari fitnah kubur dan siksa neraka.&rdquo;</div>
+<div class="arti"><strong>Untuk Jenazah Perempuan</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 41px;">اَللَّهُمَّ اغْفِرْ لَهَا وَارْحَمهَا وَعَافِهَا وَاعْفُ عَنْهَا وأَكْرِمْ نُزُوْلَهَا وَوَسِّعْ مَدْخَلَهَا وَاغْسِلْهَا بِمَاءٍ وثَلْجٍ وَبَرَدٍ وَنَقِّهَا مِنَ اْلخَطَايَا كَمَا يُنَقَى الثَوْبُ اْلأَبْيَضُ مِنَ الدَّنَسِ وأَبْدِلْهَا دَارًا خَيْرًا مِنْ دَارِهَا وأََهْلًا خَيْراً مِنْ أَهْلِهَا وَزَوْجًا خَيْراً مِنْ زَوْجِهَا وَقِهِهَا فِتْنَةَ القَبْرِ وَعَذَابَ النَّارِ</div>
+<div class="arti">allahumma agfirlahaa warhamhaa wa &lsquo;aafihaa waa&rsquo;fu &lsquo;anhaa wa akrim nuzuulahaa wa wassi&rsquo; madkhalahaa waagsilhaa bimaa-in wa tsaljin wa baradin wa naqqihaa minal khathaayaa kamaa yunaqiits tsaubul abyadhu minaddanasi wa abdil-haa daaran khairan min daarihiaa wa ahlan khairan min ahlihaa wa zaujan khairan min zaujihaa wa qihi haa fitnatal qabri wa &lsquo;adazaabannaar(i)</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Allah, ampunilah dia, rahmatilah dia, maafkanlah dia, ampunilah kesalahannya, muliakanlah kematiannya, lapangkanlah kuburannya, cucilah kesalahannya dengan air, es dan embun sebagaimana mencuci pakaian putih dari kotoran, gantilah rumahnya dengan rumah yang lebih baik, gantilah keluarganya dengan keluarga yang lebih baik, gantilah suaminya dengan suami yang lebih baik, hindarkanlah dari fitnah kubur dan siksa neraka.&rdquo;</div>
+<div class="arti"><strong>5. Bacaan Sholat Jenazah setelah takbir Keempat</strong></div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 43px;">اَللَّهُمَّ لاَتَحْرِمْنا أَجْرَهُ وَلاَتَفْتِِنَّا بَعْدَهُ</div>
+<div class="arti">allahumma laa tahrimnaa ajrahuu wa laa taftinnaa ba&rsquo;dah(u)</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Allah, janganlah Engkau haramkan Kami dari pahalanya, dan janganlah Engkau beri fitnah pada kami setelah kematiannya.&rdquo;</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 44px;">اَللَّهُمَّ لاَتَحْرِمْنا أَجْرَهَا وَلاَتَفْتِِنَّا بَعْدَهَا</div>
+<div class="arti">allahumma laa tahrimnaa ajrahaa wa laa taftinnaa ba&rsquo;dahaa</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Ya Allah, janganlah Engkau haramkan Kami dari pahalanya, dan janganlah Engkau beri fitnah pada kami setelah kematiannya.&rdquo;</div>
+<div class="arti"><strong>6. Salam</strong></div>
+<div class="arti">Setelah membaca doa takbir ke empat, dilanjutkan dengan membaca salam ke kanan dan ke kiri.</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 39px;">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</div>
+<div class="arti">assalaamu&rsquo;alaikum wa rahmatullahi wa barakaatuh(u)</div>
+<div class="bacaan" style="text-align: justify;"><strong>Artinya :</strong> &ldquo;Keselamatan, rahmat Allah dan keberkahan-Nya semoga untuk kalian semua&rdquo;</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+</body>
+</html>

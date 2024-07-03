@@ -1,0 +1,469 @@
+
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<meta name=viewport content="width=device-width, user-scalable=no" />
+		<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+		<script src="audioplayerengine/jquery.js"></script>
+		<script src="audioplayerengine/amazingaudioplayer.js"></script>
+		<link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
+			<script src="audioplayerengine/initaudioplayer-1.js"></script>
+			<link href="js/styles.css" rel="stylesheet" type="text/css">
+				<script src="js/jquery.js"></script>
+				<script src="js/jquery.mobile-1.4.0.min.js"></script>
+				<style>
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Bold.ttf");
+}
+
+
+.audioPlayer{
+  display: block;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+
+.tabView{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+
+
+}
+
+.arabic {
+	
+					<!-- position:fixed; -->
+					<!-- display: inline -->
+	direction:rtl;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+    font-family: "myFirstFont";
+	text-align: right;
+	font-size: 30px;
+	line-height: 2;
+	background-color: #F8F3E0;
+	border-radius: 10px;
+	margin: 0;
+	
+}
+
+
+.indonesia {
+	
+					<!-- position:fixed; -->
+					<!-- display: inline -->
+					<!-- direction:rtl; -->
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-bottom: 40px;
+	padding-right: 10px;
+	text-align: center;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 1;
+	border-radius: 10px;
+	margin: 0;
+	color: #9a0007;
+	
+}
+
+.indonesia2 {
+	
+					<!-- position:fixed; -->
+					<!-- display: inline -->
+					<!-- direction:rtl; -->
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+    <!-- font-family: "myFirstFont"; -->
+	text-align: left;
+	font-size: 22px;
+	padding-bottom: 20px;
+	line-height: 1.2;
+	border-radius: 10px;
+	margin: 0;
+	
+	
+}
+
+
+.indonesia3 {
+	
+					<!-- position:fixed; -->
+					<!-- display: inline -->
+					<!-- direction:rtl; -->
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+    <!-- font-family: "myFirstFont"; -->
+	text-align: center;
+	font-size: 22px;
+	margin-top: 10px;
+	line-height: 1.2;
+	border-radius: 10px;
+	color: #00897b;
+	padding-bottom: 20px;
+	margin: 0;
+}
+
+
+body {
+    background-color: #000
+
+}
+
+.custom-btn {
+    width: 40% !important;
+}
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: none;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 8px 12px 8px 12px;
+    background-image: "gambar/paper.png" font-family: "Helvetica, sans-serif"
+}
+
+	
+					<!-- h1 { -->
+					<!-- padding-bottom: 5px; -->
+					<!-- padding-top: 5px; -->
+					<!-- font-size: 22px; -->
+					<!-- margin-bottom: 10px; -->
+					<!-- text-align: center; -->
+					<!-- border-style: solid; -->
+					<!-- border-bottom: double #666; -->
+					<!-- border-top: double; -->
+					<!-- border-left: 0px; -->
+					<!-- border-right: 0px; -->
+					<!-- background-color: none; -->
+					<!-- border-radius: 0px; -->
+					<!-- line-height: 1; -->
+					<!-- font-family: "arial" -->
+					<!-- } -->
+
+h3 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+	padding-left: 10px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: -25px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #232323;
+    border-radius: 40px;
+    font-family: "arial"
+}
+
+h2 {
+    padding-bottom: 0px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: none #666;
+    border-top: none;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "helvetica"
+}
+
+h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal!important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px/10px;
+    border-radius: 100px/10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg)rotate(3deg);
+    -moz-transform: skew(8deg)rotate(3deg);
+    -ms-transform: skew(8deg)rotate(3deg);
+    -o-transform: skew(8deg)rotate(3deg);
+    transform: skew(8deg)rotate(3deg);
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+}
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+@media screen and(max-width:640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    td,
+    th {
+        border: 1px solid #999;
+        padding: 0.3rem;
+    }
+}
+
+.imageradio {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border-top-left-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 30px;
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        content: "\f01d";
+        font-family: FontAwesome;
+        font-size: 100px;
+        color: #fff;
+        opacity: .8;
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    }
+    &:hover:before {
+        color: #eee;
+    }
+}
+
+
+ol. > li{
+    position: relative;
+    margin-top: 0px;
+    
+					<!-- padding-left: 0.5em; -->
+					<!-- min-height: 3em; -->
+					<!-- line-height: 3em; -->
+}
+
+
+					<!-- .ui-page .ui-header { -->
+					<!-- background: #232323 !important; -->
+					<!-- } -->
+					<!-- Navbar { -->
+					<!-- background: #00897b !important; -->
+					<!-- } -->
+				</style>
+			</head>
+			<body>
+				<div data-role=page id=page1>
+					<div data-role=header data-position=fixed width=100%>
+						<h1>Doa Pilihan</h1>
+						<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a><a data-theme="a" href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat" data-icon="heart" data-iconpos="notext">Rate</a>
+						<!-- <a href="#add-form" data-icon="gear" data-iconpos="notext">Setting</a> -->
+						<form>
+							<input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari Doa">
+							</form>
+						</div>
+						
+<div data-role = "collapsibleset" data-filter = "true" data-inset = "true" 
+id = "collapsiblesetForFilter" data-input = "#divOfPs-input">
+
+<!-- mulai -->
+<div data-role = "collapsible" data-filtertext = "Doa Anugerah Keamanan Negeri">
+<h2>Doa Anugerah Keamanan Negeri</h2>
+<div class="arabic"> رَبِّ ٱجْعَلْ هَٰذَا بَلَدًا ءَامِنًا وَٱرْزُقْ أَهْلَهُۥ مِنَ ٱلثَّمَرَٰتِ مَنْ ءَامَنَ مِنْهُم بِٱللَّهِ وَٱلْيَوْمِ ٱلْءَاخِرِ ۖ قَالَ وَمَن كَفَرَ فَأُمَتِّعُهُۥ قَلِيلًا ثُمَّ أَضْطَرُّهُۥٓ إِلَىٰ عَذَابِ ٱلنَّارِ ۖ وَبِئْسَ ٱلْمَصِير</div>
+
+<p class="indonesia">Rabbi ij'al haadzaa baladan aaminan waurzuq ahlahu mina altstsamaraati man aamana minhum biallaahi waalyawmi al-aakhiri qaala waman kafara faumatti'uhu qaliilan tsumma adtharruhu ilaa 'adzaabi alnnaari wabi/sa almashiiru
+</p>
+<p class="indonesia2">Ya Tuhanku, jadikanlah negeri ini, negeri yang aman sentosa, dan berikanlah rezki dari buah-buahan kepada penduduknya yang beriman diantara mereka kepada Allah dan hari kemudian</p>
+<p class="indonesia3">QS. Al-Baqarah 126</p>
+</div>
+
+
+<!-- mulai -->
+<div data-role = "collapsible" data-filtertext = "Doa Diterima Amalan">
+<h2>Doa Diterima Amalan</h2>
+<p class="arabic">رَبَّنَا تَقَبَّلْ مِنَّآ ۖ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ</p>
+
+<p class="indonesia">Rabbanaa taqabbal minnaa, innaka antas sami'ul 'alimu
+</p>
+
+<p class="indonesia2">Ya Tuhan kami terimalah (amalan) daripada kami, sesungguhnya Engkaulah Yang Maha Mendengar lagi Maha Mengetahui</p>
+
+<p class="indonesia3">QS. Al-Baqarah 127</p>
+
+<strong>Keterangan :</strong>
+        <p class="indonesia2">Doa ini menjelaskan bahwa segala amalan yang dikerjakan oleh Nabi Ibrahim dipersembahkan semata-mata hanya untuk Allah. Nabi Ibrahim menyebutkan dua sifat Allah, yaitu Maha Mendengar bahwa Allah mendengar doa hamba-Nya dalam arti diterima oleh Allah dan Maha Mengetahui segala alasan dari doa yang dipanjatkan.
+</p>
+							
+</div>
+
+
+
+
+
+
+								<div data-role="panel" data-display="push" data-theme="a" id="nav-panel">
+									<ul data-role="listview">
+										<li data-icon="delete">
+											<a href="index.html" data-rel="close">Close</a>
+										</li>
+										<li>
+											<a href="index.html" rel="external" data-ajax="false">Dzikir & Doa Setelah Sholat</a>
+										</li>
+										<li>
+											<a href="bacaansholat.html" rel="external" data-ajax="false">Bacaan Sholat</a>
+										</li>
+										<li>
+											<a href="dzikirpagipetang.html" rel="external" data-ajax="false">Dzikir Pagi Petang</a>
+										</li>
+										<li>
+											<a href="doaharian.html" rel="external" data-ajax="false">Doa Harian</a>
+										</li>
+										<li>
+											<a href="doapilihan.html" rel="external" data-ajax="false">Doa Pilihan</a>
+										</li>
+										<li>
+											<a href="doarabbana.html" rel="external" data-ajax="false">40 Doa Rabbana</a>
+										</li>
+										<li>
+											<a href="doaparanabi.html" rel="external" data-ajax="false">Doa Para Nabi & Rasul</a>
+										</li>
+										<li>
+											<a href="sholatsunnah.html" rel="external" data-ajax="false">Panduan Shalat Sunnah<span class="blink_me" style="background-color:red;margin-left:8px;padding-left:5px;padding-right:5px;">new</span></a>
+										</li>
+										<li>
+											<a href="doashalatsunnah.html" rel="external" data-ajax="false">Doa Sholat Sunnah</a>
+										</li>
+										<li><a href="quran.html" rel="external" data-ajax="false">Quran Terjemah</a></li>
+										<li><a href="asmaulhusna.html" rel="external" data-ajax="false">Asmaul Husna<span class="blink_me" style="background-color:red;margin-left:8px;padding-left:5px;padding-right:5px;">new</span></a></li>
+										<li>
+											<a href="rate.html" rel="external" data-ajax="false">Rate This App</a>
+										</li>
+										<li>
+											<a href="disclaimer.html" rel="external" data-ajax="false">Discalimer</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</body>
+					</html>

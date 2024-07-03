@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Persiapan Shalat Idul Fitri</h1>
+        <a href="idulfitri.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Setelah mengetahui hukum, waktu dan tempat melaksanakan kita perlu mengetahui tata cara dan hal-hal yang perlu dilakukan sebelum melaksanakan shalat idul fitri. Simak penjelasan berikut ini</div>
+<div class="arti"><strong>1. Mandi dan mensucikan diri</strong></div>
+<div class="arti">Sebelum melaksanakan shalat idul fitri hendaknya kita mandi dan mensucikan diri. Jangan lupa untuk berwudhu sebelum berangkat menuju tempat shalat. Terkadang seseorang lupa untuk mengambil wudhu terutama wanita yang memakai make up setelah mandi. Jangan lupa bahwa wudhu adalah salah satu syarat sahnya shalat.</div>
+<div class="arti"><strong>2. Memakai pakaian terbaik</strong></div>
+<div class="arti">Saat hendak melaksanakan shalat idul fitri, sebaiknya kita menghias diri dan memakai pakaian terbaik. Pria juga dianjurkan untuk memakai wangi-wangian. Sebagaimana yang dikatakan oleh Ibnul Qayyim bahwa &ldquo;Nabi shallallahu &lsquo;alaihi wa sallam biasa keluar ketika shalat Idul Fithri dan Idul Adha dengan pakaiannya yang terbaik.</div>
+<div class="arti"><strong>3. Makan</strong></div>
+<div class="arti">Sebelum melaksanakan shalat id kita dianjurkan untuk makan dipagi hari dan hal inilah yang membedakan shalat idul fitri dengan shalat idul adha dimana saat sebelum shalat idul adha kita tidak dianjurkan untuk makan hal ini dimaksudkan bahwa pada hari raya idul fitri umat islam tidak lagi melakukan ibadah puasa seperti sebelumnya pada bulan ramadhan. Sebagaimana hadist Rasullullah SAW</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 59px;">كَانَ رَسُولُ اللَّهِ -صلى الله عليه وسلم- لاَ يَغْدُو يَوْمَ الْفِطْرِ حَتَّى يَأْكُلَ وَلاَ يَأْكُلُ يَوْمَ الأَضْحَى حَتَّى يَرْجِعَ فَيَأْكُلَ مِنْ أُضْحِيَّتِهِ</div>
+<div class="bacaan" style="text-align: justify;">Rasulullah shallallahu &lsquo;alaihi wa sallam biasa berangkat shalat &lsquo;ied pada hari Idul Fithri dan beliau makan terlebih dahulu. Sedangkan pada hari Idul Adha, beliau tidak makan lebih dulu kecuali setelah pulang dari shalat &lsquo;ied baru beliau menyantap hasil qurbannya.&rdquo;</div>
+<div class="arti"><strong>4. Berjalan kaki dan menempuh jalan yang berlainan</strong></div>
+<div class="arti">Yang dinaksud dengan menempuh jalan yang berlainan adalah saat pergi dan pulang shalat idul fitri hendaknya kita melewati jalan yang berbeda hal ini dimaksudkan supaya saat pergi maupun pulang kita lebih banyak bertemu dengan orang-orang yang juga melaksanakan shalat id dan saling berminal aidzin. Pergi menuju tempat shalat id juga dianjurkan untuk berjalan kaki daripada menggunakan kendaraan kecuali jika ada halangan atau hajat. Sebagaimana hadist yang diriwayatkan oleh ibnu Jabir :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 58px;">كَانَ النَّبِىُّ &ndash; صلى الله عليه وسلم &ndash; إِذَا كَانَ يَوْمُ عِيدٍ خَالَفَ الطَّرِيقَ</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Nabi shallallahu &lsquo;alaihi wa sallam ketika shalat &lsquo;ied, beliau lewat jalan yang berbeda ketika berangkat dan pulang.</div>
+<div class="arti">Dan Hadist yang diriwayatkan oleh ibnu umar</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 60px;">كَانَ رَسُولُ اللَّهِ -صلى الله عليه وسلم- يَخْرُجُ إِلَى الْعِيدِ مَاشِيًا وَيَرْجِعُ مَاشِيًا</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Rasulullah shallallahu &lsquo;alaihi wa sallam biasa berangkat shalat &lsquo;ied dengan berjalan kaki, begitu pula ketika pulang dengan berjalan kaki</div>
+<div class="arti"><strong>5. Melafalkan takbir</strong></div>
+<div class="arti">Saat sebelum melaksanakan shalat id sebaiknya kita melafalkan kalimat takbir kepada Allah SWT sebagai tanda bahwa kita gembira menyambut hari raya idul fitri (baca manfaat takbir)</div>
+<div class="arti">Kalimat takbir adalah sebagai berikut :</div>
+<div class="ayat" style="background-color: #f8f3e0; padding-top: 57px;">اللَّهُ أَكْبَرُ اللَّهُ أَكْبَرُ لَا إلَهَ إلَّا اللَّهُ وَاَللَّهُ أَكْبَرُ اللَّهُ أَكْبَرُ وَلِلَّهِ الْحَمْدُ</div>
+<div class="bacaan" style="text-align: justify;">&ldquo;Allahu akbar, Allahu akbar, laa ilaaha illallah wallahu akbar, Allahu akbar wa lillahi ilhamd (Allah Maha Besar, Allah Maha Besar, tidak ada sesembahan yang berhak disembah dengan benar selain Allah, Allah Maha Besar, Allah Maha Besar, segala pujian hanya untuk-Nya)</div>
+
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

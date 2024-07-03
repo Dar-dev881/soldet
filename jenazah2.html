@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Syarat, Rukun dan Sunnah Shalat Jenazah</h1>
+        <a href="jenazah.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Posisi Sholat Jenazah</strong></div>
+<div class="arti">Jika jenazah wanita imam berada ditengah Jenazah / Mayit.</div>
+<div class="arti">Jika jenazahnya laki-laki maka imam lurus dengan kepala.</div>
+<div class="arti"><strong>Syarat Shalat Jenazah</strong></div>
+<div class="arti">1. Jenazah harus tertutup auratnya.<br>2. Mayit harus di mandikan dan disucikan dari najis / hadas besar.<br>3. Mayit sudah dikafani.<br>4. Letak Mayit / Jenazah sebelah kiblat orang yang menyalatinya, kecuali jika shalat dikerjakan di atas kubur atau Sholat Ghaib.</div>
+<div class="arti"><strong>Rukun Sholat Jenazah</strong></div>
+<div class="arti">1. Niat<br>2. Berdiri bagi yang mampu.<br>3. Takbir 4 kali.<br>4. Membaca surat Al Fatihah.<br>5. Membaca sholawat kepada Nabi.<br>6. Mendo'akan mayat.<br>7. Memberi salam.</div>
+<div class="arti"><strong>Sunnah Sholat Jenazah</strong>
+<div class="arti">1. Mengangkat tangan pada tiap-tiap takbir (4 takbir)<br>2. Merendahkan suara bacaan (sirr)<br>3. Membaca ta'awudz<br>4. Disunnahkan banyak pengikutnya<br>5. Memperbanyak shaf</div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

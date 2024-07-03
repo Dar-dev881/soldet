@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Mimpi dan Jawaban Shalat Istikharah</h1>
+        <a href="istikharah.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+		
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti"><strong>Mimpi Setelah Shalat Istikharah</strong></div>
+<div class="arti">Banyak yang mengatakan bahwa Allah akan mengirimkan jawabannya melalui mimpi. Mimpi itu seperti tradisi yang ada di Indonesia jika segala penentuan atau hasil akhir dari shalat istikharah akan diberitahukan melalui mimpi. Sehingga ketika shalat istikharah selesai dilakukan, orang muslim tersebut harus tidur. Jika dia bermimpi yang berhubungan dengan apa yang menjadi permasalahannya, bisa dikatakan itu adalah jawaban atau hasil finalmya.</div>
+<div class="arti">Sayangnya pandangan dan persepsi masyarakat Indonesia akan hal tersebut kurang tepat, ditambah lagi tidak ada hadist yang mengatakan seperti itu. Memang tidak ada salahnya mengandalkan hasil final dari shalat istikharah melalui mimpi, jika mimpinya tersebut adalah hal baik. Yang menjadi permasalahan kini adalah bagaimana jika mimpi tersebut justru mimpi yang kurang baik atau buruk?.</div>
+<div class="arti">Mimpi tersebut justru tidak membawa maslahat bagi orang yang melakukan shalat tersebut. Mimpi bukan menjadi tolak ukur hasil final dari shalat istikharah yang dilakukan sebab asal mimpi ada 3 macam yaitu sebagai berikut ini :</div>
+<div class="arti">1. Mimpi yang datangnya dari setan.</div>
+<div class="arti">2. Mimpi yang datang dari Allah.</div>
+<div class="arti">3. Mimpi yang datang dari dalam diri sendiri.</div>
+<div class="arti"><strong>Jawaban Shalat Istikharah</strong></div>
+<div class="arti">Jika kita tidak boleh mengandalkan mimpi setelah melaksanakan shalat istikharah, lalu bagaimana kita mengetahui kalau shalat istikharah kita telah terjawab?. Memang sampai saat ini belum ada dalil yang pasti yang membahas mengenai jawaban dari shalat istikharah yang dilakukan. Namun kita bisa melihat jawaban shalat istikharah berdasarkan kata dari beberapa ulama besar yang mengatakan berikut ini :</div>
+<div class="arti">1. Mengambil keputusan yang menjadi keyakinan dengan perasaan pasti.</div>
+<div class="arti">2. Seseorang sebaiknya mengambil keputusan yang menjadi keyakinannya, entah itu sesuai dengan suara hatinya maupun tidak. Hal itu dikarenakan kebaikan merupakan sesuatu yang ada pada apa yang telah menjadi keyakinannya, bukan berasal dari kecocokan di dalam hatinya.</div>
+<div class="arti">3. Suara hati sering diperngaruhi oleh berbagai hal salah satunya adalah masalah tentang perasaan yang sifatnya subyektif dan tidak ada hadist yang membahas tentang hal tersebut.</div>
+<div class="arti">Jawaban istikharah bisa terlihat pada hati orang muslim yang bersih, sehingga hati akan murni dan tidak dipengaruhi oleh hal-hal yang kurang bagus.</div>
+
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+</body>
+</html>

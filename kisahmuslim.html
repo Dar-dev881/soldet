@@ -1,0 +1,344 @@
+
+<html>
+
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui3.css />
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+
+<style>
+body {
+    background-color: #000;
+}
+
+
+.pembahasan {
+background-color: grey;
+padding-left: 5px;
+padding-right: 5px;
+radius: 5px;
+padding-bottom: 0px;
+color: #ffffff;
+display: none;
+
+
+}
+
+<!-- .ui-btn { -->
+    <!-- font-size: 16px; -->
+    <!-- margin: 0em; -->
+    <!-- padding: 0em; -->
+	<!-- } -->
+
+img {
+    display: block;
+    margin: 0 auto;
+	padding-top:10px;
+	padding-bottom:10px;
+    max-width: 60%;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: auto;
+	border-radius: 0%;
+}
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+
+.deskripsi {
+font-color: red !important;
+
+
+}
+
+
+.ui-page-theme-d .ui-panel-wrapper {
+background-color: #ffffff Important!;
+}
+
+
+.shadow {
+    font-size: 1em;
+    width: 100%;
+    height: 0.5em;
+    border-top: 0.0625em solid rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to bottom,
+                                      rgb(135, 136, 138),
+                                      transparent);
+    -webkit-mask-box-image: linear-gradient(to right,
+                                            rgba(0, 0, 0, 0) 0%,
+                                            rgba(0, 0, 0, 0.8) 50%,
+                                            rgba(0, 0, 0, 0) 100%);
+											
+											
+}
+
+
+
+	  
+a {text-decoration: none !important;}
+
+p {
+font-weight: normal;
+font-size: 14px;
+margin-block-start: 0.5em;
+margin-block-end: 0.3em;
+
+
+}
+
+.lama {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.tabButton {
+ margin: 0em;
+    padding: 0em;
+
+
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("Amiri/Amiri-Regular.ttf");
+}
+
+
+.audioPlayer{
+  display: block;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+
+.tabView{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+
+
+}
+
+.arabic {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+    font-family: "myFirstFont";
+	text-align: right;
+	font-size: 33px;
+	line-height: 2;
+	<!-- background-color: #fff; -->
+	border-radius: 10px;
+	
+}
+
+.rate {
+    padding-bottom: 0px;
+    padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    <!-- border-style: solid; -->
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: "myFirstFont";
+	line-height: 1.3;
+}
+
+
+.ondel {
+margin:auto;
+border-right:white solid 1px;
+border-left:white solid 1px;
+border-bottom:none;
+background-color:#00897b;
+border-top:none;
+border-radius:0px;
+box-shadow:none;
+margin: 0em;
+padding: 0em;
+
+}
+
+.cabe {
+margin: 0em;
+padding: 0em;
+border-bottom: 0px;
+
+}
+
+.ui-page { 
+    background:#e8f5e9 !important;
+}
+
+.ui-block-a.menu-kiwo
+.ui-block-b.menu-kiwo {
+background-color:#FFFDF1;border:none;border-radius:0px;box-shadow:none;
+
+
+}
+
+
+<!-- .lama { -->
+<!-- @include 'css/jquery.mobile.squareui.css'; -->
+<!-- } -->
+	  
+</style>
+</head>
+
+<body>
+<title>Sholat Sunnah</title>
+<div data-role=page id=page1 data-theme="a">
+
+<div data-role=header data-position=fixed> 
+						
+<form>
+<input data-type=search id=divOfPs-input autocomplete=off autocorrect=off autocapitalize=off placeholder="Cari">
+</form>
+</div>
+
+<!-- TAP TUTORIALS -->
+<div id=two class=tabView>
+
+<div>
+
+<fieldset class=ui-grid-b data-inset="true" data-input="#divOfPs-input" data-filter="true" data-theme="a"	>
+
+<div class=ui-block-a><a href=kisahnabi.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah1.png style="width: 95%;" /><p align=center>Kisah Nabi<br>dan Rasul<br><span class="pembahasan">9 pembahasan</span></p></a></div>
+
+<div class=ui-block-b><a href=sahabat.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah2.png style="width: 95%;" /><p align=center>Kisah Sahabat<br>Nabi<br><span class="pembahasan">5 pembahasan</span></p></a></div>
+
+<div class=ui-block-c><a href=tabiin.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah3.png style="width: 95%;" /><p align=center>Kisah<br>Tabi’in<span class="pembahasan">4 pembahasan</span></p></a></div>
+
+<div class=ui-block-a><a href=biografiulama.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah4.png style="width: 95%;" /><p align=center>Biografi<br>Ulama<br><span class="pembahasan">4 pembahasan</span></p></a></div>
+
+<div class=ui-block-b><a href=orangshalih.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah5.png style="width: 95%;" /><p align=center>Kisah Orang<br>Shalih<br><span class="pembahasan">4 pembahasan</span></p></a></div>
+
+<div class=ui-block-c><a href=hidayahislam.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah6.png style="width: 95%;" /><p align=center>Kisah Hidayah<br>Islam<br><span class="pembahasan">6 pembahasan</span></p></a></div>
+
+<div class=ui-block-a><a href=umatterdahulu.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah7.png style="width: 95%;" /><p align=center>Kisah Umat<br>Terdahulu<br><span class="pembahasan">5 pembahasan</span></p></a></div>
+
+<div class=ui-block-b><a href=kaumdurhaka.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/desert.png style="width: 95%;" /><p align=center>Kisah Kaum<br>Durhaka<br><span class="pembahasan">4 pembahasan</span></p></a></div>
+
+<div class=ui-block-c><a href=masadepan.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah9.png style="width: 95%;" /><p align=center>Kisah Masa<br>Depan<br><span class="pembahasan">3 pembahasan</span></p></a></div>
+
+<div class=ui-block-a><a href=taknyata.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah11.png style="width: 95%;" /><p align=center>Kisah Tak<br>Nyata<br><span class="pembahasan">5 pembahasan</span></p></a></div>
+
+<div class=ui-block-b><a href=birrulwalidain.html rel=external data-ajax=false style=text-decoration:none;><img alt="" src=images/kisah8.png style="width: 95%;" /><p align=center>Kisah Birrul<br>Walidain<br><span class="pembahasan">4 pembahasan</span></p></a></div>
+
+
+</fieldset>
+
+</div>
+</div>
+
+
+<!-- TAB RATE -->
+<div id=three class=tabView>
+<div id=t>
+<img clss=img2 width=600px src=icon/rate.gif>
+<p data-icon=false data-theme=e><h3 class=wrap align=center>Tim kami bekerja keras untuk menyediakan berbagai konten dalam aplikasi ini. Jika Anda suka dengan aplikasi ini jangan ragu untuk memberi kami penilaian dan ulasan terbaik Anda.</h3></p>
+<!-- MASUKIN ACTIVITY RATE DI SINI -->
+<a href="https://play.google.com/store/apps/details?id=com.bismillah.doadzikirsholat">
+<div data-role=button style="background-color:#00897b;border:none;border-radius:10px;" class="ui-btn ui-input-btn ui-shadow custom-btn" data-theme=>&#11088; &#11088; &#11088; &#11088; &#11088;
+</div></a>
+<!-- <img class=img2 width=600px src=icon/thanks.gif> -->
+</div>
+</div>
+
+
+
+<!-- TAB REQUEST -->
+
+
+</div>
+
+
+
+
+<div data-role=footer data-position=fixed style="background-color:#00897b">
+<div data-role=navbar id=navbar data-iconpos=top data-theme=b style="background-color:#00897b">
+							<ul>
+								
+
+<li class="ondel"><a href=#two class=tabButton style="background-color:#00897b"><img alt="" src=icon/sholat.png style="width: 30px;" /></a></li>
+<li class="ondel"><a href=#three class=tabButton style="background-color:#00897b"><img alt="" src=icon/rate.gif style="width: 30px;" /></a></li>
+<li class="ondel"><a href=#one class=tabButton style="background-color:#00897b"><img alt="" src=icon/request.png style="width: 30px;" /></a></li>
+<!-- <li class="ondel" ><a href="sholatsunnah.html" rel="external" class="button" style="background-color:#007c91"><p style="font-size:12.5;display:block;margin:0">Sholat<br>Sunnah</p></a></li> -->
+								
+							</ul>
+						</div>
+</div>
+
+<div data-role="panel"  data-display="push" data-theme="" id="nav-panel" style="background-color:#00897b;margin-top:0px;">
+
+<!-- <img alt="" src=icon/logo2.png style="width: 60%;" /> -->
+    </div>
+
+
+
+
+</div>
+<script src="function.js">
+
+
+</script> 
+<script> 
+ $(document).on("pagecreate", "#page1", function(){
+    //start with only viewone visible
+    $(".tabButton").removeClass("ui-btn-active");
+    $(".tabView").hide();
+    $(".tabButton").eq(0).addClass("ui-btn-active");
+    var viewHref  = $(".tabButton").eq(0).prop("href");
+    $(viewHref.substr(viewHref.indexOf('#'))).show();
+    
+    $(".tabButton").on("click", function(){
+        $(".tabButton").removeClass("ui-btn-active");        
+        $(".tabView").hide();
+        var href = $(this).prop("href");
+        $(href.substr(href.indexOf('#'))).show();        
+        $(this).addClass("ui-btn-active");
+        return false;
+    });
+	
+	
+});
+ 
+
+
+</script> 
+<script>
+		loadBookmark();
+	
+
+
+</script>
+</body>
+</html>

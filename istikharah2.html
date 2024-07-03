@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, user-scalable=no" />
+<link rel=stylesheet type=text/css href=css/jquery.mobile.squareui.css />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js">
+</script> 
+<script src="js/jquery.mobile-1.4.0.min.js">
+</script>
+<script>
+    function changeFont(font){
+        document.getElementByClassName("ayat").style.fontFamily = font.value;
+    }
+</script>
+</head>
+<body>
+
+<div data-role=footer data-position=fixed style="background-color:#007c91;border:none">
+<div data-role=navbar id=navbar data-iconpos=top>
+<ul>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" data-theme=c>-</a></li> 
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >Dzikir</a></li> 
+<li><a href="index2.html" rel="external"  data-ajax="false" class="" data-theme=c>Do'a</a></li>
+<li><a href="index.html" rel="external"  data-ajax="false" class="" >+</a></li> 
+</ul>
+</div>
+</div>
+<div data-role=page id=page1>
+
+<div data-role=header data-position=fixed style="background-color:#007c91">
+	<div class="ui-grid-c center">
+
+
+<div class="ui-block-a">
+<button style="background-color:#007c91;border:none" onclick="myArti()" type="button" data-role="button" data-inline="false"><img id="dafa" src="images/arti.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-b">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(-1);resizeText3(-1);resizeText4(-1)" type="button" data-role="button" data-inline="false" class=""><img id="" src="images/min.png" width="20" height="20"></button>
+</div>
+<div class="ui-block-c">
+<button style="background-color:#007c91;border:none" onclick="resizeText2(+1);resizeText3(+1);resizeText4(+1)" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/plus.png" width="20" height="20"></button>
+</div>
+
+<div class="ui-block-d">
+<button style="background-color:#007c91;border:none" onclick="myBacaan()" type="button" data-role="button" data-inline="false" class="play2"><img id="play" src="images/bacaan.png" width="20" height="20"></button>
+</div>
+</div> 
+</div>
+ <div data-role="header" data-theme="c">
+        <h1>Waktu Pelaksanaan Shalat Istikharah</h1>
+        <a href="istikharah.html" style="background-color:#007c91;border:none" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="notext">Menu</a>
+	
+</div>
+
+
+
+<!-- SD -->
+<div id=one>
+<div id="nav-a">
+<!---->
+
+<div class="arti">Sholat istikharah boleh dilaksanakan kapan saja, baik siang maupun malam. Kalau dilakukan malam hari pada saat shalat tahajjud karena memang waktu seperti itu sangat utama. Namun intinya adalah ketika kita menghadapi persoalan yang berat maupun yang ringan. Dalam hadis Rasulullah SAW bersabda:</div>
+<div class="arti">&ldquo;Apabila salah seorang diantar kalian berniat melakukan suatu urusan, hendaklah dia sholat dua raka&rsquo;at yang bukan fardhu kemudian hendaklah dia berdo&rsquo;a , &ldquo;Allahumma&hellip;&rdquo; <strong>(HR Bukhari)</strong></div>
+<div class="arti">Dalam hadits tersebut dijelaskan waktunya adalah kapan saja dan tidak terikat. Oleh karena itu Imam An-Nawawi berkata, &ldquo;Istikharah disunnahkan dilaksanakan di segala kondisi sebagaimana dijelaskan oleh nash hadis di atas.&rdquo; <strong>(Al-Adzkar)</strong> hal tersebut juga dikemukakan oleh Ibnu Hajar Al-Asqolani <strong>(Fathul Bari 11/184)</strong></div>
+<div class="arti">Dalam hadis tidak dijelaskan bagaimana jawaban akan diberikan, meskipun Imam Nawawi dalam kitabnya Al-Adzkar menyatakan hendaklah orang tersebut memilih sesuai dengan pilihan hatinya (hatinya menjadi contong terhadap suatu pilihan setelah sholat).</div>
+<div class="arti">Tetapi pendapat tersebut ditentang oleh sejumlah ulama karena hadis yang menjadi rujukan Imam Nawawi adalah hadis dhoif. Para ulama hanya menegaskan bahwa jangan memilih pilihan yang ada sebelumnya yang hanya berdasarkan kepada hawa nafsu <strong>(Fathul bari 11/187)</strong></div>
+<div class="arti">Jadi yang seharus dilakukan adalah, setelah kita melaksanakan sholat istikharah kita pilih mana yang terbaik (berazam) dan meyerahkan segala urusannya pada Allah. Karena kalau pilhan tersebut adalah pilihan yang terbaik, maka Allah akan memudahkannya bagi orang tersebut dan akan memberkahinya. Tetapi jika hal tersebut adalah sebaliknya maka Allah akan memalingkannya dan memudahkan orang tersebut kepada kebaikan dengan idzin-Nya. <strong>(Bughyatul Mutathowwi&rsquo; Fi Sholat At-Tathowwu&rsquo; hal 105)</strong></div>
+<div class="arti">Kami tidak mendapatkan dalil shohih yang menjelaskan tentang batasan minimum maupun maksimum pelaksanaan sholat istikharah. Sedangkan hadis yang diriwayatkan oleh Ibnu sunni dari Anas r.a. ia berkata: Rasulullah SAW bersabda, &ldquo;Wahai Anas, apabila engkau berniat melaksanakan suatu urusan, maka minta pilihan pada tuhanmu mengenai urusan tersebut tujuh kali, kemudian perhatikan mana urusan yang pertama dipilih oleh hatimu, karena kebikan ada padanya.&rdquo;</div>
+<div class="arti">Hadis di atas dihoif sebagaimana dikemukakan oleh Ibnu Hajar, &ldquo;Sanadnya dhoif sekali.&rdquo; <strong>(Fathul Bari 11/187)</strong>. Al-Iroqi berkata, &ldquo;Mereka (para rowi) memang terkenal tetapi di antara mereka ada rowi yang terkenal dengan kedhoifannya (bahkan sangat dhoif) yaitu Ibrohim bin Al-Baro&rdquo; <strong>(Kitab Al-Adzkar An-Nawawi dan Tuhfatul Abror As-Suyuthi hal 162-163)</strong></div>
+
+
+<!---->
+<!-- <center> -->
+<!-- <a href="index2.html" rel="external"  data-ajax="false" data-small="true" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Doa</a> -->
+<!-- </center> -->
+</div>
+</div>
+
+
+<script src="function.js">
+
+
+</script> 
+
+
+</body>
+</html>
